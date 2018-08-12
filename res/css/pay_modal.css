@@ -1,0 +1,20 @@
+.btn-pay{margin-top: 3px;} 
+.btn-pay{border-color:#f57e42;background:#f57e42;box-shadow:none}
+.btn-pay:hover,.btn-pay:focus{border-color:#f5ad6e;background-color:#f5ad6e;box-shadow:none}
+.btn-pay.active,.btn-pay:active{outline:none;border-color:#e67613;background:#e67613;box-shadow:none}
+.btn-pay.disabled,.btn-pay.disabled:hover,.btn-pay.disabled:focus,.btn-pay.disabled:active,.btn-pay.disabled.active,.btn-pay[disabled],.btn-pay[disabled]:hover,.btn-pay[disabled]:focus,.btn-pay[disabled]:active,.btn-pay[disabled].active{cursor:not-allowed;background:#f6b881;border-color:#f6b881;box-shadow:none}
+.btn-pay.disabled{background:#f57e42;border-color:#f57e42;;box-shadow:none}
+
+.payModalLi{list-style: none;}
+.text-center{text-align:center}
+.avatar img{width:100%;height:100%;border:2px solid white;border-radius:50%;box-sizing:border-box}.avatar:hover img{border-color:#e78170}.cover-img{position:absolute;top:0;left:0;width:100%;height:100%;background-position:center;background-size:cover}.signin_error{color:#d96f5d}b{font-weight:bold}.phone-hiding{opacity:0;filter:alpha(opacity=0);-webkit-transition:opacity 0.5s !important;-moz-transition:opacity 0.5s !important;-ms-transition:opacity 0.5s !important;-o-transition:opacity 0.5s !important;transition:opacity 0.5s !important}.signin_error{color:#d96f5d}.loader-tiny{width:17px}*[id^="xunlei_com_thunder_helper_plugin"],embed[type="application/thunder_download_plugin"]{display:none}input.placeholder{color:#999999}input:-webkit-autofill{box-shadow:0 0 0 1000px white inset !important}@media (max-width: 480px){.avatar{border:1px solid white}.avatar img{border:none}.avatar:hover{border-color:#e78170}}
+.avatar img{width:66px;height:66px;display:inline-block} .avatar img{border:none}
+
+.modal-body p{padding-left:41px;margin-top:5px;font-size:12px;line-height:1.8}.support_list-modal .modal-body p:before,.support_list-modal .modal-body p:after{font:normal normal normal 6px/1 FontAwesome;vertical-align:text-top;color:#999999}.support_list-modal .modal-body p:before{content:"\f10d";margin-right:4px}.support_list-modal .modal-body p:after{content:"\f10e";margin-left:4px}
+
+.otherfa {font-size: 30px; margin-left: 10px;}
+
+.main-inputs label{float:none;padding:0;margin:0 10px 0 0;display:inline-block;vertical-align:middle}
+.main-inputs{margin-top: 20px; margin-bottom:10px;border:1px solid #eeeeee;background-color:whitesmoke;color:#999999;-webkit-border-radius:4px;-moz-border-radius:4px;border-radius:4px}.pay-modal .main-inputs .control-group,.top-up-modal .main-inputs .control-group,.withdraw-modal .main-inputs .control-group{padding:15px 20px;margin-bottom:0}.pay-modal .main-inputs label,.top-up-modal .main-inputs label,.withdraw-modal .main-inputs label{float:none;padding:0;margin:0 10px 0 0;display:inline-block;vertical-align:middle}.pay-modal .main-inputs i,.top-up-modal .main-inputs i,.withdraw-modal .main-inputs i{vertical-align:middle;font-size:32px;color:orange}.pay-modal .main-inputs input,.top-up-modal .main-inputs input,.withdraw-modal .main-inputs input{position:relative;top:-1px;width:60%;width:calc(100% - 120px);height:auto;margin-bottom:0;font-size:32px;line-height:38px}.pay-modal .main-inputs .message,.top-up-modal .main-inputs .message,.withdraw-modal .main-inputs .message{border-top:1px solid #eeeeee}.pay-modal .main-inputs input,.pay-modal .main-inputs textarea,.top-up-modal .main-inputs input,.top-up-modal .main-inputs textarea,.withdraw-modal .main-inputs input,.withdraw-modal .main-inputs textarea{background:none !important;border:none !important;box-sizing:border-box;-webkit-box-shadow:none;-moz-box-shadow:none;box-shadow:none}.pay-modal .main-inputs textarea,.top-up-modal .main-inputs textarea,.withdraw-modal .main-inputs textarea{width:100%;height:50px;padding:0;margin:0;resize:none}
+
+i { font-style: normal; color: #E94F06; }
