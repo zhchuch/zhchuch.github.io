@@ -21,6 +21,9 @@
 	</p>
 	<div class="row-fluid">
 		<div class="span8">
+			<p>IN ****************</p>
+			<?php require 'test.php'; ?>
+			<p>OUT****************</p>
 			<h3 class="text-left">
 				追求自由，追求快乐，不念过往，不惧将来
 			</h3>
