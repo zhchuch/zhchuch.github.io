@@ -1,0 +1,493 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
+<title>北大屠夫</title>
+
+
+<style type="text/css">
+body {
+  font-family: Helvetica, arial, sans-serif;
+  font-size: 14px;
+  line-height: 1.6;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  background-color: white;
+  padding: 30px; }
+
+body > *:first-child {
+  margin-top: 0 !important; }
+body > *:last-child {
+  margin-bottom: 0 !important; }
+
+a {
+  color: #4183C4; }
+a.absent {
+  color: #cc0000; }
+a.anchor {
+  display: block;
+  padding-left: 30px;
+  margin-left: -30px;
+  cursor: pointer;
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0; }
+
+h1, h2, h3, h4, h5, h6 {
+  margin: 20px 0 10px;
+  padding: 0;
+  font-weight: bold;
+  -webkit-font-smoothing: antialiased;
+  cursor: text;
+  position: relative; }
+
+h1:hover a.anchor, h2:hover a.anchor, h3:hover a.anchor, h4:hover a.anchor, h5:hover a.anchor, h6:hover a.anchor {
+  background: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAAGXRFWHRTb2Z0d2FyZQBBZG9iZSBJbWFnZVJlYWR5ccllPAAAA09pVFh0WE1MOmNvbS5hZG9iZS54bXAAAAAAADw/eHBhY2tldCBiZWdpbj0i77u/IiBpZD0iVzVNME1wQ2VoaUh6cmVTek5UY3prYzlkIj8+IDx4OnhtcG1ldGEgeG1sbnM6eD0iYWRvYmU6bnM6bWV0YS8iIHg6eG1wdGs9IkFkb2JlIFhNUCBDb3JlIDUuMy1jMDExIDY2LjE0NTY2MSwgMjAxMi8wMi8wNi0xNDo1NjoyNyAgICAgICAgIj4gPHJkZjpSREYgeG1sbnM6cmRmPSJodHRwOi8vd3d3LnczLm9yZy8xOTk5LzAyLzIyLXJkZi1zeW50YXgtbnMjIj4gPHJkZjpEZXNjcmlwdGlvbiByZGY6YWJvdXQ9IiIgeG1sbnM6eG1wPSJodHRwOi8vbnMuYWRvYmUuY29tL3hhcC8xLjAvIiB4bWxuczp4bXBNTT0iaHR0cDovL25zLmFkb2JlLmNvbS94YXAvMS4wL21tLyIgeG1sbnM6c3RSZWY9Imh0dHA6Ly9ucy5hZG9iZS5jb20veGFwLzEuMC9zVHlwZS9SZXNvdXJjZVJlZiMiIHhtcDpDcmVhdG9yVG9vbD0iQWRvYmUgUGhvdG9zaG9wIENTNiAoMTMuMCAyMDEyMDMwNS5tLjQxNSAyMDEyLzAzLzA1OjIxOjAwOjAwKSAgKE1hY2ludG9zaCkiIHhtcE1NOkluc3RhbmNlSUQ9InhtcC5paWQ6OUM2NjlDQjI4ODBGMTFFMTg1ODlEODNERDJBRjUwQTQiIHhtcE1NOkRvY3VtZW50SUQ9InhtcC5kaWQ6OUM2NjlDQjM4ODBGMTFFMTg1ODlEODNERDJBRjUwQTQiPiA8eG1wTU06RGVyaXZlZEZyb20gc3RSZWY6aW5zdGFuY2VJRD0ieG1wLmlpZDo5QzY2OUNCMDg4MEYxMUUxODU4OUQ4M0REMkFGNTBBNCIgc3RSZWY6ZG9jdW1lbnRJRD0ieG1wLmRpZDo5QzY2OUNCMTg4MEYxMUUxODU4OUQ4M0REMkFGNTBBNCIvPiA8L3JkZjpEZXNjcmlwdGlvbj4gPC9yZGY6UkRGPiA8L3g6eG1wbWV0YT4gPD94cGFja2V0IGVuZD0iciI/PsQhXeAAAABfSURBVHjaYvz//z8DJYCRUgMYQAbAMBQIAvEqkBQWXI6sHqwHiwG70TTBxGaiWwjCTGgOUgJiF1J8wMRAIUA34B4Q76HUBelAfJYSA0CuMIEaRP8wGIkGMA54bgQIMACAmkXJi0hKJQAAAABJRU5ErkJggg==) no-repeat 10px center;
+  text-decoration: none; }
+
+h1 tt, h1 code {
+  font-size: inherit; }
+
+h2 tt, h2 code {
+  font-size: inherit; }
+
+h3 tt, h3 code {
+  font-size: inherit; }
+
+h4 tt, h4 code {
+  font-size: inherit; }
+
+h5 tt, h5 code {
+  font-size: inherit; }
+
+h6 tt, h6 code {
+  font-size: inherit; }
+
+h1 {
+  font-size: 28px;
+  color: black; }
+
+h2 {
+  font-size: 24px;
+  border-bottom: 1px solid #cccccc;
+  color: black; }
+
+h3 {
+  font-size: 18px; }
+
+h4 {
+  font-size: 16px; }
+
+h5 {
+  font-size: 14px; }
+
+h6 {
+  color: #777777;
+  font-size: 14px; }
+
+p, blockquote, ul, ol, dl, li, table, pre {
+  margin: 15px 0; }
+
+hr {
+  background: transparent url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAYAAAAECAYAAACtBE5DAAAAGXRFWHRTb2Z0d2FyZQBBZG9iZSBJbWFnZVJlYWR5ccllPAAAAyJpVFh0WE1MOmNvbS5hZG9iZS54bXAAAAAAADw/eHBhY2tldCBiZWdpbj0i77u/IiBpZD0iVzVNME1wQ2VoaUh6cmVTek5UY3prYzlkIj8+IDx4OnhtcG1ldGEgeG1sbnM6eD0iYWRvYmU6bnM6bWV0YS8iIHg6eG1wdGs9IkFkb2JlIFhNUCBDb3JlIDUuMC1jMDYwIDYxLjEzNDc3NywgMjAxMC8wMi8xMi0xNzozMjowMCAgICAgICAgIj4gPHJkZjpSREYgeG1sbnM6cmRmPSJodHRwOi8vd3d3LnczLm9yZy8xOTk5LzAyLzIyLXJkZi1zeW50YXgtbnMjIj4gPHJkZjpEZXNjcmlwdGlvbiByZGY6YWJvdXQ9IiIgeG1sbnM6eG1wPSJodHRwOi8vbnMuYWRvYmUuY29tL3hhcC8xLjAvIiB4bWxuczp4bXBNTT0iaHR0cDovL25zLmFkb2JlLmNvbS94YXAvMS4wL21tLyIgeG1sbnM6c3RSZWY9Imh0dHA6Ly9ucy5hZG9iZS5jb20veGFwLzEuMC9zVHlwZS9SZXNvdXJjZVJlZiMiIHhtcDpDcmVhdG9yVG9vbD0iQWRvYmUgUGhvdG9zaG9wIENTNSBNYWNpbnRvc2giIHhtcE1NOkluc3RhbmNlSUQ9InhtcC5paWQ6OENDRjNBN0E2NTZBMTFFMEI3QjRBODM4NzJDMjlGNDgiIHhtcE1NOkRvY3VtZW50SUQ9InhtcC5kaWQ6OENDRjNBN0I2NTZBMTFFMEI3QjRBODM4NzJDMjlGNDgiPiA8eG1wTU06RGVyaXZlZEZyb20gc3RSZWY6aW5zdGFuY2VJRD0ieG1wLmlpZDo4Q0NGM0E3ODY1NkExMUUwQjdCNEE4Mzg3MkMyOUY0OCIgc3RSZWY6ZG9jdW1lbnRJRD0ieG1wLmRpZDo4Q0NGM0E3OTY1NkExMUUwQjdCNEE4Mzg3MkMyOUY0OCIvPiA8L3JkZjpEZXNjcmlwdGlvbj4gPC9yZGY6UkRGPiA8L3g6eG1wbWV0YT4gPD94cGFja2V0IGVuZD0iciI/PqqezsUAAAAfSURBVHjaYmRABcYwBiM2QSA4y4hNEKYDQxAEAAIMAHNGAzhkPOlYAAAAAElFTkSuQmCC) repeat-x 0 0;
+  border: 0 none;
+  color: #cccccc;
+  height: 4px;
+  padding: 0;
+}
+
+body > h2:first-child {
+  margin-top: 0;
+  padding-top: 0; }
+body > h1:first-child {
+  margin-top: 0;
+  padding-top: 0; }
+  body > h1:first-child + h2 {
+    margin-top: 0;
+    padding-top: 0; }
+body > h3:first-child, body > h4:first-child, body > h5:first-child, body > h6:first-child {
+  margin-top: 0;
+  padding-top: 0; }
+
+a:first-child h1, a:first-child h2, a:first-child h3, a:first-child h4, a:first-child h5, a:first-child h6 {
+  margin-top: 0;
+  padding-top: 0; }
+
+h1 p, h2 p, h3 p, h4 p, h5 p, h6 p {
+  margin-top: 0; }
+
+li p.first {
+  display: inline-block; }
+li {
+  margin: 0; }
+ul, ol {
+  padding-left: 30px; }
+
+ul :first-child, ol :first-child {
+  margin-top: 0; }
+
+dl {
+  padding: 0; }
+  dl dt {
+    font-size: 14px;
+    font-weight: bold;
+    font-style: italic;
+    padding: 0;
+    margin: 15px 0 5px; }
+    dl dt:first-child {
+      padding: 0; }
+    dl dt > :first-child {
+      margin-top: 0; }
+    dl dt > :last-child {
+      margin-bottom: 0; }
+  dl dd {
+    margin: 0 0 15px;
+    padding: 0 15px; }
+    dl dd > :first-child {
+      margin-top: 0; }
+    dl dd > :last-child {
+      margin-bottom: 0; }
+
+blockquote {
+  border-left: 4px solid #dddddd;
+  padding: 0 15px;
+  color: #777777; }
+  blockquote > :first-child {
+    margin-top: 0; }
+  blockquote > :last-child {
+    margin-bottom: 0; }
+
+table {
+  padding: 0;border-collapse: collapse; }
+  table tr {
+    border-top: 1px solid #cccccc;
+    background-color: white;
+    margin: 0;
+    padding: 0; }
+    table tr:nth-child(2n) {
+      background-color: #f8f8f8; }
+    table tr th {
+      font-weight: bold;
+      border: 1px solid #cccccc;
+      margin: 0;
+      padding: 6px 13px; }
+    table tr td {
+      border: 1px solid #cccccc;
+      margin: 0;
+      padding: 6px 13px; }
+    table tr th :first-child, table tr td :first-child {
+      margin-top: 0; }
+    table tr th :last-child, table tr td :last-child {
+      margin-bottom: 0; }
+
+img {
+  max-width: 100%; }
+
+span.frame {
+  display: block;
+  overflow: hidden; }
+  span.frame > span {
+    border: 1px solid #dddddd;
+    display: block;
+    float: left;
+    overflow: hidden;
+    margin: 13px 0 0;
+    padding: 7px;
+    width: auto; }
+  span.frame span img {
+    display: block;
+    float: left; }
+  span.frame span span {
+    clear: both;
+    color: #333333;
+    display: block;
+    padding: 5px 0 0; }
+span.align-center {
+  display: block;
+  overflow: hidden;
+  clear: both; }
+  span.align-center > span {
+    display: block;
+    overflow: hidden;
+    margin: 13px auto 0;
+    text-align: center; }
+  span.align-center span img {
+    margin: 0 auto;
+    text-align: center; }
+span.align-right {
+  display: block;
+  overflow: hidden;
+  clear: both; }
+  span.align-right > span {
+    display: block;
+    overflow: hidden;
+    margin: 13px 0 0;
+    text-align: right; }
+  span.align-right span img {
+    margin: 0;
+    text-align: right; }
+span.float-left {
+  display: block;
+  margin-right: 13px;
+  overflow: hidden;
+  float: left; }
+  span.float-left span {
+    margin: 13px 0 0; }
+span.float-right {
+  display: block;
+  margin-left: 13px;
+  overflow: hidden;
+  float: right; }
+  span.float-right > span {
+    display: block;
+    overflow: hidden;
+    margin: 13px auto 0;
+    text-align: right; }
+
+code, tt {
+  margin: 0 2px;
+  padding: 0 5px;
+  white-space: nowrap;
+  border: 1px solid #eaeaea;
+  background-color: #f8f8f8;
+  border-radius: 3px; }
+
+pre code {
+  margin: 0;
+  padding: 0;
+  white-space: pre;
+  border: none;
+  background: transparent; }
+
+.highlight pre {
+  background-color: #f8f8f8;
+  border: 1px solid #cccccc;
+  font-size: 13px;
+  line-height: 19px;
+  overflow: auto;
+  padding: 6px 10px;
+  border-radius: 3px; }
+
+pre {
+  background-color: #f8f8f8;
+  border: 1px solid #cccccc;
+  font-size: 13px;
+  line-height: 19px;
+  overflow: auto;
+  padding: 6px 10px;
+  border-radius: 3px; }
+  pre code, pre tt {
+    background-color: transparent;
+    border: none; }
+
+sup {
+    font-size: 0.83em;
+    vertical-align: super;
+    line-height: 0;
+}
+
+kbd {
+  display: inline-block;
+  padding: 3px 5px;
+  font-size: 11px;
+  line-height: 10px;
+  color: #555;
+  vertical-align: middle;
+  background-color: #fcfcfc;
+  border: solid 1px #ccc;
+  border-bottom-color: #bbb;
+  border-radius: 3px;
+  box-shadow: inset 0 -1px 0 #bbb
+}
+
+* {
+	-webkit-print-color-adjust: exact;
+}
+@media screen and (min-width: 914px) {
+    body {
+        width: 854px;
+        margin:0 auto;
+    }
+}
+@media print {
+	table, pre {
+		page-break-inside: avoid;
+	}
+	pre {
+		word-wrap: break-word;
+	}
+}
+</style>
+
+
+</head>
+
+<body>
+
+<h2 id="toc_0">北大屠夫 <small>陆步轩</small></h2>
+
+<blockquote>
+<p>一个大学培养什么并不能说明其本质，关键是培养的人 给这个社会做了什么贡献 以及 他自己在此过程中又得到了什么乐趣。</p>
+</blockquote>
+
+<h3 id="toc_1">第一章 少年不识愁滋味</h3>
+
+<blockquote>
+<p>世间许多事，在旁观者眼里，充满了曲折离奇，绮丽无比，倘若写书或讲故事，自有引人入胜之处。然而置身其中，尝尝个中滋味，其酸楚与艰辛，不足与外人道哉。</p>
+</blockquote>
+
+<ul>
+<li><p>当年学校引进优良品种，为确保优势，秘而不宣，与左邻右舍之劣等品种混种，互授花粉，逐渐失去了优势，可惜当初无人想通其中的道理。
+推而广之，生物之习性、规律亦适合其他领域，包括科技。</p></li>
+<li><p>无独有偶，有一则外国幽默，校长告诫新来的老师：如果一位学生学业优秀，你要善待他，他可能是未来的科学家，对社会可能有所贡献；
+如果一位学生学业良好，你也要善待他，他可能会返校当老师，成为你的同事；如果一位学生学业一般，你更要善待他，他可能会赚大钱，会给学校捐一笔款子；
+如果一位学生学业很差，而且经常考试作弊，你最要善待他，因为他将来很有可能竞选总统或议员，成为国人景仰的领袖。</p></li>
+<li><p>在毕业后的十几年里，自己蓬头垢面，窝窝囊囊，活得不像人样，无颜再与老师联系。
+其实我知道，恩师就在西安市二十六中，她对我期望很高，我辜负了她的一片苦心，羞愧难当，无地自容。</p></li>
+<li><p>进入高三，学校分文理科，我结合自己的兴趣，选择了文科。老师、同学们纷纷质疑：
+“学好数理化，走遍天下都不怕。你理科成绩那么好，何必报考文科。”
+在人们的意识里，只有头脑不够用，数理化学不懂才会选择文科。他们哪里知道，我自幼饱览群书，博闻强识，倘不学文，这些资源岂不白白浪费！
+现在看来，当初选择学文，是我人生道路上的第一败笔。</p></li>
+<li><p>1984年高中毕业，我以全校第一、遥遥领先其他同学的成绩超过了大专录取分数线，但英语、政治、历史、地理分数相对较低。
+<b>我权衡再三，认为自己的潜力还没有得到充分发挥，在个别老师、同学的怂恿下，最终自动放弃上西安师专的机会，选择了复读。</b>
+1985年通过复读，考了状元，上了北大中文系！
+1985年，我以531分，陕西省第十四、长安县第一的成绩考入北京大学中文系。1985年8月28日，我第一次远行。带着简单的行囊，肩负着家乡父老的期盼，
+独自一人，登上了北上的列车。那年，我十九岁。  
+1989年大学毕业的他，考虑到自己年龄偏大，家中经济困难，主动放弃了继续深造的机会，选择了就业。</p></li>
+<li><p>当民叔起先由于土地多而成为地主，贫下中农们纷纷与他划清了界限，“鸡犬之声相闻，老死不相往来”；后来却因为钱多而成为共产党员，当上了村长，乡亲们又纷纷与他拉关系、套近乎。
+短短几十年，从小少爷到狗崽子，从地富反坏右被批判的对象到大老板再到村干部，最后冤死，其间发生了戏剧性的变化，命运之神数次捉弄于他，世态炎凉也在他身上得到了充分体现。
+<br><font color="blue">@思考：人生总是富有戏剧性，人生如戏！我们永远也猜不到自己最终的结局！好事也可以变坏事，坏事也可以变好事！永远不要对自己放弃希望。坚信自己人生所遭遇之一切，无论好坏皆是由于已经种下了因！是‘缘/果’ 到了，无论好坏都躲不过去！</font>若你前世种下了恶因，这辈子的霉运也许就是为了还债的，这一世如果你直接选择了自杀避世，不但逃脱不了前世种下的恶果，还会在这一世增加新的恶果，你的来世只会变得更惨，逃不过去的！<b>所以坚信自己所遇到的一切也许就是自己命中注定本该体验到的一切！不要排斥，请抱以<code>修行</code>的心态接受它，战胜它！</b></p></li>
+<li><p><b>那时大学升学竞争之激烈，百分之三的升学率</b>，大部分学生在学校食堂——教室——宿舍三点一线式地忙碌着，生活圈子狭窄，学习、学习、再学习，枯燥而乏味，远没有如今的学生可以逛网吧、玩游戏、谈恋爱，活得洒脱自在，丰富多彩。
+<br><font color="purple">@联系：我高考时可是 2950/29W，也属于百里挑一式的人物哦！</font>即使是放在那个年代，我也是自信自己是能够通过独木桥上得了大学的！</p></li>
+<li><p>在离开校园的这十四年里，和你一样，我也做了很多为了谋生而不得不做的事情，我的身上好像总背负着一个沉重的十字架：做得好了，因为你是北大出来的，理应如此；
+做得不好，所有的污言秽语都会袭来，北大就这个水平呀？<b>我用了生命中最好的十年光阴才卸去了身上这沉重的包袱：做一个独立的人才是最重要的。</b>
+<font color="blue">@总结：名校光环其实也是一种枷锁，但我们要学会自己卸去这个包袱，学会做一个真正独立的人！</font></p></li>
+</ul>
+
+<h3 id="toc_2">第二章 一波三折求职路</h3>
+
+<blockquote>
+<p>俗话说：“骑着骡子，才能赶马。”毕业分配时的一次错位，使我在人生的道路上一步踏绽脚，步步赶不上，最终为生活所迫，逼上梁山。这个“逼”字，在我的身上，得到了充分的体现。</p>
+</blockquote>
+
+<p>【机关分配没背景，无奈下海办实业(装潢业)】</p>
+
+<ul>
+<li><p>当时离校匆忙，我竟不知在西安还有个北大陕西校友会。多年以后，很多校友责备我为何不在校友会寻求帮助，却一味依赖个人奋斗。要知道，“个人的力量在强大的社会面前是多么微不足道啊！”</p></li>
+<li><p>1989年毕业，1989年9月13日赶到计经委报到。我常常早上第一个到达办公室，拖地、抹桌椅、烧开水、给主任沏茶，时间久了，便成为惯例。忽一日，写材料到深夜，或许烟抽得太多，或许浓茶喝得过量，总之熬过了眼，怎么也无法入睡，直至黎明才迷糊过去。
+一觉醒来，“糟糕！”太阳已高高在照。脸顾不上洗，牙也无时间刷，急忙赶到办公室，主任他们已经俨然在座。见我进来，主任便责备：“你小子，越来越不像话了，卫生不搞，茶也不泡了。”</p></li>
+<li><p><u>在机关跑腿，没有硬性指标，尽干些人云亦云、无关痛痒、鸡毛蒜皮之事。虽然整日上班下班，忙忙碌碌，却是碌碌无为，劳而无功，忙得没有名堂。</u></p></li>
+<li><p>也曾动过考研的念头，重新考回母校，经过几年寒窗苦读，以求再次分配。转眼一想，老父为供我读书，两个弟弟相继辍学，好不容易盼到毕业，分担家庭负担，竟又想一走了之，徒增老父伤心；而且，自己胡子一大把，究竟还要把书读到何时？
+况且学那么多“回”字有几种写法的知识走到社会又能用得几许？以后年龄渐大，结了婚，拖家带口的，便打消了考研的想法。</p></li>
+<li><p>单位集资建房：<u>分房规定，未婚者与人事关系不在本单位的不得参加集资建房</u>。这两条规定如对我量身定做，不大不小，恰恰合身。然而单位还有一位顶替父亲接班的，年龄小我几岁，也未婚。按规定他也不在集资建房之列，但其父是离休干部，“解放战争扛过枪，抗美援朝负过伤”。有功之臣，天不怕，地不怕，领导就忌惮三分，于是急忙改口“老干部是党和国家宝贵的财富”，便照顾了一套。
+世间之事大抵如此，领导处理问题也与我卖肉如出一辙，抱定一个原则：老头吃柿子——<font color="red">净拣软的捏，善良的人总是吃亏。</font></p></li>
+<li><p>“开弓没有回头箭。”兵法云：置之死地而后生。既然已经下海，就一定要在商品经济的海洋中学会游泳，绝不能被海浪所吞噬；或者稍遇挫折就如丧家之犬，摇尾乞怜。我经常这般勉励自己。</p></li>
+</ul>
+
+<hr>
+
+<ul>
+<li>陆步轩总结自己下海办实业失败之原因：1.自己不会活学活用触类旁通，对工程知识知之甚少；2.装潢市场弱肉强食，自己一文弱书生很是吃亏；3.下海玩的是空手道，缺资金缺技术熬不过来也正常；
+4.自己出身农家，小农意识过强，书生意气浓不会来事！</li>
+</ul>
+
+<h3 id="toc_3">第三章 贫贱夫妻百事哀</h3>
+
+<blockquote>
+<p>俗话说：“福无双至，祸不单行。”爱情之花要常开不谢，就必须用金钱的雨露不断浇灌。一位哲人说过：“幸福的家庭基本相同，而不幸的家庭各有各的不幸。”事业上的挫折与婚姻的不幸总是相伴相随的，这几乎是一条规律。</p>
+</blockquote>
+
+<ul>
+<li><p>我白白把书念了许多，思想一点也不开化。在骨子里，我的封建意识很浓。新婚之夜，我发觉她已不是处女，嘴上傻瓜似的装作不知，心里便起了鸡皮疙瘩。此前，我有多次偷尝禁果的机会，如儿时吃葡萄，先拣最绿的、最小的吃，把最红的、最鲜的留到最后，
+这样，越吃越甜，越吃越有希望。总想将最神秘最宝贵最美好的留给洞房花烛夜，未曾想却拱手让与他人，心中有种被贼偷、被人欺骗的感觉，别提有多么难受。没有蜜月的如胶似漆，日子宁静而平淡。
+<br><font color="purple">@思考：如果迫于生活，娶了一个自己不爱或是不懂生活的人，带给自己的只会是无尽的痛苦。过这种婚姻下的无性无爱生活，还不如不结婚充分享受单身的自由！</font></p></li>
+<li><p>这桩不幸的婚姻持续了两年。1996年4月，在财产归她、债务归我的条件下协议离婚。我又成为自由身，快乐的单身汉，哈哈！嗨嗨！啊哈哈哈哈……</p></li>
+<li><p>与前妻离婚后，没想到姻缘又迅速找到了他。我把此归结为前世因缘，机缘巧合。她很普通，是“老大难”；我很潦倒，是“二锅头”，我们天造地设，互不嫌弃。</p></li>
+</ul>
+
+<blockquote>
+<p>📌 <u><font color="red">从孕妇身材体型上直观的判断生男生女</font>：若肚皮高高地向前凸起，就是男孩；倘若向四周发展，铁桶一般长粗了，则是女婴无疑。</u>起初我也不太相信，以为是江湖郎中的伎俩，骗吃骗喝更骗取人民币而已，然几经验证，屡试不爽，比医学院几百万进口的B超机还精确几分，<b>不由得不由衷感叹咱中华文化的博大精深</b>。</p>
+</blockquote>
+
+<ul>
+<li>初为人父，是什么感觉？我觉得这是个非常大的话题，非只言片语所能说清道明，似打翻的五味瓶，酸、甜、苦、辣、咸五味俱全，又混合在一起，难以分辨，几乎包含了人生的全部况味，这也许就是人们常说的“天伦之乐”吧。</li>
+</ul>
+
+<p><font color="blue">@感叹：人生啊，永远存在着那说不尽的道！</font>第一房非处女小公主脾气暴躁，第二房大龄剩女却是黄花大闺女脾气温顺，为他带来一儿一女。谁能想到这样的结局呢。</p>
+
+<h3 id="toc_4">第四章 昔日北大生，今日卖肉郎</h3>
+
+<blockquote>
+<p>人算不如天算，计划赶不上变化，人世间有太多的不如意。每个人的境遇不同，各人有各人的活法。譬如茶杯与水缸，茶杯虽小，能够盛水解除干渴；水缸很大，却难以滋润天下之干旱。所以，小，可以纳天；大，不足以容心。</p>
+</blockquote>
+
+<ul>
+<li>陆步轩说自己：“心中有一股信念支撑着，诚实待人，诚信经商，坚持下来，总有感动上苍、生意转机的一天。”</li>
+<li><p>陆步轩一开始由于对于开小卖部的难处未做到充分估计，终因为没生意，小本生意赚不到钱等原因宣告失败。
+后他们汲取了开商店的教训，大目标再次确定为“开猪肉店”，发现附近没有肉食经营户，居民吃肉要跑很远的路，很不方便，因此建议将商店改作猪肉店。起初他们并不急于投资，而是首先<b>进行市场调研</b>。</p></li>
+<li><p>三百六十行，行行出状元，行行有学问。上初中时，鸣犊中学的教导主任杨德林老师常常告诫我们：“处处留心皆学问。”好长一段时间，我对“学问”二字的理解，仅限于老师传授的知识与技能。人们常说“看××老师多有学问”，从来也未听说过哪个杀猪卖肉的有多高的水平。
+走上社会后，摔过几个大跟头，头破血流之后，才真正体会到“学问”二字的深刻含义。</p></li>
+<li><p>开店做生意，卖的多为回头客，不赊账显得不近人情，容易得罪老关系，路愈走愈窄；倘若赊账，每年总有几笔死账呆账难以收回，要做几次冤大头。反过来又想，恶意透支者毕竟不多，
+绝大多数顾客重承诺、守信用。一年到头，除去费用与日常花销，总有些许赚头，世间的生意可能大抵如此。</p></li>
+<li><p>上帝是公平的，他给富人以美味的食物，给穷人以良好的胃口；给伟人以短小的身躯，给高大者以卑微的地位；给小鸟以翅膀，给野兽以爪牙；让强大者独处，让弱小者群居……
+他不让任何事物完美，于是便有了人类对完美的追求。而完美却恰恰是美好的愿望，看不见摸不着，如海市蜃楼，子虚乌有。</p></li>
+<li><p>欲壑难填：终日奔忙只为饥，才得有食又思衣。置下绫罗身上穿，抬头又嫌房屋低。盖下高楼并大厦，床前缺少美貌妻。娇妻美妾都娶下，又虑门前无马骑。将钱买下高头马，
+马前马后少跟随。家人招下数十个，有钱没势被人欺。一铨铨到知县位，又说官小势位卑。一攀攀到阁老位，每日思量要登基。一日南面坐天下，又想神仙来下棋。洞宾与他把棋下，又问哪是上天梯。上天梯子未做下，阎王发牌鬼来催。若非此人大限到，上到天梯还嫌低。</p></li>
+<li><p>人生在世屈指算，难活三万六千天。今晚脱鞋放一晚，不定明日穿不穿。世间几多愚昧汉，一生不肯结姻缘。贪心不过意难满，有了八百想一千，有了一千想一万。奉劝世人早看淡，有钱积德种福田。</p></li>
+</ul>
+
+<h3 id="toc_5">第五章 一朝成名天下知</h3>
+
+<blockquote>
+<p>我被媒体捧成了“名人”。贾平凹先生说：“名人为芸芸众生用泥和草和金粉捏出来的神。”宛如商店里悬挂着的衣服，翻过来扯过去地让人品头论足。</p>
+</blockquote>
+
+<ul>
+<li>自从学校毕业，一脚踏入社会，好久未尝“第一名”的滋味了。那种感觉，何其美妙，以至于掩饰不住内心的喜悦。 </li>
+<li><p>1985年，长安县鸣犊镇农家少年陆步轩从引镇中学毕业，以高出本科线100多分的成绩考取了北大中文系，是当年长安县的文科状元。四年苦读毕业后，陆步轩被分配到长安县柴油机配件厂。
+当时的县计委对这个高才生比较关心，借调他到机关工作。后来计委办企业，陆步轩自告奋勇去了企业，但几年后企业垮了，他失去了“饭碗”，以后他搞过装修，开过小商店。
+长安县计委几经改制，后来变成长安区经贸局下属的工业国有资产管理公司。对陆步轩的情况，区经贸局也无能为力。陆步轩的单位“柴配厂”早已停产，去年厂里给他办了最低生活保障，
+对他也算是一点安慰。2000年(大学毕业后的第11年)，陆步轩租了房子开起了肉店，文弱书生操起了切肉刀。</p></li>
+<li><p>人与人生来在权利上是平等的，但同时 <b>人与人从出生开始也是不平等的，这种不平等就唯一体现在了 智力 的不平等</b>！</p></li>
+<li><p>陆步轩卖猪肉的消息被各大媒体争相报道之后，引起了长安区委区政府的高度重视，很多单位向陆步轩抛出了橄榄枝。在众多橄榄枝之中，陆步轩选择了去西安工程科技学院任教。</p></li>
+</ul>
+
+<h3 id="toc_6">第六章 创业艰难百战多</h3>
+
+<blockquote>
+<p>自从我一夜成名后，说话做事都得小心翼翼。唯恐留下什么蛛丝马迹，被人揪住，捅将出去，时不时地搞点边角新闻，弄得沸沸扬扬，引得人们指手画脚，再转过身去戳脊梁骨。反倒不如过去活得舒心自在、无所顾忌。</p>
+
+<p>📌 <font color="red">陆步轩2013年回北大演讲总结人生：</font>
+<br>· 第一条忠告：干事业到大都市，那儿大家来自五湖四海，人事关系相对简单，机会多，发展空间大；混生活到小地方，这儿交通方便，房价不高，生活安逸。
+<br>· 第二条忠告：不打无准备之仗，创业选择自己熟悉的行业。天下行业七十二，行行都有潜规则。有的同学可能不屑运用，但你必须懂得，提早防备，才不至于临事措手不及。
+<br>· 第三条忠告：考入北大，只能证明我们天赋高，文化课学得好。其他说明不了什么。</p>
+</blockquote>
+
+<ul>
+<li>《北大毕业等于零》走上社会，我们在学校学过的知识未必用得上，需要在实践中锻炼、提高自己。有一个看似奇怪的现象，不知大家注意没有。往往在学校学习、表现好的学生，
+走上社会没出息；反倒调皮捣蛋者，在社会上如鱼得水。其实一点都不奇怪，从幼儿园到小学，而后初中、高中，再到大学，有近20年时间，几乎占一生的四分之一，而且是最可塑的时段。
+在学校表现优秀，经常受老师、家长表扬，周围也是一片溢美之声。久而久之，习惯了表扬、奖励，面皮较薄，受不得批评、挫折，走上社会，没有一帆风顺，在打击、挫折中容易一蹶不振；
+相反，调皮捣蛋者，经常挨批评，脸皮锻炼得特别厚，走上社会，百折不挠，往往取得出人意料的成绩。</li>
+</ul>
+
+<h3 id="toc_7">代后记 故乡，想说爱你不容易</h3>
+
+<ul>
+<li><p>陆步轩 最后以一个故事 结束了自己的这本自传，形象幽默的总结了自己毕业后走过的这二十年时光：</p>
+<p>某倒霉蛋匆忙上了列车才发现搭错了车，急忙找乘务员寻求帮助。乘务员很为难：“我们这可是直达快车，中途不能停啊！”请示列车长后，乘务员有了办法：
+“经过车站的时候，车速会减慢，到时候我将车门打开，你跳下去就是。不过千万注意，车速虽然不快，但是由于惯性，你跳下去的时候必须向前跑一段路，否则会摔个大跟头。”
+倒霉蛋感激涕零，千恩万谢。当列车进入车站时，乘务员打开了车门，倒霉蛋往下一跳，脚刚着地就往前跑，一直跑到前一节车厢。就在他刚想停下来的一刹那，车厢的门忽然打开，
+另一位乘务员老鹰捉小鸡似的一把将他拽进车厢：“先生，你真幸运，我们这是直达快车，中途还没有上来过人。来，请补票吧！”</p><p>而那个倒霉蛋便是我。</p></li>
+<li><p><font color="blue">总结：个人 在整个社会上或是在自己人生命运中 混，不可控之因素太多了。经常可能发现自己所走之路并不是自己预想的那样，但我们在面对命运时切记<u>《老人与海》中老渔夫圣地亚哥所说的的那样：我可以被打倒，但绝不可以被打败！</u></font></p></li>
+</ul>
+
+
+
+
+</body>
+
+</html>

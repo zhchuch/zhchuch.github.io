@@ -1,0 +1,83 @@
+.tblDetail{
+	width: 100%;
+}
+
+.tdSubject{
+	font-size: 16px;
+	font-weight: bolder;
+	text-align: center;
+	padding-left:25px;
+	padding-right:25px;
+}
+
+.tdSubject2C,tdSubject2L{
+	font-size: 13pt;
+	font-family: ¿¬Ìå_GB2312;
+	text-align: center;
+	padding-left:25px;
+	padding-right:25px;
+}
+
+.tdDetail{
+	font-size: 14px;
+	line-height: 25px;
+	padding-left: 25px;
+	padding-right: 25px;
+	padding-top: 10px;
+	padding-bottom: 10px;
+	height: 250px;
+	vertical-align: top;
+}
+
+.tdDetail a:link{
+	font-size: 14px;
+	line-height: 25px;
+}
+.tdDetail a:visited{
+	font-size: 14px;
+	line-height: 25px;
+}
+.tdDetail a:hover{
+	font-size: 14px;
+	line-height: 25px;
+}
+.td10{
+   
+}
+.td30{
+	width:0px;
+}
+
+.tblNav{
+	width: 98%;
+}
+
+.tblNav td{
+	padding: 6px;
+	background-image:url(../images/moretitle.gif);
+	background-repeat:no-repeat;
+	height:28px;
+	color:white;
+	font-weight:bold;
+}
+
+.tblNav a:link{
+	color:white;
+	font-weight:bolder;
+}
+.tblNav a:visited{
+	color:white;
+	font-weight:bolder;
+}
+.tblNav a:hover{
+	color:white;
+	font-weight:bolder;
+}
+
+.tblRla{
+	width: 98%;
+}
+
+.tblRla td{
+	padding: 4px;
+}

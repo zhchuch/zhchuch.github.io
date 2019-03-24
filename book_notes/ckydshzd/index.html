@@ -1,0 +1,237 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html>
+<head>
+<meta charset="utf-8">
+<title>&#34081;&#24247;&#27704;&#30340;&#35828;&#35805;&#20043;&#36947; &nbsp;&nbsp;&nbsp;&#20316;&#32773;&#65306;&#34081;&#24247;&#27704;</title>
+<style type="text/css">
+    body {margin-right: 100px;}
+    li { list-style: none;  margin: 0; }
+    p { margin: 0; }
+    span.foldopened { color: white; font-size: xx-small;
+    border-width: 1; font-family: monospace; padding: 0em 0.25em 0em 0.25em; background: #e0e0e0;
+    VISIBILITY: visible;
+    cursor:pointer; }
+
+
+    span.foldclosed { color: #666666; font-size: xx-small;
+    border-width: 1; font-family: monospace; padding: 0em 0.25em 0em 0.25em; background: #e0e0e0;
+    VISIBILITY: hidden;
+    cursor:pointer; }
+
+    span.foldspecial { color: #666666; font-size: xx-small; border-style: none solid solid none;
+    border-color: #CCCCCC; border-width: 1; font-family: sans-serif; padding: 0em 0.1em 0em 0.1em; background: #e0e0e0;
+    cursor:pointer; }
+
+    span.l { color: red; font-weight: bold; }
+
+    a.mapnode:link {text-decoration: none; color: black; }
+    a.mapnode:visited {text-decoration: none; color: black; }
+    a.mapnode:active {text-decoration: none; color: black; }
+    a.mapnode:hover {text-decoration: none; color: black; background: #eeeee0; }
+
+</style>
+<!-- ^ Position is not set to relative / absolute here because of Mozilla -->
+</head>
+<body>
+
+<script type="text/javascript">
+   // Here we implement folding. It works fine with MSIE5.5, MSIE6.0 and
+   // Mozilla 0.9.6.
+
+   if (document.layers) {
+      //Netscape 4 specific code
+      pre = 'document.';
+      post = ''; }
+   if (document.getElementById) {
+      //Netscape 6 specific code
+      pre = 'document.getElementById("';
+      post = '").style'; }
+   if (document.all) {
+      //IE4+ specific code
+      pre = 'document.all.';
+      post = '.style'; }
+
+function layer_exists(layer) {
+   try {
+      eval(pre + layer + post);
+      return true; }
+   catch (error) {
+      return false; }}
+
+function show_layer(layer) {
+   eval(pre + layer + post).position = 'relative'; 
+   eval(pre + layer + post).visibility = 'visible'; }
+
+function hide_layer(layer) {
+   eval(pre + layer + post).visibility = 'hidden';
+   eval(pre + layer + post).position = 'absolute'; }
+
+function hide_folder(folder) {
+    hide_folding_layer(folder)
+    show_layer('show'+folder);
+
+    scrollBy(0,0); // This is a work around to make it work in Browsers (Explorer, Mozilla)
+}
+
+function show_folder(folder) {
+    // Precondition: all subfolders are folded
+
+    show_layer('hide'+folder);
+    hide_layer('show'+folder);
+    show_layer('fold'+folder);
+
+    scrollBy(0,0); // This is a work around to make it work in Browsers (Explorer, Mozilla)
+
+    var i;
+    for (i=1; layer_exists('fold'+folder+'_'+i); ++i) {
+       show_layer('show'+folder+'_'+i); }
+}
+function show_folder_completely(folder) {
+    // Precondition: all subfolders are folded
+
+    show_layer('hide'+folder);
+    hide_layer('show'+folder);
+    show_layer('fold'+folder);
+
+    scrollBy(0,0); // This is a work around to make it work in Browsers (Explorer, Mozilla)
+
+    var i;
+    for (i=1; layer_exists('fold'+folder+'_'+i); ++i) {
+       show_folder_completely(folder+'_'+i); }
+}
+
+
+
+function hide_folding_layer(folder) {
+   var i;
+   for (i=1; layer_exists('fold'+folder+'_'+i); ++i) {
+       hide_folding_layer(folder+'_'+i); }
+
+   hide_layer('hide'+folder);
+   hide_layer('show'+folder);
+   hide_layer('fold'+folder);
+
+   scrollBy(0,0); // This is a work around to make it work in Browsers (Explorer, Mozilla)
+}
+
+function fold_document() {
+   var i;
+   var folder = '1';
+   for (i=1; layer_exists('fold'+folder+'_'+i); ++i) {
+       hide_folder(folder+'_'+i); }
+}
+
+function unfold_document() {
+   var i;
+   var folder = '1';
+   for (i=1; layer_exists('fold'+folder+'_'+i); ++i) {
+       show_folder_completely(folder+'_'+i); }
+}
+
+</script>
+<SPAN class="foldspecial" onclick="fold_document()">All +</SPAN>
+<SPAN class="foldspecial" onclick="unfold_document()">All -</SPAN>
+&#xa;    <p style="text-align: center">&#xa;      <font size="4">&#x8521;&#x5eb7;&#x6c38;&#x7684;&#x8bf4;&#x8bdd;&#x4e4b;&#x9053;</font>&#xa;    </p>&#xa;    <p style="text-align: center">&#xa;      &#x4f5c;&#x8005;&#xff1a;<font color="#ff0000">&#x8521;&#x5eb7;&#x6c38;</font>&#xa;    </p>&#xa;  
+<ul><li>&#xa;    <p>&#xa;      - &#26412;&#20070;&#24378;&#35843;&#30340;&#35266;&#28857;&#26159;&#65306;&quot;<font color="#0000ff">&#36879;&#36807;&#35828;&#35805;&#65292;&#25026;&#24471;&#25226;&#21035;&#20154;&#25918;&#22312;&#24515;&#19978;</font>&quot;&#65292;&#36825;&#23601;&#26159;&#25152;&#35859;&#30340;&#35828;&#35805;&#20043;&#36947;&#65281;&#xa;    </p>&#xa;  
+&#xa;    <p>&#xa;      - &#x672c;&#x4e66;&#x7684;&#x4e00;&#x5927;&#x7279;&#x8272;&#xff1a;&#x201c;&#x914d;&#x7684;&#x6f2b;&#x753b; &#x5f88;&#x5207;&#x9898; &#x4e14; &#x5f88;&#x5e7d;&#x9ed8;&#x641e;&#x7b11;&#x201d;&#xff01;&#xa;    </p>&#xa;  
+<p>&nbsp;
+&#xa;    <p>&#xa;      <font color="#000000">+ </font><font size="4" color="#ff0000">&#x603b;&#x7ed3;</font><font color="#000000">&#xff1a;</font>&#xa;    </p>&#xa;  
+<ul><li>&#xa;    <p>&#xa;      &#x672c;&#x4e66;&#x770b;&#x5b8c;&#x4e4b;&#x540e;&#x7ed9;&#x6211;&#x7559;&#x4e0b;&#x5370;&#x8c61;&#x6700;&#x6df1;&#x7684;&#x51e0;&#x4e2a;&#x89c2;&#x70b9;&#xff0c;&#x6216;&#x8005;&#x8bf4;&#x51e0;&#x6761;&#x5efa;&#x8bae;&#x662f;&#xff1a;&#xa;    </p>&#xa;    <p>&#xa;      &#xb7; 1. &#x4e0e;&#x81ea;&#x5df1;&#x5173;&#x5fc3;&#x7684;&#x4eba;&#x4e4b;&#x95f4;(&#x5305;&#x62ec;&#x4eb2;&#x4eba;&#x3001;&#x60c5;&#x4eba;&#x7b49;)&#x8868;&#x8fbe;&#x611f;&#x60c5;&#xff0c;&#x5207;&#x8bb0;&#x4e0d;&#x8981;&#x53ea;&#x4f1a;&#x8bf4;&#x800c;&#x662f;&#x8981;&#x5b66;&#x4f1a;&#x201c;&#x7528;&#x5fc3;&#x201d;&#xff0c;&#x8981;&#x901a;&#x8fc7;&#x5b9e;&#x9645;&#x884c;&#x52a8;&#x8ba9;&#x522b;&#x4eba;&#x611f;&#x53d7;&#x5230;&#x4f60;&#x7684;&#x5fc3;&#x610f;&#xff01;&#xa;    </p>&#xa;    <p>&#xa;      (&#x4e3e;&#x4f8b;&#xff1a;&#x60c5;&#x4eba;&#x8282;&#x793c;&#x7269;&#x7684;&#x9009;&#x62e9;&#xff0c;&#x4eb2;&#x4eba;&#x540c;&#x4e8b;&#x95f4;&#x5982;&#x4f55;&#x61c2;&#x5f97;&#x8c03;&#x6574;&#x81ea;&#x5df1;&#x7684;&#x5fc3;&#x6001;&#x53bb;&#x51d1;&#x8da3;&#xff0c;KTV&#x5185;&#x5982;&#x4f55;&#x63d0;&#x5347;&#x76f8;&#x4e92;&#x4e4b;&#x95f4;&#x7684;&#x5173;&#x7cfb;&#x7b49;&#x7b49;)&#xa;    </p>&#xa;    <p>&#xa;      &#xb7; 2. &#x600e;&#x6837;&#x8ba9;&#x81ea;&#x5df1;&#x53d8;&#x6210;&#x4e00;&#x4e2a;&#x6709;&#x804a;&#x7684;&#x4eba;&#xff1f;&#x5207;&#x8bb0;&#xff1a;&#x4f60;&#x95ee;&#x7684;&#x8d8a;&#x5177;&#x4f53;&#x522b;&#x4eba;&#x56de;&#x7b54;&#x5c31;&#x8d8a;&#x7701;&#x529b;&#xff01;&#xa;    </p>&#xa;    <p>&#xa;      (&#x5148;&#x4ece;&#x201c;&#x662f;&#x975e;&#x9898;/&#x9009;&#x62e9;&#x9898;&#x201d;&#x4e4b;&#x7c7b;&#x5177;&#x4f53;&#x95ee;&#x9898;&#x5f00;&#x59cb;&#x6478;&#x6e05;&#x522b;&#x4eba;&#x611f;&#x5174;&#x8da3;&#x7684;&#x8bdd;&#x9898;&#xff0c;再&#x7528;&#x201c;&#x95ee;&#x7b54;&#x9898;&#x201d;&#x7684;&#x65b9;&#x5f0f;&#x6df1;&#x5165;&#x804a;&#x5929;&#xff01;&#x53e6;&#x5916;&#x4e3a;&#x4e86;&#x8ba9;&#x8bdd;&#x9898;&#x53ef;&#x4ee5;&#x6301;&#x7eed;&#xff0c;&#x4f60;&#x8981;&#x5b66;&#x4f1a;&#x201c;&#x95ee;&#x95ee;&#x9898;&#x7559;&#x6709;&#x9000;&#x8def;&#x201d;)&#xa;    </p>&#xa;    <p>&#xa;      &#xb7; 3. &#x600e;&#x4e48;&#x8ba9;&#x81ea;&#x5df1;&#x53d8;&#x6210;&#x4e00;&#x4e2a;&#x4e0a;&#x9053;&#x7684;&#x4eba;&#xff1f;&#xa;    </p>&#xa;    <p>&#xa;      (&#x5b66;&#x4f1a;&#x53bb;&#x503e;&#x542c;&#xff0c;&#x5c3d;&#x91cf;&#x4e0d;&#x8981;&#x8ba9;&#x81ea;&#x5df1;&#x8bf4;&#x51fa;&#x201c;&#x6211;&#x201d;&#x8fd9;&#x4e2a;&#x5b57;)&#xa;    </p>&#xa;    <p>&#xa;      &#xb7; 4. &#x4e00;&#x5b9a;&#x8981;&#x5b66;&#x4f1a;&#x8d5e;&#x8d4f;&#x522b;&#x4eba;&#xff0c;&#x4e0d;&#x8981;&#x541d;&#x60dc;&#x8d5e;&#x7f8e;&#x4e4b;&#x8bcd;&#xa;    </p>&#xa;    <p>&#xa;      (&#x5f53;&#x522b;&#x4eba;&#x8d5e;&#x7f8e;&#x4f60;&#x7684;&#x65f6;&#x5019;&#xff0c;&#x4e5f;&#x8981;&#x5b66;&#x4f1a;&#x56de;&#x4e00;&#x53e5;&#x8d5e;&#x7f8e;)&#xa;    </p>&#xa;  
+</li>
+</ul><p>&nbsp;<p>
+<span id="show1_1" class="foldclosed" onClick="show_folder('1_1')" style="POSITION: absolute">+</span> <span id="hide1_1" class="foldopened" onClick="hide_folder('1_1')">-</span>
+<span style="color: #338800;font-size: 116%;font-family: SansSerif, sans-serif; ">01-10</span>
+<ul id="fold1_1" style="POSITION: relative; VISIBILITY: visible;"><li>&#xa;    <p>&#xa;      - &#x8f6c;&#x8ff0;&#x522b;&#x4eba;&#x7684;&#x8d5e;&#x7f8e;&#xff0c;&#x4e5f;&#x4e0d;&#x7528;刻意&#x53bb;&#x634f;&#x9020;&#x8fd9;&#x7c7b;&#x7684;&#x8d5e;&#x7f8e;&#xff01;<br>(&#x6709;&#x65f6;&#x5019;&#xff0c;&#x8f6c;&#x8ff0;&#x522b;&#x4eba;&#x7684;&#x8d5e;&#x7f8e;&#x53ef;&#x80fd;&#x6bd4;&#x4f60;&#x76f4;&#x63a5;&#x53bb;&#x8d5e;&#x7f8e;&#x66f4;&#x52a0;&#x5408;&#x9002;~)<br>- &#xa;      &#x56e0;&#x4e3a;&#x6bcf;&#x4e2a;&#x4eba;&#x90fd;&#x60f3;&#x8981;&#x5f97;&#x5230;&#x522b;&#x4eba;&#x7684;&#x8d5e;&#x7f8e;~&#xa;    </p>&#xa;  
+<p>&nbsp;
+&#xa;    <p>&#xa;      - &#x6709;&#x65f6;&#x5019;&#x6211;&#x4eec;&#x8bf4;&#x4ec0;&#x4e48;&#x8bdd;&#x5c31;&#x4ee3;&#x8868;&#x4e86;&#x6211;&#x4eec;&#x662f;&#x4e00;&#x4e2a;&#x4ec0;&#x4e48;&#x6837;&#x7684;&#x4eba;&#xff01;(You are what you say.)&#xa;    </p>&#xa;  
+&#xa;    <p>&#xa;      - <font color="#006600">&#x5207;&#x8bb0;&#xff1a;&#x5c11;&#x7ed9;&#x522b;&#x4eba;&#x627e;&#x9ebb;&#x70e6;&#x7684;&#x65b9;&#x6cd5;&#xff0c;&#x5c31;&#x662f;&#x628a;&#x9ebb;&#x70e6;&#x5728;&#x81ea;&#x5df1;&#x624b;&#x4e0a;&#x89e3;&#x51b3;&#x6389;&#xff01;</font><br>(&#x4f60;&#x5982;&#x679c;&#x4e0d;&#x559c;&#x6b22;&#x522b;&#x4eba;&#x505a;&#x7684;&#xff0c;&#x4f60;&#x6709;&#x65b0;&#x60f3;&#x6cd5;&#xff0c;&#x90a3;&#x4e48;&#x4f60;&#x5c31;&#x53bb;&#x505a;&#xff0c;&#x4e0d;&#x8981;&#x518d;&#x9ebb;&#x70e6;&#x522b;&#x4eba;&#x53bb;&#x505a;)<br>- &#xa;      &#x4e0e;&#x4eba;&#x6253;&#x4ea4;&#x9053;<font color="#990000">&#x5207;&#x8bb0;&#xff1a;&#x522b;&#x4eba;&#x5e76;&#x4e0d;&#x662f;&#x4e3a;&#x4e86;&#x4f3a;&#x5019;&#x4f60;&#x800c;&#x5b58;&#x5728;&#x7684;</font>&#xff01;&#xa;    </p>&#xa;  
+<p>&nbsp;
+&#xa;    <p>&#xa;      + <b>&#x201c;&#x4f20;&#x8bf4;&#xb7;&#xb7;&#xb7; &#x5927;&#x5bb6;&#x4e00;&#x8d77;&#x6c89;&#x9ed8;&#x65f6;&#xff0c;&#x662f;&#x5929;&#x4f7f;&#x964d;&#x4e34;&#xb7;&#xb7;&#xb7; &#x7684;&#x65f6;&#x5019;&#xb7;&#xb7;&#xb7;&#x201d;</b><br><font color="#0000ff">@&#x5b66;&#x4e60;</font>&#xff1a;&#x53ef;&#x4ee5;&#x5b66;&#x4e00;&#x4e0b;&#xff0c;&#x4ee5;&#x540e;&#x518d;&#x9762;&#x4e34;&#x6c89;&#x9ed8;&#x65f6;&#xff0c;&#x8fd9;&#x53e5;&#x8bdd;&#x53ef;&#x4ee5;&#x505a;&#x4e3a;&#x6253;&#x7834;&#x6c89;&#x9ed8;&#x7684;&#x5f00;&#x573a;&#x767d;~<br>- &#xa;      &#x6c89;&#x9ed8;&#x672c;&#x8eab;&#x4e5f;&#x5f88;&#x6b63;&#x5e38;&#xff0c;&#x6709;&#x65f6;&#x5019;&#x4e5f;&#x4e0d;&#x5fc5;&#x523b;&#x610f;&#x8425;&#x9020;&#x8bdd;&#x9898;&#x53bb;&#x6253;&#x7834;&#x6c89;&#x9ed8;&#xff0c;&#x800c;&#x662f;&#x4e5f;&#x53ef;&#x4ee5;&#x201c;&#x5b66;&#x4f1a;&#x4eab;&#x53d7;&#x6b63;&#x5728;&#x505a;&#x7684;&#x4e8b;&#x60c5;&#x201d;&#x672c;&#x8eab;&#xff01;&#xa;    </p>&#xa;  
+<p>&nbsp;
+&#xa;    <p>&#xa;      - &#x628a;&#x65e0;&#x8c13;&#x7684;&#x80dc;&#x5229;&#x8ba9;&#x7ed9;&#x5bf9;&#x65b9;&#xff0c;&#x8981;&#x5b66;&#x4f1a;&#x61c2;&#x5f97;&#x8ba4;&#x8f93;&#x3002;<br>+ &#xa;      &#x667a;&#x8005;&#x8bf4;&#x201c;&#x6bcf;&#x4e2a;&#x4eba;&#xff0c;&#x90fd;&#x662f;&#x81ea;&#x5df1;&#x90a3;&#x7247;&#x5c0f;&#x9886;&#x571f;&#x7684;&#x56fd;&#x738b;&#x201d;&#xff01;<br>- &#xa;      <font color="#990000">&#x6bcf;&#x4e2a;&#x4eba;&#x90fd;&#x559c;&#x6b22;&#x522b;&#x4eba;&#x540c;&#x610f;&#x81ea;&#x5df1;</font>&#xff01;&#x53ea;&#x8981;&#x8ba4;&#x6e05;&#x81ea;&#x5df1;&#x7684;&#x7acb;&#x573a;&#xff0c;&#x5728;&#x8ba4;&#x4e2a;&#x8f93;&#x4e0d;&#x4f1a;&#x4f24;&#x5bb3;&#x5230;&#x81ea;&#x5df1;&#x7684;&#x539f;&#x5219;&#x7684;&#x65f6;&#x5019;&#xff0c;&#x5c31;&#x4e00;&#x7b11;&#x7f6e;&#x4e4b;&#x5427;&#xff01;<br><font color="#0000ff">@&#x8054;&#x7cfb;</font>:&#x300a;&#x91cd;&#x65b0;&#x5b9a;&#x4e49;&#x516c;&#x53f8;&#x300b;&#x91cc;&#x9762;&#x8bf4;&#x9053;&#x201c;Google&#x5728;&#x8fbe;&#x6210;&#x5171;&#x8bc6;&#x201d;&#x65f6;&#x7684;&#x7ecf;&#x9a8c;&#xff0c;&#x8ba4;&#x540c;&#x548c;&#x8d5e;&#x7f8e;&#x522b;&#x4eba;&#x4e5f;&#x662f;&#x4e00;&#x4e2a;&#x5f88;&#x91cd;&#x8981;&#x7684;&#x7ecf;&#x9a8c;~&#xa;    </p>&#xa;  
+<p>&nbsp;
+&#xa;    <p>&#xa;      - <b>&#x6bcf;&#x4e2a;&#x4eba;&#x90fd;&#x5e0c;&#x671b;&#x81ea;&#x5df1;&#x88ab;&#x91cd;&#x89c6;</b>&#xff01;<br>&#x800c;&#x88ab;&#x91cd;&#x89c6;&#x8fd9;&#x4e2a;&#x5173;&#x952e;&#x8bcd;&#x672c;&#x8eab;&#x4e5f;&#x6709;&#x4e00;&#x4e2a;&#x5173;&#x952e;&#x5b57;&#xff0c;&#x90a3;&#x5c31;&#x662f;&#x201c;&#x89c6;&#x201d;&#xff01;&#xa;    </p>&#xa;  
+<p>&nbsp;
+&#xa;    <p>&#xa;      + &#x8bf7;&#x5b66;&#x4f1a;&#x8bb2;&#x90a3;&#x4e9b;&#x201c;&#x4e0d;&#x4f1a; GAME OVER&#xff0c;&#x8ba9;&#x4eba;&#x80fd;&#x63a5;&#x5f97;&#x4e0b;&#x53bb;&#x7684;&#x8bdd;&#x201d;~<br>&#x8bb0;&#x4f4f;&#xff1a;&#x4e0d;&#x7ba1;&#x5bf9;&#x65b9;&#x8bf4;&#x7684;&#x5728;&#x4f60;&#x5fc3;&#x76ee;&#x4e2d;&#x662f;&#x591a;&#x4e48;&#x65e0;&#x804a;&#x7684;&#x4e8b;&#x60c5;&#xff0c;&#x8bf7;&#x8bb0;&#x4f4f;&#x7ed9;&#x522b;&#x4eba;&#x7559;&#x6709;&#x4f59;&#x5730;&#x3002;&#x8981;&#x5b66;&#x4f1a;&#x5de7;&#x5999;&#x5730;&#x5f15;&#x5bfc;&#x4f60;&#x4eec;&#x4e4b;&#x95f4;&#x7684;&#x8c08;&#x8bdd;&#x5230;&#x4f60;&#x4eec;&#x90fd;&#x611f;&#x5174;&#x8da3;&#x7684;&#x8bdd;&#x9898;&#x4e0a;&#x53bb;&#x3002;<br>- &#xa;      &#x4e0d;&#x8981;&#x8bd5;&#x56fe;&#x548c;&#x5973;&#x751f;&#x79c0;&#x667a;&#x5546;&#xff0c;&#x6709;&#x7684;&#x65f6;&#x5019;&#x4f60;&#x7684;&#x667a;&#x5546;&#x4e0d;&#x4e00;&#x5b9a;&#x6709;&#x5979;&#x9ad8;&#xff01;<br>&#x56e0;&#x6b64;&#xff1a;&#x5f53;&#x4e00;&#x4e2a;&#x5973;&#x751f;&#x8ddf;&#x4f60;&#x8bf4;&#x8fd9;&#x4e2a;&#x4e1c;&#x897f;&#x5f88;&#x96be;&#x61c2;&#x5f88;&#x96be;&#x7406;&#x89e3;&#x7684;&#x65f6;&#x5019;&#xff0c;&#x901a;&#x5e38;&#x5c31;&#x662f;&#x8868;&#x793a;&#x5bf9;&#x8fd9;&#x4e2a;&#x8bdd;&#x9898;&#x4e0d;&#x592a;&#x611f;&#x5174;&#x8da3;&#xff0c;&#x4f60;&#x8981;&#x8bd5;&#x7740;&#x8f6c;&#x5230;&#x5176;&#x4ed6;&#x8bdd;&#x9898;&#xff0c;&#x800c;&#x4e0d;&#x8981;&#x8bd5;&#x56fe;&#x7ee7;&#x7eed;&#x8ddf;&#x5979;&#x8c08;&#x8fd9;&#x4e2a;&#x4e1c;&#x897f;&#xff0c;&#x8fd8;&#x8bd5;&#x56fe;&#x60f3;&#x628a;&#x5979;&#x8bf4;&#x660e;&#x767d;~&#xa;    </p>&#xa;  
+<p>&nbsp;
+&#xa;    <p>&#xa;      + <font color="#990000">&#x95ee;&#x7684;&#x95ee;&#x9898;&#x8d8a;&#x5177;&#x4f53;</font>&#xff0c;&#x56de;&#x7b54;&#x7684;&#x4eba;&#x5c31;&#x8d8a;&#x7701;&#x529b;&#xff01;<br>&#xb7; &#xa;      &#x522b;&#x4eba;&#x53d1;&#x73b0;&#x56de;&#x7b54;&#x4f60;&#x7684;&#x95ee;&#x9898;&#x5f88;&#x7701;&#x529b;&#xff0c;&#x90a3;&#x4e48;&#x522b;&#x4eba;&#x5c31;&#x4f1a;&#x613f;&#x610f;&#x4e14;&#x6709;&#x529b;&#x6c14;&#x548c;&#x4f60;&#x804a;&#x4e0b;&#x53bb;~<br>&#xb7; &#xa;      &#x5efa;&#x8bae;&#x53d1;&#x95ee;&#xff1a;<font color="#660066">&#x5148;&#x95ee;&#x201c;&#x662f;&#x975e;&#x9898;&#x201d;&#x6216;&#x201c;&#x9009;&#x62e9;&#x9898;&#x201d;&#x8fd9;&#x79cd;&#x5177;&#x4f53;&#x95ee;&#x9898;</font>&#xff0c;&#x800c;&#x4e0d;&#x8981;&#x8bd5;&#x56fe;&#x76f4;&#x63a5;&#x7528;&#x201c;&#x95ee;&#x7b54;&#x9898;&#x201d;&#x8fd9;&#x79cd;&#x9700;&#x8981;&#x8d39;&#x592a;&#x591a;&#x8111;&#x7b4b;&#x7684;&#x95ee;&#x9898;~ &#xa;      &#x7b49;&#x5230;&#x6478;&#x6e05;&#x695a;&#x4e86;&#x5bf9;&#x65b9;&#x611f;&#x5174;&#x8da3;&#x6216;&#x6709;&#x804a;&#x7684;&#x8bdd;&#x9898;&#x65f6;&#xff0c;<font color="#660066">&#x518d;&#x91c7;&#x7528;&#x201c;&#x95ee;&#x7b54;&#x9898;&#x201d;&#x6216;&#x201c;&#x7533;&#x8bba;&#x9898;&#x201d;&#x8fd9;&#x79cd;&#x65b9;&#x5f0f;&#x6df1;&#x5165;&#x8c08;&#x8bdd;</font>~<br>+ &#xa;      &#x540c;&#x65f6;&#x4e3a;&#x4e86;&#x8ba9;&#x8bdd;&#x9898;&#x53ef;&#x4ee5;&#x6301;&#x7eed;&#x4e0b;&#x53bb;&#xff0c;&#x4f60;&#x8981;&#x5b66;&#x4f1a;<font color="#990000">&#x201c;&#x95ee;&#x95ee;&#x9898;&#x7559;&#x6709;&#x9000;&#x8def;&#x201d;</font>&#xff01;<br>&#xb7; &#xa;      &#x5c31;&#x662f;&#x8bf4;&#x4f60;&#x81ea;&#x5df1;&#x8981;&#x6709;&#x4e0e;&#x4f60;&#x95ee;&#x7684;&#x95ee;&#x9898;&#x76f8;&#x5173;&#x7684;&#x6709;&#x8da3;&#x7684;&#x4e8b;&#x60c5;&#x53ef;&#x4ee5;&#x8bb2;&#xff0c;&#x8981;&#x4e0d;&#x7136;&#xff0c;&#x4f60;&#x7684;&#x95ee;&#x9898;&#x5c31;&#x5e94;&#x8be5;&#x6362;&#x6210;&#x5176;&#x4ed6;&#x4f60;&#x6709;&#x8bdd;&#x53ef;&#x8bf4;&#x7684;&#x9898;&#x76ee;~&#xa;<br>
+&#xb7; &#xa;<font color="#0000ff">比如我的话题可以是</font>：<br>
+&#xa;&nbsp;&nbsp;- “你上学期间有没有离退学只有一步之遥，就是那种差一点就退学了的特殊经历”<br>
+&#xa;&nbsp;&nbsp;- “你想知道为什么我从没有复读过，却比同班人年龄要大一岁吗”(制造悬念)</p>&#xa;  
+<p>&nbsp;
+<span style="font-family: SansSerif, sans-serif; font-weight: bold; ">&#xa;    <p>&#xa;      + &#x600e;&#x4e48;&#x8ba9;&#x4eba;&#x611f;&#x89c9;&#x5230;&#x548c;&#x4f60;&#x6709;&#x5f88;&#x591a;&#x201c;&#x5171;&#x540c;&#x8bdd;&#x9898;&#x201d;&#xff0c;&#x548c;&#x4f60;&#x603b;&#x662f;&#x6709;&#x201c;&#x8bf4;&#x4e0d;&#x5b8c;&#x7684;&#x8bdd;&#x201d;&#xff0c;&#x548c;&#x4f60;&#x804a;&#x5929;&#x600e;&#x4e48;&#x90a3;&#x4e48;&#x201c;&#x8f7b;&#x677e;&#x201d; &#xa;      &#x5462;&#xff1f;&#xa;    </p>&#xa;  </span>
+<ul><li>&#xa;    <p>&#xa;      - &#x5207;&#x8bb0;&#xff1a;&#x4e00;&#x5f00;&#x59cb;&#x5c31;&#x80fd;&#x5236;&#x9020;&#x51fa;&#x53cc;&#x65b9;&#x90fd;&#x5f88;&#x60f3;&#x8bb2;&#x8bdd;&#x7684;&#x6c14;&#x6c1b;~ &#x6ce8;&#x610f;&#x7528;&#x5408;&#x9002;&#x7684;&#x65b9;&#x5f0f;&#x63a2;&#x8ba8;&#x51fa;&#x53cc;&#x65b9;&#x90fd;&#x6709;&#x804a;&#x7684;&#x8bdd;&#x9898;&#x3002;&#xa;    </p>&#xa;  
+</li>
+</ul><p>&nbsp;
+&#xa;    <p>&#xa;      + &#x804a;&#x5929;&#x65f6;&#xff0c;&#x6bcf;&#x4e2a;&#x4eba;&#x90fd;&#x60f3;&#x804a;&#x81ea;&#x5df1;&#xff01;<b>(&#x8fd9;&#x4e2a;&#x4e16;&#x754c;&#x7684;&#x771f;&#x76f8;&#x662f;&#xff1a;&#x6bcf;&#x4e2a;&#x4eba;&#x90fd;&#x6d3b;&#x5728;&#x81ea;&#x5df1;&#x7684;&#x4e16;&#x754c;&#x91cc;)</b><br><font color="#0000ff">@&#x8054;&#x60f3;</font>:&#x300a;&#x628a;&#x65f6;&#x95f4;&#x5f53;&#x4f5c;&#x670b;&#x53cb;&#x300b;&#x4e2d;&#x6240;&#x8bf4;&#x7684;&quot;&#x6bcf;&#x4e2a;&#x4eba;&#x5728;&#x81ea;&#x5df1;&#x9047;&#x5230;&#x75db;&#x82e6;&#x65f6;&#xff0c;&#x90fd;&#x4f1a;&#x89c9;&#x5f97;&#x81ea;&#x5df1;&#x662f;&#x8fd9;&#x4e2a;&#x4e16;&#x754c;&#x4e0a;&#x6700;&#x4e0d;&#x5e78;&#x7684;&#x4eba;&quot;&#xff01;&#x8fd9;&#x6b63;&#x662f;&#x56e0;&#x4e3a;&#x6211;&#x4eec;&#x6bcf;&#x4e2a;&#x4eba;&#x90fd;&#x662f;&#x6d3b;&#x5728;&#x81ea;&#x5df1;&#x4e16;&#x754c;&#x91cc;&#x7684;&#x4eba;&#xff0c;&#x6211;&#x4eec;&#x611f;&#x53d7;&#x4e0d;&#x5230;&#x5176;&#x4ed6;&#x4eba;&#x7684;&#x75db;&#x82e6;&#xff01;&#xa;    </p>&#xa;  
+&#xa;    <p>&#xa;      - &#x6240;&#x4ee5;&#xff0c;&#x6211;&#x4eec;&#x5982;&#x679c;&#x5728;&#x4e4e;&#x67d0;&#x4e2a;&#x4eba;&#xff0c;&#x5c31;&#x5b66;&#x4f1a;&#x201c;&#x53bb;&#x503e;&#x542c;&#x4ed6;&#x5bf9;&#x81ea;&#x5df1;&#x6240;&#x9047;&#x5230;&#x7684;&#x4e8b;&#x60c5;&#x7684;&#x503e;&#x8bc9;&#x201d;&#x5427;&#x3002;<br>- &#xa;      <b>&#x8981;&#x60f3;&#x626e;&#x6f14;&#x4e00;&#x4f4d;&#x201c;&#x6700;&#x4e0a;&#x9053;&#x201d;&#x7684;&#x670b;&#x53cb;&#x7684;&#x89d2;&#x8272;&#xff0c;&#x5176;&#x5b9e;&#x6709;&#x4e00;&#x4e2a;&#x5f88;&#x7b80;&#x5355;&#x7684;&#x6700;&#x9ad8;&#x539f;&#x5219;</b>&#xff1a;&#x90a3;&#x5c31;&#x662f;<font color="#990000">&#x201c;&#x5c3d;&#x91cf;&#x522b;&#x8ba9;&#x81ea;&#x5df1;&#x8bf4;&#x51fa;&#x2018;&#x6211;&#x2019;&#x8fd9;&#x4e2a;&#x5b57;&#x201d;</font>&#xff01;&#xa;    </p>&#xa;  
+<ul><li>&#xa;    <p>&#xa;      &#xb7; <font color="#006600">&#x8fd9;&#x4e2a;&#x89c4;&#x5219;&#x5f88;&#x7b80;&#x5355;&#xff0c;&#x4f60;&#x4e5f;&#x53ef;&#x4ee5;&#x8bd5;&#x8bd5;&#x770b;&#xff0c;&#x8ddf;&#x670b;&#x53cb;&#x804a;&#x5929;&#x7684;&#x65f6;&#x5019;&#x4e0d;&#x8981;&#x8bf4;&#x51fa;&#x201c;&#x6211;&#x201d;&#x5b57;</font>&#xff01;<br>&#x5f53;&#x4f60;&#x8981;&#x8bf4;&#x201c;&#x6211;&#x201d;&#x5b57;&#x7684;&#x65f6;&#x5019;&#xff0c;&#x90fd;&#x6539;&#x6210;&#x201c;&#x4f60;&#x201d;&#x5b57;&#x6216;&#x662f;&#x201c;&#x4ed6;&#x201d;&#x5b57;~&#xa;    </p>&#xa;  
+</li>
+</ul></li>
+</ul><p>&nbsp;<p>
+<span id="show1_2" class="foldclosed" onClick="show_folder('1_2')" style="POSITION: absolute">+</span> <span id="hide1_2" class="foldopened" onClick="hide_folder('1_2')">-</span>
+<span style="color: #990000;font-size: 116%;font-family: SansSerif, sans-serif; ">11-20</span>
+<ul id="fold1_2" style="POSITION: relative; VISIBILITY: visible;"><li>&#xa;    <p>&#xa;      + &#x95ee;&#x9898;&#x5982;&#x679c;&#x5f88;&#x5c16;&#x9510;&#xff0c;&#x90a3;&#x5c31;&#x8bd5;&#x7740;&#x5012;&#x63a8;&#x56de;&#x53bb;&#x4e24;&#x4e09;&#x6b65;&#xff01;&#xa;    </p>&#xa;  
+<ul><li>&#xa;    <p>&#xa;      - &#x4e0d;&#x8981;&#x603b;&#x662f;&#x8ba4;&#x4e3a;&#x201c;&#x6211;&#x624d;&#x662f;&#x6b63;&#x5e38;&#x4eba;&#x201d;&#xff0c;&#x201c;&#x6211;&#x624d;&#x662f;&#x793e;&#x4f1a;&#x7684;&#x4e2d;&#x575a;&#x201d;&#x3002;&#x4e0d;&#x8981;&#x603b;&#x8ba9;&#x81ea;&#x5df1;&#x5145;&#x6ee1;&#x4f18;&#x8d8a;&#x611f;&#x3002;&#xa;    </p>&#xa;  
+
+</li>
+
+</ul>&#xa;    <p>&#xa;      + &#x9002;&#x5ea6;&#x7684;&#x6311;&#x8845;&#xff0c;&#x80fd;&#x8ba9;&#x8c08;&#x8bdd;&#x6d3b;&#x7edc;&#x8d77;&#x6765;&#xa;    </p>&#xa;  
+<ul><li>&#xa;    <p>&#xa;      - &#x8fd9;&#x662f;&#x56e0;&#x4e3a;&#x6bcf;&#x4e2a;&#x4eba;&#x90fd;&#x5e0c;&#x671b;&#x81ea;&#x5df1;&#x7684;&#x610f;&#x89c1;&#x88ab;&#x91cd;&#x89c6;&#xff0c;&#x88ab;&#x63a2;&#x8ba8;&#xff0c;&#x800c;&#x4e0d;&#x662f;&#x88ab;&#x4e00;&#x4e2a;&#x5b8c;&#x5168;&#x6ca1;&#x6709;&#x539f;&#x5219;&#x7684;&#x4eba;&#x6577;&#x884d;&#x4e86;&#x4e8b;&#xff0c;&#x6216;&#x662f;&#x88ab;&#x70b9;&#x5934;&#x79f0;&#x662f;&#x5bf9;&#x4ed8;&#x8fc7;&#x53bb;~&#xa;    </p>&#xa;  
+</li>
+</ul><p>&nbsp;
+&#xa;    <p>&#xa;      - &#x4eba;&#x751f;&#x5904;&#x5904;&#x6709;&#x5730;&#x96f7;&#xff0c;&#x5982;&#x679c;&#x4f60;&#x8fd8;&#x6ca1;&#x6709;&#x88ab;&#x70b8;&#x5230;&#xff0c;&#x90a3;&#x53ea;&#x662f;&#x56e0;&#x4e3a;&#x4f60;&#x8fd8;&#x6ca1;&#x6709;&#x8e29;&#x5230;&#xff01;&#x800c;&#x4e0d;&#x662f;&#x56e0;&#x4e3a;&#x4f60;&#x90a3;&#x7247;&#x533a;&#x57df;&#x8fd9;&#x4e48;&#x597d;&#x90fd;&#x6ca1;&#x6709;&#x5730;&#x96f7;~<br>- &#xa;      &#x5207;&#x8bb0;&#x4e0d;&#x8981;&#x201c;&#x4ea4;&#x6d45;&#x8a00;&#x6df1;&#x201d;&#xff0c;&#x56e0;&#x4e3a;&#x8fd9;&#x4f1a;&#x8ba9;&#x4f60;&#x4e00;&#x4e0d;&#x5c0f;&#x5fc3;&#x5c31;&#x8e29;&#x5230;&#x5730;&#x96f7;~ &#xa;      &#x6709;&#x4e9b;&#x6df1;&#x8a00;&#x53ea;&#x6709;&#x5728;&#x5927;&#x5bb6;&#x4ea4;&#x60c5;&#x591f;&#x4e86;&#x7684;&#x524d;&#x63d0;&#x4e0b;&#xff0c;&#x624d;&#x80fd;&#x591f;&#x88ab;&#x89e6;&#x53ca;~&#xa;    </p>&#xa;  
+<p>&nbsp;
+&#xa;    <p>&#xa;      + <b>&#x907f;&#x514d;&#x786c;&#x751f;&#x751f;&#x7684;&#x62a5;&#x51fa;&#x6570;&#x5b57;</b>&#xff0c;&#x56e0;&#x4e3a;&#x8fd9;&#x786e;&#x5b9e;&#x5f88;&#x96be;&#x8ba9;&#x4eba;&#x8bb0;&#x4f4f;&#x3002;(&#x540c;&#x65f6;&#x8fd9;&#x6837;&#x4e5f;&#x80fd;&#x6311;&#x8d77;&#x8bdd;&#x9898;&#xff0c;&#x5e76;&#x907f;&#x514d;&#x5c34;&#x5c2c;)&#xa;    </p>&#xa;  
+<ul><li>&#xa;    <p>&#xa;      - &#x4e3e;&#x4f8b;&#xff1a;<br>&#x201c;&#x5c0f;&#x6208;&#xff0c;&#x4f60;&#x662f;&#x54ea;&#x4e00;&#x5e74;&#x51fa;&#x751f;&#x7684;&#xff1f;&#x201d;<br>&#x201c;&#x6211;&#x51fa;&#x751f;&#x90a3;&#x5e74;&#xff0c;&#x8fc8;&#x514b;&#x5c14;&#xb7;&#x6770;&#x514b;&#x900a;&#x51fa;&#x4e86;&#x90a3;&#x9996;&lt;Beat &#xa;      It&gt;&#x54e6;&#xff01;&#x201d;(&#x987a;&#x4fbf;&#x4e5f;&#x53ef;&#x5531;&#x4e24;&#x53e5;)<br>&#x201c;&#x771f;&#x7684;&#xff01;&#x8fd9;&#x9996;&#x6b4c;&#x8d85;&#x68d2;&#x7684;&#xff01;&#x201d;<br>&#x201c;&#x5bf9;&#x554a;&#xff0c;&#x53ef;&#x60dc;&#x6b4c;&#x7ea2;&#x6211;&#x4eba;&#x4e0d;&#x7ea2;&#xff01;&#x201d;<br>&#x201c;&#x54c8;&#x54c8;&#xff0c;&#x53c8;&#x4e0d;&#x662f;&#x4f60;&#x5531;&#x7684;&#x201d;&#xa;    </p>&#xa;  
+</li>
+</ul><p>&nbsp;
+&#xa;    <p>&#xa;      + &#x60ac;&#x7591;&#x5f0f;&#x8bf4;&#x8bdd;&#xff1a;&#x201c;&#x60f3;&#x77e5;&#x9053;&#x540e;&#x6765;&#x600e;&#x4e48;&#x4e86;&#x5417;&#xff1f;&#x201d;&#xa;    </p>&#xa;  
+<ul><li>&#xa;    <p>&#xa;      - &#x5927;&#x90e8;&#x5206;&#x4eba;&#x5fc3;&#x4e2d;&#x5bf9;&#x4e00;&#x4ef6;&#x81ea;&#x5df1;&#x4e0d;&#x77e5;&#x9053;&#x7684;&#x4e8b;&#x60c5;&#x5145;&#x6ee1;&#x95ee;&#x53f7;&#xff0c;&#x60f3;&#x77e5;&#x9053;&#x540e;&#x6765;&#x600e;&#x4e48;&#x6837;&#x4e86;&#xff01;<br>&#x8fd9;&#x662f;&#x56e0;&#x4e3a;&#xff1a;<font color="#990000">&#x4eba;&#x4ece;&#x539f;&#x59cb;&#x65f6;&#x4ee3;&#x5f00;&#x59cb;&#xff0c;&#x5c31;&#x5b66;&#x4f1a;&#x5fc5;&#x987b;&#x77e5;&#x9053;&#x5f88;&#x591a;&#x4e8b;&#x60c5;&#x540e;&#x6765;&#x662f;&#x600e;&#x4e48;&#x53d1;&#x5c55;&#x7684;&#x53c8;&#x662f;&#x600e;&#x4e48;&#x7ed3;&#x675f;&#x7684;&#xff0c;&#x4ece;&#x800c;&#x5411;&#x540c;&#x4f34;&#x4eec;&#x5b66;&#x4e60;&#x751f;&#x5b58;&#x4e4b;&#x9053;&#xff01;</font><br>&#x4e3e;&#x4e2a;&#x4f8b;&#x5b50;&#xff1a;&#x6709;&#x4e24;&#x4e2a;&#x7a74;&#x5c45;&#x4eba;&#x5c0f;&#x7532;&#x548c;&#x5c0f;&#x4e59;&#xff0c;&#x6709;&#x4e00;&#x5929;&#x5c0f;&#x7532;&#x5bf9;&#x5c0f;&#x4e59;&#x8bf4;&#xff1a;&#x201c;&#x6211;&#x4eca;&#x5929;&#x9047;&#x5230;&#x4e00;&#x53ea;&#x7259;&#x9f7f;&#x8fd9;&#x4e48;&#x5c16;&#x3001;&#x6ee1;&#x8eab;&#x90fd;&#x662f;&#x6bdb;&#x3001;&#x6bd4;&#x5927;&#x6811;&#x8fd8;&#x9ad8;&#x7684;&#x91ce;&#x517d;&#x201d;&#x3002;&#x5c0f;&#x4e59;&#x5c31;&#x4f1a;&#x8d76;&#x5feb;&#x63a5;&#x7740;&#x95ee;&#x201c;&#x540e;&#x6765;&#x5462;&#xff1f;&#x201d;&#x3002;<font color="#006600">&#x56e0;&#x4e3a;&#x4ed6;&#x6700;&#x597d;&#x77e5;&#x9053;&#x5c0f;&#x7532;&#x662f;&#x600e;&#x4e48;&#x5e94;&#x4ed8;&#x8fd9;&#x4e2a;&#x5c40;&#x9762;&#xff0c;&#x624d;&#x6d3b;&#x4e0b;&#x6765;&#x7684;</font>&#xff0c;&#x4ee5;&#x5907;&#x4ed6;&#x4e0b;&#x6b21;&#x81ea;&#x5df1;&#x9047;&#x5230;&#x8fd9;&#x7c7b;&#x91ce;&#x517d;&#x7684;&#x65f6;&#x5019;&#xff0c;&#x4ed6;&#x624d;&#x4f1a;&#x77e5;&#x9053;&#x8be5;&#x600e;&#x4e48;&#x53bb;&#x505a;&#x3002;&#xa;    </p>&#xa;  
+&#xa;    <p>&#xa;      - &#x600e;&#x6837;&#x5224;&#x65ad;&#x81ea;&#x5df1;&#x8bf4;&#x7684;&#x4e1c;&#x897f;&#x201c;&#x5438;&#x4e0d;&#x5438;&#x5f15;&#x4eba;&#x201d;&#x5462;&#xff1f;&#x90a3;&#x5c31;&#x662f;&#x6bcf;&#x8bb2;&#x51e0;&#x53e5;&#x8bdd;&#xff0c;&#x5c31;&#x7a0d;&#x5fae;&#x505c;&#x987f;&#x4e00;&#x4e0b;&#xff0c;&#x770b;&#x4f60;&#x7684;&#x670b;&#x53cb;&#x4f1a;&#x4e0d;&#x4f1a;&#x95ee;&#x201c;&#x7136;&#x540e;&#x5462;&#xff0c;&#x540e;&#x6765;&#x5462;&#x201d;&#x4e4b;&#x7c7b;&#x7684;&#x8bdd;&#x3002;&#xa;    </p>&#xa;  
+</li>
+</ul>&#xa;    <p>&#xa;      + &#x5f53;&#x6240;&#x6709;&#x4eba;&#x90fd;&#x5728;&#x7167;&#x672c;&#x5ba3;&#x79d1;&#x65f6;&#xff0c;&#x8c01;&#x80fd;&#x7ed9;&#x522b;&#x4eba;&#x5e26;&#x6765;&#x60ca;&#x53f9;&#x53f7;&#xff0c;&#x8c01;&#x5c31;&#x4f1a;&#x7ed9;&#x5927;&#x5bb6;&#x7559;&#x4e0b;&#x6df1;&#x523b;&#x7684;&#x5f71;&#x54cd;~<br>&#x4e3e;&#x4f8b;&#xff1a;<br><img src="01.png">&#xa;    </p>&#xa;  
+</li>
+</ul><p>&nbsp;
+<p><span id="show1_3" class="foldclosed" onClick="show_folder('1_3')" style="POSITION: absolute">+</span> <span id="hide1_3" class="foldopened" onClick="hide_folder('1_3')">-</span>
+<span style="color: #006699;font-size: 116%;font-family: SansSerif, sans-serif; ">21-30</span>
+<ul id="fold1_3" style="POSITION: relative; VISIBILITY: visible;"><li>&#xa;    <p>&#xa;      + &#x521d;&#x6b21;&#x89c1;&#x9762;&#xff0c;&#x5207;&#x8bb0;&#xff1a;&#x5b66;&#x4f1a;&#x4e3b;&#x52a8;&#x62a5;&#x4e0a;&#x81ea;&#x5df1;&#x7684;&#x540d;&#x5b57;&#xff01;&#x9632;&#x6b62;&#x522b;&#x4eba;&#x4e0d;&#x77e5;&#x9053;&#x600e;&#x4e48;&#x79f0;&#x547c;&#x4f60;&#xff0c;&#x7ed9;&#x522b;&#x4eba;&#x9020;&#x6210;&#x5c34;&#x5c2c;&#x6216;&#x9ebb;&#x70e6;&#x3002;&#xa;    </p>&#xa;  
+&#xa;    <p>&#xa;      + &#x8d5e;&#x8d4f;&#xff0c;&#x89c2;&#x5bdf;&#x5bf9;&#x65b9;&#x6700;&#x6e34;&#x671b;&#x7684;&#x90e8;&#x5206;&#x3002;&#x800c;&#x4e14;&#x6700;&#x597d;&#x662f;&#x5f80;&#x5177;&#x4f53;&#x91cc;&#x9762;&#x5938;&#xff0c;&#x8fd9;&#x6837;&#x5c31;&#x663e;&#x5f97;&#x66f4;&#x52a0;&#x771f;&#x8bda;~<br><img src="02.png">&#xa;    </p>&#xa;  
+<p>&nbsp;
+&#xa;    <p>&#xa;      + &#x6f14;&#x8bb2;&#x7684;&#x4eba;&#xff0c;<font color="#990000">&#x8981;&#x8bbe;&#x8eab;&#x5904;&#x5730;&#x7684;&#x4ee5;&#x53f0;&#x4e0b;&#x89c2;&#x4f17;&#x7684;&#x7acb;&#x573a;&#x6765;&#x60f3;</font>&#xff0c;&#x624d;&#x80fd;&#x505a;&#x51fa;&#x6700;&#x7cbe;&#x5f69;&#x7684;&#x6f14;&#x8bb2;&#xff01;&#xa;    </p>&#xa;  
+<ul><li>&#xa;    <p>&#xa;      - &#x4e0d;&#x7ba1;&#x4ed6;&#x662f;&#x81ea;&#x5df1;&#x82b1;&#x94b1;&#x4e70;&#x7968;&#xff0c;&#x8fd8;&#x662f;&#x88ab;&#x8001;&#x5e08;&#x903c;&#x7740;&#x6765;&#x542c;&#x4f60;&#x7684;&#x6f14;&#x8bb2;&#x3002;<font color="#006600">&#x53ea;&#x8981;&#x4f60;&#x4f53;&#x8c05;&#x542c;&#x8bb2;&#x8005;&#x5bb9;&#x6613;&#x604d;&#x795e;&#xff0c;&#x7ed9;&#x4ed6;&#x4e00;&#x4e9b;&#x4e50;&#x8da3;&#xff0c;&#x4ee5;&#x53ca;&#x4e24;&#x5230;&#x4e09;&#x6837;&#x6709;&#x7528;&#x7684;&#x8baf;&#x606f;</font>&#xff0c;&#x90a3;&#x4e48;&#x4ed6;&#x5c31;&#x4f1a;&#x89c9;&#x5f97;&#x4f60;&#x662f;&#x4e2a;&#x975e;&#x5e38;&#x597d;&#x7684;&#x6f14;&#x8bb2;&#x8005;&#xff0c;&#x800c;&#x4e14;&#x4e0b;&#x6b21;&#x4e5f;&#x8fd8;&#x4f1a;&#x4e50;&#x610f;&#x542c;&#x5230;&#x4f60;&#x7684;&#x6f14;&#x8bb2;&#x3002;&#xa;    </p>&#xa;  
+</li>
+</ul>&#xa;    <p>&#xa;      + &#x8c03;&#x6574;&#x5fc3;&#x6001;&#xff0c;&#x5b66;&#x4f1a;&#x4ee5;&#x522b;&#x4eba;&#x7684;&#x5feb;&#x4e50;&#x4e3a;&#x5feb;&#x4e50;&#x3002;&#x8fd9;&#x662f;&#x51d1;&#x8da3;&#x7684;&#x6709;&#x6548;&#x9014;&#x5f84;&#xff01;<br>(&#x5bf9;&#x81ea;&#x5df1;&#x5728;&#x610f;&#x7684;&#x4eba;&#xff0c;&#x8981;&#x505a;&#x5230; &#xa;      &#x53ea;&#x8981;&#x4f60;&#x5f00;&#x5fc3;&#xff0c;&#x6211;&#x5c31;&#x5f00;&#x5fc3;)&#xa;    </p>&#xa;  
+<p>&nbsp;
+&#xa;    <p>&#xa;      + &#x4e00;&#x4e2a;&#x4eba;&#x5f88;&#x96be;&#x4e86;&#x89e3;&#x53e6;&#x4e00;&#x4e2a;&#x4eba;&#x6240;&#x53d7;&#x7684;&#x82e6;&#xff0c;<b>&#x4e00;&#x5b9a;&#x8981;&#x80fd;&#x8bc6;&#x522b;&#x51fa;&#x6240;&#x8c13;&#x7684;&#x201c;&#x5f15;&#x86c7;&#x51fa;&#x6d1e;&#x201d;&#x5f0f;&#x7684;&#x8bc9;&#x82e6;</b>&#xff0c;&#x8fd9;&#x79cd;&#x8bc9;&#x82e6;&#x901a;&#x5e38;&#x4e0d;&#x662f;&#x771f;&#x7684;&#x5728;&#x8bc9;&#x82e6;&#xff0c;&#x800c;&#x662f;&#x5e0c;&#x671b;&#x4f60;&#x5938;&#x5979;&#x4eec;&#x5e76;&#x6ca1;&#x6709;&#x5979;&#x4eec;&#x81ea;&#x5df1;&#x6240;&#x8bf4;&#x7684;&#x95ee;&#x9898;&#xff0c;&#x6bd4;&#x5982;&#xff1a;<br><img src="03.png">&#xa;    </p>&#xa;  
+&#xa;    <p>&#xa;      - &#x5982;&#x679c;&#x5979;&#x7684;&#x8bc9;&#x82e6;&#x4e0d;&#x662f;&#x5728;&#x201c;&#x5f15;&#x86c7;&#x51fa;&#x6d1e;&#x201d;&#xff0c;&#x800c;&#x662f;&#x771f;&#x7684;&#x5728;&#x8bc9;&#x82e6;&#xff0c;&#x90a3;&#x4e48;&#x4f60;&#x9700;&#x8981;&#x505a;&#x7684;&#x5c31;&#x662f;&#x201c;&#x8ba4;&#x771f;&#x53bb;&#x503e;&#x542c;&#x201d;~&#xa;    </p>&#xa;  
+</li>
+</ul><p>&nbsp;
+<p><span id="show1_4" class="foldclosed" onClick="show_folder('1_4')" style="POSITION: absolute">+</span> <span id="hide1_4" class="foldopened" onClick="hide_folder('1_4')">-</span>
+<span style="color: #006633;font-size: 116%;font-family: SansSerif, sans-serif; ">31-40</span>
+<ul id="fold1_4" style="POSITION: relative; VISIBILITY: visible;"><li>&#xa;    <p>&#xa;      + &#x53ea;&#x542c;&#x5b57;&#x9762;&#x610f;&#x601d;&#x5c31;&#x505a;&#x51b3;&#x5b9a;&#xff0c;&#x6050;&#x6015;&#x673a;&#x4f1a;&#x5c31;&#x8dd1;&#x6389;&#x4e86;&#xff01;<br><font color="#0000ff">@&#x8054;&#x60f3;</font>&#xff1a;&#x5f53;&#x522b;&#x4eba; &#xa;      say no &#x7684;&#x65f6;&#x5019;&#xff0c;&#x5982;&#x679c;&#x4f60;&#x76f4;&#x63a5;&#x5c31;&#x8d70;&#x4e86;(&#x6216;&#x653e;&#x5f03;&#x4e86;)&#xff0c;&#x90a3;&#x4e48;&#x4f60;&#x7684;&#x673a;&#x4f1a;&#x4e5f;&#x5c31;&#x8ddf;&#x4f60;&#x8bf4;&#x62dc;&#x62dc;&#x4e86;&#xff01;<font color="#990000">&#x6b63;&#x786e;&#x7684;&#x6253;&#x5f00;&#x65b9;&#x5f0f;&#x662f;&#xff1a;&#x7d27;&#x8ddf;&#x7740; &#xa;      &#x95ee;&#x4e00;&#x4e0b;&#xa0;why&#xff0c;&#x7136;&#x540e;&#x4f60;&#x5c31;&#x4f1a;&#x53d1;&#x73b0;&#x53ef;&#x80fd;&#x5b58;&#x5728;&#x7740;&#x65b0;&#x7684;&#x673a;&#x9047;~</font>&#xa;    </p>&#xa;  
+&#xa;    <p>&#xa;      + <b>&#x5f53;&#x522b;&#x4eba;&#x8d5e;&#x7f8e;&#x4f60;&#x4e00;&#x53e5;&#x7684;&#x65f6;&#x5019;&#xff0c;&#x4f60;&#x5c31;&#x56de;&#x4e00;&#x53e5;&#x8d5e;&#x7f8e;&#xff01;</b><br><font color="#0000ff">@&#x8054;&#x7cfb;</font>&#xff1a;running-man&#x90d1;&#x51ef;&#x548c;&#x4ed6;&#x7684;&#x5973;&#x540c;&#x5b66;&#x4e4b;&#x95f4;&#x7684;&#x804a;&#x5929;&#xff0c;&#x4ed6;&#x7684;&#x5973;&#x540c;&#x5b66;&#x8d5e;&#x7f8e;&#x4ed6;10&#x5e74;&#x8fc7;&#x53bb;&#x4e86;&#x600e;&#x4e48;&#x4f9d;&#x65e7;&#x6ca1;&#x53d8;&#x8fd8;&#x662f;&#x90a3;&#x4e48;&#x5e05;&#xff0c;&#x90d1;&#x51ef;&#x5c31;&#x56de;&#x4e00;&#x53e5;&#x201c;&#x4f60;&#x4e5f;&#x4e00;&#x6837;&#x90a3;&#x4e48;&#x6f02;&#x4eae;&#xff0c;&#x76ae;&#x80a4;&#x8fd8;&#x662f;&#x90a3;&#x4e48;&#x767d;&#x201d;&#xff0c;&#x8fd9;&#x6837;&#x53cc;&#x65b9;&#x90fd;&#x4f1a;&#x5f88;&#x9ad8;&#x5174;&#x5f88;&#x5f00;&#x5fc3;~<br>- &#xa;      &#x5343;&#x4e07;&#x4e0d;&#x8981;&#x50cf;&#x4e0b;&#x9762;&#x7684;&#x8fd9;&#x4f4d;&#x59d1;&#x5a18;&#x4e00;&#x6837;&#xff1a;<br><img src="04.png">&#xa;    </p>&#xa;  
+&#xa;    <p>&#xa;      + <b><font color="#0000ff">&#x5207;&#x8bb0;</font></b>&#xff1a;&#x522b;&#x4eba;&#x9a82;&#x4f60;&#x4e00;&#x53e5;&#xff0c;&#x4f60;&#x56de;&#x9a82;&#x4e00;&#x53e5;&#xff0c;&#x8fd9;&#x662f;&#x5435;&#x67b6;&#xff1b;<font color="#990000">&#x4f46;&#x662f;&#x522b;&#x4eba;&#x8d5e;&#x7f8e;&#x4f60;&#x4e00;&#x53e5;&#xff0c;&#x4f60;&#x56de;&#x4e00;&#x53e5;&#x8d5e;&#x7f8e;&#xff0c;&#x8fd9;&#x5c31;&#x53eb;&#x793e;&#x4ea4;</font>&#xff01;<br>- &#xa;      &#x5982;&#x679c;&#x522b;&#x4eba;&#x8d5e;&#x7f8e;&#x4f60;&#x4e00;&#x53e5;&#xff0c;&#x4f60;&#x5374;&#x53ea;&#x662f;&#x5f88;&#x793c;&#x8c8c;&#x6027;&#x7684;&#x56de;&#x58f0;&#x201c;&#x8c22;&#x8c22;&#x201d;&#xff0c;&#x8fd9;&#x6837;&#x5f53;&#x7136;&#x4e5f;&#x65e0;&#x53ef;&#x539a;&#x975e;&#xff0c;&#x4f46;&#x662f;&#x8fd9;&#x4e00;&#x62db;&#x901a;&#x5e38;&#x66f4;&#x52a0;&#x9002;&#x5408;&#x90a3;&#x4e9b;&#x771f;&#x6b63;&#x5f53;&#x5f97;&#x8d77;&#x8fd9;&#x4e9b;&#x8d5e;&#x7f8e;&#x7684;&#x4eba;&#x3002;&#xa;    </p>&#xa;  
+<p>&nbsp;
+&#xa;    <p>&#xa;      + &#x7f8e;&#x56fd;&#x6709;&#x4e2a;&#x8c03;&#x67e5;&#xff1a;<font color="#990000">&#x4e00;&#x822c;&#x4eba;&#x6700;&#x559c;&#x6b22;&#x7684;&#x5b57;&#xff0c;&#x5c31;&#x662f;&#x4ed6;&#x81ea;&#x5df1;&#x59d3;&#x540d;&#x91cc;&#x7684;&#x5b57;</font>&#xff01;<br>&#x6211;&#x60f3;&#x8fd9;&#x4e2a;&#x8c03;&#x67e5;&#x7ed3;&#x679c;&#x5e94;&#x8be5;&#x662f;&#x666e;&#x904d;&#x9002;&#x7528;&#x7684;&#x5427;~&#xa;    </p>&#xa;  
+&#xa;    <p>&#xa;      + &#x5982;&#x679c;&#x521d;&#x6b21;&#x4e0e;&#x4eba;&#x76f8;&#x9047;&#xff0c;&#x5bf9;&#x8c08;&#x8bdd;&#x7684;&#x65b9;&#x5411;&#x6ca1;&#x6709;&#x628a;&#x63e1;&#xff0c;&#x90a3;&#x5c31;&#x4e0d;&#x59a8;&#x7528; &#x201c;&#x89c2;&#x5bdf;+&#x63a8;&#x7406;&#x201d; &#xa;      &#x6765;&#x6293;&#x4f4f;&#x5bf9;&#x7684;&#x65b9;&#x5411;&#x5427;~&#xa;    </p>&#xa;  
+<p>&nbsp;
+&#xa;    <p>&#xa;      + &#x4ee5;&#x540e;&#x53bb; KTV &#x4e00;&#x5b9a;&#x8981;&#x6ce8;&#x610f;&#xff1a;&#x4e0d;&#x8981;&#x53bb;&#x505a;&#x9ea6;&#x9738;&#xff0c;<font color="#990000">&#x522b;&#x4eba;&#x5531;&#x6b4c;&#x7684;&#x65f6;&#x5019;&#x4e0d;&#x8981;&#x53bb;&#x8ddf;&#x7740;&#x559d;&#x53d1;&#x51fa;&#x58f0;&#x97f3;(&#x4f1a;&#x8ba9;&#x4eba;&#x8ba8;&#x538c;&#x7684;)&#xff0c;&#x4e56;&#x4e56;&#x7684;&#x53bb;&#x542c;&#x5c31;&#x597d;&#x4e86;&#xff0c;</font>&#x6bcf;&#x4e2a;&#x4eba;&#x90fd;&#x5e0c;&#x671b;&#x81ea;&#x5df1;&#x5728;&#x5531;&#x7684;&#x65f6;&#x5019;&#xff0c;&#x6709;&#x4eba;&#x5145;&#x5f53;&#x542c;&#x4f17;&#xff0c;&#x81ea;&#x5df1;&#x5f97;&#x5230;&#x5173;&#x6ce8;&#xff01;<br>+ &#xa;      &#x800c;&#x4e14;&#x5728;&#x522b;&#x4eba;&#x5531;&#x5b8c;&#x4e4b;&#x540e;&#x4e5f;<font color="#990000">&#x4e0d;&#x8981;&#x541d;&#x60dc;&#x4f60;&#x7684;&#x8d5e;&#x7f8e;&#x4e4b;&#x8bcd;</font>&#xa0;(&#x6bcf;&#x4e2a;&#x4eba;&#x90fd;&#x5e0c;&#x671b;&#x5f97;&#x5230;&#x8d5e;&#x7f8e;&#xff0c;&#x66f4;&#x597d;&#x7684;&#x662f;&#x51fa;&#x81ea;&#x4e8e;&#x5185;&#x5fc3;&#x7684;&#x5177;&#x4f53;&#x7684;&#x8d5e;&#x7f8e;)&#xff01;<br><font color="#0000ff">@&#x601d;&#x8003;</font>&#xff1a;&#x4ee5;&#x524d;&#x6211;&#x53bb;KTV&#x5531;&#x6b4c;&#x4ece;&#x6ca1;&#x6ce8;&#x610f;&#x5230;&#x8fd9;&#x4e2a;&#x95ee;&#x9898;&#x554a;&#xff0c;&#x771f;&#x5b9e;&#x60ed;&#x6127;&#xff01;&#xa;    </p>&#xa;  
+&#xa;    <p>&#xa;      <img src="05.png">&#xa;      &#xa;    </p>&#xa;  
+&#xa;    <p>&#xa;      + &#x8bb0;&#x4f4f;&#xff1a;&#x4e0d;&#x5531;&#x6b4c;&#x53ea;&#x542c;&#x6b4c;&#x7684;&#x4eba;&#xff0c;&#x53ea;&#x8981;&#x6bcf;&#x9996;&#x6b4c;&#x4e4b;&#x540e;&#x90fd;&#x7528;&#x529b;&#x62cd;&#x624b;&#xff0c;&#x4e5f;&#x662f;&#x5f88;&#x4e0a;&#x9053;&#x7684;&#x4eba;&#xff01;<br><font color="#0000ff">@&#x8054;&#x7cfb;</font>&#xff1a;&#x201c;&#x61c2;&#x5f97;&#x8d5e;&#x7f8e;&#xff0c;&#x61c2;&#x5f97;&#x4e0d;&#x541d;&#x60dc;&#x8d5e;&#x7f8e;&#x4e4b;&#x8bcd;&#x201d;&#x7684;&#x4eba;&#x662f;&#x628a;&#x522b;&#x4eba;&#x653e;&#x5fc3;&#x4e0a;&#x7684;&#x4eba;&#xff0c;&#x662f;&#x4e0a;&#x9053;&#x7684;&#x4eba;&#xff01;&#xa;    </p>&#xa;  
+<p>&nbsp;
+&#xa;    <p>&#xa;      + <b>&#x62db;&#x5f85;&#x522b;&#x4eba;(&#x4e0d;&#x4ec5;&#x4ec5;&#x53ea;&#x9002;&#x7528;&#x4e8e;&#x5ba2;&#x4eba;)&#xff0c;&#x5343;&#x4e07;&#x8981;&#x8bb0;&#x5f97;&#x201c;&#x522b;&#x53ea;&#x7528;&#x94b1;&#x4e0d;&#x7528;&#x5fc3;&#x201d;</b>&#xff01;<br>&#xb7; &#xa;      <font color="#006600">&#x4f60;&#x5173;&#x5fc3;&#x4e00;&#x4e2a;&#x4eba;&#xff0c;&#x5c31;&#x4f1a;&#x627e;&#x8bdd;&#x8ddf;&#x4ed6;&#x804a;&#xff0c;&#x8ba9;&#x4ed6;&#x8bf4;&#x8bdd;&#x3002;</font>&#x6211;&#x76f8;&#x4fe1; &#xa;      &#x201c;&#x503e;&#x8bc9;&#x201d; &#x662f;&#x4eba;&#x7684;&#x672c;&#x80fd;&#xff01;<br>&#xb7; &#xa;      <font color="#006600">&#x5f53;&#x4f60;&#x5173;&#x5fc3;&#x4e00;&#x4e2a;&#x4eba;&#x65f6;&#xff0c;&#x4f60;&#x5c31;&#x4f1a;&#x7ed9;&#x4ed6;&#x673a;&#x4f1a;&#xff0c;&#x8ba9;&#x4ed6;&#x5bf9;&#x4f60;&#x503e;&#x8bc9;</font>&#xff0c;&#x800c;&#x4e0d;&#x662f;&#x4e00;&#x5473;&#x5730;&#x4e3a;&#x4ed6;&#x82b1;&#x94b1;~~&#xa;    </p>&#xa;  
+<p>&nbsp;
+<span style="font-family: SansSerif, sans-serif; font-weight: bold; ">&#xa;    <p>&#xa;      + &#x4f20;&#x8fbe;&#x611f;&#x60c5;&#xff0c;&#x4e0d;&#x8981;&#x53ea;&#x4f1a;&#x8bf4;&#xff01;&#x6709;&#x65f6;&#x5019;&#x505a;&#x4e86;&#x82b1;&#x94b1;&#x4e86;&#xff0c;&#x4ee3;&#x8868;&#x7684;&#x5c31;&#x662f;&#x5fc3;&#x610f;&#xff01;&#xa;    </p>&#xa;  </span>
+<ul><li>&#xa;    <p>&#xa;      - <font color="#0000ff">&#x60c5;&#x4eba;&#x8282;&#x793c;&#x7269;&#x5f69;&#x86cb;</font>&#xff1a;&#x53e4;&#x53e4;&#x548c;&#x5c0f;&#x6208;&#x4e24;&#x4eba;&#x8bd5;&#x7740;&#x4ea4;&#x5f80;&#x4e86;&#x4e24;&#x4e2a;&#x6708;&#xff0c;&#x9047;&#x5230;&#x4e86;&#x7b2c;&#x4e00;&#x4e2a;&#x60c5;&#x4eba;&#x8282;&#x3002;&#x50cf;&#x6240;&#x6709;&#x4e0e;&#x4ea4;&#x5f80;&#x5bf9;&#x8c61;&#x8fc8;&#x5411;&#x4ea4;&#x5f80;&#x4ee5;&#x6765;&#x7b2c;&#x4e00;&#x4e2a;&#x60c5;&#x4eba;&#x8282;&#x7684;&#x5973;&#x751f;&#x4e00;&#x6837;&#xff0c;&#x53e4;&#x53e4;&#x4e5f;&#x6709;&#x4e00;&#x70b9;&#x671f;&#x5f85;&#x548c;&#x5fd0;&#x5fd1;&#xff1a;&#x201c;&#x4f1a;&#x6536;&#x5230;&#x4ec0;&#x4e48;&#x793c;&#x7269;&#x5462;&#x201d;&#xff1f;<br>- &#xa;      &#x5230;&#x4e86;&#x60c5;&#x4eba;&#x8282;&#x8fd9;&#x5929;&#xff0c;&#x53e4;&#x53e4;&#x62ff;&#x51fa;&#x5979;&#x8981;&#x9001;&#x7ed9;&#x5c0f;&#x6208;&#x7684;&#x793c;&#x7269;&#xff1a;&#x4e00;&#x53ea;&#x8868;&#x9762;&#x4e0a;&#x7ec6;&#x81f4;&#x5730;&#x523b;&#x7740;&#x5c0f;&#x6208;&#x540d;&#x5b57;&#x7684;<font color="#006600">&#x5b9a;&#x5236;&#x7248;&#x624b;&#x8868;</font>&#x3002;&#x5c0f;&#x6208;&#x663e;&#x7136;&#x6ca1;&#x770b;&#x8fc7;&#x8868;&#x9762;&#x4e0a;&#x7adf;&#x7136;&#x6709;&#x81ea;&#x5df1;&#x540d;&#x5b57;&#x7684;&#x624b;&#x8868;&#xff0c;&#x9732;&#x51fa;&#x53c8;&#x60ca;&#x559c;&#x6709;&#x611f;&#x52a8;&#x7684;&#x8868;&#x60c5;&#x3002;<br>- &#xa;      &#x8f6e;&#x5230;&#x5c0f;&#x6208;&#x62ff;&#x51fa;&#x793c;&#x7269;&#x4e86;&#xff0c;&#x53ea;&#x89c1;&#x5c0f;&#x6208;&#x62ff;&#x51fa;&#x6765;&#x7684;&#xff0c;&#x7adf;&#x7136;&#x662f;&#x4e00;&#x4e2a;&#x8584;&#x8584;&#x7684;&#x4fe1;&#x5c01;&#x3002;&#x53e4;&#x53e4;&#x5fc3;&#x91cc;&#x6709;&#x70b9;&#x4e0d;&#x5b89;&#xff1a;&#x201c;&#x4ed6;&#x9001;&#x6211;&#x4e00;&#x5c01;&#x4fe1;&#xff1f;&#x8fd8;&#x662f;&#x4e00;&#x5f20;&#x652f;&#x7968;&#xff1f;&#x201d; &#xa;      &#x4e0d;&#x7ba1;&#x662f;&#x54ea;&#x6837;&#xff0c;&#x90fd;&#x53ef;&#x4ee5;&#x7b97;&#x662f;&#x5f88;&#x5192;&#x9669;&#x7684;&#x60c5;&#x4eba;&#x8282;&#x793c;&#x7269;&#x554a;&#xff0c;&#x5982;&#x679c;&#x662f;&#x4fe1;&#xff0c;&#x4fe1;&#x7684;&#x5185;&#x5bb9;&#x8ddf;&#x6587;&#x7b14;&#x4f1a;&#x4ee4;&#x4eba;&#x5192;&#x6c57;&#x5427;&#xff01;&#x5982;&#x679c;&#x662f;&#x652f;&#x7968;&#xff0c;&#x652f;&#x7968;&#x7684;&#x91d1;&#x989d;&#x4e0e;&#x542b;&#x4e49;&#x8be5;&#x600e;&#x4e48;&#x770b;&#x5f85;&#xff1f;<br>- &#xa;      &#x53e4;&#x53e4;&#x6253;&#x5f00;&#x4fe1;&#x5c01;&#xff0c;&#x5f88;&#x53e4;&#x602a;&#xff0c;&#x662f;&#x4e00;&#x53e0;&#x8ba1;&#x7b97;&#x673a;&#x6253;&#x5370;&#x7684;<font color="#0000ff">&#x5c0f;&#x6208;&#x76d6;&#x7ae0;&#x7684;&#x201c;&#x53e4;&#x53e4;&#x4e13;&#x7528;&#x793c;&#x5238;&#x201d;&#xff0c;&#x5171;&#x8ba1;52&#x5f20;</font>&#x3002;<br>- &#xa;      &#x5c0f;&#x6208;&#x8bf4;&#xff1a;&#x201c;&#x8fd9;&#x662f;&#x4e00;&#x5e74;&#x4efd;&#x6bcf;&#x4e2a;&#x793c;&#x62dc;&#x4e00;&#x5f20;&#x7684;&#x793c;&#x5238;&#xff0c;&#x53ea;&#x80fd;&#x7ed9;&#x4f60;&#x7528;&#xff0c;&#x800c;&#x4e14;&#x53ea;&#x80fd;&#x7528;&#x5728;&#x6211;&#x8eab;&#x4e0a;&#x201d;&#xff0c;&#x201c;&#x793c;&#x5238;&#x7684;&#x7528;&#x9014;&#x5f39;&#x6027;&#x5f88;&#x5927;&#xff0c;&#x53ef;&#x4ee5;&#x53eb;&#x6211;&#x5e2e;&#x4f60;&#x526a;&#x4e00;&#x6b21;&#x811a;&#x8dbe;&#x7532;&#xff0c;&#x53eb;&#x6211;&#x5e2e;&#x4f60;&#x4e70;&#x4e00;&#x6b21;&#x591c;&#x5bb5;&#xff0c;&#x53eb;&#x6211;&#x4e00;&#x6b21;&#x4e0d;&#x8ddf;&#x4f60;&#x56de;&#x5634;&#xff0c;&#x53eb;&#x6211;&#x4e00;&#x6b21;&#x966a;&#x4f60;&#x770b;&#x54ed;&#x54ed;&#x557c;&#x557c;&#x7684;&#x97e9;&#x5267;&#xb7;&#xb7;&#xb7; &#xa;      &#xb7;&#xb7;&#xb7;&#x201d;<br>- &#x53e4;&#x53e4;&#x5f88;&#x611f;&#x52a8;&#xff0c;&#x62b1;&#x4f4f;&#x4e86;&#x5c0f;&#x6208;&#xff01;&#x8fd9;&#x786e;&#x5b9e;&#x662f;&#x4e00;&#x4e2a;&#x5f88;&#x597d;&#x7684;&#x60c5;&#x4eba;&#x8282;&#x793c;&#x7269;&#xff0c;&#x56e0;&#x4e3a;<b>&#x8fd9;&#x91cc;&#x9762;&#x5305;&#x542b;&#x6709;&#x5f88;&#x591a;&#x7684;&#x5fc3;&#x610f;</b>~&#xa;    </p>&#xa;  
+</li>
+</ul><p>&nbsp;
+&#xa;    <p>&#xa;      - &#x8bf4;&#x8bdd;&#xff0c;&#x65e0;&#x975e;&#x662f;&#x8868;&#x8fbe;&#x81ea;&#x5df1;&#xff0c;&#x6253;&#x52a8;&#x522b;&#x4eba;&#x3002;&#x8bed;&#x8a00;&#x6700;&#x7f8e;&#x7684;&#x65f6;&#x5019;&#xff0c;&#x5c31;&#x662f;&#x6211;&#x4eec;&#x900f;&#x8fc7;&#x8bed;&#x8a00;&#xff0c;&#x611f;&#x53d7;&#x5230;&#x5f7c;&#x6b64;&#x4e4b;&#x95f4;&#x76f8;&#x4e92;&#x7684;&#x9700;&#x8981;&#xff0c;&#x9760;&#x8bed;&#x8a00;&#x6211;&#x4eec;&#x786e;&#x8ba4;&#x4e86;&#x5f7c;&#x6b64;&#x7684;&#x5b58;&#x5728;&#xff01;&#xa;    </p>&#xa;  
+</li>
+</ul></li>
+</ul><SCRIPT type="text/javascript">
+fold_document();
+</SCRIPT>
+<p>&nbsp;</p>
+</body>
+</html>

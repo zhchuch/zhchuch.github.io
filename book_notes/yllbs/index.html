@@ -1,0 +1,401 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
+<title>yllbs</title>
+
+
+<style type="text/css">
+body {
+  font-family: Helvetica, arial, sans-serif;
+  font-size: 14px;
+  line-height: 1.6;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  background-color: white;
+  padding: 30px; }
+
+body > *:first-child {
+  margin-top: 0 !important; }
+body > *:last-child {
+  margin-bottom: 0 !important; }
+
+a {
+  color: #4183C4; }
+a.absent {
+  color: #cc0000; }
+a.anchor {
+  display: block;
+  padding-left: 30px;
+  margin-left: -30px;
+  cursor: pointer;
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0; }
+
+h1, h2, h3, h4, h5, h6 {
+  margin: 20px 0 10px;
+  padding: 0;
+  font-weight: bold;
+  -webkit-font-smoothing: antialiased;
+  cursor: text;
+  position: relative; }
+
+h1:hover a.anchor, h2:hover a.anchor, h3:hover a.anchor, h4:hover a.anchor, h5:hover a.anchor, h6:hover a.anchor {
+  background: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAAGXRFWHRTb2Z0d2FyZQBBZG9iZSBJbWFnZVJlYWR5ccllPAAAA09pVFh0WE1MOmNvbS5hZG9iZS54bXAAAAAAADw/eHBhY2tldCBiZWdpbj0i77u/IiBpZD0iVzVNME1wQ2VoaUh6cmVTek5UY3prYzlkIj8+IDx4OnhtcG1ldGEgeG1sbnM6eD0iYWRvYmU6bnM6bWV0YS8iIHg6eG1wdGs9IkFkb2JlIFhNUCBDb3JlIDUuMy1jMDExIDY2LjE0NTY2MSwgMjAxMi8wMi8wNi0xNDo1NjoyNyAgICAgICAgIj4gPHJkZjpSREYgeG1sbnM6cmRmPSJodHRwOi8vd3d3LnczLm9yZy8xOTk5LzAyLzIyLXJkZi1zeW50YXgtbnMjIj4gPHJkZjpEZXNjcmlwdGlvbiByZGY6YWJvdXQ9IiIgeG1sbnM6eG1wPSJodHRwOi8vbnMuYWRvYmUuY29tL3hhcC8xLjAvIiB4bWxuczp4bXBNTT0iaHR0cDovL25zLmFkb2JlLmNvbS94YXAvMS4wL21tLyIgeG1sbnM6c3RSZWY9Imh0dHA6Ly9ucy5hZG9iZS5jb20veGFwLzEuMC9zVHlwZS9SZXNvdXJjZVJlZiMiIHhtcDpDcmVhdG9yVG9vbD0iQWRvYmUgUGhvdG9zaG9wIENTNiAoMTMuMCAyMDEyMDMwNS5tLjQxNSAyMDEyLzAzLzA1OjIxOjAwOjAwKSAgKE1hY2ludG9zaCkiIHhtcE1NOkluc3RhbmNlSUQ9InhtcC5paWQ6OUM2NjlDQjI4ODBGMTFFMTg1ODlEODNERDJBRjUwQTQiIHhtcE1NOkRvY3VtZW50SUQ9InhtcC5kaWQ6OUM2NjlDQjM4ODBGMTFFMTg1ODlEODNERDJBRjUwQTQiPiA8eG1wTU06RGVyaXZlZEZyb20gc3RSZWY6aW5zdGFuY2VJRD0ieG1wLmlpZDo5QzY2OUNCMDg4MEYxMUUxODU4OUQ4M0REMkFGNTBBNCIgc3RSZWY6ZG9jdW1lbnRJRD0ieG1wLmRpZDo5QzY2OUNCMTg4MEYxMUUxODU4OUQ4M0REMkFGNTBBNCIvPiA8L3JkZjpEZXNjcmlwdGlvbj4gPC9yZGY6UkRGPiA8L3g6eG1wbWV0YT4gPD94cGFja2V0IGVuZD0iciI/PsQhXeAAAABfSURBVHjaYvz//z8DJYCRUgMYQAbAMBQIAvEqkBQWXI6sHqwHiwG70TTBxGaiWwjCTGgOUgJiF1J8wMRAIUA34B4Q76HUBelAfJYSA0CuMIEaRP8wGIkGMA54bgQIMACAmkXJi0hKJQAAAABJRU5ErkJggg==) no-repeat 10px center;
+  text-decoration: none; }
+
+h1 tt, h1 code {
+  font-size: inherit; }
+
+h2 tt, h2 code {
+  font-size: inherit; }
+
+h3 tt, h3 code {
+  font-size: inherit; }
+
+h4 tt, h4 code {
+  font-size: inherit; }
+
+h5 tt, h5 code {
+  font-size: inherit; }
+
+h6 tt, h6 code {
+  font-size: inherit; }
+
+h1 {
+  font-size: 28px;
+  color: black; }
+
+h2 {
+  font-size: 24px;
+  border-bottom: 1px solid #cccccc;
+  color: black; }
+
+h3 {
+  font-size: 18px; }
+
+h4 {
+  font-size: 16px; }
+
+h5 {
+  font-size: 14px; }
+
+h6 {
+  color: #777777;
+  font-size: 14px; }
+
+p, blockquote, ul, ol, dl, li, table, pre {
+  margin: 15px 0; }
+
+hr {
+  background: transparent url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAYAAAAECAYAAACtBE5DAAAAGXRFWHRTb2Z0d2FyZQBBZG9iZSBJbWFnZVJlYWR5ccllPAAAAyJpVFh0WE1MOmNvbS5hZG9iZS54bXAAAAAAADw/eHBhY2tldCBiZWdpbj0i77u/IiBpZD0iVzVNME1wQ2VoaUh6cmVTek5UY3prYzlkIj8+IDx4OnhtcG1ldGEgeG1sbnM6eD0iYWRvYmU6bnM6bWV0YS8iIHg6eG1wdGs9IkFkb2JlIFhNUCBDb3JlIDUuMC1jMDYwIDYxLjEzNDc3NywgMjAxMC8wMi8xMi0xNzozMjowMCAgICAgICAgIj4gPHJkZjpSREYgeG1sbnM6cmRmPSJodHRwOi8vd3d3LnczLm9yZy8xOTk5LzAyLzIyLXJkZi1zeW50YXgtbnMjIj4gPHJkZjpEZXNjcmlwdGlvbiByZGY6YWJvdXQ9IiIgeG1sbnM6eG1wPSJodHRwOi8vbnMuYWRvYmUuY29tL3hhcC8xLjAvIiB4bWxuczp4bXBNTT0iaHR0cDovL25zLmFkb2JlLmNvbS94YXAvMS4wL21tLyIgeG1sbnM6c3RSZWY9Imh0dHA6Ly9ucy5hZG9iZS5jb20veGFwLzEuMC9zVHlwZS9SZXNvdXJjZVJlZiMiIHhtcDpDcmVhdG9yVG9vbD0iQWRvYmUgUGhvdG9zaG9wIENTNSBNYWNpbnRvc2giIHhtcE1NOkluc3RhbmNlSUQ9InhtcC5paWQ6OENDRjNBN0E2NTZBMTFFMEI3QjRBODM4NzJDMjlGNDgiIHhtcE1NOkRvY3VtZW50SUQ9InhtcC5kaWQ6OENDRjNBN0I2NTZBMTFFMEI3QjRBODM4NzJDMjlGNDgiPiA8eG1wTU06RGVyaXZlZEZyb20gc3RSZWY6aW5zdGFuY2VJRD0ieG1wLmlpZDo4Q0NGM0E3ODY1NkExMUUwQjdCNEE4Mzg3MkMyOUY0OCIgc3RSZWY6ZG9jdW1lbnRJRD0ieG1wLmRpZDo4Q0NGM0E3OTY1NkExMUUwQjdCNEE4Mzg3MkMyOUY0OCIvPiA8L3JkZjpEZXNjcmlwdGlvbj4gPC9yZGY6UkRGPiA8L3g6eG1wbWV0YT4gPD94cGFja2V0IGVuZD0iciI/PqqezsUAAAAfSURBVHjaYmRABcYwBiM2QSA4y4hNEKYDQxAEAAIMAHNGAzhkPOlYAAAAAElFTkSuQmCC) repeat-x 0 0;
+  border: 0 none;
+  color: #cccccc;
+  height: 4px;
+  padding: 0;
+}
+
+body > h2:first-child {
+  margin-top: 0;
+  padding-top: 0; }
+body > h1:first-child {
+  margin-top: 0;
+  padding-top: 0; }
+  body > h1:first-child + h2 {
+    margin-top: 0;
+    padding-top: 0; }
+body > h3:first-child, body > h4:first-child, body > h5:first-child, body > h6:first-child {
+  margin-top: 0;
+  padding-top: 0; }
+
+a:first-child h1, a:first-child h2, a:first-child h3, a:first-child h4, a:first-child h5, a:first-child h6 {
+  margin-top: 0;
+  padding-top: 0; }
+
+h1 p, h2 p, h3 p, h4 p, h5 p, h6 p {
+  margin-top: 0; }
+
+li p.first {
+  display: inline-block; }
+li {
+  margin: 0; }
+ul, ol {
+  padding-left: 30px; }
+
+ul :first-child, ol :first-child {
+  margin-top: 0; }
+
+dl {
+  padding: 0; }
+  dl dt {
+    font-size: 14px;
+    font-weight: bold;
+    font-style: italic;
+    padding: 0;
+    margin: 15px 0 5px; }
+    dl dt:first-child {
+      padding: 0; }
+    dl dt > :first-child {
+      margin-top: 0; }
+    dl dt > :last-child {
+      margin-bottom: 0; }
+  dl dd {
+    margin: 0 0 15px;
+    padding: 0 15px; }
+    dl dd > :first-child {
+      margin-top: 0; }
+    dl dd > :last-child {
+      margin-bottom: 0; }
+
+blockquote {
+  border-left: 4px solid #dddddd;
+  padding: 0 15px;
+  color: #777777; }
+  blockquote > :first-child {
+    margin-top: 0; }
+  blockquote > :last-child {
+    margin-bottom: 0; }
+
+table {
+  padding: 0;border-collapse: collapse; }
+  table tr {
+    border-top: 1px solid #cccccc;
+    background-color: white;
+    margin: 0;
+    padding: 0; }
+    table tr:nth-child(2n) {
+      background-color: #f8f8f8; }
+    table tr th {
+      font-weight: bold;
+      border: 1px solid #cccccc;
+      margin: 0;
+      padding: 6px 13px; }
+    table tr td {
+      border: 1px solid #cccccc;
+      margin: 0;
+      padding: 6px 13px; }
+    table tr th :first-child, table tr td :first-child {
+      margin-top: 0; }
+    table tr th :last-child, table tr td :last-child {
+      margin-bottom: 0; }
+
+img {
+  max-width: 100%; }
+
+span.frame {
+  display: block;
+  overflow: hidden; }
+  span.frame > span {
+    border: 1px solid #dddddd;
+    display: block;
+    float: left;
+    overflow: hidden;
+    margin: 13px 0 0;
+    padding: 7px;
+    width: auto; }
+  span.frame span img {
+    display: block;
+    float: left; }
+  span.frame span span {
+    clear: both;
+    color: #333333;
+    display: block;
+    padding: 5px 0 0; }
+span.align-center {
+  display: block;
+  overflow: hidden;
+  clear: both; }
+  span.align-center > span {
+    display: block;
+    overflow: hidden;
+    margin: 13px auto 0;
+    text-align: center; }
+  span.align-center span img {
+    margin: 0 auto;
+    text-align: center; }
+span.align-right {
+  display: block;
+  overflow: hidden;
+  clear: both; }
+  span.align-right > span {
+    display: block;
+    overflow: hidden;
+    margin: 13px 0 0;
+    text-align: right; }
+  span.align-right span img {
+    margin: 0;
+    text-align: right; }
+span.float-left {
+  display: block;
+  margin-right: 13px;
+  overflow: hidden;
+  float: left; }
+  span.float-left span {
+    margin: 13px 0 0; }
+span.float-right {
+  display: block;
+  margin-left: 13px;
+  overflow: hidden;
+  float: right; }
+  span.float-right > span {
+    display: block;
+    overflow: hidden;
+    margin: 13px auto 0;
+    text-align: right; }
+
+code, tt {
+  margin: 0 2px;
+  padding: 0 5px;
+  white-space: nowrap;
+  border: 1px solid #eaeaea;
+  background-color: #f8f8f8;
+  border-radius: 3px; }
+
+pre code {
+  margin: 0;
+  padding: 0;
+  white-space: pre;
+  border: none;
+  background: transparent; }
+
+.highlight pre {
+  background-color: #f8f8f8;
+  border: 1px solid #cccccc;
+  font-size: 13px;
+  line-height: 19px;
+  overflow: auto;
+  padding: 6px 10px;
+  border-radius: 3px; }
+
+pre {
+  background-color: #f8f8f8;
+  border: 1px solid #cccccc;
+  font-size: 13px;
+  line-height: 19px;
+  overflow: auto;
+  padding: 6px 10px;
+  border-radius: 3px; }
+  pre code, pre tt {
+    background-color: transparent;
+    border: none; }
+
+sup {
+    font-size: 0.83em;
+    vertical-align: super;
+    line-height: 0;
+}
+
+kbd {
+  display: inline-block;
+  padding: 3px 5px;
+  font-size: 11px;
+  line-height: 10px;
+  color: #555;
+  vertical-align: middle;
+  background-color: #fcfcfc;
+  border: solid 1px #ccc;
+  border-bottom-color: #bbb;
+  border-radius: 3px;
+  box-shadow: inset 0 -1px 0 #bbb
+}
+
+* {
+	-webkit-print-color-adjust: exact;
+}
+@media screen and (min-width: 914px) {
+    body {
+        width: 854px;
+        margin:0 auto;
+    }
+}
+@media print {
+	table, pre {
+		page-break-inside: avoid;
+	}
+	pre {
+		word-wrap: break-word;
+	}
+}
+</style>
+
+
+</head>
+
+<body>
+
+<h2 id="toc_0">月亮和六便士</h2>
+
+<blockquote>
+<p>生活与艺术，月亮与六便士，现实与理想 两者之间的矛盾与相互作用。</p>
+</blockquote>
+
+<p>主人公：<strong>查理斯 · 斯特里克兰德</strong></p>
+
+<pre>
+经典语录：
+- 为了使灵魂宁静，一个人每天要做两件他不喜欢的事。
+- 一代代的人在前赴后继的走过属于他们各自的时代，但切勿忘记即便是当下高举着火把的勇士们有朝一日也同样会让位于他人，到最后你会发现 谁说的话都不能算做最后拍板！
+- 斯特里克兰德太太从心眼里喜欢读书，通过读书她为自己创造了一个幻想的小天地，生活于这片天地，她能感受到生活在日常生活里所无从享受的自由！
+</pre>
+
+<ol>
+<li><p>男主人公 斯特里克兰德 的初始人物设定：</p>
+
+<ul>
+<li>只不过是一个忠厚老实，索然无味且相貌平凡的普通人。他不懂社交，甚至也没有任何奇行怪癖能使之免于平凡庸俗之嫌。</li>
+<li>一般人看待他 可以很钦佩他的为人，却不愿意和他待在一起，他是一个毫不引人注意的人。</li>
+<li>他可以是一个令人起敬的社会成员，一个诚实的经纪人，一个恪守职责的丈夫和父亲，但是你却觉得在他身上你没有必要浪费任何时间！</li>
+</ul></li>
+<li><p>勃朗什爱上查理斯的原因：</p>
+
+<ul>
+<li>只不过是身体内深处的爱情被激活了，屈服于肉体的诱惑，她对自己的丈夫从来就没有什么感情，过去她爱施特略夫，实际上只是男人的爱抚和生活的安适在女人身上所引发的自然反应。
+而大多数女人将这种反应却当做了爱情。</li>
+<li>其实这种感情只不过是对 有保障的生活的满足，对拥有家资的骄傲，对有人需要自己的沾沾自喜，以及对能够建立起属于自己的家庭的洋洋得意而已。
+这种爱情其实只是女人们秉性善良以及爱慕虚荣的一种表现，其实并不是爱情。</li>
+<li>查理斯则不同，他生得粗野不逊，眼睛深邃冷漠，嘴型给人以肉欲感，他身高且壮硕，总能给人以热情狂放的印象。他身上带有某种邪恶的气质，一种原始的生命力。</li>
+</ul></li>
+<li><p>阿伯拉罕 与 阿莱克 之间的人生传奇故事 (命运的神祇)</p>
+
+<ul>
+<li>阿伯拉罕是一个很有才能的外科医生，他凭借自己过人的才华被选进了领导机构，他本可以在事业上飞黄腾达，名利双收。但在其正式上任之前，他想度一次假，在这次度假中，
+他乘船到达了亚历山大港，就在这个时候他的心境忽然发生了奇异的变化，好似晴天霹雳般他的内心好像得到了某种启示，突然间他感到一阵狂喜，有了一种从未感受过的无限自由的
+感觉。他于是向医院领导人递交了一份辞呈，他决定放弃那个原本人人都羡慕的位置，在亚历山大港定居了。</li>
+<li>而阿莱克此时无疑算是交到了一次极大地好运，本来在做学生的时候他处处都被阿伯拉罕打得惨败，最后毕业时他原本只能做个小医生，没想到此时阿伯拉罕居然离奇辞职，他因此
+因缘际会般的得到了这样一个步步高升的机会，从此飞黄腾达。他把这一切都归功于那次奇特的运气。</li>
+</ul></li>
+<li><p>查理斯·斯特里克兰德 在塔西堤的生活（原来塔西堤岛就是现在南太平洋上的大溪地）</p>
+
+<ul>
+<li>有爱之岛（Love Island）之称，是南太平洋上的波里尼西亚群岛118个岛中的最大之岛，是法属波里尼西亚国际机场和首府所在地。因其秀美的热带风光、环绕四周的七彩海水，
+而被称为“最接近天堂的地方”。<a href="http://www.mafengwo.cn/i/5586587.html" target="_blank">马蜂窝·大溪地旅游见闻</a></li>
+<li>查理斯终于在这么个远离人类文明的仙境，过上了自己梦寐以求的生活。通过书籍里的描述，这简直就是另一种远离尘世的仙境。</li>
+<li>他娶了一个当地土著，又生下了两个孩子，一个孩子夭折了，另一个孩子成长为了一个水手。而他自己最终也因患了麻风病死在了塔西堤岛上自己的家中。</li>
+</ul></li>
+</ol>
+
+<p>尾言：这个故事的主人公查理斯·斯特里克兰德的经历 取材于法国后印象派画家 高更 的生平。他原本是一位普普通通的证券经纪人，人届中年之后突然响应内心的呼唤，舍弃一切
+来到南太平洋的塔西堤岛上与当地土著人一起生活，并获得灵感创作出许多杰出的艺术作品。</p>
+
+<p><strong>@思考与总结</strong>：这个故事中的主人公确实做到了为常人所不能为，把自己的一生活了两次。虽然他自己追寻到了自己内心所有想要的东西，但是我作为一个俗人还是对他的这种不负责任的行为表示无法理解。他可能根本就不在意世人的看法，但这一点又有多少人能够做到？<br>我们每个人的身上总是背负着各种各样的责任 (作为儿子, 作为父亲, 作为丈夫, 作为员工等等)，这每一种角色说白了背后都是责任，这也就是我们身而为人无法逃避的枷锁，这也就是为什么生而为人本就是一种惩罚的原因。<u>人生：不如意事十八九，可与人言无二三</u>。人皆如此，因此我只能期盼：这一世的自己能够好好修行(做事尽责)，期盼多抵一点前世的罪孽,为后代也能多积一些福报(期盼他们可以过得比我好)，而对于我自己则希望来世能够不再成为人。</p>
+
+<h2 id="toc_1"></h2>
+
+<p>网友评论：</p>
+
+<ol>
+<li>你常有弯腰捡六便士的时候，你也会有抬头看见月亮的时候，那就是诗和远方，那时候你才是一个完整的人。</li>
+<li>别人的人生是在不断做加法，他却在做减法。人的每一种身份都是一种自我绑架，唯有失去是通向自由之途。所以查尔斯拒绝再做“丈夫”、“爸爸”、“朋友”、“同事”、“英国人”，他甩掉一个一个身份，如同脱去一层一层衣服，最后一抬脚，赤身裸体踏进内心召唤的冰窟窿里去。</li>
+</ol>
+
+
+
+
+</body>
+
+</html>

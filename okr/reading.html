@@ -1,0 +1,41 @@
+
+<!--+++++++++ Objective: 阅读 Read +++++++++-->
+<div class="row-fluid">
+	<div class="span10">
+		<h3 style="margin-top: 3px;">
+			阅读 <small>We are what we read!</small>
+		</h3>
+	</div>
+	<!-- <div class="span2">
+		<?php include "../includes/reward.php";?>
+	</div> -->
+</div>
+<hr style="margin-top: 3px;">
+
+<h4 style="margin-bottom: 15px;"> Current: 最近准备阅读书目列表 </h4>
+
+<div class="row-fluid">
+
+<div class="span1">
+	<ul class="nav nav-pills nav-stacked">
+		<li class="active"> <a href="#read2018" data-toggle="tab"><font color="black"><b>2018</b></font></a> </li>
+		<li> <a href="reading2017.html">2017</a> </li>
+		<li> <a href="reading2016.html">2016</a> </li>
+		<li> <a href="reading2015.html">2015</a> </li>
+		<li> <a href="#readPLAN" data-toggle="tab">PLAN</a> </li>
+	</ul>
+</div>
+
+<div class="span11 tab-pane fade in active" id="read2018">
+<!-- <include src="./reading/readPLAN.html"></include> -->
+</div> <!-- End of span11 -->
+
+<div class="span11 tab-pane fade" id="readPLAN">
+<!-- <include src="./reading/readPLAN.html"></include> -->
+</div> <!-- End of span11 -->
+
+</div> <!-- End of row-fluid -->
+
+<script src="/res/js/include-html.js"></script>
+<script> $("#read2018").load("./reading/reading2018.html") </script>
+<script> $("#readPLAN").load("./reading/readPLAN.html") </script>

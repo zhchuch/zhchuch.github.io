@@ -1,0 +1,455 @@
+
+<!-- saved from url=(0120)http://note.youdao.com/web/note?note=%2FA7017F89DF1646B1A1B13EB8ED1FC7D2%2F6005C17CC6314294A3F62A591EC14953&notebook=%2F -->
+<html><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8"><meta charset="utf-8">
+<title> 宇宙的琴弦 作者：[美]布莱恩&middot;格林 </title>
+<style>
+html {margin:0;padding:0;}
+a {cursor:pointer}
+body {margin:0;padding:5px;margin-left:140px;margin-right:140px;} 
+body.edit-mode {background:url(style/editor-inner-glow.jpg) no-repeat center top}
+body, td {font:12px/1.5 "宋体","sans serif",tahoma,verdana,helvetica;}
+body, p, div {word-wrap: break-word;}
+p {margin:0 0 5px;}
+table {border-collapse:collapse;}
+img {border:0;}
+table.ke-zeroborder td {border:1px dotted #AAA;}
+table {font-size: inherit; border-collapse: collapse;
+    margin-top: 10px; margin-bottom: 10px; display: table;
+}
+table td, table th{
+   word-break: break-all;
+   border: 1px solid #999;
+   padding: 5px 10px;
+   min-height: 25px;
+   min-width: 25px;
+   height: 25px;
+}
+table td>div {min-width: 2px;}
+img.ke-flash {
+	border:1px solid #AAA;
+	background-image:url(themes/common/flash.gif);
+	background-position:center center;
+	background-repeat:no-repeat;
+	width:100px;
+	height:100px;
+}
+img.ke-rm {
+	border:1px solid #AAA;
+	background-image:url(themes/common/rm.gif);
+	background-position:center center;
+	background-repeat:no-repeat;
+	width:100px;
+	height:100px;
+}
+img.ke-media {
+	border:1px solid #AAA;
+	background-image:url(themes/common/media.gif);
+	background-position:center center;
+	background-repeat:no-repeat;
+	width:100px;
+	height:100px;
+}
+img.ke-anchor {
+	border:1px dashed #666;
+	width:16px;
+	height:16px;
+}
+.ke-script {
+	display:none;
+	font-size:0;
+	width:0;
+	height:0;
+}
+.ke-pagebreak {
+	border:1px dotted #AAA;
+	font-size:0;
+	height:2px;
+}
+.ke-content {
+	font-family: "微软雅黑", "Microsoft Yahei", Helvetica Neue, Hiragino Sans GB,"宋体", simsun, "黑体", Arial, sans-serif;
+	font-size: 16px;
+	word-break: break-all;
+	word-wrap: break-word;
+	min-height:300px
+}
+div.remind-wrap {
+	width:550px;
+	min-height:18px;
+	font-size:14px;
+	border:none;
+	display:inline-block;
+	position:relative;
+	vertical-align:top;
+}
+div.remind-wrap.selected, div.remind-wrap.mover, div.remind-wrap:hover {
+	background:#ffffd6;
+}
+div.remind-wrap.mover .remind-text{
+	background:#ffffd6;
+}
+.remind-textarea:focus{
+	background:#ffffd6;
+}
+div.remind-mask {
+	position:absolute!important;
+	width:550px;
+	display:block;
+	height:18px;
+	z-index:999;
+	background:white;
+	opacity:0;
+	filter:progid:DXImageTransform.Microsoft.Alpha(Opacity=0);
+}
+div.remind-content {
+	padding-left:50px;
+	line-height:18px;
+	height:18px;
+	overflow:hidden;
+}
+div.remind-content .remind-textarea{
+	resize: none;
+	height: 18px;
+	font-size: 13px;
+	line-height: 18px;
+	width:100%;
+	display:inline-block;
+	padding:0px;
+	outline:none;
+	z-index:3;
+	font:inherit;
+	letter-spacing:inherit;
+	word-spacing:inherit;
+	border:none;
+	white-space:nowrap;
+	background:inherit;
+}
+.remind-content .remind-textarea-holder {
+	z-index:-1!important;
+	position:absolute;
+	display:none;
+	top:0px;
+	left:9999px;
+}
+.view-mode .remind-textarea {
+	display:none;
+}
+span.original-todo {
+	display:none;
+}
+input.remind-checked {
+	position:absolute;
+	left: 5px;
+	top: 2px;
+	*top: -2px;
+	margin:0px;
+	padding:0px;
+}
+i.remind-watch {
+	position:absolute;
+	left: 25px;
+	width: 16px;
+	height: 16px;
+	cursor: pointer;
+	top: -1px;
+	background: url(style/remind.png);
+	background-position: -26px -2px;
+}
+.expired i.remind-watch {
+	background-position: -5px -2px;
+}
+.invalid i.remind-watch {
+	background-position: -48px -2px;
+}
+.remind-text {
+	overflow:hidden;
+	display:none;
+	width:100%;
+	height:100%;
+	text-overflow:ellipsis;
+	cursor:default;
+	white-space:nowrap;
+	background:inherit;
+	border:none;
+	font:inherit;
+	letter-spacing:inherit;
+	word-spacing:inherit;
+	border:none;
+	white-space:nowrap;
+}
+.view-mode .remind-text {
+	display:inline-block;
+}
+.invalid .remind-text {
+	color:#999;
+	text-decoration:line-through;
+}
+.lt-550 .remind-wrap{
+	width:100%;
+}
+.from-tcWeiboShare a{
+	color: #006A92;
+	text-decoration: none;
+}
+
+	ul {margin:0; padding:0;}
+	li { list-style: none;  margin: 0; }
+
+    span.foldopened { color: white; font-size: xx-small;
+    border-width: 1; font-family: monospace; padding: 0em 0.25em 0em 0.25em; background: #e0e0e0;
+    VISIBILITY: visible;
+    cursor:pointer; }
+
+    span.foldclosed { color: #666666; font-size: xx-small;
+    border-width: 1; font-family: monospace; padding: 0em 0.25em 0em 0.25em; background: #e0e0e0;
+    VISIBILITY: hidden;
+    cursor:pointer; }
+
+    span.foldspecial { color: #666666; font-size: xx-small; border-style: none solid solid none;
+    border-color: #CCCCCC; border-width: 1; font-family: sans-serif; padding: 0em 0.1em 0em 0.1em; background: #e0e0e0;
+    cursor:pointer; }
+
+    span.l { color: red; font-weight: bold; }
+
+</style>
+</head><body class="ke-content editor-body"><div><span style="color:maroon;line-height:1.5;">
+
+<script type="text/javascript">
+   // Here we implement folding. It works fine with MSIE5.5, MSIE6.0 and
+   // Mozilla 0.9.6.
+
+   if (document.layers) {
+      //Netscape 4 specific code
+      pre = 'document.';
+      post = ''; }
+   if (document.getElementById) {
+      //Netscape 6 specific code
+      pre = 'document.getElementById("';
+      post = '").style'; }
+   if (document.all) {
+      //IE4+ specific code
+      pre = 'document.all.';
+      post = '.style'; }
+
+function layer_exists(layer) {
+   try {
+      eval(pre + layer + post);
+      return true; }
+   catch (error) {
+      return false; }}
+
+function show_layer(layer) {
+   eval(pre + layer + post).position = 'relative'; 
+   eval(pre + layer + post).visibility = 'visible'; }
+
+function hide_layer(layer) {
+   eval(pre + layer + post).visibility = 'hidden';
+   eval(pre + layer + post).position = 'absolute'; }
+
+function hide_folder(folder) {
+    hide_folding_layer(folder)
+    show_layer('show'+folder);
+
+    scrollBy(0,0); // This is a work around to make it work in Browsers (Explorer, Mozilla)
+}
+
+function show_folder(folder) {
+    // Precondition: all subfolders are folded
+
+    show_layer('hide'+folder);
+    hide_layer('show'+folder);
+    show_layer('fold'+folder);
+
+    scrollBy(0,0); // This is a work around to make it work in Browsers (Explorer, Mozilla)
+
+    var i;
+    for (i=1; layer_exists('fold'+folder+'_'+i); ++i) {
+       show_layer('show'+folder+'_'+i); }
+}
+function show_folder_completely(folder) {
+    // Precondition: all subfolders are folded
+
+    show_layer('hide'+folder);
+    hide_layer('show'+folder);
+    show_layer('fold'+folder);
+
+    scrollBy(0,0); // This is a work around to make it work in Browsers (Explorer, Mozilla)
+
+    var i;
+    for (i=1; layer_exists('fold'+folder+'_'+i); ++i) {
+       show_folder_completely(folder+'_'+i); }
+}
+
+
+
+function hide_folding_layer(folder) {
+   var i;
+   for (i=1; layer_exists('fold'+folder+'_'+i); ++i) {
+       hide_folding_layer(folder+'_'+i); }
+
+   hide_layer('hide'+folder);
+   hide_layer('show'+folder);
+   hide_layer('fold'+folder);
+
+   scrollBy(0,0); // This is a work around to make it work in Browsers (Explorer, Mozilla)
+}
+
+function fold_document() {
+   var i;
+   var folder = '1';
+   for (i=1; layer_exists('fold'+folder+'_'+i); ++i) {
+       hide_folder(folder+'_'+i); }
+}
+
+function unfold_document() {
+   var i;
+   var folder = '1';
+   for (i=1; layer_exists('fold'+folder+'_'+i); ++i) {
+       show_folder_completely(folder+'_'+i); }
+}
+</script>
+
+<SPAN class="foldspecial" onclick="fold_document()">All +</SPAN>
+<SPAN class="foldspecial" onclick="unfold_document()">All -</SPAN>
+
+<p style="text-align: center"><font face="Times New Roman" size="4"> 宇宙的琴弦</font></p>
+<p style="text-align: center">作者：<font face="Times New Roman" color="red"> [美]布莱恩&middot;格林</font></p>
+<br>超弦，隐藏的维度 及 对宇宙终极理论的探索。</span></div><div><span style="color:maroon;"><span style="color:black;"></span></span><span style="line-height:1.5;">这本书解释了爱因斯坦，海森堡以来的主要物理学成就，超弦理论。</span><p style="color:black;"><span style="color:#1918e8;">超弦理论</span>撒开了一张大网，它是一个深广的主题，它融合了许多重要的物理学发现，这个理论统一了大与小的定律，</p><p style="color:black;"><span style="color:#e92a2a;">大到统领宇宙的尽头，小到深入物质的核心</span>。 &nbsp; &nbsp;&nbsp;</p><p style="color:black;"><br></p><div style="color:black;">各章自我总结：</div><div style="color:black;"><div><div>第&nbsp;1&nbsp;章 是全书的一个引子，通过人类知识的边界的不断扩展来引出理论物理学上的许多新理论；</div><div>第 2&nbsp;章 讲述狭义相对论；&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span style="line-height:1.5;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;第 3&nbsp;章 讲述广义相对论；</span></div><div>第 4&nbsp;章 讲述量子力学；<span style="line-height:1.5;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;第 5&nbsp;章 讲述广义相对论与量子力学之间的矛盾；</span></div><div>第 6&nbsp;章 引出弦理论；<span style="line-height:1.5;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;第&nbsp;7,8&nbsp;章 介绍弦理论的性质以及它最新的理论成果；</span></div></div><div>第 9 章 介绍弦理论的实验证据；<span style="line-height:1.5;">&nbsp; &nbsp; &nbsp;第 10,11 章 介绍弦理论下的时空新特性；</span></div><div>第 12,13&nbsp;章 引出M理论并通过它重新认识黑洞；</div><div>第 14&nbsp;章 借助新理论重新考虑宇宙的形成；</div><div>第 15 章 说说未来物理科学发展过程中要解决的问题以及对未来科学发展的展望。</div></div><div style="color:black;"><br></div><div><span style="color:#ff0000;"><b> 读后感：</b></span>了解到了物理学发展的背景(都是在矛盾中寻求新理论)，同时对微观世界的组成(十一维的宇宙)有了很直观的</div><div style="color:black;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp; &nbsp; 感受，理解了为什么说科学是一门以怀疑为基础的宗教，其实原本我们自认为绝对正确的事情，自己因此就从</div><div style="color:black;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp; &nbsp;&nbsp;没有考虑一些问题，后来都会发现它并不是那么的不容置疑。比如：亚里士多德关于重的物体比轻的物体下落</div><div style="color:black;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 的更快这一错误思想一直统治了人们2000多年，最后发现是错的；牛顿的经典力学所确定的时空观也统治了人</div><div style="color:black;">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; 们近几百年，这些最终都被修正了。</div><div style="color:black;">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; 从此我也应该领会到：以后自己一定要学会<b>辩证的看待问题</b>，对所谓的真理敢于提出质疑，能够保有一份怀疑</div><div style="color:black;">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; 真理的态度。</div><p style="color:black;"><br></p><span style="color:maroon;line-height:1.5;"></span><span style="line-height:1.5;color:yellow;"></span></div>
+
+<ul>
+<div><span style="background-color:#FFFFFF;color:#000000;font-family:微软雅黑;font-size:14px;font-style:normal;font-weight:normal;text-align:left;">========= PART 1: 知识的边缘 ===================</span><br></div><div><span style="background-color:#FFFFFF;color:#000000;font-family:微软雅黑;font-size:14px;font-style:normal;font-weight:normal;text-align:left;"><span style="color:#FF0000;font-family:微软雅黑;font-size:16px;font-style:normal;font-weight:normal;text-align:left;background-color:#FFFFFF;">Date: 2015-11-02</span><br></span></div>
+<li><span id="show1_1" class="foldclosed" onClick="show_folder('1_1')" style="POSITION: absolute">+</span> 
+	<span id="hide1_1" class="foldopened" onClick="hide_folder('1_1')">-</span>
+第一章 绷紧的弦
+<ul id="fold1_1" style="POSITION: relative; VISIBILITY: visible;">
+<li>
+<div>&nbsp; &nbsp; = &nbsp;<span style="line-height:1.5;">现在物理学的两大支柱：</span><span style="line-height:1.5;color:#E52626;">爱因斯坦的相对论[大尺度宇宙]，量子力学[微观宇宙]</span><span style="line-height:1.5;">。</span><p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;但是从广义相对论和量子力学今天的形式来看：<span style="color:#9d16d9;">它们不可能都是正确的。</span></p></div><div>&nbsp; &nbsp; = 物理学史上的三次大冲突</div><div>&nbsp; &nbsp; &nbsp; &nbsp; <span style="color:blue;">Conflict 1.</span> 牛顿运动定律预言可以赶上或超过光速 vs. 麦克斯韦电磁场理论预言谁也跑不过光</div><div>&nbsp; &nbsp; &nbsp; &nbsp; <span style="color:brown;">Solution1.</span> 爱因斯坦“狭义相对论”(1905)，推翻了原有的时空观。</div><div>&nbsp; &nbsp; &nbsp; &nbsp; <span style="color:blue;">Conflict 2.</span> 狭义相对论预言任何物体都不可能跑过光 vs. 牛顿引力理论却可以使得物体的瞬时速度会超过光速</div><div>&nbsp; &nbsp; &nbsp; &nbsp; <span style="color:brown;">Solution2.</span> 爱因斯坦“广义相对论”(1915)，时空会随着物质和能量的出现发生弯曲。</div><div>&nbsp; &nbsp; &nbsp; &nbsp; <span style="color:blue;">Conflict 3.</span> 广义相对论 vs. 量子力学</div><div>&nbsp; &nbsp; &nbsp; &nbsp; <span style="color:brown;">Solution3. </span>弦理论的提出(1980s) 与 发展。</div><div>&nbsp;&nbsp;&nbsp;&nbsp;</div><div>&nbsp; &nbsp; =&nbsp;<span style="line-height:1.5;">自然界中的四种力：引力，电磁力，弱力 和 强力。 &nbsp; &nbsp;&nbsp;</span><br><div>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;引力取决于物体的质量；电磁力取决于粒子所带的电荷量；</div><div>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;强力：是一种将上夸克下夸克组合成质子和中子，又把质子和中子塞在一起组成原子核的这种强大的核力。</div></div><div><br></div><div>&nbsp; &nbsp; = &nbsp;<span style="line-height:1.5;">弦理论</span><p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;基本思想：物质由原子组成，而原子由夸克和电子组成，根据弦理论，所有这些粒子实际上是振动的一根闭合的弦。</p><p><span style="color:#e02323;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;万物在最微观的层次上是由振动的“绳子”组合在一起的。<span style="color:black;"></span></span></p><p>&nbsp; &nbsp; &nbsp; &nbsp;弦理论的弦 
+      在共振频率处的振动，会产生粒子，而粒子的质量和电荷由弦的振荡行为决定。</p><p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;就目前来看，把广义相对论和量子力学和谐的统一起来，是弦理论的主要成功。 &nbsp; &nbsp;&nbsp;</p></div><div><br></div><div>&nbsp; &nbsp; =&nbsp;相对论：是关于时空和引力的基本原理，依据研究对象的不同分为狭义相对论和广义相对论。</div><div>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp; &nbsp;相对论的基本假设是“<span style="color:blue;">相对性原理</span>”，也即物理定律与参照系的选择无关。<br></div><div>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;狭义相对论：讨论的是匀速直线运动下的参照系(惯性参照系)下的物理定律。[爱因斯坦相对性原理 &amp;&amp; 光速不变性原理]<br></div><div>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;广义相对论：推广到了具有加速度的非惯性参照系，它发展了牛顿力学，推动物理学发展走向一个新的高度。</div><div>&nbsp; &nbsp; &nbsp; &nbsp;量子力学：是研究微观粒子的运动规律的物理学分支学科。<br></div><div>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;量子力学的基本原理包括 量子态的概念，运动方程，理论概念和观测物理量之间的对应规则和无力原理。<br></div><div><br></div>
+
+</li> </ul> </li> <br>
+
+<div><span style="background-color:#FFFFFF;color:#000000;font-family:微软雅黑;font-size:14px;font-style:normal;font-weight:normal;text-align:left;">========= PART 2: 时间，空间和量子的困境 ===========</span><br></div>
+
+<li><span id="show1_2" class="foldclosed" onClick="show_folder('1_2')" style="POSITION: absolute">+</span> 
+	<span id="hide1_2" class="foldopened" onClick="hide_folder('1_2')">-</span>
+第二章 时间，空间 和 观察者的眼睛
+<ul id="fold1_2" style="POSITION: relative; VISIBILITY: visible;">
+<li>
+<div>&nbsp; &nbsp; =&nbsp;<span style="line-height:1.5;color:#0000FF;">Conflict 1&nbsp;</span><span style="line-height:1.5;color:#E71C1C;">牛顿和麦克斯韦</span><span style="line-height:1.5;">：</span><p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;根据麦克斯韦的电磁场理论，光总是以光速运动，它永不停歇也永不减缓脚步；但是按照牛顿的运动定律，如果我们以光的</p><p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;速度来追光，光相对于我们就相对静止了，光就好像停在了那里。这就引起了一个问题--谁也不曾抓一把光在手里。 &nbsp; &nbsp;&nbsp;<span style="line-height:1.5;"></span></p><p><span style="color:brown;">&nbsp; &nbsp; &nbsp; &nbsp;</span><span style="color:brown;">Solution </span><span style="color:brown;">1</span> 最终爱因斯坦于1905年用 狭义相对论 解决了这一冲突，同时也颠覆了我们对时间和空间的概念。</p><p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;狭义相对论认为：不同观察者所看到的现象是不同的，而这又蕴藏着微妙而深刻的意义。 &nbsp; &nbsp;&nbsp;</p><br></div><div>&nbsp; &nbsp; = 直觉和错觉</div><div>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;时间膨胀(时间上) &nbsp; &nbsp;洛伦兹收缩(空间上)</div><div>&nbsp; &nbsp; = 相对性原理</div><div>&nbsp; &nbsp; &nbsp; &nbsp; 牛顿发现：运动是相对的，爱因斯坦发现：时间也是相对的。</div><div>&nbsp; &nbsp; &nbsp; &nbsp; 所有的观察者都同意：光是以每秒30 0000km的速度在运动，光的速度是不变的(相对于任何参照系)。</div><div>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; -“光速是不变的”这一事实已然改变了我们已知的宇宙观！</div><div>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; - 爱因斯坦发现：不变的光速意味着牛顿物理学的崩溃。</div><div>&nbsp; &nbsp; = 事实和结论</div><div>&nbsp; &nbsp; &nbsp; &nbsp; 光的存在，不仅是对 我们寻常对速度这一概念 的挑战，它实际上也在挑战着我们原有的时空观。</div><div>&nbsp; &nbsp; = 时间的同时性</div><div>&nbsp; &nbsp; = 时间的膨胀</div><div>&nbsp; &nbsp; &nbsp; &nbsp; 使用理论上的“光子钟”来进行解释。</div><div>&nbsp; &nbsp; &nbsp; &nbsp; 运动的物体，速度越快，所经历的时间变慢了。从静止的观察者的角度来看，可能他已经经历了1年的时间，</div><div>&nbsp; &nbsp; &nbsp; &nbsp; 而这个高速运动的物体却只经历了1个月，甚至是更短，所看在他看来，高速运动的物体时间是膨胀了的。</div><div><span style="line-height:1.5;"><span style="color:#FF0000;font-family:微软雅黑;font-style:normal;font-weight:normal;text-align:left;background-color:#FFFFFF;">Date: 2015-11-04</span>&nbsp;</span></div><div>&nbsp;&nbsp; = 运动的生命【54/433】</div><div>&nbsp; &nbsp; &nbsp; &nbsp; 运动者的生命会比静止的生命活的更长，运动者的时间慢下来了。</div><div>&nbsp; &nbsp; &nbsp; &nbsp; 其实不是人的寿命延长了，而是来自微观世界的某种粒子(μ子)的寿命延长了。<span style="color:#00b050;">【联想电影《星际穿越》里面的情景】</span></div><div>&nbsp; &nbsp; &nbsp; &nbsp;【但是并不是说寿命延长了人可以干更多的事，因为运动者的时间变慢，同时他做任何事也会变慢。】</div><div>&nbsp; &nbsp; = 谁在运动</div><div>&nbsp; &nbsp; &nbsp; &nbsp; 又是一个由相对性原理导致的逻辑困惑。</div><div>&nbsp; &nbsp; = 空间的收缩</div><div>&nbsp; &nbsp; &nbsp; &nbsp; 运动不仅使得物体所经历的时间变短，同时它在空间上也变短了。</div><div>&nbsp; &nbsp; &nbsp; &nbsp; 观察者会发现 运动的物体在运动方向上缩短了。狭义相对论的方程已经证明，如果物体以90%的光速运动，</div><div>&nbsp; &nbsp; &nbsp; &nbsp; 那么静止的观察者将发现他比静止时短了80%，也即：只有静止时长度的20%。</div><div><br></div><div>&nbsp; &nbsp; = 在时空里运动</div><div>&nbsp; &nbsp; &nbsp; &nbsp; 狭义相对论还提供了一个更为深刻的统一观点，它能够囊括所有这些运动时的现象。</div><div>&nbsp; &nbsp; &nbsp; &nbsp; 爱因斯坦狭义相对论 惊人的物理学事实基础——运动不仅能够在空间维上尽心分解，而且&nbsp;<b><span style="color:red;">时间维上也能“分享”运动</span></b>。</div><div><br></div><div>&nbsp; &nbsp; &nbsp; &nbsp; 重要现象：当物体相对于我们在空间运动时，它的钟比我们走得慢，这就是说：它在时间里的运动速度变慢了。</div><div>&nbsp; &nbsp; &nbsp; &nbsp; 爱因斯坦由此宣布：宇宙间的一切事物总是以一个固定的速度(光速)，在时空中运动。</div><div><br></div><div>&nbsp; &nbsp; &nbsp; &nbsp; 当我们以四维时空的视角来看时，物体在空间运动，原先在时间里的部分运动转移到了空间，这样，在原始时间轴</div><div>&nbsp; &nbsp; &nbsp; &nbsp; 上的运动速度就会降低，所以时间走的就变慢了。</div><div><br></div>
+</li> </ul> </li> <br>
+
+<li><span id="show1_3" class="foldclosed" onClick="show_folder('1_3')" style="POSITION: absolute">+</span> 
+	<span id="hide1_3" class="foldopened" onClick="hide_folder('1_3')">-</span>
+第三章 卷曲与波澜
+<ul id="fold1_3" style="POSITION: relative; VISIBILITY: visible;">
+<li>
+
+<div>&nbsp; &nbsp; = <span style="color:blue;">Conflict 2</span>: <span style="color:brown;">狭义相对论 与 牛顿引力理论之间的冲突</span></div><div>&nbsp; &nbsp; &nbsp; &nbsp;<span style="color:brown;"> Solution 2</span>: 广义相对论，再一次革新了我们对时空的概念，时空是卷曲的，而引力就是那卷曲的波澜。</div><div><br></div><div>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;冲突详情：<br></div><div>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;<span style="color:blue;"> 狭义相对论</span>认为，任何物体包括各种信号或干扰从一个地方传到另一个地方，都不可能比光速更快，所以它们的</div><div>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp; 传播总会有一定的时间上的延迟；<br></div><div>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp; 而牛顿的<span style="color:blue;">万有引力定律</span>，则说明引力只与两个物体的质量以及他们之间的距离相关，而与时间无关，所以一旦<br></div><div>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp; 物体的质量或距离变化了，那么它们之间的引力也就会立即发生变化，这种变化是瞬时的，不会有任何时间上的<br></div><div>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp; 延迟。所以两者之间就矛盾了。<br></div><div><br></div><div>&nbsp; &nbsp; = 牛顿的万有引力理论</div><div>&nbsp; &nbsp; = 牛顿引力与狭义相对论的不相容</div><div>&nbsp; &nbsp; &nbsp; &nbsp; 狭义相对论的一个重要特征：光所限定的绝对速度，任何物体的速度都不可能超越光速。</div><div>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;这导致了牛顿引力与狭义相对论之间的不相容。<br></div><div><br></div><div>&nbsp; &nbsp; = 爱因斯坦将 加速运动与引力的不可分辨 的性质称做为 <span style="color:olive;">“等效原理</span><span style="color:olive;">”</span>，这在 <span style="color:fuchsia;">广义相对论 中起着核心的作用</span>。<br></div><div>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp; 爱因斯坦用旋转的环的加速度来模拟引力。<br></div><div>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp; 得出结论：在所有的加速运动的情形中，时空都是弯曲的。<br></div><div><br></div><div>&nbsp; &nbsp; = 广义相对论基础<br></div><div>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp; 当没有任何物质或能量存在时，空间应该是平直的。但当有了质量和能量的存在之后，时空就会发生弯曲。<br></div><div>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp; 爱因斯坦 同时也确定了引力的传播机理：空间的弯曲。<br></div><div><br></div><div>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp; <span style="color:brown;">质</span><span style="color:brown;">量牵着空间，告诉空间如何弯曲；空间牵着质量，告诉质量如何运动。</span><br></div><div><span style="color:brown;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<br></span></div><div><span style="color:brown;"><span style="color:black;">&nbsp;&nbsp;&nbsp;&nbsp;</span><span style="color:black;">&nbsp; &nbsp; 想象当太阳爆炸的时候，大约在8分钟之后，地球上的我们才知道太阳灭了，而在这同一时刻我们也会</span><br></span></div><div><span style="color:brown;"><span style="color:black;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp; 瞬间感到来自太阳的引力的消失，而在这8分钟之内，地球上的我们完全不可能知道太阳已经发生了变化，<br></span></span></div><div><span style="color:brown;"><span style="color:black;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp; 这是由于引力扰动与光同步，他们一起以光速在宇宙中传播。<br></span></span></div><div><br></div><div><span style="color:#FF0000;font-family:微软雅黑;font-size:16px;background-color:#FFFFFF;">Date: 2015-11-06</span></div><div>&nbsp; &nbsp; &nbsp;= 再谈时间弯曲<br></div><div>&nbsp; &nbsp; &nbsp; &nbsp; 质量不仅会导致空间的弯曲，也会导致时间的弯曲。引力越大，时间也会变得越慢。<br></div><div>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;<span style="color:#00B050;">【这也可以联想电影《星际穿越》里面在一颗引力很大的行星上呆了只有几分钟，当再次回到飞船上时发现</span></div><div><span style="color:#00B050;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp; &nbsp;&nbsp;已经过去了几十年 (这种时间变慢就是由引力导致的，而不是速度导致的)。】</span><br></div><div><br></div><div>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span style="color:black;">当我们讨论黑洞时，由于引力场过于强大，所以在这里 时间和空间 都失去了意义。</span><br></div><div><span style="color:black;"><br></span></div><div><span style="color:black;">&nbsp; &nbsp; = 黑洞，大爆炸和空间膨胀<br></span></div><div><span style="color:black;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp; <span style="color:blue;">狭义相对论</span>：在高速运动的情形下 会显著的表现出来；<br></span></div><div><span style="color:black;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp; <span style="color:blue;">广义相对论</span>：在物体质量大，空间和时间相应地弯曲剧烈时就能发挥自己的作用。<br></span></div><div><span style="color:black;">&nbsp;&nbsp;&nbsp;&nbsp;<br></span></div><div><span style="color:black;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp; 黑洞(或者是质量很大的横星)&nbsp;可以被用作时光机器，因为在这附近存在着巨大的引力场从而导致时间变慢了，<br></span></div><div><span style="color:black;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp; 我们在这里呆一段时间后再回到地球，会发现地球上已经过去了很多年，我们穿越到了地球的未来。<br></span></div><div><span style="color:black;"><br></span></div>
+
+</li> </ul> </li> <br>
+<li><span id="show1_4" class="foldclosed" onClick="show_folder('1_4')" style="POSITION: absolute">+</span> 
+	<span id="hide1_4" class="foldopened" onClick="hide_folder('1_4')">-</span>
+第四章 奇异的微观世界
+<ul id="fold1_4" style="POSITION: relative; VISIBILITY: visible;">
+
+<div>&nbsp; &nbsp; 德国物理学家 普朗克 向量子力学投来第一缕阳光。<br></div><div>&nbsp; &nbsp; = 量子框架<br></div><div>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp; 一种描述 原子和亚原子世界所发生的事情&nbsp;的理论框架。</div><div><span style="color:#FF0000;font-family:微软雅黑;font-size:16px;line-height:21px;background-color:#FFFFFF;">Date: 2015-11-07</span><br></div><div>&nbsp; &nbsp; = 炉子里太热了<br></div><div>&nbsp; &nbsp; &nbsp; &nbsp; 普朗克找到了一个参数：波的最小能量单位与它的频率之间的比例(普朗克常数)。<br></div><div>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp; 能量正比于波的频率，其比例为普朗克常数。<br></div><div>&nbsp; &nbsp; = 能量包是什么<br></div><div>&nbsp; &nbsp; = 物质都是波<br></div><div>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp; 电子是小的可怜的东西，不论我们怎样小心翼翼的去发现它从哪一条缝过来，照在它上面的光子总会影响到<br></div><div>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp; 它以后的运动，而运动的改变将会带来实验(电子的双缝干涉实验)结果的改变。<br></div><div>&nbsp; &nbsp; = 古怪的量子<br></div><div>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp; 海森堡在1927年发现的 <span style="color:brown;">“不确定性原理</span><span style="color:brown;">”</span> 从根本上将量子理论与经典理论区分开来</div><div>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;[<span style="font-family:&#39;Times New Roman&#39;;font-size:medium;line-height:normal;">人们永远不能同时知道粒子的位置和速度，对其中一个知道的越准确，则对另一个就知道的越不准确</span>]。<br></div><div><br></div><div>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp; <strong>不确定性原理 </strong>抓住了 量子力学的核心。我们通常所认为的一些毫无疑问的基本事实，比如物体具有确定的</div><div>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;位置和速度，有确定的能量确定的动量，现在看来只不过是因为普朗克常数太小而在寻常世界里表现的一些<br></div><div>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp; 特例。</div><div><br></div>
+</li> </ul> </li> <br>
+
+<li><span id="show1_5" class="foldclosed" onClick="show_folder('1_5')" style="POSITION: absolute">+</span> 
+    <span id="hide1_5" class="foldopened" onClick="hide_folder('1_5')">-</span>
+第五章 渴望新理论：广义相对论与量子力学
+<ul id="fold1_5" style="POSITION: relative; VISIBILITY: visible;">
+<li> 
+<div>&nbsp; &nbsp; 通过 量子力学，我们可以预言发生在原子，亚原子这一个微观尺度上所发生的物理现象；<br></div><div>&nbsp; &nbsp; 通过 广义相对论，我们可以预言发生在 星系，星系团这一宏观尺度上所发生的物理现象。</div><div><br></div><div>&nbsp; &nbsp; = 为什么 广义相对论 和 量子力学 之间会发生矛盾？<br></div><div>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp; 量子力学的不确定性原理告诉我们：宇宙在微观世界尺度上是一个疯狂的，混沌的世界。<br></div><div>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp; 物理学家想发展新的量子力学方法，以认识弱力，强力和引力的作用。最后发展出了 “量子色(强)动力学”和“量子弱电理论”。<br></div><div>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp; 量子力学可以很好的描述宇宙中的四种基本力中的三种：强作用力，弱作用力，电磁力。</div><div><br></div><div>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp; 为了寻找一种引力的规范场论，我们需要将量子力学融入到广义相对论中。<br></div><div>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp; 引力场通过空间的弯曲来表现，而量子涨落是通过周围空间越来越强烈的扭曲表现自己。<br></div><div><br></div><div>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp; 广义相对论的核心原理——光滑的空间几何的概念，与小距离尺度的量子世界里的量子剧烈涨落相矛盾。<br></div><div>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;<span style="color:red;"> 在超微尺度上，量子力学核心的 “不确定性原理</span><span style="color:red;">”，与广义相对论时空的光滑几何</span><span style="color:red;">模型是针锋相对的</span>。<br></div><div><br></div><div>&nbsp; &nbsp; 为了能够将广义相对论和量子力学结合起来，除了弦理论之外还有扭量理论等一些新的理论出现。<br></div><div><div><span style="line-height:1.5;"></span></div></div>
+ </li> </ul> </li> <br>
+
+<div><span style="font-family:微软雅黑;font-size:14px;line-height:21px;background-color:#FFFFFF;">========= PART 3: 宇宙交响曲&nbsp;===================</span><span style="line-height:1.5;"></span></div>
+
+<li><span id="show1_6" class="foldclosed" onClick="show_folder('1_6')" style="POSITION: absolute">+</span> 
+     <span id="hide1_6" class="foldopened" onClick="hide_folder('1_6')">-</span>
+第六章 万物都是音乐：超弦理论的基础
+<ul id="fold1_6" style="POSITION: relative; VISIBILITY: visible;">
+<li>
+<div>&nbsp; &nbsp; 超弦理论(或简称为"弦理论") 革命性的修正了我们对宇宙超微观性质的理论描述，而且这修正也正是我们想要的，<br></div><div>&nbsp; &nbsp; 它使得爱因斯坦的广义相对论与量子力学完全相容了。<br></div><div>&nbsp; &nbsp; <span style="color:blue;">根据弦理论宇宙的<strong>基本组成要素不是点粒子，而是上下振动着的一堆丝线(弦</strong></span><span style="color:blue;"><strong>)</strong>，根据该理论，<strong>弦&nbsp;</strong>是构成原子</span><span style="color:blue;">的粒子</span><br></div><div><span style="color:blue;">&nbsp; &nbsp; 的超微观组成元</span>。这些弦的长度大约就是 普朗克常数长度的尺寸。<br></div><div>&nbsp; &nbsp; <span style="color:green;">【联想电影《蚁人</span><span style="color:green;">》中男主</span><span style="color:green;">角所进入的那种次</span><span style="color:green;">原子级别的空间之后所看到的原子核</span><span style="color:green;">的超微观组成。</span><span style="color:green;">】</span><br></div><div><br></div><div><span style="color:#FF0000;font-family:微软雅黑;line-height:21px;background-color:#FFFFFF;">Date: 2015-11-08</span><br></div><div>&nbsp;&nbsp;&nbsp;&nbsp;= &nbsp;<span style="line-height:1.5;">弦是做什么的？</span><p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;它是真正基本的东西。</p><p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;一根基本弦的不同振动模式可以生成不同的质量和力荷。</p><p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;一个粒子就是一根弦，<span style="color:blue;">不同的基本粒子实际上是在同一根基本弦上弹出的不同“音调”</span>。 &nbsp; &nbsp;&nbsp;</p><p>&nbsp; &nbsp; = &nbsp;基本粒子</p><p>&nbsp; &nbsp; &nbsp; &nbsp;&nbsp;基本粒子 已经可以用 “一根根振动的弦” 来理解。</p><p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;在亚原子尺度上，量子概念取代了经典逻辑。</p><p><br></p><p>&nbsp; &nbsp; = 如何调和 广义相对论 与 量子力学之间的矛盾？</p><p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;<span style="line-height:1.5;">从某种意义上来说，假想的普朗克尺度下汹涌的量子波浪是不存在的。</span></p><p>&nbsp; &nbsp; &nbsp;&nbsp;&nbsp;也就是说：弦理论指出了那种导致相对论与量子力学相互矛盾的 假想的普朗克尺度以下的微观空间 
+      实际上是没有的，</p><p><span style="line-height:1.5;">&nbsp; &nbsp; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;从而平息了疯狂的量子颤栗，调和了广义相对论与量子力学之间的矛盾。 &nbsp; &nbsp;&nbsp;</span></p><p><span style="line-height:1.5;"><br></span></p></div>
+</li> </ul> </li> <br>
+
+<li><span id="show1_7" class="foldclosed" onClick="show_folder('1_7')" style="POSITION: absolute">+</span> 
+     <span id="hide1_7" class="foldopened" onClick="hide_folder('1_7')">-</span>
+第七章 超弦 "超" 在哪里
+<ul id="fold1_7" style="POSITION: relative; VISIBILITY: visible;">
+<li>
+<div>&nbsp; &nbsp; = 超弦理论是指 带有超对称性的弦理论。<br></div>
+</li> </ul> </li> <br>
+
+<li><span id="show1_8" class="foldclosed" onClick="show_folder('1_8')" style="POSITION: absolute">+</span> 
+     <span id="hide1_8" class="foldopened" onClick="hide_folder('1_8')">-</span>
+第八章 看不见的维度
+<ul id="fold1_8" style="POSITION: relative; VISIBILITY: visible;">
+<li>
+<div>&nbsp; &nbsp; = 我们的宇宙结构既有 延展的维度，也有卷缩的维度。<br></div><div>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp; 想象生活在 一维世界里的生物，再到二维，再到三维。<br></div><div>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp; (线段)&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp; (平面)&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;(立体生物)<br></div><div>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp; 【<span style="color:green;">推荐看一本精彩的科幻小说：《FlatLand: A romance of many dimensions》平面国</span>】<br></div><div>&nbsp;&nbsp;&nbsp;&nbsp;<br></div><div>&nbsp; &nbsp; = 弦理论 解决广义相对论和量子力学之间的矛盾<br></div><div>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp; 如果只依赖于 三维空间+一维时间，弦理论虽然能够消除那些概率值计算结果为无限的情况，但是它居然会出现概率值<br></div><div>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp; 为负值这种也不能让人接受的情形。<br></div><div>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp; 负概率产生的原因是：理论需要的弦的振动方向与实际表现的方向不一样多，如果弦能够在9个独立的空间方向上振动，<br></div><div>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp; 那么所有的负概率都将会消失。<br></div><div>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp; 所以弦理论要求：宇宙至少是十维的(9个空间维+1个时间维)，后来有了令人信服的证据证明：弦理论实际上需要一共</div><div>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp; <span style="color:red;">十一维的宇宙空间</span>，其中有10个空间维和1个时间维。<br></div><div><br></div><div><strong>&nbsp; &nbsp; = 看不见的卷缩起来的空间维度 的物理意义</strong><br></div><div><strong>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp; </strong><span style="color:red;"><strong>隐藏维度&nbsp;</strong></span><strong>的几何 决定着我们在寻常三维展开空间里所观察到的那些粒子的基本物理属性：比如质量，电荷等。</strong><br></div><div><div><span style="line-height:1.5;"><br></span></div>
+</li> </ul> </li> <br>
+
+<li><span id="show1_9" class="foldclosed" onClick="show_folder('1_9')" style="POSITION: absolute">+</span> 
+     <span id="hide1_9" class="foldopened" onClick="hide_folder('1_9')">-</span>
+第九章 证据：实验信号
+<ul id="fold1_9" style="POSITION: relative; VISIBILITY: visible;">
+<li> 
+<div>&nbsp; &nbsp; <span style="color:blue;">任何一个没有经过实验验证的理论是不能用来描述世界的。</span><br></div><div>&nbsp; &nbsp; = 弦理论遇到了一个困局<br></div><div>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp; 以前物理学的发展&nbsp;都是实验走在理论的前面，但是现在不同了，理论的发展已经超越了实验走在了前面，<br></div><div>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp; 实验达不到弦理论所要求的那种微观结构，所以目前来看实验只能跟着理论后面发展。<br></div><div><br></div><div>&nbsp; &nbsp; = 走向实验<br></div><div>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp; 如果没有大的技术突破，我们永远也不可能聚焦到能直接看一根根弦的小尺度上来。</div><div>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp; 弦理论的几大预言：1. 超伙伴粒子；2. 分数电荷。这些预言一旦被实验所证实(也即粒子被发现)，都可以成为<br></div><div>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp; 弦理论真实性的证据。</div><div><br></div>
+</li> </ul> </li> <br>
+
+<div><span style="color:#FF0000;font-family:微软雅黑;line-height:21px;background-color:#FFFFFF;">Date: 2015-11-10</span><br></div><div><span style="font-family:微软雅黑;font-size:14px;line-height:21px;background-color:#FFFFFF;">========= PART 4: 弦理论与时空结构&nbsp;==============</span><br></div>
+
+<li><span id="show1_10" class="foldclosed" onClick="show_folder('1_10')" style="POSITION: absolute">+</span> 
+     <span id="hide1_10" class="foldopened" onClick="hide_folder('1_10')">-</span>
+第十章 量子几何
+<ul id="fold1_10" style="POSITION: relative; VISIBILITY: visible;">
+<li>
+<div>&nbsp; &nbsp; 广义相对论运用到大尺度下的空间，可以使用黎曼几何作为它的数学灵魂；但是当距离尺度小到普朗克长度时，<br></div><div>&nbsp; &nbsp; 必须使用新的几何(即：量子几何) 来作为广义相对论的新的几何框架。<br></div><div><br></div><div>&nbsp; &nbsp; = 弦理论声称宇宙在任何空间维上都不可能收缩到 普朗克长度 以下。<br></div><div><br></div><div>&nbsp; &nbsp; <span style="color:blue;">两种距离：轻弦探针模式</span><span style="color:blue;">(通过光子测量)</span><span style="color:blue;">下的R，以及重弦探针模式下的1/R</span>。</div><div>&nbsp; &nbsp; 最小的距离：轻弦模式测量的宇宙半径总是大于普朗克长度的。<br></div><div><br></div>
+</li> </ul> </li> <br>
+
+<li><span id="show1_11" class="foldclosed" onClick="show_folder('1_11')" style="POSITION: absolute">+</span> 
+     <span id="hide1_11" class="foldopened" onClick="hide_folder('1_11')">-</span>
+十一章 空间结构的破裂
+<ul id="fold1_11" style="POSITION: relative; VISIBILITY: visible;">
+<li>
+<br> &nbsp; &nbsp; 高等研究院，于1930年建在一片如诗一般的森林的小山坡上，离普林斯顿大学校园只有几英里。<br> &nbsp; &nbsp; 1933年爱因斯坦离开德国以后就来到了研究院，在这里度过了他的余生，在这幽静孤独的苦行僧生活的环境里，<br> &nbsp; &nbsp; 一位老人在思索他的统一场理论，这是一种怎样的图景，是不难想象的。这里的空气仿佛也总是弥漫着深沉的思想，<br> &nbsp; &nbsp; 它可能令你兴奋，也可能让你感到压抑——这要看你当时的思想状况是什么样子的。<br><br> &nbsp; &nbsp; 空间能够发生破裂而不产生物理学灾难。<div><br></div>
+</li> </ul> </li> <br>
+
+<li><span id="show1_12" class="foldclosed" onClick="show_folder('1_12')" style="POSITION: absolute">+</span> 
+     <span id="hide1_12" class="foldopened" onClick="hide_folder('1_12')">-</span>
+十二章 超越弦：寻找 M理论
+<ul id="fold1_12" style="POSITION: relative; VISIBILITY: visible;">
+<li> 
+<br> &nbsp; &nbsp; = 第二次超弦革命<br></div><div>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp; 多年来，5种弦理论上做研究的物理学家认为他们都是在完全独立的理论上工作，但是后来人们发现有个能够<br></div><div>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp; 囊括四方的框架将这一切都包容了进来，这种框架就是“M 理论”。<br></div><div>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<img src="M_theory.png" data-ke-src="http://note.youdao.com/yws/res/770/79258F3B22A8444484E692AC96024496" alt="M_theory.png" data-media-type="image">&nbsp;&nbsp;&nbsp; &nbsp;<br></div><div>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp; M 理论中的 M 代表着 Mysterious(谜)。<br></div><div><span style="color:#FF0000;font-family:微软雅黑;line-height:21px;background-color:#FFFFFF;">Date: 2015-11-11</span></div><div>&nbsp; &nbsp; &nbsp; &nbsp; 一种科学方法：微扰方法，先给出一个大致的估计然后再对这个估计进行一点点的微调(微扰)，从而使得我们原先</div><div>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;的估计越来越精确。<br></div><div><br></div><div>&nbsp;&nbsp;&nbsp;&nbsp;= 小结<br></div><div>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp; 现在来看我们都讨论了些什么，20世纪80年代中期，物理学家构造了5种不同的弦理论。在微扰论的近似框架下，<br></div><div>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp; 这些理论是各不相同的。<br></div><div>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp; 过去百年的基本发现——狭义和广义相对论，量子力学，强弱和电磁力的规范理论，超对称性等等，从逻辑上来说，<br></div><div>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp; 都完全包容在弦理论(M理论)中了。<br></div><div>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<img src="string_theory_2.png" data-ke-src="http://note.youdao.com/yws/res/797/AB425326187446FA8D8484369C8F6D05" alt="string_theory_2.png" data-media-type="image" style="width:274px;height:218.53776435045316px;"><br></div><div><br></div><div><br></div>
+</li> </ul> </li> <br>
+
+<li><span id="show1_13" class="foldclosed" onClick="show_folder('1_13')" style="POSITION: absolute">+</span> 
+     <span id="hide1_13" class="foldopened" onClick="hide_folder('1_13')">-</span>
+十三章 从 弦/M 理论看黑洞
+<ul id="fold1_13" style="POSITION: relative; VISIBILITY: visible;">
+<li> 
+<div>&nbsp; &nbsp; = 黑洞 与 基本粒子<br></div><div>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp; 黑洞和基本粒子从某种角度来看，并不像我们想的那么悬殊。<br></div><div>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp; 所谓“黑洞无毛”，一种看法就是除了少数几个可以区别的特征外，所有黑洞看起来都是相像的。<br></div><div>&nbsp;&nbsp;&nbsp;&nbsp;<br></div><div>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp; 黑洞和基本粒子 原来是同一弦物质的不同相，弦理论在&nbsp;黑洞和基本粒子之间架起了桥梁。</div></div><div>&nbsp;&nbsp;&nbsp;&nbsp;<br></div><div>&nbsp; &nbsp; = 黑洞熵<br></div><div>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp; 熵是衡量无序和随机的量度。高度无序意味着高熵。<br></div><div>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp; 热力学第二定律：事物都是朝着更加无序的状态演化，熵增原理。<br></div><div>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<br></div><div>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp; 黑洞质量越小，它的温度越高，从而辐射也越强；黑洞质量越大，它的熵也就越大，同时也就<br></div><div>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp; 代表着它所包含的无序是巨大的。但是这种熵(无序)到底是什么导致的呢？这个问题一直困扰着<br></div><div>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp; 很多人。知道使用弦理论给出了黑洞的微观组成以及其相应的熵。<br></div><div>&nbsp;&nbsp;&nbsp;&nbsp;<br></div><div>&nbsp;&nbsp;&nbsp;&nbsp;= 法国拉普拉斯所提出的 <span style="color:blue;">“</span><span style="color:blue;">决定论”</span>：</div><div>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp; 理性 能认识某一时刻所有令自然洋溢生机的力 和 它的存在物的状态，如果理性足够强大，可以<br></div><div>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp; 将那些数据拿来分析，那么它能将一切运动，从宇宙中最大的物体到最小的原子，都包含在同一</div><div>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;个公式里。对这样的理性来说：没有什么不确定的东西，将来与过去一样，它都能看得见。<br></div><div>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp; 换句话说：<br></div><div>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp; 如果我们知道宇宙每个粒子在某一刻的位置和速度，我们就可以用牛顿运动定律或其他的定律<br></div><div>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp; 来确定它们在过去或未来任何时刻的位置和速度【也就是说这一切都是注定的】。<br></div><div><br></div><div>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp; 这种宇宙观使得哲学陷入了关于自由意志的泥潭。但后来还是量子力学中的不确定性原理缓解了<br></div><div>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp; 这种一切由天注定所带来的尴尬局面。<br></div><div><br></div><div>&nbsp; &nbsp; = 黑洞中的未解之谜<br></div><div>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp; 1. 黑洞中的信息是否真会丢失，是今天理论物理学的一个主要研究问题。<br></div><div>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp; 2. 黑洞中心点的时空本性问题。<br></div><div><br></div><div><span style="color:#FF0000;font-family:微软雅黑;font-size:16px;font-style:normal;font-weight:normal;text-align:left;background-color:#FFFFFF;">Date: 2015-11-12</span><br></div>
+</li> </ul> </li> <br>
+
+<li><span id="show1_14" class="foldclosed" onClick="show_folder('1_14')" style="POSITION: absolute">+</span> 
+     <span id="hide1_14" class="foldopened" onClick="hide_folder('1_14')">-</span>
+十四章 宇宙学的沉思
+<ul id="fold1_14" style="POSITION: relative; VISIBILITY: visible;">
+<li>
+<div>&nbsp; &nbsp; = 宇宙学标准模型(宇宙大爆炸模型)</div><div>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp; 大约150亿年前，宇宙的所有空间和物质从一次奇异的大能量事件爆发出来，然后到了“原初核合成</div><div>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;时期”，然后再经过一段漫长的时间，宇宙从沸腾的爆发状态安静下来，星系，恒星和行星终于一个</div><div>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;个的从原始元素的引力束缚堆里产生出来。</div><div><br></div><div>&nbsp; &nbsp; = 空调 和 冰箱的制冷制热原理<br></div><div>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp; 如果什么东西被压缩，它就会变热，反过来，如果什么东西被解压了，它就会冷却。<br></div><div>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp; 空调和冰箱所使用的冷却物质是--氟利昂，他经过循环的压缩(凝结)和膨胀(蒸发)，可以让热量朝着<br></div><div>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp; 我们需要的方向流动，从而达到制冷制热的效果。<br></div><div><br></div><div>&nbsp; &nbsp; = 视界<br></div><div>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp; 是指我们能够看多远，或者说光能够走多远。<br></div><div><br></div><div>&nbsp; &nbsp; = 每一个黑洞都是一粒新宇宙的种子，新宇宙从种子中爆发出来，但永远藏在黑洞视界的背后，我们看不见。<br></div><div>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;所以虫洞可以作为时空旅行的工具，我们可以通过虫洞到达另一片新的宇宙。<br></div><div><br></div>
+ </li> </ul> </li> <br>
+
+<div><span style="font-family:微软雅黑;font-size:14px;line-height:21px;background-color:#FFFFFF;"><span style="font-family:微软雅黑;font-size:14px;line-height:21px;background-color:#FFFFFF;">========= PART 5: 21世纪的统一&nbsp;===================</span><br></span></div>
+
+<li><span id="show1_15" class="foldclosed" onClick="show_folder('1_15')" style="POSITION: absolute">+</span> 
+     <span id="hide1_15" class="foldopened" onClick="hide_folder('1_15')">-</span>
+十五章 远望未来
+<ul id="fold1_15" style="POSITION: relative; VISIBILITY: visible;">
+<li> 
+<div>&nbsp; &nbsp; 百年之后，科学会发展成什么样子，谁也看不出来。在通往更宏大的宇宙蓝图的路上，我们可能会发现<br></div><div>&nbsp; &nbsp; 弦理论不过是万里长征中的一步，<span style="color:blue;">我们还会遇到以前从未见过的不同的思想和概念</span>，这就是科学发展的<br></div><div>&nbsp; &nbsp; 历程，<span style="color:blue;">科学就是一门</span><span style="color:blue;">以怀疑为基础的宗教<span style="color:black;">[摘自&lt;少有人走的路&gt;]</span></span>。<br></div><div><br></div><div>&nbsp; &nbsp;= 走向未来<br></div><div>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp; 虽然我们的技术把我们限制在地球和太阳系的近邻，但是依靠思想和实验的力量，我们也能够探索<br></div><div>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp; 空间和外太空。<br></div><div><br></div><div>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp; 凭借思想的力量，人类发现了广义相对论和量子力学，随后在追寻宇宙的终极理论的过程中，又出现了<br></div><div>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp; 超弦力量和M理论，而这些理论给人们的世界观所带来的冲击是巨大的：一圈圈的弦，一颗颗振动的液</div><div>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;滴，把宇宙生成的万物都统一归结为形形色色的振动模式，而那些精密的振动所在的宇宙空间具有很多</div><div>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp; 隐藏的维度，这些维度能够极端的卷缩起来，不停的经历结构的破裂和修复。<br></div><div><br></div><div>&nbsp; &nbsp; = 联想《苏菲的世界》中的最后一部分讲述我们也是星尘<br></div><div>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp; 其中就说道：世界万物其实在宇宙出现之前，不过都是压缩在一个点上的物质，随着宇宙大爆炸，宇宙</div><div>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp; 空间里便散布了这种物质的星尘，而这些星尘有经过演变产生了现在人类所处的这个世界的万事万物。<br></div><div>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp; 通过本书，我们又知道宇宙大爆炸之前物质所压缩的那个点的大小只有 普朗克长度 这个级别，它不是</div><div>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp; 无限的小。
+</li> </ul> </li>
+</ul>
+<SCRIPT type="text/javascript">
+fold_document();
+</SCRIPT>
+</body></html>

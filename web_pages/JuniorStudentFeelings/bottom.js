@@ -1,0 +1,10 @@
+document.writeln("<div class=\"mnw_foot iw \">");
+document.writeln("<p><a target=\"_blank\" href=\"http://app.mnw.cn/redirect.php?url=http://www.mnw.cn/about/copyright.shtml\">版权声明</a> | ");
+document.writeln("<a target=\"_blank\" href=\"http://app.mnw.cn/redirect.php?url=http://www.mnw.cn/about/\">关于我们</a> | ");
+document.writeln("<a target=\"_blank\" href=\"http://app.mnw.cn/redirect.php?url=http://www.mnw.cn/about/contact.shtml\">联系我们</a> | ");
+document.writeln("<a target=\"_blank\" href=\"http://app.mnw.cn/redirect.php?url=http://www.mnw.cn/about/ads.shtml\">广告服务</a> | ");
+document.writeln("<a target=\"_blank\" href=\"http://www.mnw.cn/map/\">网站地图</a> | <a href=\"#top\">回到顶部</a> <a target=\"_blank\" rel=\"nofollow\" title=\"关注福建闽南网官方微博\" href=\"http://weibo.com/ihaij\"><img border=\"0\" align=\"absmiddle\" alt=\"关注福建闽南网官方微博\" src=\"http://img.mnw.cn/style/sina_weibo.gif\"></a> </p>");
+document.writeln("<p>电话:0595-28679111 传真:0595-22567376 地址:福建省泉州市泉秀街沉洲路莲花大厦4楼 <a title=\"站长统计\" href=\"http://www.cnzz.com/stat/website.php?web_id=3301342\" target=\"_blank\">站长统计</a> <a target=\'_blank\' href=\'http://wpa.qq.com/msgrd?v=3&uin=188595000&site=qq&menu=yes\'><img border=\'0\' src=\'http://wpa.qq.com/pa?p=2:188595000:51\' alt=\'在线QQ客服\' title=\'在线QQ客服\'/></a></p>");
+document.writeln("<p>CopyRight &copy2017 闽南网由福建日报社（集团）主管主办 版权所有 <a title=\"闽ICP备10206509号\" target=\"_blank\" rel=\"nofollow\" href=\"http://www.miibeian.gov.cn/\">闽ICP备10206509号</a> <a target=\"_blank\" title=\"闽互联网新闻信息服务备20111002号\" href=\"http://app.mnw.cn/redirect.php?url=http://www.mnw.cn/about/778899.html\">闽互联网新闻信息服务备20111002号</a></p>");
+document.writeln("<p>福建日报社（报业集团）拥有闽南网采编人员所创作作品之版权，未经福建日报社（报业集团）书面授权，不得转载、摘编或以其他方式使用和传播。</p>");
+document.writeln("</div>");

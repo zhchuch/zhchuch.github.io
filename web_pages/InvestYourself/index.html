@@ -1,0 +1,514 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width,initial-scale=1.0,maximum-scale=1.0,user-scalable=0" />
+<meta name="apple-mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-status-bar-style" content="black">
+<meta name="format-detection" content="telephone=no">
+
+<link rel="stylesheet" type="text/css" href="../css_files/page_mp_article_improve2d1390.css">
+        <link rel="stylesheet" type="text/css" href="../css_files/page_mp_article_improve_combo2d1390.css">
+        <link rel="stylesheet" type="text/css" href="../css_files/not_in_mm2c9cd6.css">
+
+        <script type="text/javascript">
+            window.logs = {
+                pagetime: {}
+            };
+            window.logs.pagetime['html_begin'] = (+new Date());
+        </script>
+        
+
+<script type="text/javascript"> 
+
+    var page_begintime = (+new Date());
+
+    var biz = "MzA5NTU0NzY2Mg=="||"";
+    var sn = "b5a609224798a4173a02d8d268c378f5" || ""|| "";
+    var mid = "2651226529" || ""|| "";
+    var idx = "2" || "" || "";
+
+    
+    var is_rumor = ""*1;
+    var norumor = ""*1;
+    if (!!is_rumor&&!norumor){
+      if (!document.referrer || document.referrer.indexOf("mp.weixin.qq.com/mp/rumor") == -1){
+        location.href = "http://mp.weixin.qq.com/mp/rumor?action=info&__biz=" + biz + "&mid=" + mid + "&idx=" + idx + "&sn=" + sn + "#wechat_redirect";
+      }
+    }
+
+    
+    
+</script>
+<script type="text/javascript">
+var MutationObserver = window.WebKitMutationObserver||window.MutationObserver||window.MozMutationObserver;
+var isDangerSrc = function(src) {
+    if(src) {
+        var host = src.match(/http(?:s)?:\/\/([^\/]+?)(\/|$)/);
+        if(host && !/qq\.com$/.test(host[1])) {
+            return true;
+        }
+    }
+    return false;
+}
+var ishttp = location.href.indexOf("http://")==0;
+if (ishttp && typeof MutationObserver === 'function') {
+    window.__observer_data = {count:0, exec_time: 0, list:[]};
+    window.__observer = new MutationObserver(function(mutations) {
+        
+        window.__observer_data.count++;
+        var begin = new Date(), deleteNodes = [];
+        mutations.forEach(function(mutation) {
+            var nodes = mutation.addedNodes;
+            for (var i = 0; i < nodes.length; i++) {
+                var node = nodes[i];
+
+                if (node.tagName === 'SCRIPT') {
+                    var scriptSrc = node.src;
+                    if(isDangerSrc(scriptSrc)) {
+                        window.__observer_data.list.push(scriptSrc);
+                        deleteNodes.push(node);
+                    }
+                
+                }
+            }
+        });
+        for(var i=0; i<deleteNodes.length; i++) {
+            var node = deleteNodes[i];
+            node.parentNode.removeChild(node);
+        }
+        window.__observer_data.exec_time += (new Date() - begin);
+    });
+    window.__observer.observe(document, {subtree: true, childList: true});
+}
+(function() {
+    if (Math.random()<0.01 && ishttp && HTMLScriptElement.prototype.__lookupSetter__ && typeof Object.defineProperty !== "undefined") {
+        window.__danger_src = {xmlhttprequest:[], script_src: [], script_setAttribute: []};
+        var t = "$"+Math.random();
+        
+        
+        HTMLScriptElement.prototype.__old_method_script_src = HTMLScriptElement.prototype.__lookupSetter__ ('src');
+        HTMLScriptElement.prototype.__defineSetter__ ('src', function(url) {
+            if (url && isDangerSrc(url)) {
+                
+                window.__danger_src.script_src.push(url);
+            }
+            this.__old_method_script_src(url);
+        });
+        var element_setAttribute_method = "element_setAttribute"+t;
+        Object.defineProperty(Element.prototype, element_setAttribute_method, {
+            value: Element.prototype.setAttribute,
+            enumerable: false
+        });
+        Element.prototype.setAttribute = function(name, url) {
+            if (this.tagName == 'SCRIPT' && name == 'src' && isDangerSrc(url)) {
+                
+                window.__danger_src.script_setAttribute.push(url);
+            }
+            this[element_setAttribute_method](name, url);
+        };
+    }
+})();
+</script>
+
+        <link rel="dns-prefetch" href="//res.wx.qq.com">
+<link rel="dns-prefetch" href="//mmbiz.qpic.cn">
+<link rel="shortcut icon" type="image/x-icon" href="http://res.wx.qq.com/mmbizwap/zh_CN/htmledition/images/icon/common/favicon22c41b.ico">
+<script type="text/javascript">
+    String.prototype.html = function(encode) {
+        var replace =["&#39;", "'", "&quot;", '"', "&nbsp;", " ", "&gt;", ">", "&lt;", "<", "&amp;", "&", "&yen;", "¥"];
+        if (encode) {
+            replace.reverse();
+        }
+        for (var i=0,str=this;i< replace.length;i+= 2) {
+             str=str.replace(new RegExp(replace[i],'g'),replace[i+1]);
+        }
+        return str;
+    };
+
+    window.isInWeixinApp = function() {
+        return /MicroMessenger/.test(navigator.userAgent);
+    };
+
+    window.getQueryFromURL = function(url) {
+        url = url || 'http://qq.com/s?a=b#rd'; 
+        var query = url.split('?')[1].split('#')[0].split('&'),
+            params = {};
+        for (var i=0; i<query.length; i++) {
+            var arg = query[i].split('=');
+            params[arg[0]] = arg[1];
+        }
+        if (params['pass_ticket']) {
+        	params['pass_ticket'] = encodeURIComponent(params['pass_ticket'].html(false).html(false).replace(/\s/g,"+"));
+        }
+        return params;
+    };
+
+    (function() {
+	    var params = getQueryFromURL(location.href);
+        window.uin = params['uin'] || '';
+        window.key = params['key'] || '';
+        window.wxtoken = params['wxtoken'] || '';
+        window.pass_ticket = params['pass_ticket'] || '';
+    })();
+
+</script>
+
+        <title>薪水不高，怎么投资自己？</title>
+
+<script type="text/javascript">
+                        var first_sceen__time = (+new Date());
+
+                        if ("" == 1 && document.getElementById('js_content'))
+                            document.getElementById('js_content').addEventListener("selectstart",function(e){ e.preventDefault(); });
+
+                                        (function(){
+                            if (navigator.userAgent.indexOf("WindowsWechat") != -1){
+                                var link = document.createElement('link');
+                                var head = document.getElementsByTagName('head')[0];
+                                link.rel = 'stylesheet';
+                                link.type = 'text/css';
+                                link.href = "https://res.wx.qq.com/mmbizwap/zh_CN/htmledition/style/page/appmsg/page_mp_article_improve_winwx2c9cd6.css";
+                                head.appendChild(link);
+                            }
+                        })();
+                    </script>
+
+<link rel="stylesheet" type="text/css" href="https://res.wx.qq.com/mmbizwap/zh_CN/htmledition/style/page/appmsg/page_mp_article_improve_combo2d1390.css">
+     
+    </style>
+<!--[if lt IE 9]>
+<link rel="stylesheet" type="text/css" href="https://res.wx.qq.com/mmbizwap/zh_CN/htmledition/style/page/appmsg/page_mp_article_improve_pc2c9cd6.css">
+<![endif]-->
+<script type="text/javascript">
+    document.domain = "qq.com";
+</script>
+
+    </head>
+    <body id="activity-detail" class="zh_CN mm_appmsg" ontouchstart="">
+        
+    <script type="text/javascript">
+        var write_sceen_time = (+new Date());
+    </script>
+    
+    <div id="js_cmt_mine" class="discuss_container editing access" style="display:none;">
+        <div class="discuss_container_inner">
+            <h2 class="rich_media_title">薪水不高，怎么投资自己？</h2>
+            <span id="log"></span>
+            <div class="frm_textarea_box_wrp">
+                <span class="frm_textarea_box">
+                    <textarea id="js_cmt_input" class="frm_textarea" placeholder="留言将由公众号筛选后显示，对所有人可见。"></textarea>
+                    <div class="emotion_tool">
+                        <span class="emotion_switch" style="display:none;"></span>
+                        <span id="js_emotion_switch" class="pic_emotion_switch_wrp">
+                            <img class="pic_default" src="https://res.wx.qq.com/mmbizwap/zh_CN/htmledition/images/icon/appmsg/emotion/icon_emotion_switch.2x278965.png" alt="">
+                            <img class="pic_active" src="https://res.wx.qq.com/mmbizwap/zh_CN/htmledition/images/icon/appmsg/emotion/icon_emotion_switch_active.2x278965.png" alt="">
+                        </span>
+                        <div class="emotion_panel" id="js_emotion_panel">
+                            <span class="emotion_panel_arrow_wrp" id="js_emotion_panel_arrow_wrp">
+                                <i class="emotion_panel_arrow arrow_out"></i>
+                                <i class="emotion_panel_arrow arrow_in"></i>
+                            </span>
+                            <div class="emotion_list_wrp" id="js_slide_wrapper">
+                                
+                                
+                            </div>
+                            <ul class="emotion_navs" id="js_navbar">
+                                
+                            </ul>
+                        </div>
+                    </div>
+                </span>
+            </div>
+            <div class="discuss_btn_wrp"><a id="js_cmt_submit" class="btn btn_primary btn_discuss btn_disabled" href="javascript:;">提交</a></div>
+            <div class="discuss_list_wrp" style="display:none">
+                <div class="rich_tips with_line title_tips discuss_title_line">
+                    <span class="tips">我的留言</span>
+                </div>
+                <ul class="discuss_list" id="js_cmt_mylist"></ul>
+            </div>
+            <div class="rich_tips tips_global loading_tips" id="js_mycmt_loading">
+                <img src="http://res.wx.qq.com/mmbizwap/zh_CN/htmledition/images/icon/common/icon_loading_white2805ea.gif" class="rich_icon icon_loading_white" alt="">
+                <span class="tips">加载中</span>
+            </div>
+            <div class="wx_poptips" id="js_cmt_toast" style="display:none;">
+                <img alt="" class="icon_toast" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAGoAAABqCAYAAABUIcSXAAAAGXRFWHRTb2Z0d2FyZQBBZG9iZSBJbWFnZVJlYWR5ccllPAAAA3NpVFh0WE1MOmNvbS5hZG9iZS54bXAAAAAAADw/eHBhY2tldCBiZWdpbj0i77u/IiBpZD0iVzVNME1wQ2VoaUh6cmVTek5UY3prYzlkIj8+IDx4OnhtcG1ldGEgeG1sbnM6eD0iYWRvYmU6bnM6bWV0YS8iIHg6eG1wdGs9IkFkb2JlIFhNUCBDb3JlIDUuNS1jMDE0IDc5LjE1MTQ4MSwgMjAxMy8wMy8xMy0xMjowOToxNSAgICAgICAgIj4gPHJkZjpSREYgeG1sbnM6cmRmPSJodHRwOi8vd3d3LnczLm9yZy8xOTk5LzAyLzIyLXJkZi1zeW50YXgtbnMjIj4gPHJkZjpEZXNjcmlwdGlvbiByZGY6YWJvdXQ9IiIgeG1sbnM6eG1wTU09Imh0dHA6Ly9ucy5hZG9iZS5jb20veGFwLzEuMC9tbS8iIHhtbG5zOnN0UmVmPSJodHRwOi8vbnMuYWRvYmUuY29tL3hhcC8xLjAvc1R5cGUvUmVzb3VyY2VSZWYjIiB4bWxuczp4bXA9Imh0dHA6Ly9ucy5hZG9iZS5jb20veGFwLzEuMC8iIHhtcE1NOk9yaWdpbmFsRG9jdW1lbnRJRD0ieG1wLmRpZDoyMTUxMzkxZS1jYWVhLTRmZTMtYTY2NS0xNTRkNDJiOGQyMWIiIHhtcE1NOkRvY3VtZW50SUQ9InhtcC5kaWQ6MTA3QzM2RTg3N0UwMTFFNEIzQURGMTQzNzQzMDAxQTUiIHhtcE1NOkluc3RhbmNlSUQ9InhtcC5paWQ6MTA3QzM2RTc3N0UwMTFFNEIzQURGMTQzNzQzMDAxQTUiIHhtcDpDcmVhdG9yVG9vbD0iQWRvYmUgUGhvdG9zaG9wIENDIChNYWNpbnRvc2gpIj4gPHhtcE1NOkRlcml2ZWRGcm9tIHN0UmVmOmluc3RhbmNlSUQ9InhtcC5paWQ6NWMyOGVjZTMtNzllZS00ODlhLWIxZTYtYzNmM2RjNzg2YjI2IiBzdFJlZjpkb2N1bWVudElEPSJ4bXAuZGlkOjIxNTEzOTFlLWNhZWEtNGZlMy1hNjY1LTE1NGQ0MmI4ZDIxYiIvPiA8L3JkZjpEZXNjcmlwdGlvbj4gPC9yZGY6UkRGPiA8L3g6eG1wbWV0YT4gPD94cGFja2V0IGVuZD0iciI/Pmvxj1gAAAVrSURBVHja7J15rF1TFMbXk74q1ZKHGlMkJVIhIgg1FH+YEpEQJCKmGBpThRoSs5jVVNrSQUvEEENIhGiiNf9BiERICCFIRbUiDa2qvudbOetF3Tzv7XWGffa55/uS7593977n3vO7e5+199p7v56BgQGh0tcmvAUERREUQVEERREUQVEERREUQVEERREUQVEERREUQVEERREUQVEERVAUQVEERVAUQbVYk+HdvZVG8b5F0xj4RvhouB+eCy8KrdzDJc1RtAX8ILxvx98V1GyCSkN98Cx4z/95/Wn4fj6j6tUEeN4wkFSnw1MJqj5NhBfAuwaUHREUg4lqNMmePVsHll/HFhVfe1t3FwpJI8DXCCquDrCWNN4B6Tb4M3Z98aTPmTvh0YHl18PXw29yZiKejoPvcUD6E74yFBJbVDk6Bb7K8aP/Hb4c/tRzEYIqprPhSxzlf4Uvhb/0Xoig8qnHAJ3lqPMzfDH8XZ4LEpRf2sVdA5/sqPO9Qfop70UJyn+/boaPddT5yrq7VUUvTIVJI7q74MMddXR8NB1eXcYvhBpZm0s2w72/o86HFoKvLau/pYaXzjLMdUJ6y0LwtWV9CIIaXtvA8+G9HHV03u5q+K+yH47U0NoRngPv7KjzHDwTLj0bS1BDazfJJlcnOOostC6ysnCT+q80G/sIvFVgeW09D8FPVT0uoP7VfvAD8NjA8pqmuAN+OcYAjso0RbIZ8DGB5TVNcRO8JMaHY9SXSdfa3eeANJimWBLrA7JFiZwIXye+NMUV8CcxP2SRFjXefok7NRjSGZJlWUPvw2/wtNiQirSoXWyMsR28wR7AzzYM0oXw+Y7yK+CLJGeaoqjyrJSdZJD6Ov4+z5y6NJc0Az7NUecHydIUy+v60KNyQHoM3nKI1y7YCFiq0i7uBvgER52vDdKqWn9djhY1Dn4G3n6Ecqm2rF74dvgoR53S0hQxW9RJAZAGW5bSn58QJA27dQ7uIEedjywEX5NKVxCqsY6y+qA+LxFI4+yZ6oH0trWkNan80jygtIUsc5SflgAsDXgehfdx1KkkTRE76tN+Xue2jnTU0Ru1oIbvpt30bBtKhOp5yaaRkts0lic8V1i6dPcIRx2d/l8Y8XtNNEg7OOo8bl1kmmOKnDsO88CaYzejau0hWZqiL7C83oCH4SeTHvwV2BqqsHRVztSEYOmWF80NeXZT6Hd4KflResE9vCnBOlCyGfDNAstHTVPUDWoQ1t3iW+9WNizvlhfd4aerXd+ThqiMfNR6+9LvOOro5OY5JX2H4+F7HZD+kGzlamMgldWiirQsjcwWFbjmqZJteekJLK9pisvgL6RhKvuciZiwzrWWGapfrPy30kBVcSBIrw0aD3PU0XB6cehntq7rTMf7/2iQlktDVdXJLXlg6VjmiYBn6rWSTRCH6hvJ0hQrpcGq8oidsmHpTP8t8DGO9/vcWt9qabiqPgup1yKyQwvC2tSefZ73SSpNkUJ4PlLorlHZ+446nc8f3fIyywlJhwrTuwVSjBa1ccvSxN0hjjoK5xVrYZMd9V6XbFfgBukixTwGLg8sDam3dZR/wZ6L/dJlin1en8LS+bgpFbz3Ygvzu1J1HKxYNqxGpCmaCEo12rrBorD6LRp8UbpcdR5VWhTW35KlKd6QFqjuM2XzwlpnMxTvSkuUwuG/Xlg6NtPjbT6WFimF/VG6LEvXgn8QGDjMbBukVECFwhpoS+CQatfX2Q1q6H7wENHdrfCr0lKleEB9JyxNneus+VJpsVL9TwI6W65LovWIGl3KtVJaLv7LBwYTFEERFEVQFEERFEVQFEERFEVQFEERFEVQFEERFEVQFEERFFWq/hFgADUMN4RzT6/OAAAAAElFTkSuQmCC">
+                <p class="toast_content">已留言</p>
+            </div>
+        </div>
+    </div>
+
+    <div id="js_article" class="rich_media">
+        
+        <div id="js_top_ad_area" class="top_banner">
+ 
+        </div>
+                
+
+        <div class="rich_media_inner">
+            <div id="page-content">
+                <div id="img-content" class="rich_media_area_primary">
+                    <h2 class="rich_media_title" id="activity-name">
+                        薪水不高，怎么投资自己？ 
+                    </h2>
+                    <div class="rich_media_meta_list">
+                        						                        <em id="post-date" class="rich_media_meta rich_media_meta_text">2016-05-10</em>
+
+                                                <em class="rich_media_meta rich_media_meta_text">分享智识与见解☞</em>
+                                                
+                        <div id="js_profile_qrcode" class="profile_container" style="display:none;">
+                            <div class="profile_inner">
+                                <strong class="profile_nickname">书单</strong>
+                                <img class="profile_avatar" id="js_profile_qrcode_img" src="" alt="">
+
+                                <p class="profile_meta">
+                                <label class="profile_meta_label">微信号</label>
+                                <span class="profile_meta_value">BookSelection</span>
+                                </p>
+
+                                <p class="profile_meta">
+                                <label class="profile_meta_label">功能介绍</label>
+                                <span class="profile_meta_value">【书单】唯一官方公众号，专职帮你筛选好书，过滤烂书。</span>
+                                </p>
+                                
+                            </div>
+                            <span class="profile_arrow_wrp" id="js_profile_arrow_wrp">
+                                <i class="profile_arrow arrow_out"></i>
+                                <i class="profile_arrow arrow_in"></i>
+                            </span>
+                        </div>
+                    </div>
+                    
+                    
+                    <div class="rich_media_content " id="js_content">
+                        <section class="135editor" data-id="86005" style="max-width: 100%; box-sizing: border-box; color: rgb(62, 62, 62); line-height: 25.6000003814697px; white-space: normal; border: 0px none; word-wrap: break-word !important; background-color: rgb(255, 255, 255);"><section class="135brush" style="margin-bottom: 16px; padding: 16px; max-width: 100%; box-sizing: border-box; word-wrap: normal; overflow: auto; font-size: 15px; line-height: 1.45; border-top-left-radius: 3px; border-top-right-radius: 3px; border-bottom-right-radius: 3px; border-bottom-left-radius: 3px; background-color: rgb(247, 247, 247);"><p>今天想和大家聊聊投资自己这件事。</p><p><span style="line-height: 1.45;"><br  /></span></p><p>为什么有的人，可以一年达到普通人用三年才达到的职业高度？<br  /></p><p><br  /></p><p>为什么有的人，在工作几年拿到不错的薪水后，发展就停滞了？</p><p><br  /></p><p>原因，可能就在于给自己做了多少投资。<br  /></p><p><span style="line-height: 1.45;"><br  /></span></p><p><span style="line-height: 1.45;">这种投资，不是指买股票或房产，而是用时间和钱换来快速成长的经验、知识、资源。无论你薪水多少，都可以给自己投资。</span></p><p><span style="line-height: 1.45;"><br  /></span></p><p><span style="line-height: 1.45;">本期分享人，学习社群“益分享”的创始人王立登就是一个给自己投资，而且已获得了不错“收益”的90后，他的建议很实在，就看你如何实践啦。</span></p></section><section style="max-width: 100%; width: 0px; height: 0px; clear: both; box-sizing: border-box !important; word-wrap: break-word !important;"></section></section><p style="max-width: 100%; min-height: 1em; white-space: pre-wrap; color: rgb(62, 62, 62); line-height: 25.6000003814697px; text-align: center; background-color: rgb(255, 255, 255); box-sizing: border-box !important; word-wrap: break-word !important; margin-bottom: 10px;"><span style="color: rgb(54, 94, 146); font-size: 12px; line-height: 25.6000003814697px; text-align: center; white-space: pre-wrap; background-color: rgb(255, 255, 255);">▼</span></p><p><span style="font-size: 15px; color: rgb(68, 68, 68);">如今在一些圈子，我会遇到一些特别厉害的90后，00后，仔细观察后发现，他们最擅长做的就是狠狠地投资自己。&nbsp;</span></p><p><br  /></p><p><span style="font-size: 15px; color: rgb(68, 68, 68);">之前见过一位小伙伴，他在半年的时间里，几乎花完了自己之前一年所有的积蓄<span style="font-size: 15px; color: rgb(136, 136, 136);">（2万元左右）</span>用来投资自己，他做了这样几件事情：</span></p><p><br  /></p><blockquote><p style="margin-bottom: 10px;"><span style="font-size: 14px; color: rgb(136, 136, 136);">1.系统的买书，这个几乎每个月投资600元左右，也就是会购买20—30本书籍；</span></p><p style="margin-bottom: 10px;"><span style="font-size: 14px; color: rgb(136, 136, 136);">2.在行约人，通过在行这个平台，约一些大咖吃饭聊天，然后顺便解决自己当下的困惑；</span></p><p style="margin-bottom: 10px;"><span style="font-size: 14px; color: rgb(136, 136, 136);">3.网络学习，最主要的就是拆解别人的文章，然后自己开始写文章；</span></p><p><span style="font-size: 14px; color: rgb(136, 136, 136);">4.每件事都会总结。</span></p></blockquote><p><br  /></p><p><span style="font-size: 15px; color: rgb(68, 68, 68);">这是我见过的一个在短时间内对自己投资最狠的人，也是我目前见过的一个成长很快的人，当然不是成长最快的人，因为有些领域是有瓶颈的。</span></p><p style="text-align: center;"><strong><span style="color: rgb(54, 94, 146); font-size: 15px; line-height: 1.6;"></span></strong></p><section class="135editor" style="   box-sizing: border-box; border: 0px none; " data-id="86122" data-color="rgb(54, 94, 146)" data-custom="rgb(54, 94, 146)"><section style="margin-top: 0.5em; margin-bottom: 0.5em;"><section style="padding-bottom: 2px; text-align: center; color: rgb(255, 255, 255); background-color: rgb(54, 94, 146);"><section style="border-bottom-width: 1px; border-bottom-style: solid; border-color: rgb(54, 94, 146) rgb(54, 94, 146) rgb(255, 255, 255); padding: 0.5em 1.5em;"><p style="font-size: 20px; line-height: 20px;" class="135brush" data-brushtype="text"><strong><span style="font-size: 16px;">为什么你不舍得投资自己？</span></strong></p></section></section></section></section><p><br  /></p><p><span style="font-size: 15px; color: rgb(68, 68, 68);">我们每个月有钱买好衣服穿，有钱大吃大喝，有钱约会逛街，但是却始终没有投资自己，甚至还有些人在投资自己的时候碍手碍脚。</span></p><p><br  /></p><p><span style="font-size: 15px; color: rgb(68, 68, 68);">在我所发起的领读活动里，有一些小伙伴一直舍不得买纸质书，总是用电子书凑合着看，我知道的时候总是会提醒一下，如果我们真正能从书中学习到哪怕一点知识，其实就已经赚回书本的价格了，要是能够反复地读，把它分享给身边的小伙伴，那就赚的更多了。</span></p><p><br  /></p><p><span style="font-size: 15px; color: rgb(68, 68, 68);">如果在这个基础上你还能够开发出微课，顺便收点筛选学员的门槛小费，那么一节课赚几本书的钱是没有任何问题的。</span></p><p><br  /></p><p><span style="font-size: 15px; color: rgb(68, 68, 68);">不妨思考一下，为什么我们舍不得投资？</span></p><p><br  /></p><p><span style="font-size: 15px; color: rgb(68, 68, 68);">其实最主要的问题在于我们的思维意识和心智模式：</span></p><section class="135editor" style="   box-sizing: border-box; border: 0px none; transform: rotateZ(0deg); -webkit-transform: rotateZ(0deg); " data-id="132" data-color="rgb(33, 33, 34)" data-custom="rgb(33, 33, 34)"><section style="border: 0px; text-align: center; box-sizing: border-box;"><section style="display: inline-block; box-sizing: border-box; color: inherit;"><section class="135brush" data-brushtype="text" style="margin-top: 0.2em; padding-right: 0.5em; padding-bottom: 5px; padding-left: 0.5em; max-width: 100%; color: rgb(33, 33, 34); font-size: 1.8em; line-height: 1; border-bottom-width: 1px; border-bottom-style: solid; border-color: rgb(33, 33, 34);"><span style="color: rgb(136, 136, 136); font-size: 15px;"><em><span style="color: rgb(136, 136, 136);">1</span></em></span></section><section class="135brush" data-brushtype="text" style="margin: 5px 1em; font-size: 1em; line-height: 1; color: rgb(33, 33, 34); box-sizing: border-box; border-color: rgb(33, 33, 34);"><span style="color: rgb(54, 94, 146); font-size: 16px;"><strong><span style="color: rgb(54, 94, 146);">太注重短期的收益</span></strong></span></section></section></section><section style="width: 0px; height: 0px; clear: both;"></section></section><p><br  /><span style="font-size: 15px; color: rgb(68, 68, 68);"></span></p><p><span style="font-size: 15px; color: rgb(68, 68, 68);">这是第一个，也是最主要的一点，很多时候我们容易受限，我们想着短期的利益，然后忽略了最好的投资。</span></p><p><br  /></p><p><span style="font-size: 15px; color: rgb(68, 68, 68);">我当初北上工作，很多人反对，但是他们不懂，我在半年的时间里几乎经历了别人五年的成长时间和空间，而这样的经历最终帮助我得到现在自己喜欢的这份工作。</span></p><p><span style="font-size: 15px; color: rgb(68, 68, 68);"><br  /></span></p><p><span style="font-size: 15px; color: rgb(68, 68, 68);">因此我们要时常地读书和行走，更好地去修炼自己的思维意识，开放自己的心智模式。</span></p><p><br  /></p><p><span style="font-size: 15px; color: rgb(68, 68, 68);">很多时候，许多小伙伴都是想着在这一刻投资，然后马上得到收获，哪有这样的好事！</span><span style="color: rgb(68, 68, 68); font-size: 15px; line-height: 1.6;">农耕也是在春天播种秋天收获。</span></p><p><span style="color: rgb(68, 68, 68); font-size: 15px; line-height: 1.6;"><br  /></span></p><p><strong><span style="color: rgb(54, 94, 146); font-size: 15px; line-height: 1.6;">这其中延迟满足的能力是我们需要修炼的。</span></strong></p><p><span style="font-size: 15px; color: rgb(68, 68, 68);"><br  /></span></p><p><span style="font-size: 15px; color: rgb(68, 68, 68);">在成长和职业规划里，能够看长远的人才能够投资出更大价值的东西，也才能够在成长和发展的路上走得更长远一点。</span></p><section class="135editor" style="   box-sizing: border-box; border: 0px none; transform: rotateZ(0deg); -webkit-transform: rotateZ(0deg); " data-id="132" data-color="rgb(33, 33, 34)" data-custom="rgb(33, 33, 34)"><section style="border: 0px; text-align: center; box-sizing: border-box;"><section style="display: inline-block; box-sizing: border-box; color: inherit;"><section class="135brush" data-brushtype="text" style="margin-top: 0.2em; padding-right: 0.5em; padding-bottom: 5px; padding-left: 0.5em; max-width: 100%; color: rgb(33, 33, 34); font-size: 1.8em; line-height: 1; border-bottom-width: 1px; border-bottom-style: solid; border-color: rgb(33, 33, 34);"><span style="font-size: 15px; color: rgb(136, 136, 136);"><em>2</em></span></section><section class="135brush" data-brushtype="text" style="margin: 5px 1em; font-size: 1em; line-height: 1; color: rgb(33, 33, 34); box-sizing: border-box; border-color: rgb(33, 33, 34);"><span style="color: rgb(54, 94, 146);"><strong>不懂如何成长</strong></span></section></section></section></section><p><br  /></p><p><span style="font-size: 15px; color: rgb(68, 68, 68);">这一点其实从找工作就可以很好地判定出来。刚开始工作时</span><span style="color: rgb(68, 68, 68); font-size: 15px; line-height: 1.6;">我就一直不明白：</span></p><p><span style="font-size: 15px; color: rgb(68, 68, 68);"><br  /></span></p><blockquote><p><span style="font-size: 14px; color: rgb(136, 136, 136);">为什么有人喜欢找闲一点的工作？</span></p><p><span style="font-size: 14px; color: rgb(136, 136, 136);">为什么我们一天可以泡一杯咖啡，看看电影就结束？</span></p><p><span style="font-size: 14px; color: rgb(136, 136, 136);">为什么太多的人选择了安逸，喜欢了稳定？</span></p><p><span style="font-size: 14px; color: rgb(136, 136, 136);">为什么很多人都会把自己份内的工作能够分出去的就尽量分出去？</span></p><p><span style="font-size: 14px; color: rgb(136, 136, 136);">为什么有人喜欢单一的重复，甚至拿来别人的东西一点不改就用？</span></p><p><span style="font-size: 14px; color: rgb(136, 136, 136);">........</span></p></blockquote><p><br  /></p><p><span style="font-size: 15px; color: rgb(68, 68, 68);">我想，这些人是不是傻子呢？放着这么多成长和积累的机会不用，偏偏要放手使得它溜走。</span></p><p><br  /></p><p><span style="font-size: 15px; color: rgb(68, 68, 68);">后来我才明白，他们只能用一个字来形容：<strong><span style="font-size: 15px; color: rgb(54, 94, 146);">懒！</span></strong></span></p><p><br  /></p><p><span style="font-size: 15px; color: rgb(68, 68, 68);">但归根结底，其实就是不懂如何成长，不明白成长的价值究竟在哪里。</span></p><section class="135editor" style="   box-sizing: border-box; border: 0px none; transform: rotateZ(0deg); -webkit-transform: rotateZ(0deg); " data-id="132" data-color="rgb(33, 33, 34)" data-custom="rgb(33, 33, 34)"><section style="border: 0px; text-align: center; box-sizing: border-box;"><section style="display: inline-block; box-sizing: border-box; color: inherit;"><section class="135brush" data-brushtype="text" style="margin-top: 0.2em; padding-right: 0.5em; padding-bottom: 5px; padding-left: 0.5em; max-width: 100%; color: rgb(33, 33, 34); font-size: 1.8em; line-height: 1; border-bottom-width: 1px; border-bottom-style: solid; border-color: rgb(33, 33, 34);"><span style="font-size: 15px; color: rgb(136, 136, 136);"><em>3</em></span></section><section class="135brush" data-brushtype="text" style="margin: 5px 1em; font-size: 1em; line-height: 1; color: rgb(33, 33, 34); box-sizing: border-box; border-color: rgb(33, 33, 34);"><span style="color: rgb(54, 94, 146);"><strong>缺乏成就感</strong></span></section></section></section><section style="width: 0px; height: 0px; clear: both;"></section></section><p><br  /></p><p><span style="font-size: 15px; color: rgb(68, 68, 68);">没有因为投资成长而收获自己想要的东西，没有因为收获而拥有属于自己的成就感！</span></p><p><br  /></p><p><span style="font-size: 15px; color: rgb(68, 68, 68);">这是我常常分享的，因为我们会有坚持不下去的时候，所以<strong><span style="font-size: 15px; color: rgb(54, 94, 146);">要找到属于自己的成就感，然后再加点自豪感</span></strong>，那么我们就可以像自动的发动机一样，一旦转起来就再也停不下来了。</span></p><p><br  /></p><p><span style="font-size: 15px; color: rgb(68, 68, 68);">所以很多小伙伴的误区在于，投资自己的时候没有找到那个收获的点，没有很耐心地等待成长背后的结果和收获。</span></p><section class="135editor" style="   box-sizing: border-box; border: 0px none; transform: rotateZ(0deg); -webkit-transform: rotateZ(0deg); " data-id="132" data-color="rgb(33, 33, 34)" data-custom="rgb(33, 33, 34)"><section style="border: 0px; text-align: center; box-sizing: border-box;"><section style="display: inline-block; box-sizing: border-box; color: inherit;"><section class="135brush" data-brushtype="text" style="margin-top: 0.2em; padding-right: 0.5em; padding-bottom: 5px; padding-left: 0.5em; max-width: 100%; color: rgb(33, 33, 34); font-size: 1.8em; line-height: 1; border-bottom-width: 1px; border-bottom-style: solid; border-color: rgb(33, 33, 34);"><span style="font-size: 15px; color: rgb(136, 136, 136);"><em>4</em></span></section><section class="135brush" data-brushtype="text" style="margin: 5px 1em; font-size: 1em; line-height: 1; color: rgb(33, 33, 34); box-sizing: border-box; border-color: rgb(33, 33, 34);"><span style="color: rgb(54, 94, 146);"><strong>没有产生连接价值</strong></span></section></section></section><section style="width: 0px; height: 0px; clear: both;"></section></section><p><br  /></p><p><span style="font-size: 15px; color: rgb(68, 68, 68);">有时候我们会因为投资自己，得到成长之后，产生了很多连接的价值。</span></p><p><br  /></p><p><span style="font-size: 15px; color: rgb(68, 68, 68);">比如别人邀请我们去做分享，比如进入一些高质量的圈子，牛人的圈子。这也会让我们看到更多的东西，因为这就是环境因素。</span></p><p><br  /></p><blockquote><p><span style="font-size: 14px; color: rgb(136, 136, 136);">你身边的人都很厉害的时候，你还会不厉害吗？</span></p><p><span style="color: rgb(136, 136, 136); font-size: 14px; line-height: 1.6;">你身边的人都在投资自己的时候，你还不会去投资自己吗？</span></p><p><span style="color: rgb(136, 136, 136); font-size: 14px; line-height: 1.6;">你身边的人都在飞速地成长的时候，你还不会成长吗？</span><br  /></p></blockquote><p><br  /></p><p><span style="font-size: 15px; color: rgb(68, 68, 68);">所以连接产生的价值是很神奇的，而这个神奇更多地在于我们不断地成长，然后从一个圈子跨越到另一个圈子，也就有更多的人愿意为我们做信任代理。</span></p><p><br  /></p><section class="135editor" style="   box-sizing: border-box; border: 0px none; " data-id="86122" data-color="rgb(54, 94, 146)" data-custom="rgb(54, 94, 146)"><section style="margin-top: 0.5em; margin-bottom: 0.5em;"><section style="padding-bottom: 2px; text-align: center; color: rgb(255, 255, 255); background-color: rgb(54, 94, 146);"><section style="border-bottom-width: 1px; border-bottom-style: solid; border-color: rgb(54, 94, 146) rgb(54, 94, 146) rgb(255, 255, 255); padding: 0.5em 1.5em;"><p style="font-size: 20px; line-height: 20px;" class="135brush" data-brushtype="text"><strong><span style="font-size: 16px;">我们该如何来投资自己？</span></strong></p></section></section></section><section style="width: 0px; height: 0px; clear: both;"></section></section><p><br  /></p><p><span style="font-size: 15px; color: rgb(68, 68, 68);">最近在琢磨投资学的问题，而这里的投资学，我更倾向于来谈谈自我投资，因为我始终认为我们对未来最好的规划其实就是来投资自己的成长，这样也才能够带来更多的价值，从而提升我们自己的价值，时间，精力，金钱也会相应地好起来。</span></p><p><br  /></p><p><span style="font-size: 15px; color: rgb(68, 68, 68);">那么我们又该如何来投资自己呢？这才是这个里面真正的学问。</span></p><p><span style="font-size: 15px; color: rgb(68, 68, 68);"><br  /></span></p><section class="135editor" style="   box-sizing: border-box; border: 0px none; transform: rotateZ(0deg); -webkit-transform: rotateZ(0deg); " data-id="132" data-color="rgb(33, 33, 34)" data-custom="rgb(33, 33, 34)"><section style="border: 0px; text-align: center; box-sizing: border-box;"><section style="display: inline-block; box-sizing: border-box; color: inherit;"><section class="135brush" data-brushtype="text" style="margin-top: 0.2em; padding-right: 0.5em; padding-bottom: 5px; padding-left: 0.5em; max-width: 100%; color: rgb(33, 33, 34); font-size: 1.8em; line-height: 1; border-bottom-width: 1px; border-bottom-style: solid; border-color: rgb(33, 33, 34);"><span style="font-size: 15px; color: rgb(136, 136, 136);"><em>1</em></span></section><section class="135brush" data-brushtype="text" style="margin: 5px 1em; font-size: 1em; line-height: 1; color: rgb(33, 33, 34); box-sizing: border-box; border-color: rgb(33, 33, 34);"><span style="color: rgb(54, 94, 146);"><strong>构建学习需求，制定学习目标</strong></span></section></section></section><section style="width: 0px; height: 0px; clear: both;"></section></section><p><br  /><span style="font-size: 15px; color: rgb(68, 68, 68);"></span></p><p><span style="font-size: 15px; color: rgb(68, 68, 68);">在学习的时候，我们一定要找到自己的需求，然后为这个需求专门制定一个学习目标，之后开始进行学习。</span></p><p><span style="font-size: 15px; color: rgb(68, 68, 68);"><br  /></span></p><p><span style="font-size: 15px; color: rgb(68, 68, 68);">有需求有目标的时候，我们学习起来效率会提升很多，而相应的精力也能够专门地投入进来，这个就可以体验一下把一件事情学习透彻的感觉。</span></p><p><br  /></p><p><span style="font-size: 15px; color: rgb(68, 68, 68);">因为在学习成长的路上，我们最主要的就是找到这个时期最需要学习的那些点，然后制定专属于它们的目标，之后去为这个目标做一些计划，然后就可以开始行动啦！</span></p><p><br  /></p><p><span style="font-size: 15px; color: rgb(68, 68, 68);">在自我投资里面，我始终认为<strong><span style="font-size: 15px; color: rgb(54, 94, 146);">最重要的点是要找到自己的学习需求，这个需求还要是当下最重要但不紧急的，因为这样我们才能够规划得足够长远。</span></strong></span></p><p><span style="font-size: 15px; color: rgb(68, 68, 68);"><strong><span style="font-size: 15px; color: rgb(54, 94, 146);"><br  /></span></strong></span></p><section class="135editor" style="   box-sizing: border-box; border: 0px none; transform: rotateZ(0deg); -webkit-transform: rotateZ(0deg); " data-id="132" data-color="rgb(33, 33, 34)" data-custom="rgb(33, 33, 34)"><section style="border: 0px; text-align: center; box-sizing: border-box;"><section style="display: inline-block; box-sizing: border-box; color: inherit;"><section class="135brush" data-brushtype="text" style="margin-top: 0.2em; padding-right: 0.5em; padding-bottom: 5px; padding-left: 0.5em; max-width: 100%; color: rgb(33, 33, 34); font-size: 1.8em; line-height: 1; border-bottom-width: 1px; border-bottom-style: solid; border-color: rgb(33, 33, 34);"><span style="font-size: 15px; color: rgb(136, 136, 136);"><em>2</em></span></section><section class="135brush" data-brushtype="text" style="margin: 5px 1em; font-size: 1em; line-height: 1; color: rgb(33, 33, 34); box-sizing: border-box; border-color: rgb(33, 33, 34);"><span style="color: rgb(54, 94, 146);"><strong>寻找最牛掰的人进行请教</strong></span></section></section></section><section style="width: 0px; height: 0px; clear: both;"></section></section><p><br  /></p><p><span style="font-size: 15px; color: rgb(68, 68, 68);">和人学习是最快的学习方式，这也是我们在企业或者学校时专门配备一个导师的原因，但是我们是否真正地能够利用好这个呢？</span></p><p><br  /></p><p><span style="font-size: 15px; color: rgb(68, 68, 68);">在找到我们的专属需求，到了要制定学习目标和成长目标的时候，就要去寻找这个领域能够教给我们东西的人。</span></p><p><span style="font-size: 15px; color: rgb(68, 68, 68);"><br  /></span></p><p><span style="font-size: 15px; color: rgb(68, 68, 68);">当然如果你身边有在这个领域做得比你好的人，甚至是做得最好的人，那么就再好不过了。</span></p><p><br  /></p><p><span style="font-size: 15px; color: rgb(68, 68, 68);">如果没有认识的，也不要紧，<strong><span style="font-size: 15px; color: rgb(54, 94, 146);">尝试在各种渠道主动寻找连接。</span></strong></span></p><p><span style="font-size: 15px; color: rgb(68, 68, 68);"><br  /></span></p><p><span style="font-size: 15px; color: rgb(68, 68, 68);">比如有很多老师都在开课程培训，也有在像“在行”平台上约人授课，这个时候不妨花一些钱来上他们的课程或者单约。这时候，我们也有可能会因此拥有这个资源，以后可以开始更多的连接和学习。</span></p><p><span style="font-size: 15px; color: rgb(68, 68, 68);"><br  /></span></p><section class="135editor" style="   box-sizing: border-box; border: 0px none; transform: rotateZ(0deg); -webkit-transform: rotateZ(0deg); " data-id="132" data-color="rgb(33, 33, 34)" data-custom="rgb(33, 33, 34)"><section style="border: 0px; text-align: center; box-sizing: border-box;"><section style="display: inline-block; box-sizing: border-box; color: inherit;"><section class="135brush" data-brushtype="text" style="margin-top: 0.2em; padding-right: 0.5em; padding-bottom: 5px; padding-left: 0.5em; max-width: 100%; color: rgb(33, 33, 34); font-size: 1.8em; line-height: 1; border-bottom-width: 1px; border-bottom-style: solid; border-color: rgb(33, 33, 34);"><span style="font-size: 15px; color: rgb(136, 136, 136);"><em>3</em></span></section><section class="135brush" data-brushtype="text" style="margin: 5px 1em; font-size: 1em; line-height: 1; color: rgb(33, 33, 34); box-sizing: border-box; border-color: rgb(33, 33, 34);"><span style="color: rgb(54, 94, 146);"><strong>做一次主题阅读，进行系统学习</strong></span></section></section></section><section style="width: 0px; height: 0px; clear: both;"></section></section><p><br  /></p><p><span style="font-size: 15px; color: rgb(68, 68, 68);">读书是最系统的学习方式。</span></p><p><span style="font-size: 15px; color: rgb(68, 68, 68);"><br  /></span></p><p><span style="font-size: 15px; color: rgb(68, 68, 68);">所以如果想要真正的系统的来研究一些东西的话，那么不妨在这个主题之下，找几十本书一起来阅读。</span></p><p><br  /></p><p><span style="font-size: 15px; color: rgb(68, 68, 68);">就像我最近研究时间管理，于是把这方面的书籍都阅读了一遍：</span></p><p><span style="font-size: 15px; color: rgb(68, 68, 68);"><br  /></span></p><blockquote><p><span style="font-size: 14px; color: rgb(136, 136, 136);">《把时间当作朋友》</span></p><p><span style="font-size: 14px; color: rgb(136, 136, 136);">《奇特的一生》</span></p><p><span style="font-size: 14px; color: rgb(136, 136, 136);">《番茄工作法》</span></p><p><span style="font-size: 14px; color: rgb(136, 136, 136);">《卓有成效的管理者》</span></p><p><span style="font-size: 14px; color: rgb(136, 136, 136);">《高效能人士的七个习惯》</span></p><p><span style="font-size: 14px; color: rgb(136, 136, 136);">《小强升职记》</span></p><p><span style="font-size: 14px; color: rgb(136, 136, 136);">还有GTD方面的一些书籍</span></p><p><span style="font-size: 14px; color: rgb(136, 136, 136);">......</span></p></blockquote><p><br  /></p><p><span style="font-size: 15px; color: rgb(68, 68, 68);">通读一遍后，我发现自己的时间管理系统直接提升了一个档次，并且也开了两节微课，还正筹备第三次！</span></p><p><br  /></p><p><span style="font-size: 15px; color: rgb(68, 68, 68);">这也算是系统地吸收，然后系统地分享，这样的学习交流不仅快速，而且成本还非常低！</span></p><p><span style="font-size: 15px; color: rgb(68, 68, 68);"><br  /></span></p><section class="135editor" style="   box-sizing: border-box; border: 0px none; transform: rotateZ(0deg); -webkit-transform: rotateZ(0deg); " data-id="132" data-color="rgb(33, 33, 34)" data-custom="rgb(33, 33, 34)"><section style="border: 0px; text-align: center; box-sizing: border-box;"><section style="display: inline-block; box-sizing: border-box; color: inherit;"><section class="135brush" data-brushtype="text" style="margin-top: 0.2em; padding-right: 0.5em; padding-bottom: 5px; padding-left: 0.5em; max-width: 100%; color: rgb(33, 33, 34); font-size: 1.8em; line-height: 1; border-bottom-width: 1px; border-bottom-style: solid; border-color: rgb(33, 33, 34);"><span style="font-size: 15px; color: rgb(136, 136, 136);"><em>4</em></span></section><section class="135brush" data-brushtype="text" style="margin: 5px 1em; font-size: 1em; line-height: 1; color: rgb(33, 33, 34); box-sizing: border-box; border-color: rgb(33, 33, 34);"><span style="color: rgb(54, 94, 146);"><strong>总结和复盘</strong></span></section></section></section><section style="width: 0px; height: 0px; clear: both;"></section></section><p><br  /></p><p><span style="font-size: 15px; color: rgb(68, 68, 68);">总结和复盘可以使我们提升得足够的快，并且能使我们破拆出更多的东西，找到它们最具价值的一部分。</span></p><p><br  /></p><p><span style="font-size: 15px; color: rgb(68, 68, 68);">因此在每一件事结束之后，我会马上做一份总结，无论是和朋友的深度聊天，还是参加活动，或者仅仅是看到某个现象，因为这就是我们向事情学习的一次机会，有多认真的总结，就有多大价值的收获。</span></p><p><span style="font-size: 15px; color: rgb(68, 68, 68);"></span></p><section class="135editor" style="   box-sizing: border-box; border: 0px none; transform: rotateZ(0deg); -webkit-transform: rotateZ(0deg); " data-id="132" data-color="rgb(33, 33, 34)" data-custom="rgb(33, 33, 34)"><section style="border: 0px; text-align: center; box-sizing: border-box;"><section style="display: inline-block; box-sizing: border-box; color: inherit;"><section class="135brush" data-brushtype="text" style="margin-top: 0.2em; padding-right: 0.5em; padding-bottom: 5px; padding-left: 0.5em; max-width: 100%; color: rgb(33, 33, 34); font-size: 1.8em; line-height: 1; border-bottom-width: 1px; border-bottom-style: solid; border-color: rgb(33, 33, 34);"><span style="font-size: 15px; color: rgb(136, 136, 136);"><em>5</em></span></section><section class="135brush" data-brushtype="text" style="margin: 5px 1em; font-size: 1em; line-height: 1; color: rgb(33, 33, 34); box-sizing: border-box; border-color: rgb(33, 33, 34);"><span style="color: rgb(54, 94, 146);"><strong>任何时候，记得搜索一下</strong></span></section></section></section><section style="width: 0px; height: 0px; clear: both;"></section></section><p><br  /></p><p><span style="font-size: 15px; color: rgb(68, 68, 68);">我们在面对自己不知道的事情或问题时该怎么办？最简单最方便的就是“搜索一下”。</span></p><p><br  /></p><p><span style="font-size: 15px; color: rgb(68, 68, 68);">记得之前我教小弟处理事情的时候，就和他说过，你有什么问题，就像问我一样的去网上搜索就好，怎么问就怎么搜。</span></p><p><span style="font-size: 15px; color: rgb(68, 68, 68);"><br  /></span></p><p><span style="font-size: 15px; color: rgb(68, 68, 68);">有时候也会给身边的人说这个方法，因为很多时候，太多人不会提问，太多的人也不懂得如何进行独立思考。</span></p><p><span style="font-size: 15px; color: rgb(68, 68, 68);"></span></p><section class="135editor" style="   box-sizing: border-box; border: 0px none; transform: rotateZ(0deg); -webkit-transform: rotateZ(0deg); " data-id="132" data-color="rgb(33, 33, 34)" data-custom="rgb(33, 33, 34)"><section style="border: 0px; text-align: center; box-sizing: border-box;"><section style="display: inline-block; box-sizing: border-box; color: inherit;"><section class="135brush" data-brushtype="text" style="margin-top: 0.2em; padding-right: 0.5em; padding-bottom: 5px; padding-left: 0.5em; max-width: 100%; color: rgb(33, 33, 34); font-size: 1.8em; line-height: 1; border-bottom-width: 1px; border-bottom-style: solid; border-color: rgb(33, 33, 34);"><span style="font-size: 15px; color: rgb(136, 136, 136);"><em>6</em></span></section><section class="135brush" data-brushtype="text" style="margin: 5px 1em; font-size: 1em; line-height: 1; color: rgb(33, 33, 34); box-sizing: border-box; border-color: rgb(33, 33, 34);"><span style="color: rgb(54, 94, 146);"><strong>做一次系统分享</strong></span></section></section></section><section style="width: 0px; height: 0px; clear: both;"></section></section><p><br  /><span style="font-size: 15px; color: rgb(68, 68, 68);"></span></p><p><span style="font-size: 15px; color: rgb(68, 68, 68);">教是最好的学习。</span></p><p><span style="font-size: 15px; color: rgb(68, 68, 68);"><br  /></span></p><p><span style="font-size: 15px; color: rgb(68, 68, 68);">这也是我一直在践行的。无论是自己学习到什么东西，即使只是一个简单资料，如果没有太多版权问题，基本上都会分享出去。</span></p><p><br  /></p><p><span style="font-size: 15px; color: rgb(68, 68, 68);">一方面加深了我自己的记忆和理解；</span></p><p><br  /></p><p><span style="font-size: 15px; color: rgb(68, 68, 68);">一方面还可以提升身边人的能力和学习能力。</span></p><p><br  /></p><p><span style="font-size: 15px; color: rgb(68, 68, 68);">当然现在我有了更加刻意的修炼方法，除了我在聊天，写作，还有解答时会做点分享之外，我还专门上线了系统的课程。</span></p><p><span style="font-size: 15px; color: rgb(68, 68, 68);"><br  /></span></p><p><span style="font-size: 15px; color: rgb(68, 68, 68);">在这个过程中，我收获了太多的东西：提升了学习能力，练就了表达能力，也还在升级自己的社群运营能力，还为我带来了许多有益的资源。</span></p><p><br  /></p><p><span style="font-size: 15px; color: rgb(68, 68, 68);">因此我建议身边的小伙伴多多分享，当然这也是我发起“益分享”的原因。</span></p><p><span style="font-size: 15px; color: rgb(68, 68, 68);"></span></p><section class="135editor" style="   box-sizing: border-box; border: 0px none; transform: rotateZ(0deg); -webkit-transform: rotateZ(0deg); " data-id="132" data-color="rgb(33, 33, 34)" data-custom="rgb(33, 33, 34)"><section style="border: 0px; text-align: center; box-sizing: border-box;"><section style="display: inline-block; box-sizing: border-box; color: inherit;"><section class="135brush" data-brushtype="text" style="margin-top: 0.2em; padding-right: 0.5em; padding-bottom: 5px; padding-left: 0.5em; max-width: 100%; color: rgb(33, 33, 34); font-size: 1.8em; line-height: 1; border-bottom-width: 1px; border-bottom-style: solid; border-color: rgb(33, 33, 34);"><span style="font-size: 15px; color: rgb(136, 136, 136);"><em>7</em></span></section><section class="135brush" data-brushtype="text" style="margin: 5px 1em; font-size: 1em; line-height: 1; color: rgb(33, 33, 34); box-sizing: border-box; border-color: rgb(33, 33, 34);"><span style="color: rgb(54, 94, 146);"><strong>固定地升级知识系统和思维模式</strong></span></section></section></section></section><p><br  /></p><p><strong><span style="font-size: 15px; color: rgb(54, 94, 146);">“<span style="font-size: 15px; line-height: 24px;">不断创新、学会改革</span>”，这是我在团队里最喜欢说的一句话。</span></strong></p><p><span style="font-size: 15px; color: rgb(68, 68, 68);"><br  /></span></p><p><span style="font-size: 15px; color: rgb(68, 68, 68);">我的每一个活动，即使是同样的，也会不断地升级，不断地优化，最后拿出自己质量最好的一版。</span></p><p><span style="font-size: 15px; color: rgb(68, 68, 68);"><br  /></span></p><p><span style="font-size: 15px; color: rgb(68, 68, 68);">这也是我发起“坚持成长棒棒团”的核心理念：就是要每天进步一点点，就是要在进步的过程中能够看到和收获更多的东西，包括升级自己的知识系统。</span></p><p><br  /></p><p><strong><span style="font-size: 15px; color: rgb(54, 94, 146);">如果我们能够固定时间去升级知识系统和思维模式的话，其实就是一种刻意的练习。</span></strong></p><p><span style="font-size: 15px; color: rgb(68, 68, 68);"><br  /></span></p><p><span style="font-size: 15px; color: rgb(68, 68, 68);">这样会督促我们不断地学习新东西、做积累。</span></p><p><br  /></p><section data-id="86122" data-color="rgb(54, 94, 146)" data-custom="rgb(54, 94, 146)"><section><section><section><p data-brushtype="text"><span style="font-size: 15px; color: rgb(68, 68, 68);">学会自我投资，就是这样简单。</span></p></section></section></section></section><p><br  /></p><p><strong><span style="font-size: 15px; color: rgb(54, 94, 146);">成长是规划出来的，那么越早准备越好。</span></strong></p><br>
+                        <section class="article135" label="powered by 135editor.com" style="font-family: 微软雅黑;"><p style="text-align: center; white-space: normal;">
+                            <br><br>
+                            <span style="color: #595959; font-size: 14px;">·END·</span></p><hr style="box-sizing: border-box;"  />
+                        </section>
+                    </div>
+                    
+                <div class="rich_media_area_primary sougou" id="sg_tj" style="display:none">
+
+                </div>
+
+                <div class="rich_media_area_extra">
+
+                    
+                                        <div class="mpda_bottom_container" id="js_bottom_ad_area">
+                        
+                    </div>
+                                        
+                    <div id="js_iframetest" style="display:none;"></div>
+                                        
+                                        <div class="rich_media_extra" id="js_cmt_area" style="display:none">
+
+                        <div class="discuss_container" id="js_cmt_main" style="display:none">
+                            <div class="rich_tips with_line title_tips discuss_title_line">
+                                <span class="tips">精选留言</span>
+                            </div>
+                            <p class="tips_global tc title_bottom_tips" id="js_cmt_nofans1" style="display:none;">该文章作者已设置需关注才可以留言</p>
+                            <p class="discuss_icon_tips title_bottom_tips tr" id="js_cmt_addbtn1" style="display:none">
+                                
+                                                                <a href="#comment">写留言<img class="icon_edit" src="http://res.wx.qq.com/mmbizwap/zh_CN/htmledition/images/icon/appmsg/icon_edit25ded2.png" alt=""></a>
+                                                            </p>
+                            <ul class="discuss_list" id="js_cmt_list"></ul>
+                        </div>
+
+
+                        <div class="tips_global rich_split_tips tc" id="js_cmt_nofans2" style="display:none;">
+                            该文章作者已设置需关注才可以留言
+                        </div>
+
+                        <p class="discuss_icon_tips rich_split_tips tr" id="js_cmt_addbtn2" style="display:none">
+                            
+                                                        <a href="#comment">写留言<img class="icon_edit" src="http://res.wx.qq.com/mmbizwap/zh_CN/htmledition/images/icon/appmsg/icon_edit25ded2.png" alt=""></a>
+                                                    </p>
+
+                        <p class="rich_split_tips tc tips_global" id="js_cmt_tips" style="display:none;"></p>
+
+
+                        <div class="rich_tips tips_global loading_tips" id="js_cmt_loading">
+                            <img src="http://res.wx.qq.com/mmbizwap/zh_CN/htmledition/images/icon/common/icon_loading_white2805ea.gif" class="rich_icon icon_loading_white" alt="">
+                            <span class="tips">加载中</span>
+                        </div>
+
+                        <div class="rich_tips with_line tips_global" id="js_cmt_statement" style="display:none">
+                            <span class="tips">以上留言由公众号筛选后显示</span>
+                        </div>
+
+                        <p class="rich_split_tips tc" id="js_cmt_qa" style="display:none;">
+                            <a href="http://kf.qq.com/touch/sappfaq/150211YfyMVj150313qmMbyi.html?scene_id=kf264">
+                                了解留言功能详情
+                            </a>
+                        </p>
+
+                    </div>
+                                    </div>
+               
+            </div>
+            <div id="js_pc_qr_code" class="qr_code_pc_outer" style="display:none;">
+                <div class="qr_code_pc_inner">
+                    <div class="qr_code_pc">
+                        <img id="js_pc_qr_code_img" class="qr_code_pc_img">
+                        <p>微信扫一扫<br>关注该公众号</p>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </div>
+
+
+        
+        <script>
+    var __DEBUGINFO = {
+        debug_js : "https://res.wx.qq.com/mmbizwap/zh_CN/htmledition/js/biz_wap/debug/console2ca724.js",
+        safe_js : "https://res.wx.qq.com/mmbizwap/zh_CN/htmledition/js/biz_wap/safe/moonsafe2d5cb8.js",
+        res_list: []
+    };
+</script>
+        <script>window.moon_map = {"appmsg/emotion/caret.js":"https://res.wx.qq.com/mmbizwap/zh_CN/htmledition/js/appmsg/emotion/caret278965.js","biz_wap/jsapi/cardticket.js":"https://res.wx.qq.com/mmbizwap/zh_CN/htmledition/js/biz_wap/jsapi/cardticket275627.js","appmsg/emotion/map.js":"https://res.wx.qq.com/mmbizwap/zh_CN/htmledition/js/appmsg/emotion/map278965.js","appmsg/emotion/textarea.js":"https://res.wx.qq.com/mmbizwap/zh_CN/htmledition/js/appmsg/emotion/textarea27cdc5.js","appmsg/emotion/nav.js":"https://res.wx.qq.com/mmbizwap/zh_CN/htmledition/js/appmsg/emotion/nav278965.js","appmsg/emotion/common.js":"https://res.wx.qq.com/mmbizwap/zh_CN/htmledition/js/appmsg/emotion/common278965.js","appmsg/emotion/slide.js":"https://res.wx.qq.com/mmbizwap/zh_CN/htmledition/js/appmsg/emotion/slide2a9cd9.js","pages/report.js":"https://res.wx.qq.com/mmbizwap/zh_CN/htmledition/js/pages/report2c9cd6.js","pages/music_player.js":"https://res.wx.qq.com/mmbizwap/zh_CN/htmledition/js/pages/music_player2b674b.js","pages/loadscript.js":"https://res.wx.qq.com/mmbizwap/zh_CN/htmledition/js/pages/loadscript2c9cd6.js","appmsg/emotion/dom.js":"https://res.wx.qq.com/mmbizwap/zh_CN/htmledition/js/appmsg/emotion/dom278965.js","biz_wap/utils/hashrouter.js":"https://res.wx.qq.com/mmbizwap/zh_CN/htmledition/js/biz_wap/utils/hashrouter2805ea.js","a/gotoappdetail.js":"https://res.wx.qq.com/mmbizwap/zh_CN/htmledition/js/a/gotoappdetail2a2c13.js","a/ios.js":"https://res.wx.qq.com/mmbizwap/zh_CN/htmledition/js/a/ios275627.js","a/android.js":"https://res.wx.qq.com/mmbizwap/zh_CN/htmledition/js/a/android2c5484.js","a/profile.js":"https://res.wx.qq.com/mmbizwap/zh_CN/htmledition/js/a/profile29b1f8.js","a/mpshop.js":"https://res.wx.qq.com/mmbizwap/zh_CN/htmledition/js/a/mpshop2da3e2.js","a/card.js":"https://res.wx.qq.com/mmbizwap/zh_CN/htmledition/js/a/card2d1390.js","biz_wap/utils/position.js":"https://res.wx.qq.com/mmbizwap/zh_CN/htmledition/js/biz_wap/utils/position29b1f8.js","appmsg/a_report.js":"https://res.wx.qq.com/mmbizwap/zh_CN/htmledition/js/appmsg/a_report2d87eb.js","biz_common/utils/respTypes.js":"https://res.wx.qq.com/mmbizwap/zh_CN/htmledition/js/biz_common/utils/respTypes2c57d0.js","appmsg/cmt_tpl.html.js":"https://res.wx.qq.com/mmbizwap/zh_CN/htmledition/js/appmsg/cmt_tpl.html2a2c13.js","sougou/a_tpl.html.js":"https://res.wx.qq.com/mmbizwap/zh_CN/htmledition/js/sougou/a_tpl.html2c6e7c.js","appmsg/emotion/emotion.js":"https://res.wx.qq.com/mmbizwap/zh_CN/htmledition/js/appmsg/emotion/emotion2a9cd9.js","biz_common/utils/report.js":"https://res.wx.qq.com/mmbizwap/zh_CN/htmledition/js/biz_common/utils/report275627.js","biz_common/utils/huatuo.js":"https://res.wx.qq.com/mmbizwap/zh_CN/htmledition/js/biz_common/utils/huatuo293afc.js","biz_common/utils/cookie.js":"https://res.wx.qq.com/mmbizwap/zh_CN/htmledition/js/biz_common/utils/cookie275627.js","pages/voice_component.js":"https://res.wx.qq.com/mmbizwap/zh_CN/htmledition/js/pages/voice_component2c5484.js","new_video/ctl.js":"https://res.wx.qq.com/mmbizwap/zh_CN/htmledition/js/new_video/ctl2d441f.js","biz_common/utils/monitor.js":"https://res.wx.qq.com/mmbizwap/zh_CN/htmledition/js/biz_common/utils/monitor2a30ee.js","biz_common/utils/spin.js":"https://res.wx.qq.com/mmbizwap/zh_CN/htmledition/js/biz_common/utils/spin275627.js","biz_wap/jsapi/pay.js":"https://res.wx.qq.com/mmbizwap/zh_CN/htmledition/js/biz_wap/jsapi/pay275627.js","appmsg/reward_entry.js":"https://res.wx.qq.com/mmbizwap/zh_CN/htmledition/js/appmsg/reward_entry2b1291.js","appmsg/comment.js":"https://res.wx.qq.com/mmbizwap/zh_CN/htmledition/js/appmsg/comment2d39f3.js","appmsg/like.js":"https://res.wx.qq.com/mmbizwap/zh_CN/htmledition/js/appmsg/like2b5583.js","appmsg/a.js":"https://res.wx.qq.com/mmbizwap/zh_CN/htmledition/js/appmsg/a2da3e2.js","pages/version4video.js":"https://res.wx.qq.com/mmbizwap/zh_CN/htmledition/js/pages/version4video2c7543.js","rt/appmsg/getappmsgext.rt.js":"https://res.wx.qq.com/mmbizwap/zh_CN/htmledition/js/rt/appmsg/getappmsgext.rt2c21f6.js","biz_wap/utils/storage.js":"https://res.wx.qq.com/mmbizwap/zh_CN/htmledition/js/biz_wap/utils/storage2a74ac.js","biz_common/tmpl.js":"https://res.wx.qq.com/mmbizwap/zh_CN/htmledition/js/biz_common/tmpl2b3578.js","appmsg/img_copyright_tpl.html.js":"https://res.wx.qq.com/mmbizwap/zh_CN/htmledition/js/appmsg/img_copyright_tpl.html2a2c13.js","appmsg/a_tpl.html.js":"https://res.wx.qq.com/mmbizwap/zh_CN/htmledition/js/appmsg/a_tpl.html2d1390.js","biz_common/ui/imgonepx.js":"https://res.wx.qq.com/mmbizwap/zh_CN/htmledition/js/biz_common/ui/imgonepx275627.js","biz_common/dom/attr.js":"https://res.wx.qq.com/mmbizwap/zh_CN/htmledition/js/biz_common/dom/attr275627.js","biz_wap/utils/ajax.js":"https://res.wx.qq.com/mmbizwap/zh_CN/htmledition/js/biz_wap/utils/ajax2c7a90.js","biz_common/utils/string/html.js":"https://res.wx.qq.com/mmbizwap/zh_CN/htmledition/js/biz_common/utils/string/html29f4e9.js","sougou/index.js":"https://res.wx.qq.com/mmbizwap/zh_CN/htmledition/js/sougou/index2c7543.js","biz_wap/safe/mutation_observer_report.js":"https://res.wx.qq.com/mmbizwap/zh_CN/htmledition/js/biz_wap/safe/mutation_observer_report2d5cb8.js","appmsg/report.js":"https://res.wx.qq.com/mmbizwap/zh_CN/htmledition/js/appmsg/report2cf2a3.js","biz_common/dom/class.js":"https://res.wx.qq.com/mmbizwap/zh_CN/htmledition/js/biz_common/dom/class275627.js","appmsg/report_and_source.js":"https://res.wx.qq.com/mmbizwap/zh_CN/htmledition/js/appmsg/report_and_source2c0ff9.js","appmsg/page_pos.js":"https://res.wx.qq.com/mmbizwap/zh_CN/htmledition/js/appmsg/page_pos2d38d6.js","appmsg/cdn_speed_report.js":"https://res.wx.qq.com/mmbizwap/zh_CN/htmledition/js/appmsg/cdn_speed_report2c57d0.js","appmsg/voice.js":"https://res.wx.qq.com/mmbizwap/zh_CN/htmledition/js/appmsg/voice2ab8bd.js","appmsg/qqmusic.js":"https://res.wx.qq.com/mmbizwap/zh_CN/htmledition/js/appmsg/qqmusic2ab8bd.js","appmsg/iframe.js":"https://res.wx.qq.com/mmbizwap/zh_CN/htmledition/js/appmsg/iframe2cc9e4.js","appmsg/review_image.js":"https://res.wx.qq.com/mmbizwap/zh_CN/htmledition/js/appmsg/review_image2d0cfe.js","appmsg/outer_link.js":"https://res.wx.qq.com/mmbizwap/zh_CN/htmledition/js/appmsg/outer_link275627.js","biz_wap/jsapi/core.js":"https://res.wx.qq.com/mmbizwap/zh_CN/htmledition/js/biz_wap/jsapi/core2c30c1.js","biz_common/dom/event.js":"https://res.wx.qq.com/mmbizwap/zh_CN/htmledition/js/biz_common/dom/event275627.js","appmsg/copyright_report.js":"https://res.wx.qq.com/mmbizwap/zh_CN/htmledition/js/appmsg/copyright_report2c57d0.js","appmsg/cache.js":"https://res.wx.qq.com/mmbizwap/zh_CN/htmledition/js/appmsg/cache2a74ac.js","appmsg/pay_for_reading.js":"https://res.wx.qq.com/mmbizwap/zh_CN/htmledition/js/appmsg/pay_for_reading2c5484.js","appmsg/async.js":"https://res.wx.qq.com/mmbizwap/zh_CN/htmledition/js/appmsg/async2da3e2.js","biz_wap/ui/lazyload_img.js":"https://res.wx.qq.com/mmbizwap/zh_CN/htmledition/js/biz_wap/ui/lazyload_img2b18f6.js","biz_common/log/jserr.js":"https://res.wx.qq.com/mmbizwap/zh_CN/htmledition/js/biz_common/log/jserr2805ea.js","appmsg/share.js":"https://res.wx.qq.com/mmbizwap/zh_CN/htmledition/js/appmsg/share2da3e2.js","biz_wap/utils/mmversion.js":"https://res.wx.qq.com/mmbizwap/zh_CN/htmledition/js/biz_wap/utils/mmversion275627.js","appmsg/cdn_img_lib.js":"https://res.wx.qq.com/mmbizwap/zh_CN/htmledition/js/appmsg/cdn_img_lib275627.js","biz_common/utils/url/parse.js":"https://res.wx.qq.com/mmbizwap/zh_CN/htmledition/js/biz_common/utils/url/parse2d1e61.js","biz_wap/utils/device.js":"https://res.wx.qq.com/mmbizwap/zh_CN/htmledition/js/biz_wap/utils/device2b3aae.js","biz_wap/jsapi/a8key.js":"https://res.wx.qq.com/mmbizwap/zh_CN/htmledition/js/biz_wap/jsapi/a8key2a30ee.js","appmsg/index.js":"https://res.wx.qq.com/mmbizwap/zh_CN/htmledition/js/appmsg/index2d625d.js"};</script><script type="text/javascript" src="https://res.wx.qq.com/mmbizwap/zh_CN/htmledition/js/biz_wap/moon2c7b0a.js"></script>
+    <script id="voice_tpl" type="text/html">        
+        <span id="voice_main_<#=voiceid#>_<#=posIndex#>" class="db audio_area <#if(!musicSupport){#> unsupport<#}#>">
+            <span class="tc tips_global unsupport_tips" <#if(show_not_support!==true){#>style="display:none;"<#}#>>
+            当前浏览器不支持播放音乐或语音，请在微信或其他浏览器中播放            </span>
+            <span class="audio_wrp db">
+                <span id="voice_play_<#=voiceid#>_<#=posIndex#>" class="audio_play_area">
+                    <i class="icon_audio_default"></i>
+                    <i class="icon_audio_playing"></i>
+                    <img src="http://res.wx.qq.com/mmbizwap/zh_CN/htmledition/images/icon/appmsg/audio/icon_audio_unread26f1f1.png" alt="" class="pic_audio_default">
+                </span>
+                <span class="audio_length tips_global"><#=duration_str#></span>
+                <span class="db audio_info_area">
+                    <strong class="db audio_title"><#=title#></strong>
+                    <span class="audio_source tips_global"><#if(window.nickname){#>来自<#=window.nickname#><#}#></span>
+                </span>
+                <span id="voice_progress_<#=voiceid#>_<#=posIndex#>" class="progress_bar" style="width:0px;"></span>
+            </span>
+        </span>
+    </script>
+
+    <script id="qqmusic_tpl" type="text/html">        
+        <span id="qqmusic_main_<#=comment_id#>_<#=posIndex#>" class="db qqmusic_area <#if(!musicSupport){#> unsupport<#}#>">
+            <span class="tc tips_global unsupport_tips" <#if(show_not_support!==true){#>style="display:none;"<#}#>>
+            当前浏览器不支持播放音乐或语音，请在微信或其他浏览器中播放            </span>
+            <span class="db qqmusic_wrp">
+                <span class="db qqmusic_bd">
+                    <span id="qqmusic_play_<#=musicid#>_<#=posIndex#>" class="play_area">
+                        <i class="icon_qqmusic_switch"></i>
+                        <img src="http://res.wx.qq.com/mmbizwap/zh_CN/htmledition/images/icon/appmsg/qqmusic/icon_qqmusic_default.2x26f1f1.png" alt="" class="pic_qqmusic_default">
+                        <img src="<#=music_img#>" data-autourl="<#=audiourl#>" data-musicid="<#=musicid#>" class="qqmusic_thumb" alt="">
+                    </span>
+                                        <a id="qqmusic_home_<#=musicid#>_<#=posIndex#>" href="javascript:void(0);" class="access_area">
+                        <span class="qqmusic_songname"><#=music_name#></span>
+                        <span class="qqmusic_singername"><#=singer#></span>
+                        <span class="qqmusic_source"><img src="http://res.wx.qq.com/mmbizwap/zh_CN/htmledition/images/icon/appmsg/qqmusic/icon_qqmusic_source263724.png" alt=""></span>
+                    </a>
+                </span>
+            </span>       
+        </span>
+    </script>
+  <script type="text/javascript">
+      var not_in_mm_css = "https://res.wx.qq.com/mmbizwap/zh_CN/htmledition/style/page/appmsg/not_in_mm2c9cd6.css";
+      var windowwx_css = "https://res.wx.qq.com/mmbizwap/zh_CN/htmledition/style/page/appmsg/page_mp_article_improve_winwx2c9cd6.css";
+      var tid = "";
+      var aid = "";
+      var clientversion = "0";
+      var appuin = "MzA5NTU0NzY2Mg=="||"";
+
+      var source = "1";
+      var scene = 75;
+      
+      var itemidx = "";
+
+      var _copyright_stat = "0";
+      var _ori_article_type = "";
+
+      var nickname = "书单";
+      var appmsg_type = "9";
+      var ct = "1462836290";
+      var publish_time = "2016-05-10" || "";
+      var user_name = "gh_1b38ad5fdf22";
+      var user_name_new = "";
+      var fakeid   = "MTE2MzA2OTY4Mg==";
+      var version   = "";
+      var is_limit_user   = "0";
+      var round_head_img = "http://mmbiz.qpic.cn/mmbiz/mmF0rTjMmmJMj8yg87IRKQ2PI8wKaPhqiayFQB07yice3sYDDTS4tJ5SbpEYpd2F5kiaW8aKNNgoE2WaEibkzjuoicg/0?wx_fmt=png";
+      var msg_title = "薪水不高，怎么投资自己？";
+      var msg_desc = "给你这7招。";
+      var msg_cdn_url = "http://mmbiz.qpic.cn/mmbiz/mmF0rTjMmmJOIcMqpEibn2qaK4tU0E8S9JibGIU056y7v1Y6X8SEGNQY7DqMr5EhGPVDfQbHOfd9WHVygcPejwkA/0?wx_fmt=jpeg";
+      var msg_link = "http://mp.weixin.qq.com/s?__biz=MzA5NTU0NzY2Mg==&amp;mid=2651226529&amp;idx=2&amp;sn=b5a609224798a4173a02d8d268c378f5#rd";
+      var user_uin = "0"*1;
+      var msg_source_url = 'http://mp.weixin.qq.com/s?__biz=MzA5NTU0NzY2Mg==&amp;mid=503742875&amp;idx=1&amp;sn=6b7dbfe848e59a68aa1e41d642482837#rd';
+      var img_format = 'jpeg';
+      var srcid = '0510RodJzgOtFDu8KqMbiyWi';
+      var networkType;
+      var appmsgid = '' || '2651226529'|| "";
+      var comment_id = "3997737647" * 1;
+      var comment_enabled = "" * 1;
+      var is_need_reward = "0" * 1;
+      var is_https_res = ("" * 1) && (location.protocol == "https:");
+
+      var devicetype = "";
+      var source_username = "";  
+      var profile_ext_signature = "" || "";
+      var reprint_ticket = "";
+      var source_mid = "";
+      var source_idx = "";
+
+      var show_comment = "";
+      var __appmsgCgiData = {
+            can_use_page : "0"*1,
+            is_wxg_stuff_uin : "0"*1,
+            card_pos : "",
+            copyright_stat : "0",
+            source_biz : "",
+            hd_head_img : "http://wx.qlogo.cn/mmhead/Q3auHgzwzM4bb32o6aLiau3ibsLscZNv1KS4BYXmNRs5hyKSP0t5dIhw/0"||(window.location.protocol+"//"+window.location.host + "http://res.wx.qq.com/mmbizwap/zh_CN/htmledition/images/pic/appmsg/pic_rumor_link.2x264e76.jpg")
+      };
+      var _empty_v = "http://res.wx.qq.com/mmbizwap/zh_CN/htmledition/images/pic/pages/voice/empty26f1f1.mp3";
+
+      var copyright_stat = "0" * 1;
+
+      var pay_fee = "" * 1;
+      var pay_timestamp = "";
+      var need_pay = "" * 1;
+
+      var need_report_cost = "0" * 1;
+      var use_tx_video_player = "0" * 1;
+
+      var friend_read_source = "" || "";
+      var friend_read_version = "" || "";
+      var friend_read_class_id = "" || "";
+
+      var is_only_read = "1" * 1;
+
+      
+            window.wxtoken = "";
+          if(!!window.__initCatch){
+        window.__initCatch({
+            idkey : 27613,
+            startKey : 0,
+            limit : 128,
+            reportOpt : {
+                uin : uin,
+                biz : biz,
+                mid : mid,
+                idx : idx,
+                sn  : sn
+            },
+            extInfo : {
+                network_rate : 0.01    
+            }
+        });
+    }
+  </script>
+  <script type="text/javascript">
+          seajs.use('appmsg/index.js');
+  </script>
+
+    </body>
+</html>
+
+ 

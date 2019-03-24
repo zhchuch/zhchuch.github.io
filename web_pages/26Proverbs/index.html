@@ -1,0 +1,580 @@
+<!DOCTYPE html>
+<!-- saved from url=(0233)https://mp.weixin.qq.com/s?__biz=MzIwMTU3MTUyMQ==&mid=2652659225&idx=1&sn=30779b442fc4669617d8c89990ec01a8&scene=1&srcid=0706NheIfjllRTtCKltwl6Ho&pass_ticket=tOzUMYDTWm7y3ILWpWJLk0zN%2FAbOm7a%2FFQUZcpkT7Z0aL%2FOYSbGY5AFgotx%2BjL2H#rd -->
+<html><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+        
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width,initial-scale=1.0,maximum-scale=1.0,user-scalable=0">
+<meta name="apple-mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-status-bar-style" content="black">
+<meta name="format-detection" content="telephone=no">
+
+<link rel="stylesheet" type="text/css" href="../css_files/page_mp_article_improve2d1390.css">
+        <link rel="stylesheet" type="text/css" href="../css_files/page_mp_article_improve_combo2d1390.css">
+        <link rel="stylesheet" type="text/css" href="../css_files/not_in_mm2c9cd6.css">
+
+<script nonce="" type="text/javascript">
+window.__nonce_str = ""
+if (window.__nonce_str && location.href.indexOf("http://")==0 && Math.random() <= 0.1) {
+	window.__moonsafe_csp_offset || (window.__moonsafe_csp_offset = 18);
+	document.write('<meta http-equiv="Content-Security-Policy" content="script-src \'unsafe-inline\' \'unsafe-eval\' *.qq.com *.weishi.com'+(window.__nonce_str ? ' \'nonce-' + window.__nonce_str + "\'":"")+ '">');
+        
+}
+</script>
+        <script nonce="" type="text/javascript">
+            window.logs = {
+                pagetime: {}
+            };
+            window.logs.pagetime['html_begin'] = (+new Date());
+        </script>
+        
+<script type="text/javascript"> 
+
+    var page_begintime = (+new Date());
+
+    var biz = "MzIwMTU3MTUyMQ=="||"";
+    var sn = "30779b442fc4669617d8c89990ec01a8" || ""|| "";
+    var mid = "2652659225" || ""|| "";
+    var idx = "1" || "" || "";
+
+    //辟谣需求
+    var is_rumor = ""*1;
+    var norumor = ""*1;
+    if (!!is_rumor&&!norumor){
+      if (!document.referrer || document.referrer.indexOf("mp.weixin.qq.com/mp/rumor") == -1){
+        location.href = "http://mp.weixin.qq.com/mp/rumor?action=info&__biz=" + biz + "&mid=" + mid + "&idx=" + idx + "&sn=" + sn + "#wechat_redirect";
+      }
+    }
+
+    //原创需求，需要跳转到中间页
+    /*
+    var copyrightInfo = {
+        display_source : ""*1,
+        nocopyrightsource : ""*1
+    };
+    if (!!copyrightInfo.display_source&&!copyrightInfo.nocopyrightsource){
+      if (!document.referrer || document.referrer.indexOf("mp.weixin.qq.com/mp/reprint") == -1){
+        location.href = "http://mp.weixin.qq.com/mp/reprint?action=info&__biz=" + biz + "&mid=" + mid + "&idx=" + idx + "&sn=" + sn + "#wechat_redirect";
+      }
+    }*/
+</script>
+<script type="text/javascript">
+var MutationObserver = window.WebKitMutationObserver||window.MutationObserver||window.MozMutationObserver;
+var isDangerSrc = function(src) {
+    if(src) {
+        var host = src.match(/http(?:s)?:\/\/([^\/]+?)(\/|$)/);
+        if(host && !/qq\.com(\:8080)?$/.test(host[1]) && !/weishi\.com$/.test(host[1])) {
+            return true;
+        }
+    }
+    return false;
+}
+var ishttp = location.href.indexOf("http://")==0;
+if (ishttp && typeof MutationObserver === 'function' && location.host == 'mp.weixin.qq.com') {
+    window.__observer_data = {count:0, exec_time: 0, list:[]};
+    window.__observer = new MutationObserver(function(mutations) {
+        // 统计触发的次数
+        window.__observer_data.count++;
+        var begin = new Date(), deleteNodes = [];
+        mutations.forEach(function(mutation) {
+            var nodes = mutation.addedNodes;
+            for (var i = 0; i < nodes.length; i++) {
+                var node = nodes[i];
+
+                if (node.tagName === 'SCRIPT') {
+                    var scriptSrc = node.src;
+                    if(isDangerSrc(scriptSrc)) {
+                        window.__observer_data.list.push(scriptSrc);
+                        deleteNodes.push(node);
+                    }
+                
+                }
+            }
+        });
+        for(var i=0; i<deleteNodes.length; i++) {
+            var node = deleteNodes[i];
+            node.parentNode.removeChild(node);
+        }
+        window.__observer_data.exec_time += (new Date() - begin);
+    });
+    window.__observer.observe(document, {subtree: true, childList: true});
+}
+(function() {
+    if (Math.random()<0.01 && ishttp && HTMLScriptElement.prototype.__lookupSetter__ && typeof Object.defineProperty !== "undefined") {
+        window.__danger_src = {xmlhttprequest:[], script_src: [], script_setAttribute: []};
+        var t = "$"+Math.random();
+        // script.src
+        HTMLScriptElement.prototype.__old_method_script_src = HTMLScriptElement.prototype.__lookupSetter__ ('src');
+        HTMLScriptElement.prototype.__defineSetter__ ('src', function(url) {
+            if (url && isDangerSrc(url)) {
+                // console.log("src:"+url);
+                window.__danger_src.script_src.push(url);
+            }
+            this.__old_method_script_src(url);
+        });
+        var element_setAttribute_method = "element_setAttribute"+t;
+        Object.defineProperty(Element.prototype, element_setAttribute_method, {
+            value: Element.prototype.setAttribute,
+            enumerable: false
+        });
+        Element.prototype.setAttribute = function(name, url) {
+            if (this.tagName == 'SCRIPT' && name == 'src' && isDangerSrc(url)) {
+                // console.log("setAttr:"+url);
+                window.__danger_src.script_setAttribute.push(url);
+            }
+            this[element_setAttribute_method](name, url);
+        };
+    }
+})();
+</script>
+
+        <link rel="dns-prefetch" href="https://res.wx.qq.com/">
+<link rel="dns-prefetch" href="https://mmbiz.qpic.cn/">
+<link rel="shortcut icon" type="image/x-icon" href="http://res.wx.qq.com/mmbizwap/zh_CN/htmledition/images/icon/common/favicon22c41b.ico">
+<script nonce="" type="text/javascript">
+    String.prototype.html = function(encode) {
+        var replace =["&#39;", "'", "&quot;", '"', "&nbsp;", " ", "&gt;", ">", "&lt;", "<", "&amp;", "&", "&yen;", "¥"];
+        if (encode) {
+            replace.reverse();
+        }
+        for (var i=0,str=this;i< replace.length;i+= 2) {
+             str=str.replace(new RegExp(replace[i],'g'),replace[i+1]);
+        }
+        return str;
+    };
+
+    window.isInWeixinApp = function() {
+        return /MicroMessenger/.test(navigator.userAgent);
+    };
+
+    window.getQueryFromURL = function(url) {
+        url = url || 'http://qq.com/s?a=b#rd'; 
+        var query = url.split('?')[1].split('#')[0].split('&'),
+            params = {};
+        for (var i=0; i<query.length; i++) {
+            var arg = query[i].split('=');
+            params[arg[0]] = arg[1];
+        }
+        if (params['pass_ticket']) {
+        	params['pass_ticket'] = encodeURIComponent(params['pass_ticket'].html(false).html(false).replace(/\s/g,"+"));
+        }
+        return params;
+    };
+
+    (function() {
+	    var params = getQueryFromURL(location.href);
+        window.uin = params['uin'] || '';
+        window.key = params['key'] || '';
+        window.wxtoken = params['wxtoken'] || '';
+        window.pass_ticket = params['pass_ticket'] || '';
+    })();
+
+</script>
+
+        <title>记住这26段话，你20岁以后的人生会更加精彩</title>
+        
+<style>
+     
+    </style>
+<!--[if lt IE 9]>
+<link rel="stylesheet" type="text/css" href="https://res.wx.qq.com/mmbizwap/zh_CN/htmledition/style/page/appmsg/page_mp_article_improve_pc2c9cd6.css">
+<![endif]-->
+<script type="text/javascript">
+    document.domain = "qq.com";
+</script>
+
+    <script src="./记住这26段话，你20岁以后的人生会更加精彩_files/index2ec99a.js" type="text/javascript" async=""></script></head>
+    <body id="activity-detail" class="zh_CN mm_appmsg not_in_mm" ontouchstart="">
+        
+    <script type="text/javascript">
+        var write_sceen_time = (+new Date());
+    </script>
+    
+    <div id="js_cmt_mine" class="discuss_container editing access" style="display:none;">
+        <div class="discuss_container_inner">
+            <h2 class="rich_media_title">记住这26段话，你20岁以后的人生会更加精彩</h2>
+            <span id="log"></span>
+            <div class="frm_textarea_box_wrp">
+                <span class="frm_textarea_box">
+                    <textarea id="js_cmt_input" class="frm_textarea" placeholder="留言将由公众号筛选后显示，对所有人可见。"></textarea>
+                    <div class="emotion_tool">
+                        <span class="emotion_switch" style="display:none;"></span>
+                        <span id="js_emotion_switch" class="pic_emotion_switch_wrp">
+                            <img class="pic_default" src="./记住这26段话，你20岁以后的人生会更加精彩_files/icon_emotion_switch.2x278965.png" alt="">
+                            <img class="pic_active" src="./记住这26段话，你20岁以后的人生会更加精彩_files/icon_emotion_switch_active.2x278965.png" alt="">
+                        </span>
+                        <div class="emotion_panel" id="js_emotion_panel">
+                            <span class="emotion_panel_arrow_wrp" id="js_emotion_panel_arrow_wrp">
+                                <i class="emotion_panel_arrow arrow_out"></i>
+                                <i class="emotion_panel_arrow arrow_in"></i>
+                            </span>
+                            <div class="emotion_list_wrp" id="js_slide_wrapper">
+                                
+                                
+                            </div>
+                            <ul class="emotion_navs" id="js_navbar">
+                                
+                            </ul>
+                        </div>
+                    </div>
+                </span>
+            </div>
+            <div class="discuss_btn_wrp"><a id="js_cmt_submit" class="btn btn_primary btn_discuss btn_disabled" href="javascript:;">提交</a></div>
+            <div class="discuss_list_wrp" style="display:none">
+                <div class="rich_tips with_line title_tips discuss_title_line">
+                    <span class="tips">我的留言</span>
+                </div>
+                <ul class="discuss_list" id="js_cmt_mylist"></ul>
+            </div>
+            <div class="rich_tips tips_global loading_tips" id="js_mycmt_loading">
+                <img src="./记住这26段话，你20岁以后的人生会更加精彩_files/icon_loading_white2805ea.gif" class="rich_icon icon_loading_white" alt="">
+                <span class="tips">加载中</span>
+            </div>
+            <div class="wx_poptips" id="js_cmt_toast" style="display:none;">
+                <img alt="" class="icon_toast" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAGoAAABqCAYAAABUIcSXAAAAGXRFWHRTb2Z0d2FyZQBBZG9iZSBJbWFnZVJlYWR5ccllPAAAA3NpVFh0WE1MOmNvbS5hZG9iZS54bXAAAAAAADw/eHBhY2tldCBiZWdpbj0i77u/IiBpZD0iVzVNME1wQ2VoaUh6cmVTek5UY3prYzlkIj8+IDx4OnhtcG1ldGEgeG1sbnM6eD0iYWRvYmU6bnM6bWV0YS8iIHg6eG1wdGs9IkFkb2JlIFhNUCBDb3JlIDUuNS1jMDE0IDc5LjE1MTQ4MSwgMjAxMy8wMy8xMy0xMjowOToxNSAgICAgICAgIj4gPHJkZjpSREYgeG1sbnM6cmRmPSJodHRwOi8vd3d3LnczLm9yZy8xOTk5LzAyLzIyLXJkZi1zeW50YXgtbnMjIj4gPHJkZjpEZXNjcmlwdGlvbiByZGY6YWJvdXQ9IiIgeG1sbnM6eG1wTU09Imh0dHA6Ly9ucy5hZG9iZS5jb20veGFwLzEuMC9tbS8iIHhtbG5zOnN0UmVmPSJodHRwOi8vbnMuYWRvYmUuY29tL3hhcC8xLjAvc1R5cGUvUmVzb3VyY2VSZWYjIiB4bWxuczp4bXA9Imh0dHA6Ly9ucy5hZG9iZS5jb20veGFwLzEuMC8iIHhtcE1NOk9yaWdpbmFsRG9jdW1lbnRJRD0ieG1wLmRpZDoyMTUxMzkxZS1jYWVhLTRmZTMtYTY2NS0xNTRkNDJiOGQyMWIiIHhtcE1NOkRvY3VtZW50SUQ9InhtcC5kaWQ6MTA3QzM2RTg3N0UwMTFFNEIzQURGMTQzNzQzMDAxQTUiIHhtcE1NOkluc3RhbmNlSUQ9InhtcC5paWQ6MTA3QzM2RTc3N0UwMTFFNEIzQURGMTQzNzQzMDAxQTUiIHhtcDpDcmVhdG9yVG9vbD0iQWRvYmUgUGhvdG9zaG9wIENDIChNYWNpbnRvc2gpIj4gPHhtcE1NOkRlcml2ZWRGcm9tIHN0UmVmOmluc3RhbmNlSUQ9InhtcC5paWQ6NWMyOGVjZTMtNzllZS00ODlhLWIxZTYtYzNmM2RjNzg2YjI2IiBzdFJlZjpkb2N1bWVudElEPSJ4bXAuZGlkOjIxNTEzOTFlLWNhZWEtNGZlMy1hNjY1LTE1NGQ0MmI4ZDIxYiIvPiA8L3JkZjpEZXNjcmlwdGlvbj4gPC9yZGY6UkRGPiA8L3g6eG1wbWV0YT4gPD94cGFja2V0IGVuZD0iciI/Pmvxj1gAAAVrSURBVHja7J15rF1TFMbXk74q1ZKHGlMkJVIhIgg1FH+YEpEQJCKmGBpThRoSs5jVVNrSQUvEEENIhGiiNf9BiERICCFIRbUiDa2qvudbOetF3Tzv7XWGffa55/uS7593977n3vO7e5+199p7v56BgQGh0tcmvAUERREUQVEERREUQVEERREUQVEERREUQVEERREUQVEERREUQVEERVAUQVEERVAUQbVYk+HdvZVG8b5F0xj4RvhouB+eCy8KrdzDJc1RtAX8ILxvx98V1GyCSkN98Cx4z/95/Wn4fj6j6tUEeN4wkFSnw1MJqj5NhBfAuwaUHREUg4lqNMmePVsHll/HFhVfe1t3FwpJI8DXCCquDrCWNN4B6Tb4M3Z98aTPmTvh0YHl18PXw29yZiKejoPvcUD6E74yFBJbVDk6Bb7K8aP/Hb4c/tRzEYIqprPhSxzlf4Uvhb/0Xoig8qnHAJ3lqPMzfDH8XZ4LEpRf2sVdA5/sqPO9Qfop70UJyn+/boaPddT5yrq7VUUvTIVJI7q74MMddXR8NB1eXcYvhBpZm0s2w72/o86HFoKvLau/pYaXzjLMdUJ6y0LwtWV9CIIaXtvA8+G9HHV03u5q+K+yH47U0NoRngPv7KjzHDwTLj0bS1BDazfJJlcnOOostC6ysnCT+q80G/sIvFVgeW09D8FPVT0uoP7VfvAD8NjA8pqmuAN+OcYAjso0RbIZ8DGB5TVNcRO8JMaHY9SXSdfa3eeANJimWBLrA7JFiZwIXye+NMUV8CcxP2SRFjXefok7NRjSGZJlWUPvw2/wtNiQirSoXWyMsR28wR7AzzYM0oXw+Y7yK+CLJGeaoqjyrJSdZJD6Ov4+z5y6NJc0Az7NUecHydIUy+v60KNyQHoM3nKI1y7YCFiq0i7uBvgER52vDdKqWn9djhY1Dn4G3n6Ecqm2rF74dvgoR53S0hQxW9RJAZAGW5bSn58QJA27dQ7uIEedjywEX5NKVxCqsY6y+qA+LxFI4+yZ6oH0trWkNan80jygtIUsc5SflgAsDXgehfdx1KkkTRE76tN+Xue2jnTU0Ru1oIbvpt30bBtKhOp5yaaRkts0lic8V1i6dPcIRx2d/l8Y8XtNNEg7OOo8bl1kmmOKnDsO88CaYzejau0hWZqiL7C83oCH4SeTHvwV2BqqsHRVztSEYOmWF80NeXZT6Hd4KflResE9vCnBOlCyGfDNAstHTVPUDWoQ1t3iW+9WNizvlhfd4aerXd+ThqiMfNR6+9LvOOro5OY5JX2H4+F7HZD+kGzlamMgldWiirQsjcwWFbjmqZJteekJLK9pisvgL6RhKvuciZiwzrWWGapfrPy30kBVcSBIrw0aD3PU0XB6cehntq7rTMf7/2iQlktDVdXJLXlg6VjmiYBn6rWSTRCH6hvJ0hQrpcGq8oidsmHpTP8t8DGO9/vcWt9qabiqPgup1yKyQwvC2tSefZ73SSpNkUJ4PlLorlHZ+446nc8f3fIyywlJhwrTuwVSjBa1ccvSxN0hjjoK5xVrYZMd9V6XbFfgBukixTwGLg8sDam3dZR/wZ6L/dJlin1en8LS+bgpFbz3Ygvzu1J1HKxYNqxGpCmaCEo12rrBorD6LRp8UbpcdR5VWhTW35KlKd6QFqjuM2XzwlpnMxTvSkuUwuG/Xlg6NtPjbT6WFimF/VG6LEvXgn8QGDjMbBukVECFwhpoS+CQatfX2Q1q6H7wENHdrfCr0lKleEB9JyxNneus+VJpsVL9TwI6W65LovWIGl3KtVJaLv7LBwYTFEERFEVQFEERFEVQFEERFEVQFEERFEVQFEERFEVQFEERFFWq/hFgADUMN4RzT6/OAAAAAElFTkSuQmCC">
+                <p class="toast_content">已留言</p>
+            </div>
+        </div>
+    </div>
+
+    <div id="js_article" class="rich_media">
+        
+        <div id="js_top_ad_area" class="top_banner">
+ 
+        </div>
+                
+
+        <div class="rich_media_inner">
+                        <div id="page-content">
+                <div id="img-content" class="rich_media_area_primary">
+                    <h2 class="rich_media_title" id="activity-name">
+                        记住这26段话，你20岁以后的人生会更加精彩 
+                    </h2>
+                    <div class="rich_media_meta_list">
+                        						                        <em id="post-date" class="rich_media_meta rich_media_meta_text">2016-07-05</em>
+
+                                                <em class="rich_media_meta rich_media_meta_text">剽悍一只猫</em>
+                                                <a class="rich_media_meta rich_media_meta_link rich_media_meta_nickname" href="javascript:void(0);" id="post-user">剽悍一只猫</a>
+                        <span class="rich_media_meta rich_media_meta_text rich_media_meta_nickname">剽悍一只猫</span>
+
+                        <div id="js_profile_qrcode" class="profile_container" style="display:none;">
+                            <div class="profile_inner">
+                                <strong class="profile_nickname">剽悍一只猫</strong>
+                                <img class="profile_avatar" id="js_profile_qrcode_img" src="https://mp.weixin.qq.com/s?__biz=MzIwMTU3MTUyMQ==&amp;mid=2652659225&amp;idx=1&amp;sn=30779b442fc4669617d8c89990ec01a8&amp;scene=1&amp;srcid=0706NheIfjllRTtCKltwl6Ho&amp;pass_ticket=tOzUMYDTWm7y3ILWpWJLk0zN%2FAbOm7a%2FFQUZcpkT7Z0aL%2FOYSbGY5AFgotx%2BjL2H" alt="">
+
+                                <p class="profile_meta">
+                                <label class="profile_meta_label">微信号</label>
+                                <span class="profile_meta_value">piaohan2015</span>
+                                </p>
+
+                                <p class="profile_meta">
+                                <label class="profile_meta_label">功能介绍</label>
+                                <span class="profile_meta_value">我是剽悍一只猫，法学硕士，爱讲段子的英语老师，专治嘴笨的演讲教练，简书签约作者，LinkedIn中国专栏作者，独立采访人。2016，和我一起：跟100个牛人聊聊天，读100本实用好书，一起剽悍，一起成长！</span>
+                                </p>
+                                
+                            </div>
+                            <span class="profile_arrow_wrp" id="js_profile_arrow_wrp">
+                                <i class="profile_arrow arrow_out"></i>
+                                <i class="profile_arrow arrow_in"></i>
+                            </span>
+                        </div>
+                    </div>
+                    
+                    
+                    
+                    
+                                                            
+                                                            
+                    
+                    <div class="rich_media_content " id="js_content">
+                        
+
+                        
+                        <p style="text-align: center; margin: 10px 2em 0em; line-height: 2em;"><span style="font-size: 15px; line-height: 2em;"><p style="text-align: center; margin: 10px 2em 0em; line-height: 2em;"><span style="font-size: 15px; line-height: 2em;">&nbsp;01</span><br></p><p style="text-align: justify; margin: 10px 2em 0em; line-height: 2em;"><span style="font-size: 15px;">害怕，是这个世界上最无用的东西之一。害怕，是因为前方的道路漫长而未知；害怕，是因为现在落后于别人很多；害怕，是因为怕终究无法成为自己想要成为的人。可是没有关系啊，只要你愿意努力，愿意去改变，任何时候都来得及。</span></p><p style="text-align: center; margin: 10px 2em 0em; line-height: 2em;"><span style="font-size: 15px;">02</span></p><p style="text-align: justify; margin: 10px 2em 0em; line-height: 2em;"><span style="font-size: 15px;">钱不能带给你一切，但在必要的时候，它能给你应有的尊严，所以努力赚钱是一件特别理直气壮的事情。</span></p><p style="text-align: center; margin: 10px 2em 0em; line-height: 2em;"><span style="font-size: 15px;">03</span></p><p style="text-align: justify; margin: 10px 2em 0em; line-height: 2em;"><span style="font-size: 15px;">20出头的你，要学会存钱，以备不时之需。20出头的你，更要学会花钱，学会投资自己，不断地提升自己的能力、素养和职场竞争力，这才是王道。</span></p><p style="text-align: center; margin: 10px 2em 0em; line-height: 2em;"><span style="font-size: 15px;">&nbsp;04</span></p><p style="text-align: justify; margin: 10px 2em 0em; line-height: 2em;"><span style="font-size: 15px;">绝大部分人在努力的时候，是不知道且不确定自己什么时候会成功的，所以他们能够做的就是一直努力、一直优秀。</span></p><p style="text-align: center; margin: 10px 2em 0em; line-height: 2em;"><span style="font-size: 15px;">&nbsp;05</span></p><p style="text-align: justify; margin: 10px 2em 0em; line-height: 2em;"><span style="font-size: 15px;">人有的时候很喜欢明知故问和多此一举，很多问题，明明已经在脑海里翻来覆去地思量，有了答案，却迟迟不愿意去行动。只等着自己想好的答案从别人嘴里说出，似乎这样才有勇气开始行动，但是真的到了听话的人，说出了自己想要的答案，却又像一只小乌龟一样缩回自己的壳里，不愿走出来，不愿行动，继续迷茫、纠结的这个进程了。</span></p><p style="text-align: center; margin: 10px 2em 0em; line-height: 2em;"><span style="font-size: 15px;">&nbsp;06</span></p><p style="text-align: justify; margin: 10px 2em 0em; line-height: 2em;"><span style="font-size: 15px;">我们口口声声地说自己迷茫，但事实上，迷茫只不过是肤浅的表象，迷茫背后隐藏的是我们恨不得一步登天的野心和急功近利。可我们并不想让别人看穿自己的目标和野心，于是我们用“迷茫”这样流行的形容词加以粉饰。</span></p><p style="text-align: center; margin: 10px 2em 0em; line-height: 2em;"><span style="font-size: 15px;">07</span></p><p style="text-align: justify; margin: 10px 2em 0em; line-height: 2em;"><span style="font-size: 15px;">不管你处于什么样的位置和领域，你自己优秀了，别人自然会来找你。如果自己水平差，再有门路也是白搭。实力是第一，门路是第二，做任何事情都一样。</span></p><p style="text-align: center; margin: 10px 2em 0em; line-height: 2em;"><span style="font-size: 15px;">08</span></p><p style="text-align: justify; margin: 10px 2em 0em; line-height: 2em;"><span style="font-size: 15px;">很多时候，我们以为的幸运，是别人努力了好久才发出的光。承认这一点，是我们进步的开始。与其把成功归结在“运气”这样虚幻的东西上，倒不如把它建立在我们可以驾驭的东西上，比如勤奋，比如努力，比如方法。</span></p><p style="text-align: center; margin: 10px 2em 0em; line-height: 2em;"><span style="font-size: 15px;">09</span></p><p style="text-align: justify; margin: 10px 2em 0em; line-height: 2em;"><span style="font-size: 15px;">我知道，我们没有办法直接改变眼前的这个世界，也没有办法一下子改变固有的观念和看法，我们只能先改变自己，通过自身的改变带来的磁场和环境的变化，去慢慢地影响和改变眼前的这个世界。</span></p><p style="text-align: center; margin: 10px 2em 0em; line-height: 2em;"><span style="font-size: 15px;">&nbsp;10</span></p><p style="text-align: justify; margin: 10px 2em 0em; line-height: 2em;"><span style="font-size: 15px;">请你一定要相信自己，一定要接受喜欢自己的样子，一定要让自己变成你真心会喜欢的样子。如果你想要做的，不是长辈控制你的样子，不是社会规定你的样子，请你一定要勇敢地为自己站出来，温柔地推翻这个世界，然后把世界变成我们的。</span></p><p style="text-align: center; margin: 10px 2em 0em; line-height: 2em;"><span style="font-size: 15px;">11</span></p><p style="text-align: justify; margin: 10px 2em 0em; line-height: 2em;"><span style="font-size: 15px;">如果没有人能看见你，那你就站到有人能看见的地方。我相信，终有一天，你会被看见的，终有一天，我们会在各自的平行时空里发光。</span></p><p style="text-align: center; margin: 10px 2em 0em; line-height: 2em;"><span style="font-size: 15px;">12</span></p><p style="text-align: justify; margin: 10px 2em 0em; line-height: 2em;"><span style="font-size: 15px;">一定一定要找到自己的能力与兴趣所在，你的能力所在决定了你将来能做什么样的事情，你的兴趣所在决定了你以后做什么样的事情会开心。一定一定要努力地去规划自己将来的人生道路，一定要花时间认真思考自己想要成为什么样的人，想要走什么样的人生道路，并且为之努力。</span></p><p style="text-align: center; margin: 10px 2em 0em; line-height: 2em;"><span style="font-size: 15px;">13</span></p><p style="text-align: justify; margin: 10px 2em 0em; line-height: 2em;"><span style="font-size: 15px;">生活不是童话故事，太过梦幻的日子并不适合你，我特别喜欢你低下头认真做事情的样子。</span></p><p style="text-align: center; margin: 10px 2em 0em; line-height: 2em;"><span style="font-size: 15px;">14</span></p><p style="text-align: justify; margin: 10px 2em 0em; line-height: 2em;"><span style="font-size: 15px;">单身，意味着你还有选择的余地和空间。单身，说明你有足够的耐心和勇气去等待那个值得拥有你的人。</span></p><p style="text-align: center; margin: 10px 2em 0em; line-height: 2em;"><span style="font-size: 15px;">15</span></p><p style="text-align: justify; margin: 10px 2em 0em; line-height: 2em;"><span style="font-size: 15px;">如果一个男人真心喜欢你，他会选择你喜欢并且接受的方式对待你。同时，他会给你时间做决定，一定会等你的。那些在你犹豫要不要接受这段感情时转身就离开的人，其实并没有那么喜欢你。</span></p><p style="text-align: center; margin: 10px 2em 0em; line-height: 2em;"><span style="font-size: 15px;">16</span></p><p style="text-align: justify; margin: 10px 2em 0em; line-height: 2em;"><span style="font-size: 15px;">人啊，必须走过弯路，才能知道自己真正想要的是什么，才会明白自己真正想要追求的是什么。错过，也没有关系，人生那么长，我们还年轻，一切都是可以推翻重新来过的，只要你足够愿意。</span></p><p style="text-align: center; margin: 10px 2em 0em; line-height: 2em;"><span style="font-size: 15px;">17</span></p><p style="text-align: justify; margin: 10px 2em 0em; line-height: 2em;"><span style="font-size: 15px;">选择一直是一件很私人、很自我的事情，虽然我们每个人都会遇到很多为我们出主意、为我们规划人生的人，但不管怎样，别人的意见都只是参考意见，最重要的还是顺应自己的心意，做对自己而言最好的选择。</span></p><p style="text-align: center; margin: 10px 2em 0em; line-height: 2em;"><span style="font-size: 15px;">18</span></p><p style="text-align: justify; margin: 10px 2em 0em; line-height: 2em;"><span style="font-size: 15px;">你的薪水是有价的，但你在圈子里的名声却是无价的。在职场上，每一个人都是一个品牌，做好一块招牌很难，做坏一块招牌却很简单。永远不要为了眼前的一时利益，而毁了自己将随着时间不断增值的招牌。这一点，非常重要。</span></p><p style="text-align: center; margin: 10px 2em 0em; line-height: 2em;"><span style="font-size: 15px;">19</span></p><p style="text-align: justify; margin: 10px 2em 0em; line-height: 2em;"><span style="font-size: 15px;">人生走到了一定的阶段，就是要加法、减法同时做，不断地吸收好的东西，认识好的朋友，不断地排除坏的东西，远离不好的朋友，只有这样，人生才能进入一种良性的循环，你的生命才会绽放出更多的精彩。</span></p><p style="text-align: center; margin: 10px 2em 0em; line-height: 2em;"><span style="font-size: 15px;">20</span></p><p style="text-align: justify; margin: 10px 2em 0em; line-height: 2em;"><span style="font-size: 15px;">一切无法解决现存问题的牢骚，都只是徒劳无功的情感宣泄。</span></p><p style="text-align: center; margin: 10px 2em 0em; line-height: 2em;"><span style="font-size: 15px;">21</span></p><p style="text-align: justify; margin: 10px 2em 0em; line-height: 2em;"><span style="font-size: 15px;">任何一件事情，你都可以选择“接受”和“改变”，“接受”你能接受的东西，“改变”你想要改变的现状。人生苦短，必须性感。千万别想不开自虐，惯性地勉强接受不能使你骄傲或开心的人和事，譬如工作，譬如爱情。你也许不能做人生的赢家，但至少可以做自己生活的主人。</span></p><p style="text-align: center; margin: 10px 2em 0em; line-height: 2em;"><span style="font-size: 15px;">22</span></p><p style="text-align: justify; margin: 10px 2em 0em; line-height: 2em;"><span style="font-size: 15px;">最理想的工作，不仅能让你赚到钱，更能发挥你的特质、做得开心，这样你工作日的8小时才不是为了金钱出卖自己的煎熬。</span></p><p style="text-align: center; margin: 10px 2em 0em; line-height: 2em;"><span style="font-size: 15px;">23</span></p><p style="text-align: justify; margin: 10px 2em 0em; line-height: 2em;"><span style="font-size: 15px;">如果离开的动机，只是为了逃避现有的生活，那么，即使旅行的过程再精彩，回来后的结局都是一样的。因为心态错了，领悟和感受到的东西也是错的。你的心是自由的，你的世界才是自由的。每一次旅行，每一次离开，都应该是为了更好地回来。</span></p><p style="text-align: center; margin: 10px 2em 0em; line-height: 2em;"><span style="font-size: 15px;">24<br></span></p><p style="text-align: justify; margin: 10px 2em 0em; line-height: 2em;"><span style="font-size: 15px;">这个世界上，没有任何一个人的生活是不用受委屈的，没有任何一个人的生活是不用经历烦恼和痛苦的，我们都一样。而我们每一个人，之所以那么努力地工作，那么用力地生活，不过是因为，我们每个人的生命里，都有想要守护的人。</span></p><p style="text-align: center; margin: 10px 2em 0em; line-height: 2em;"><span style="font-size: 15px;">25</span></p><p style="text-align: justify; margin: 10px 2em 0em; line-height: 2em;"><span style="font-size: 15px;">所谓的心智成熟，并不是海纳百川，越来越包容，相反地，它是一个越来越挑剔的过程。知道自己要什么，不要什么，什么人可以交往，什么人最好离得远远的，也不会为了迁就一个人，勉强做一些不能使自己感到快乐和骄傲的事情，因为，根本就没有这个必要。与其讨好别人、讨好世界，还不如省下时间和精力来讨好自己，毕竟每个人拥有的能量是守恒的。你投入了很多没有必要的时间跟精力，消耗在与Hello Friend的无意义的社交上，最后能留给自己真正的知己好友的相处时间却少得可怜，这完全没必要。</span></p><p style="text-align: center; margin: 10px 2em 0em; line-height: 2em;"><span style="font-size: 15px;">26</span></p><p style="text-align: justify; margin: 10px 2em 0em; line-height: 2em;"><span style="font-size: 15px;">再不赚钱、再不景气的一个行业，只要你做到拔尖，一样可以赚大钱，写作这个行业也一样。虽然，韩寒和郭敬明都只有一个，可中国作家富豪排行榜上的人也不在少数。加上国内这几年IP电影被炒得火热，一个好剧本动辄能卖几十、几百万元。真的有本事、有文笔、有才华，还怕赚不到钱吗？</span><span style="font-size: 15px; line-height: 2em;">很多东西，欲先取之，必先予之。没有付出，就只想着回报，往往，什么都得不到。</span></p><p style="text-align: justify; margin: 10px 2em 0em; line-height: 2em;"><span style="font-size: 15px;">以上语句均摘自简书签约作者林夏萨摩新书《20几岁，你为什么害怕来不及》。</span></p>
+                    </div>
+                    <script type="text/javascript">
+                        var first_sceen__time = (+new Date());
+
+                        if ("" == 1 && document.getElementById('js_content'))
+                            document.getElementById('js_content').addEventListener("selectstart",function(e){ e.preventDefault(); });
+
+                                        (function(){
+                            if (navigator.userAgent.indexOf("WindowsWechat") != -1){
+                                var link = document.createElement('link');
+                                var head = document.getElementsByTagName('head')[0];
+                                link.rel = 'stylesheet';
+                                link.type = 'text/css';
+                                link.href = "https://res.wx.qq.com/mmbizwap/zh_CN/htmledition/style/page/appmsg/page_mp_article_improve_winwx2c9cd6.css";
+                                head.appendChild(link);
+                            }
+                        })();
+                    </script>
+                    <link rel="stylesheet" type="text/css" href="./记住这26段话，你20岁以后的人生会更加精彩_files/page_mp_article_improve_combo2eb52b.css">
+                    
+                    
+                                        
+                                        
+                                        <div class="rich_media_tool" id="js_toobar3">
+                                                                    <div id="js_read_area3" class="media_tool_meta tips_global meta_primary" style="display:none;">阅读 <span id="readNum3"></span></div>
+
+                        <span style="display:none;" class="media_tool_meta meta_primary tips_global meta_praise" id="like3">
+                            <i class="icon_praise_gray"></i><span class="praise_num" id="likeNum3"></span>
+                        </span>
+
+                        <a id="js_report_article3" style="display:none;" class="media_tool_meta tips_global meta_extra" href="javascript:void(0);">投诉</a>
+
+                    </div>
+
+
+
+                                    </div>
+
+                <div class="rich_media_area_primary sougou" id="sg_tj" style="display:none">
+
+                </div>
+
+                <div class="rich_media_area_extra">
+
+                    
+                                        <div class="mpda_bottom_container" id="js_bottom_ad_area">
+                        
+                    </div>
+                                        
+                    <div id="js_iframetest" style="display:none;"></div>
+                                        
+                                        <div class="rich_media_extra" id="js_cmt_area" style="display:none">
+
+                        <div class="discuss_container" id="js_cmt_main" style="display:none">
+                            <div class="rich_tips with_line title_tips discuss_title_line">
+                                <span class="tips">精选留言</span>
+                            </div>
+                            <p class="tips_global tc title_bottom_tips" id="js_cmt_nofans1" style="display:none;">该文章作者已设置需关注才可以留言</p>
+                            <p class="discuss_icon_tips title_bottom_tips tr" id="js_cmt_addbtn1" style="display:none">
+                                
+                                                                <a href="https://mp.weixin.qq.com/s?__biz=MzIwMTU3MTUyMQ==&amp;mid=2652659225&amp;idx=1&amp;sn=30779b442fc4669617d8c89990ec01a8&amp;scene=1&amp;srcid=0706NheIfjllRTtCKltwl6Ho&amp;pass_ticket=tOzUMYDTWm7y3ILWpWJLk0zN%2FAbOm7a%2FFQUZcpkT7Z0aL%2FOYSbGY5AFgotx%2BjL2H#comment">写留言<img class="icon_edit" src="./记住这26段话，你20岁以后的人生会更加精彩_files/icon_edit25ded2.png" alt=""></a>
+                                                            </p>
+                            <ul class="discuss_list" id="js_cmt_list"></ul>
+                        </div>
+
+
+                        <div class="tips_global rich_split_tips tc" id="js_cmt_nofans2" style="display:none;">
+                            该文章作者已设置需关注才可以留言
+                        </div>
+
+                        <p class="discuss_icon_tips rich_split_tips tr" id="js_cmt_addbtn2" style="display:none">
+                            
+                                                        <a href="https://mp.weixin.qq.com/s?__biz=MzIwMTU3MTUyMQ==&amp;mid=2652659225&amp;idx=1&amp;sn=30779b442fc4669617d8c89990ec01a8&amp;scene=1&amp;srcid=0706NheIfjllRTtCKltwl6Ho&amp;pass_ticket=tOzUMYDTWm7y3ILWpWJLk0zN%2FAbOm7a%2FFQUZcpkT7Z0aL%2FOYSbGY5AFgotx%2BjL2H#comment">写留言<img class="icon_edit" src="./记住这26段话，你20岁以后的人生会更加精彩_files/icon_edit25ded2.png" alt=""></a>
+                                                    </p>
+
+                        <p class="rich_split_tips tc tips_global" id="js_cmt_tips" style="display:none;"></p>
+
+
+                        <div class="rich_tips tips_global loading_tips" id="js_cmt_loading">
+                            <img src="./记住这26段话，你20岁以后的人生会更加精彩_files/icon_loading_white2805ea.gif" class="rich_icon icon_loading_white" alt="">
+                            <span class="tips">加载中</span>
+                        </div>
+
+                        <div class="rich_tips with_line tips_global" id="js_cmt_statement" style="display:none">
+                            <span class="tips">以上留言由公众号筛选后显示</span>
+                        </div>
+
+                        <p class="rich_split_tips tc" id="js_cmt_qa" style="display:none;">
+                            <a href="http://kf.qq.com/touch/sappfaq/150211YfyMVj150313qmMbyi.html?scene_id=kf264">
+                                了解留言功能详情
+                            </a>
+                        </p>
+
+                    </div>
+                                    </div>
+               
+            </div>
+
+        </div>
+    </div>
+
+
+        
+        <script nonce="">
+    var __DEBUGINFO = {
+        debug_js : "https://res.wx.qq.com/mmbizwap/zh_CN/htmledition/js/biz_wap/debug/console2ca724.js",
+        safe_js : "https://res.wx.qq.com/mmbizwap/zh_CN/htmledition/js/biz_wap/safe/moonsafe2ea69c.js",
+        res_list: []
+    };
+</script>
+        <script>window.moon_map = {"appmsg/emotion/caret.js":"https://res.wx.qq.com/mmbizwap/zh_CN/htmledition/js/appmsg/emotion/caret278965.js","biz_wap/jsapi/cardticket.js":"https://res.wx.qq.com/mmbizwap/zh_CN/htmledition/js/biz_wap/jsapi/cardticket275627.js","appmsg/emotion/map.js":"https://res.wx.qq.com/mmbizwap/zh_CN/htmledition/js/appmsg/emotion/map278965.js","appmsg/emotion/textarea.js":"https://res.wx.qq.com/mmbizwap/zh_CN/htmledition/js/appmsg/emotion/textarea27cdc5.js","appmsg/emotion/nav.js":"https://res.wx.qq.com/mmbizwap/zh_CN/htmledition/js/appmsg/emotion/nav278965.js","appmsg/emotion/common.js":"https://res.wx.qq.com/mmbizwap/zh_CN/htmledition/js/appmsg/emotion/common278965.js","appmsg/emotion/slide.js":"https://res.wx.qq.com/mmbizwap/zh_CN/htmledition/js/appmsg/emotion/slide2a9cd9.js","pages/report.js":"https://res.wx.qq.com/mmbizwap/zh_CN/htmledition/js/pages/report2e9114.js","pages/music_player.js":"https://res.wx.qq.com/mmbizwap/zh_CN/htmledition/js/pages/music_player2b674b.js","pages/loadscript.js":"https://res.wx.qq.com/mmbizwap/zh_CN/htmledition/js/pages/loadscript2c9cd6.js","appmsg/emotion/dom.js":"https://res.wx.qq.com/mmbizwap/zh_CN/htmledition/js/appmsg/emotion/dom278965.js","biz_wap/utils/hashrouter.js":"https://res.wx.qq.com/mmbizwap/zh_CN/htmledition/js/biz_wap/utils/hashrouter2805ea.js","a/gotoappdetail.js":"https://res.wx.qq.com/mmbizwap/zh_CN/htmledition/js/a/gotoappdetail2ea0e6.js","a/ios.js":"https://res.wx.qq.com/mmbizwap/zh_CN/htmledition/js/a/ios275627.js","a/android.js":"https://res.wx.qq.com/mmbizwap/zh_CN/htmledition/js/a/android2c5484.js","a/profile.js":"https://res.wx.qq.com/mmbizwap/zh_CN/htmledition/js/a/profile2ea0e6.js","a/mpshop.js":"https://res.wx.qq.com/mmbizwap/zh_CN/htmledition/js/a/mpshop2ea0e6.js","a/card.js":"https://res.wx.qq.com/mmbizwap/zh_CN/htmledition/js/a/card2ea0e6.js","biz_wap/utils/position.js":"https://res.wx.qq.com/mmbizwap/zh_CN/htmledition/js/biz_wap/utils/position29b1f8.js","appmsg/a_report.js":"https://res.wx.qq.com/mmbizwap/zh_CN/htmledition/js/appmsg/a_report2e2d45.js","biz_common/utils/respTypes.js":"https://res.wx.qq.com/mmbizwap/zh_CN/htmledition/js/biz_common/utils/respTypes2c57d0.js","appmsg/cmt_tpl.html.js":"https://res.wx.qq.com/mmbizwap/zh_CN/htmledition/js/appmsg/cmt_tpl.html2a2c13.js","sougou/a_tpl.html.js":"https://res.wx.qq.com/mmbizwap/zh_CN/htmledition/js/sougou/a_tpl.html2c6e7c.js","appmsg/emotion/emotion.js":"https://res.wx.qq.com/mmbizwap/zh_CN/htmledition/js/appmsg/emotion/emotion2a9cd9.js","biz_common/utils/report.js":"https://res.wx.qq.com/mmbizwap/zh_CN/htmledition/js/biz_common/utils/report275627.js","biz_common/utils/huatuo.js":"https://res.wx.qq.com/mmbizwap/zh_CN/htmledition/js/biz_common/utils/huatuo293afc.js","biz_common/utils/cookie.js":"https://res.wx.qq.com/mmbizwap/zh_CN/htmledition/js/biz_common/utils/cookie275627.js","pages/voice_component.js":"https://res.wx.qq.com/mmbizwap/zh_CN/htmledition/js/pages/voice_component2c5484.js","new_video/ctl.js":"https://res.wx.qq.com/mmbizwap/zh_CN/htmledition/js/new_video/ctl2d441f.js","biz_common/utils/monitor.js":"https://res.wx.qq.com/mmbizwap/zh_CN/htmledition/js/biz_common/utils/monitor2a30ee.js","biz_common/utils/spin.js":"https://res.wx.qq.com/mmbizwap/zh_CN/htmledition/js/biz_common/utils/spin275627.js","biz_wap/jsapi/pay.js":"https://res.wx.qq.com/mmbizwap/zh_CN/htmledition/js/biz_wap/jsapi/pay275627.js","appmsg/reward_entry.js":"https://res.wx.qq.com/mmbizwap/zh_CN/htmledition/js/appmsg/reward_entry2e21d7.js","appmsg/comment.js":"https://res.wx.qq.com/mmbizwap/zh_CN/htmledition/js/appmsg/comment2ec548.js","appmsg/like.js":"https://res.wx.qq.com/mmbizwap/zh_CN/htmledition/js/appmsg/like2eb52b.js","appmsg/a.js":"https://res.wx.qq.com/mmbizwap/zh_CN/htmledition/js/appmsg/a2ea76c.js","pages/version4video.js":"https://res.wx.qq.com/mmbizwap/zh_CN/htmledition/js/pages/version4video2e481d.js","rt/appmsg/getappmsgext.rt.js":"https://res.wx.qq.com/mmbizwap/zh_CN/htmledition/js/rt/appmsg/getappmsgext.rt2c21f6.js","biz_wap/utils/storage.js":"https://res.wx.qq.com/mmbizwap/zh_CN/htmledition/js/biz_wap/utils/storage2a74ac.js","biz_common/tmpl.js":"https://res.wx.qq.com/mmbizwap/zh_CN/htmledition/js/biz_common/tmpl2b3578.js","appmsg/img_copyright_tpl.html.js":"https://res.wx.qq.com/mmbizwap/zh_CN/htmledition/js/appmsg/img_copyright_tpl.html2a2c13.js","appmsg/a_tpl.html.js":"https://res.wx.qq.com/mmbizwap/zh_CN/htmledition/js/appmsg/a_tpl.html2d1390.js","biz_common/ui/imgonepx.js":"https://res.wx.qq.com/mmbizwap/zh_CN/htmledition/js/biz_common/ui/imgonepx275627.js","biz_common/dom/attr.js":"https://res.wx.qq.com/mmbizwap/zh_CN/htmledition/js/biz_common/dom/attr275627.js","biz_wap/utils/ajax.js":"https://res.wx.qq.com/mmbizwap/zh_CN/htmledition/js/biz_wap/utils/ajax2c7a90.js","biz_common/utils/string/html.js":"https://res.wx.qq.com/mmbizwap/zh_CN/htmledition/js/biz_common/utils/string/html29f4e9.js","sougou/index.js":"https://res.wx.qq.com/mmbizwap/zh_CN/htmledition/js/sougou/index2c7543.js","biz_wap/safe/mutation_observer_report.js":"https://res.wx.qq.com/mmbizwap/zh_CN/htmledition/js/biz_wap/safe/mutation_observer_report2d5cb8.js","appmsg/report.js":"https://res.wx.qq.com/mmbizwap/zh_CN/htmledition/js/appmsg/report2ecee3.js","appmsg/report_and_source.js":"https://res.wx.qq.com/mmbizwap/zh_CN/htmledition/js/appmsg/report_and_source2c0ff9.js","appmsg/page_pos.js":"https://res.wx.qq.com/mmbizwap/zh_CN/htmledition/js/appmsg/page_pos2ec4b2.js","appmsg/cdn_speed_report.js":"https://res.wx.qq.com/mmbizwap/zh_CN/htmledition/js/appmsg/cdn_speed_report2c57d0.js","appmsg/wxtopic.js":"https://res.wx.qq.com/mmbizwap/zh_CN/htmledition/js/appmsg/wxtopic2e4987.js","appmsg/voice.js":"https://res.wx.qq.com/mmbizwap/zh_CN/htmledition/js/appmsg/voice2ab8bd.js","appmsg/qqmusic.js":"https://res.wx.qq.com/mmbizwap/zh_CN/htmledition/js/appmsg/qqmusic2ab8bd.js","appmsg/iframe.js":"https://res.wx.qq.com/mmbizwap/zh_CN/htmledition/js/appmsg/iframe2e69b8.js","appmsg/review_image.js":"https://res.wx.qq.com/mmbizwap/zh_CN/htmledition/js/appmsg/review_image2d0cfe.js","appmsg/outer_link.js":"https://res.wx.qq.com/mmbizwap/zh_CN/htmledition/js/appmsg/outer_link275627.js","biz_wap/jsapi/core.js":"https://res.wx.qq.com/mmbizwap/zh_CN/htmledition/js/biz_wap/jsapi/core2c30c1.js","biz_common/dom/event.js":"https://res.wx.qq.com/mmbizwap/zh_CN/htmledition/js/biz_common/dom/event275627.js","appmsg/copyright_report.js":"https://res.wx.qq.com/mmbizwap/zh_CN/htmledition/js/appmsg/copyright_report2ec4b2.js","appmsg/cache.js":"https://res.wx.qq.com/mmbizwap/zh_CN/htmledition/js/appmsg/cache2a74ac.js","appmsg/pay_for_reading.js":"https://res.wx.qq.com/mmbizwap/zh_CN/htmledition/js/appmsg/pay_for_reading2c5484.js","appmsg/async.js":"https://res.wx.qq.com/mmbizwap/zh_CN/htmledition/js/appmsg/async2ec84f.js","biz_wap/ui/lazyload_img.js":"https://res.wx.qq.com/mmbizwap/zh_CN/htmledition/js/biz_wap/ui/lazyload_img2ec99a.js","biz_common/log/jserr.js":"https://res.wx.qq.com/mmbizwap/zh_CN/htmledition/js/biz_common/log/jserr2805ea.js","appmsg/share.js":"https://res.wx.qq.com/mmbizwap/zh_CN/htmledition/js/appmsg/share2ec548.js","biz_wap/utils/mmversion.js":"https://res.wx.qq.com/mmbizwap/zh_CN/htmledition/js/biz_wap/utils/mmversion275627.js","appmsg/cdn_img_lib.js":"https://res.wx.qq.com/mmbizwap/zh_CN/htmledition/js/appmsg/cdn_img_lib275627.js","biz_common/utils/url/parse.js":"https://res.wx.qq.com/mmbizwap/zh_CN/htmledition/js/biz_common/utils/url/parse2dd7fd.js","biz_common/dom/class.js":"https://res.wx.qq.com/mmbizwap/zh_CN/htmledition/js/biz_common/dom/class275627.js","biz_wap/utils/device.js":"https://res.wx.qq.com/mmbizwap/zh_CN/htmledition/js/biz_wap/utils/device2b3aae.js","biz_wap/jsapi/a8key.js":"https://res.wx.qq.com/mmbizwap/zh_CN/htmledition/js/biz_wap/jsapi/a8key2a30ee.js","appmsg/index.js":"https://res.wx.qq.com/mmbizwap/zh_CN/htmledition/js/appmsg/index2ec99a.js"};</script><script type="text/javascript" src="./记住这26段话，你20岁以后的人生会更加精彩_files/moon2ee9f1.js"></script>
+    <script id="topic_tpl" type="text/html">        
+        <span class="db topic_wrp">
+            <span class="topic_thumb" style="background-image:url({img_url});"></span>
+            <span class="topic_content">
+                <strong class="topic_title">{title}</strong>
+                <span class="topic_desc">{author}</span>
+                <span class="topic_info">
+                    <span class="topic_info_extra"><span class="icon_topic"></span>话题</span>
+                    <span class="topic_info_primary">相关文章{msg_num}篇</span>
+                </span>
+            </span>
+        </span>
+    </script>
+    <script id="voice_tpl" type="text/html">        
+        <span id="voice_main_<#=voiceid#>_<#=posIndex#>" class="db audio_area <#if(!musicSupport){#> unsupport<#}#>">
+            <span class="tc tips_global unsupport_tips" <#if(show_not_support!==true){#>style="display:none;"<#}#>>
+            当前浏览器不支持播放音乐或语音，请在微信或其他浏览器中播放            </span>
+            <span class="audio_wrp db">
+                <span id="voice_play_<#=voiceid#>_<#=posIndex#>" class="audio_play_area">
+                    <i class="icon_audio_default"></i>
+                    <i class="icon_audio_playing"></i>
+                    <img src="http://res.wx.qq.com/mmbizwap/zh_CN/htmledition/images/icon/appmsg/audio/icon_audio_unread26f1f1.png" alt="" class="pic_audio_default">
+                </span>
+                <span class="audio_length tips_global"><#=duration_str#></span>
+                <span class="db audio_info_area">
+                    <strong class="db audio_title"><#=title#></strong>
+                    <span class="audio_source tips_global"><#if(window.nickname){#>来自<#=window.nickname#><#}#></span>
+                </span>
+                <span id="voice_progress_<#=voiceid#>_<#=posIndex#>" class="progress_bar" style="width:0px;"></span>
+            </span>
+        </span>
+    </script>
+
+    <script id="qqmusic_tpl" type="text/html">        
+        <span id="qqmusic_main_<#=comment_id#>_<#=posIndex#>" class="db qqmusic_area <#if(!musicSupport){#> unsupport<#}#>">
+            <span class="tc tips_global unsupport_tips" <#if(show_not_support!==true){#>style="display:none;"<#}#>>
+            当前浏览器不支持播放音乐或语音，请在微信或其他浏览器中播放            </span>
+            <span class="db qqmusic_wrp">
+                <span class="db qqmusic_bd">
+                    <span id="qqmusic_play_<#=musicid#>_<#=posIndex#>" class="play_area">
+                        <i class="icon_qqmusic_switch"></i>
+                        <img src="http://res.wx.qq.com/mmbizwap/zh_CN/htmledition/images/icon/appmsg/qqmusic/icon_qqmusic_default.2x26f1f1.png" alt="" class="pic_qqmusic_default">
+                        <img src="<#=music_img#>" data-autourl="<#=audiourl#>" data-musicid="<#=musicid#>" class="qqmusic_thumb" alt="">
+                    </span>
+                                        <a id="qqmusic_home_<#=musicid#>_<#=posIndex#>" href="javascript:void(0);" class="access_area">
+                        <span class="qqmusic_songname"><#=music_name#></span>
+                        <span class="qqmusic_singername"><#=singer#></span>
+                        <span class="qqmusic_source"><img src="http://res.wx.qq.com/mmbizwap/zh_CN/htmledition/images/icon/appmsg/qqmusic/icon_qqmusic_source263724.png" alt=""></span>
+                    </a>
+                </span>
+            </span>       
+        </span>
+    </script>
+  <script type="text/javascript">
+      var not_in_mm_css = "https://res.wx.qq.com/mmbizwap/zh_CN/htmledition/style/page/appmsg/not_in_mm2c9cd6.css";
+      var windowwx_css = "https://res.wx.qq.com/mmbizwap/zh_CN/htmledition/style/page/appmsg/page_mp_article_improve_winwx2c9cd6.css";
+      var tid = "";
+      var aid = "";
+      var clientversion = "0";
+      var appuin = "MzIwMTU3MTUyMQ=="||"";
+
+      var source = "1";
+      var scene = 75;
+      
+      var itemidx = "";
+
+      var _copyright_stat = "0";
+      var _ori_article_type = "";
+
+      var nickname = "剽悍一只猫";
+      var appmsg_type = "9";
+      var ct = "1467732330";
+      var publish_time = "2016-07-05" || "";
+      var user_name = "gh_9f34bf0f5465";
+      var user_name_new = "";
+      var fakeid   = "MjM4NDM4MTcwOA==";
+      var version   = "";
+      var is_limit_user   = "0";
+      var round_head_img = "http://mmbiz.qpic.cn/mmbiz/ibSDvKYH3oiajJFBlfhTbZla5E7ACgCSx4cdFkdg4LHvkppzpXVuXWMWCaic8o946PjTnUNGS7k3NDicuvxP5MJ9qw/0?wx_fmt=png";
+      var msg_title = "记住这26段话，你20岁以后的人生会更加精彩";
+      var msg_desc = "一切无法解决现存问题的牢骚，都只是徒劳无功的情感宣泄。";
+      var msg_cdn_url = "http://mmbiz.qpic.cn/mmbiz/ibSDvKYH3oiajdDUWzrJmcGfwuF1989MaFs2CC1b6C2FIHI2kWjibHAPjib0t1POUUVGYdOiaEc1nz9dN0B9ickRDE6w/0?wx_fmt=jpeg";
+      var msg_link = "http://mp.weixin.qq.com/s?__biz=MzIwMTU3MTUyMQ==&amp;mid=2652659225&amp;idx=1&amp;sn=30779b442fc4669617d8c89990ec01a8#rd";
+      var user_uin = "0"*1;
+      var msg_source_url = '';
+      var img_format = 'jpeg';
+      var srcid = '0706NheIfjllRTtCKltwl6Ho';
+      var req_id = '0610X83D32Or7zVQfWvSdw7F';
+      var networkType;
+      var appmsgid = '' || '2652659225'|| "";
+      var comment_id = "107138375" * 1;
+      var comment_enabled = "" * 1;
+      var is_need_reward = "0" * 1;
+      var is_https_res = ("" * 1) && (location.protocol == "https:");
+
+      var devicetype = "";
+      var source_encode_biz = "";
+      // var source_username = "";
+      // var profile_ext_signature = "" || "";
+      var reprint_ticket = "";
+      var source_mid = "";
+      var source_idx = "";
+
+      var show_comment = "";
+      var __appmsgCgiData = {
+            can_use_page : "0"*1,
+            is_wxg_stuff_uin : "0"*1,
+            card_pos : "",
+            copyright_stat : "0",
+            source_biz : "",
+            hd_head_img : "http://wx.qlogo.cn/mmhead/Q3auHgzwzM7KAb3RSWaUK4Q8KA4sECsZ1A3iaF6b0jJn6J8Eynpn6AQ/0"||(window.location.protocol+"//"+window.location.host + "http://res.wx.qq.com/mmbizwap/zh_CN/htmledition/images/pic/appmsg/pic_rumor_link.2x264e76.jpg")
+      };
+      var _empty_v = "http://res.wx.qq.com/mmbizwap/zh_CN/htmledition/images/pic/pages/voice/empty26f1f1.mp3";
+
+      var copyright_stat = "0" * 1;
+
+      var pay_fee = "" * 1;
+      var pay_timestamp = "";
+      var need_pay = "" * 1;
+
+      var need_report_cost = "0" * 1;
+      var use_tx_video_player = "0" * 1;
+
+      var friend_read_source = "" || "";
+      var friend_read_version = "" || "";
+      var friend_read_class_id = "" || "";
+
+      var is_only_read = "1" * 1;
+      var read_num = "" * 1;
+      var like_num = "" * 1;
+      var liked = "" == 'true' ? true : false;
+      var is_temp_url = "" ? 1 : 0;
+      var send_time = "";
+
+      var topic_default_img = 'http://res.wx.qq.com/mmbizwap/zh_CN/htmledition/images/icon/appmsg/topic/pic_book_thumb.2x2e4987.png';
+
+      // 话题卡片相关数据
+      var wxtopic = {
+        isbn : ""    // 书籍
+      };
+
+      var svr_time = "1467773992" * 1;
+      
+            window.wxtoken = "";
+          if(!!window.__initCatch){
+        window.__initCatch({
+            idkey : 27613,
+            startKey : 0,
+            limit : 128,
+            reportOpt : {
+                uin : uin,
+                biz : biz,
+                mid : mid,
+                idx : idx,
+                sn  : sn
+            },
+            extInfo : {
+                network_rate : 0.01    //网络错误采样率
+            }
+        });
+    }
+  </script>
+  <script type="text/javascript">
+    var real_show_page_time = +new Date();
+    if (!!window.addEventListener){
+        window.addEventListener("load", function(){
+            window.onload_endtime = +new Date();
+        });
+    }
+          seajs.use('appmsg/index.js');
+  </script>
+
+    
+
+<!--tailTrap<body></body><head></head><html></html>-->
+ 
+</body></html>

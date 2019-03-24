@@ -1,0 +1,623 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
+<title>flklz</title>
+
+
+<style type="text/css">
+body {
+  font-family: Helvetica, arial, sans-serif;
+  font-size: 14px;
+  line-height: 1.6;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  background-color: white;
+  padding: 30px; }
+
+body > *:first-child {
+  margin-top: 0 !important; }
+body > *:last-child {
+  margin-bottom: 0 !important; }
+
+a {
+  color: #4183C4; }
+a.absent {
+  color: #cc0000; }
+a.anchor {
+  display: block;
+  padding-left: 30px;
+  margin-left: -30px;
+  cursor: pointer;
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0; }
+
+h1, h2, h3, h4, h5, h6 {
+  margin: 20px 0 10px;
+  padding: 0;
+  font-weight: bold;
+  -webkit-font-smoothing: antialiased;
+  cursor: text;
+  position: relative; }
+
+h1:hover a.anchor, h2:hover a.anchor, h3:hover a.anchor, h4:hover a.anchor, h5:hover a.anchor, h6:hover a.anchor {
+  background: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAAGXRFWHRTb2Z0d2FyZQBBZG9iZSBJbWFnZVJlYWR5ccllPAAAA09pVFh0WE1MOmNvbS5hZG9iZS54bXAAAAAAADw/eHBhY2tldCBiZWdpbj0i77u/IiBpZD0iVzVNME1wQ2VoaUh6cmVTek5UY3prYzlkIj8+IDx4OnhtcG1ldGEgeG1sbnM6eD0iYWRvYmU6bnM6bWV0YS8iIHg6eG1wdGs9IkFkb2JlIFhNUCBDb3JlIDUuMy1jMDExIDY2LjE0NTY2MSwgMjAxMi8wMi8wNi0xNDo1NjoyNyAgICAgICAgIj4gPHJkZjpSREYgeG1sbnM6cmRmPSJodHRwOi8vd3d3LnczLm9yZy8xOTk5LzAyLzIyLXJkZi1zeW50YXgtbnMjIj4gPHJkZjpEZXNjcmlwdGlvbiByZGY6YWJvdXQ9IiIgeG1sbnM6eG1wPSJodHRwOi8vbnMuYWRvYmUuY29tL3hhcC8xLjAvIiB4bWxuczp4bXBNTT0iaHR0cDovL25zLmFkb2JlLmNvbS94YXAvMS4wL21tLyIgeG1sbnM6c3RSZWY9Imh0dHA6Ly9ucy5hZG9iZS5jb20veGFwLzEuMC9zVHlwZS9SZXNvdXJjZVJlZiMiIHhtcDpDcmVhdG9yVG9vbD0iQWRvYmUgUGhvdG9zaG9wIENTNiAoMTMuMCAyMDEyMDMwNS5tLjQxNSAyMDEyLzAzLzA1OjIxOjAwOjAwKSAgKE1hY2ludG9zaCkiIHhtcE1NOkluc3RhbmNlSUQ9InhtcC5paWQ6OUM2NjlDQjI4ODBGMTFFMTg1ODlEODNERDJBRjUwQTQiIHhtcE1NOkRvY3VtZW50SUQ9InhtcC5kaWQ6OUM2NjlDQjM4ODBGMTFFMTg1ODlEODNERDJBRjUwQTQiPiA8eG1wTU06RGVyaXZlZEZyb20gc3RSZWY6aW5zdGFuY2VJRD0ieG1wLmlpZDo5QzY2OUNCMDg4MEYxMUUxODU4OUQ4M0REMkFGNTBBNCIgc3RSZWY6ZG9jdW1lbnRJRD0ieG1wLmRpZDo5QzY2OUNCMTg4MEYxMUUxODU4OUQ4M0REMkFGNTBBNCIvPiA8L3JkZjpEZXNjcmlwdGlvbj4gPC9yZGY6UkRGPiA8L3g6eG1wbWV0YT4gPD94cGFja2V0IGVuZD0iciI/PsQhXeAAAABfSURBVHjaYvz//z8DJYCRUgMYQAbAMBQIAvEqkBQWXI6sHqwHiwG70TTBxGaiWwjCTGgOUgJiF1J8wMRAIUA34B4Q76HUBelAfJYSA0CuMIEaRP8wGIkGMA54bgQIMACAmkXJi0hKJQAAAABJRU5ErkJggg==) no-repeat 10px center;
+  text-decoration: none; }
+
+h1 tt, h1 code {
+  font-size: inherit; }
+
+h2 tt, h2 code {
+  font-size: inherit; }
+
+h3 tt, h3 code {
+  font-size: inherit; }
+
+h4 tt, h4 code {
+  font-size: inherit; }
+
+h5 tt, h5 code {
+  font-size: inherit; }
+
+h6 tt, h6 code {
+  font-size: inherit; }
+
+h1 {
+  font-size: 28px;
+  color: black; }
+
+h2 {
+  font-size: 24px;
+  border-bottom: 1px solid #cccccc;
+  color: black; }
+
+h3 {
+  font-size: 18px; }
+
+h4 {
+  font-size: 16px; }
+
+h5 {
+  font-size: 14px; }
+
+h6 {
+  color: #777777;
+  font-size: 14px; }
+
+p, blockquote, ul, ol, dl, li, table, pre {
+  margin: 15px 0; }
+
+hr {
+  background: transparent url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAYAAAAECAYAAACtBE5DAAAAGXRFWHRTb2Z0d2FyZQBBZG9iZSBJbWFnZVJlYWR5ccllPAAAAyJpVFh0WE1MOmNvbS5hZG9iZS54bXAAAAAAADw/eHBhY2tldCBiZWdpbj0i77u/IiBpZD0iVzVNME1wQ2VoaUh6cmVTek5UY3prYzlkIj8+IDx4OnhtcG1ldGEgeG1sbnM6eD0iYWRvYmU6bnM6bWV0YS8iIHg6eG1wdGs9IkFkb2JlIFhNUCBDb3JlIDUuMC1jMDYwIDYxLjEzNDc3NywgMjAxMC8wMi8xMi0xNzozMjowMCAgICAgICAgIj4gPHJkZjpSREYgeG1sbnM6cmRmPSJodHRwOi8vd3d3LnczLm9yZy8xOTk5LzAyLzIyLXJkZi1zeW50YXgtbnMjIj4gPHJkZjpEZXNjcmlwdGlvbiByZGY6YWJvdXQ9IiIgeG1sbnM6eG1wPSJodHRwOi8vbnMuYWRvYmUuY29tL3hhcC8xLjAvIiB4bWxuczp4bXBNTT0iaHR0cDovL25zLmFkb2JlLmNvbS94YXAvMS4wL21tLyIgeG1sbnM6c3RSZWY9Imh0dHA6Ly9ucy5hZG9iZS5jb20veGFwLzEuMC9zVHlwZS9SZXNvdXJjZVJlZiMiIHhtcDpDcmVhdG9yVG9vbD0iQWRvYmUgUGhvdG9zaG9wIENTNSBNYWNpbnRvc2giIHhtcE1NOkluc3RhbmNlSUQ9InhtcC5paWQ6OENDRjNBN0E2NTZBMTFFMEI3QjRBODM4NzJDMjlGNDgiIHhtcE1NOkRvY3VtZW50SUQ9InhtcC5kaWQ6OENDRjNBN0I2NTZBMTFFMEI3QjRBODM4NzJDMjlGNDgiPiA8eG1wTU06RGVyaXZlZEZyb20gc3RSZWY6aW5zdGFuY2VJRD0ieG1wLmlpZDo4Q0NGM0E3ODY1NkExMUUwQjdCNEE4Mzg3MkMyOUY0OCIgc3RSZWY6ZG9jdW1lbnRJRD0ieG1wLmRpZDo4Q0NGM0E3OTY1NkExMUUwQjdCNEE4Mzg3MkMyOUY0OCIvPiA8L3JkZjpEZXNjcmlwdGlvbj4gPC9yZGY6UkRGPiA8L3g6eG1wbWV0YT4gPD94cGFja2V0IGVuZD0iciI/PqqezsUAAAAfSURBVHjaYmRABcYwBiM2QSA4y4hNEKYDQxAEAAIMAHNGAzhkPOlYAAAAAElFTkSuQmCC) repeat-x 0 0;
+  border: 0 none;
+  color: #cccccc;
+  height: 4px;
+  padding: 0;
+}
+
+body > h2:first-child {
+  margin-top: 0;
+  padding-top: 0; }
+body > h1:first-child {
+  margin-top: 0;
+  padding-top: 0; }
+  body > h1:first-child + h2 {
+    margin-top: 0;
+    padding-top: 0; }
+body > h3:first-child, body > h4:first-child, body > h5:first-child, body > h6:first-child {
+  margin-top: 0;
+  padding-top: 0; }
+
+a:first-child h1, a:first-child h2, a:first-child h3, a:first-child h4, a:first-child h5, a:first-child h6 {
+  margin-top: 0;
+  padding-top: 0; }
+
+h1 p, h2 p, h3 p, h4 p, h5 p, h6 p {
+  margin-top: 0; }
+
+li p.first {
+  display: inline-block; }
+li {
+  margin: 0; }
+ul, ol {
+  padding-left: 30px; }
+
+ul :first-child, ol :first-child {
+  margin-top: 0; }
+
+dl {
+  padding: 0; }
+  dl dt {
+    font-size: 14px;
+    font-weight: bold;
+    font-style: italic;
+    padding: 0;
+    margin: 15px 0 5px; }
+    dl dt:first-child {
+      padding: 0; }
+    dl dt > :first-child {
+      margin-top: 0; }
+    dl dt > :last-child {
+      margin-bottom: 0; }
+  dl dd {
+    margin: 0 0 15px;
+    padding: 0 15px; }
+    dl dd > :first-child {
+      margin-top: 0; }
+    dl dd > :last-child {
+      margin-bottom: 0; }
+
+blockquote {
+  border-left: 4px solid #dddddd;
+  padding: 0 15px;
+  color: #777777; }
+  blockquote > :first-child {
+    margin-top: 0; }
+  blockquote > :last-child {
+    margin-bottom: 0; }
+
+table {
+  padding: 0;border-collapse: collapse; }
+  table tr {
+    border-top: 1px solid #cccccc;
+    background-color: white;
+    margin: 0;
+    padding: 0; }
+    table tr:nth-child(2n) {
+      background-color: #f8f8f8; }
+    table tr th {
+      font-weight: bold;
+      border: 1px solid #cccccc;
+      margin: 0;
+      padding: 6px 13px; }
+    table tr td {
+      border: 1px solid #cccccc;
+      margin: 0;
+      padding: 6px 13px; }
+    table tr th :first-child, table tr td :first-child {
+      margin-top: 0; }
+    table tr th :last-child, table tr td :last-child {
+      margin-bottom: 0; }
+
+img {
+  max-width: 100%; }
+
+span.frame {
+  display: block;
+  overflow: hidden; }
+  span.frame > span {
+    border: 1px solid #dddddd;
+    display: block;
+    float: left;
+    overflow: hidden;
+    margin: 13px 0 0;
+    padding: 7px;
+    width: auto; }
+  span.frame span img {
+    display: block;
+    float: left; }
+  span.frame span span {
+    clear: both;
+    color: #333333;
+    display: block;
+    padding: 5px 0 0; }
+span.align-center {
+  display: block;
+  overflow: hidden;
+  clear: both; }
+  span.align-center > span {
+    display: block;
+    overflow: hidden;
+    margin: 13px auto 0;
+    text-align: center; }
+  span.align-center span img {
+    margin: 0 auto;
+    text-align: center; }
+span.align-right {
+  display: block;
+  overflow: hidden;
+  clear: both; }
+  span.align-right > span {
+    display: block;
+    overflow: hidden;
+    margin: 13px 0 0;
+    text-align: right; }
+  span.align-right span img {
+    margin: 0;
+    text-align: right; }
+span.float-left {
+  display: block;
+  margin-right: 13px;
+  overflow: hidden;
+  float: left; }
+  span.float-left span {
+    margin: 13px 0 0; }
+span.float-right {
+  display: block;
+  margin-left: 13px;
+  overflow: hidden;
+  float: right; }
+  span.float-right > span {
+    display: block;
+    overflow: hidden;
+    margin: 13px auto 0;
+    text-align: right; }
+
+code, tt {
+  margin: 0 2px;
+  padding: 0 5px;
+  white-space: nowrap;
+  border: 1px solid #eaeaea;
+  background-color: #f8f8f8;
+  border-radius: 3px; }
+
+pre code {
+  margin: 0;
+  padding: 0;
+  white-space: pre;
+  border: none;
+  background: transparent; }
+
+.highlight pre {
+  background-color: #f8f8f8;
+  border: 1px solid #cccccc;
+  font-size: 13px;
+  line-height: 19px;
+  overflow: auto;
+  padding: 6px 10px;
+  border-radius: 3px; }
+
+pre {
+  background-color: #f8f8f8;
+  border: 1px solid #cccccc;
+  font-size: 13px;
+  line-height: 19px;
+  overflow: auto;
+  padding: 6px 10px;
+  border-radius: 3px; }
+  pre code, pre tt {
+    background-color: transparent;
+    border: none; }
+
+sup {
+    font-size: 0.83em;
+    vertical-align: super;
+    line-height: 0;
+}
+
+kbd {
+  display: inline-block;
+  padding: 3px 5px;
+  font-size: 11px;
+  line-height: 10px;
+  color: #555;
+  vertical-align: middle;
+  background-color: #fcfcfc;
+  border: solid 1px #ccc;
+  border-bottom-color: #bbb;
+  border-radius: 3px;
+  box-shadow: inset 0 -1px 0 #bbb
+}
+
+* {
+	-webkit-print-color-adjust: exact;
+}
+@media screen and (min-width: 914px) {
+    body {
+        width: 854px;
+        margin:0 auto;
+    }
+}
+@media print {
+	table, pre {
+		page-break-inside: avoid;
+	}
+	pre {
+		word-wrap: break-word;
+	}
+}
+</style>
+
+
+</head>
+
+<body>
+
+<h2 id="toc_0">富兰克林自传</h2>
+
+<blockquote>
+<p>富兰克林也是美国梦的代表人物之一（另一个典型代表是林肯），他们都是穷小子积极上进，最后取得巨大成就的 “美国梦” 真实体现者。<br>
+· Top-1: <font color="b">富兰克林 · 人生十三原则 及其 具体实施方法；</font><br>
+· Top-2: <font color="b">致富之路 = 勤奋 + 节俭 (开源节流)，人生的点金石；</font><br>
+· Top-3: <font color="b">富兰克林 · 职场成功秘诀：勤奋肯干 + 过硬的技术；</font><br>
+· Top-4: <font color="b">关于税收，真正最大的税收是 懒惰 ！它甚至会缩短你人生的长度。</font><br>
+· Top-5: <font color="b">关于成立 社团 的意义(兴趣圈人脉圈)，关于读书，关于节俭，关于穷查理宝典，etc ...</font></p>
+</blockquote>
+
+<h3 id="toc_1">1. 第一部</h3>
+<ul>
+<li>本杰明·富兰克林(1706-1790) 谈自己的终生爱好 —— 特意多次提到：<font color="blue">读书，可谓 “嗜书成癖”</font>！“我自小就喜欢读书，手里有点零钱，总要拿去买书，有些书我甚至是百读不厌。
+而且我直至现在也仍然认为，这些时间花得极有价值！”</li>
+<li><b>为什么富兰克林这么看重读书？</b>他说读书可以改变自己的思想，进而帮助优化自己的决策，从而影响到自己未来的整个人生！影响自己未来生活中的很多重大事件！</li>
+</ul>
+
+<hr style="margin-top:3px; marin-bottom:3px">
+
+<ul>
+<li>富兰克林 面对自己的爱好“读书”，<font color="blue">他是怎么腾挪出时间的？“无论是读书还是做练习，我的时间都只能定在晚上，下班后或是早上上班前，要么就是星期天！”</font></li>
+<li>富兰克林 没有钱买书，他选择自己做饭菜吃素食，然后不仅能节约出钱而且还能在别人吃饭休息的时间里干自己想干的事，于是这段时间他的学习又大有长进。同时富兰克林还
+总结出来说：“饮食节制可以使人头脑更清楚，领悟更敏捷！”</li>
+</ul>
+
+<hr style="margin-top:3px; marin-bottom:3px">
+
+<ul>
+<li>因为自己爱读书练就了一手好字加好文采，一封家信赢得了自己人生第一大贵人(弗伦奇上校)的赏识，他建议富兰克林干脆自立门户自己创业干个印刷厂，他为他背书。</li>
+<li>自己十七岁时独自一人出门闯荡，凭借自己读书所带来的非凡见识，再加上自己印刷技术的娴熟，仅仅七个月时间自己不仅在外面成功立了足，而且还混得风生水起！
+七个月回家之时，可谓真是衣锦还乡了：“从头到脚一身时髦新西装，胸前佩戴一只怀表，口袋揣着银币，还成功拉倒了创业风投资金。” 简直人生赢家啊！</li>
+<li>因为自己的勤奋谨慎，富兰克林在短短七个月的时间就把自己装扮的如此漂亮，令他的父亲也不禁大为惊喜。</li>
+</ul>
+
+<hr style="margin-top:3px; marin-bottom:3px">
+
+<ul>
+<li>原来富兰克林也有被自己信任之人以借钱名义骗钱之经历，他被自己的儿时的铁磁 柯林斯 借走了很多的钱，然后这个人就消失杳无音信了！
+<br><font color="blue">@反思：柯林斯 这么个智商高，从小条件又比富兰克林好很多，同时学识甚至一度令富兰克林都佩服的人怎么后来就堕落了？</font>因为他做不到富兰克林的 <b>“勤奋谨慎”</b>，
+因为他后来又克制不住自己染上了喝酒赌博这类恶习，自此一发不可收拾，堕落了，进入了自己个人人生发展的恶性循环。最终输光了自己的一生！可惜啊！<font color="red">由此可见：<b>克己勤奋</b> 这四个字
+对于一个人的发展是多么的重要啊！</font></li>
+</ul>
+
+<hr style="margin-top:3px; marin-bottom:3px">
+
+<ul>
+<li><p><font color="red">富兰克林除了读书这一大爱好智慧，年轻时的另一大爱好就是：组织共读社(私人社团活动)</font>，这个爱好为他积攒起了很好的人脉资源圈！他找到了 奥斯本，华森，拉尔夫，四个人都爱读书，
+于是就<u>相约星期天四个人一起出去散步，讨论讨论读书心得，同时每次聚会，没人还可以拿出一首自己的作品，大家共同观摩，相互批评，各自修正，以求改进</u>！于是这一层人脉圈就打造完成了！
+<br><font color="blue">@联系：合肥张家四姐妹的故事</font>：张家也是通过在家族内部，推崇读书，然后组织读书社团建立家族刊物，最后成功把自己整个家族打造成了整个社会精英阶层的交际核心！
+<b>这种 “组建兴趣社团，大家定期约定相互交流改进” 的人脉发展模式，简直出奇得好，出奇得有效啊！</b><u>终于理解了大学里为什么要提倡大学生搞兴趣社团了，因为这真的是一条帮助学生全面发展建立人脉的好途径啊！</u></p></li>
+<li><p>后来富兰克林又进一步把自己所认识的大多数聪明能干的相识都聚集起来，成立了一个 “共图社”俱乐部，这个俱乐部成立是为了让大家可以相互促进共同提高！</p></li>
+<li><p>“共图社” 规定每周五晚上聚会，并要求每个社员轮流提出一个有关道德，政治或自然科学方面的问题，供大家共同讨论，大家共同促进共同提高，违者将被处以小额罚金！</p></li>
+<li><p>这个兴趣社团的成立，无疑对富兰克林后来一生的发展都提供了极大的助益，富兰克林由此积攒起了很多宝贵的人脉资源。</p></li>
+</ul>
+
+<blockquote>
+<p>1727年，22岁的富兰克林组织起了“共图社”，这是由他所认识的有雄心壮志的年轻人所组成的 自我改善和互帮互助 社团，规定每周五晚间聚会，这些年轻人虽职业各不相同，但都志趣相同！
+后来这个社团成为了富兰克林这一生中最大的人脉资源圈之一！</p>
+</blockquote>
+
+<hr style="margin-top:3px; marin-bottom:3px">
+
+<ul>
+<li>富兰克林在上校的欺骗下来到了英国，在这里他又只能从老本行干起，打着工期盼有一天再回去。不过富兰克林有一个极大的优点：练就了优秀的印刷技能，到哪里都能找到工作，
+而且对待自己的工作，从来都是勤勤恳恳(“我工作十分勤快”)。</li>
+<li>富兰克林后来又跳槽到了新单位工作，新单位员工无理要求他必须缴纳迎新费，他不给结果被认为是异类，大家都看他不爽最后总是干扰他！于是 <b>他悟出了一个道理：
+“与自己朝夕相处的人交恶是愚蠢透顶的！”</b>，所以他还是乖乖的把这笔钱交了！
+<br><font color="blue">@思考：富兰克林为什么每次都能在职场上混得风生水起？</font>他说自己 一直保持全勤，从不请假，再加上自己印刷排字技术好，所以就很受师傅的器重！
+后来所有的急活都派给了他，这种活拿钱也多些，自己在职场上的地位也得到了大为的提升！所以总结一下就是：<font color="red">勤奋肯干 + 好技术 = 富兰克林职场成功秘诀</font>。</li>
+</ul>
+
+<hr style="margin-top:3px; marin-bottom:3px">
+
+<ul>
+<li>富兰克林 总结自己为什么没有步入歧途的原因：“没有因为缺乏宗教信仰而可能铸成任何 任性的不道德或不正义的打错！” <b>他确信人际关系中 真实、诚信、正直 对于一个人一生的幸福至关重要</b>！</li>
+<li>富兰克林 谈起自己创业初期的经历：“哪个地方都有些乌鸦嘴，总是预言该地的毁灭近在眼前！” 有所谓的聪明人就提醒富兰克林你开印刷厂是一个极为错误的决定，这个市场已经饱和了，而且看着好像再走下行趋势。</li>
+<li>当时很多新开的印刷所确实也都不久后就倒闭了，但富兰克林凭借着自己的 “勤奋苦干” 让很多他的同行望尘莫及，让很多他的供应商变得支持他赞赏他，他因此也就创业成功了！
+（<u>富兰克林的勤奋苦干：当他的朋友离开俱乐部回家时，他还在干活，当他的邻居们都还没有起床时，他又已经在开始工作了！</u>这就是当时他周围人对富兰克林的印象！）</li>
+<li>富兰克林说：<b>“我之所以在自传里这么强调 勤奋克己，尽管有自吹自擂之嫌，但更多的目的无非是想让子孙后代们看到这段叙述勤奋对自己产生的神奇有利效果，让你们知道这种美德的极大用处！”</b></li>
+</ul></li>
+</ol>
+
+-----------
+
+<h3 id="toc_2">2. 两封信</h3>
+
+<li>人一生的主要习惯和成见都是青年时代培养而成的！
+<pre>
+当时《富兰克林自传》的读者对该书的评价：
+    - “它几乎可以在不知不觉中引导青年人下定决心力求成长为一个善良而杰出的人物！”
+    - “您的传记将会为造就未来的伟人提供机遇。您的传记不仅仅教人如何进行自我教育，而且教人如何把自己教育成一位智者。”
+    - “希望您能带领大家开启人生大门，给大家一个机会，帮助大家成为有先见之明的智者！”
+    - “您的传记将引导更多的人去过一种值得一写的生活！”
+</pre></li>
+
+-----------
+
+<h3 id="toc_3">3. 第二部</h3>
+<ul>
+<li>“读书是我让自己享受的唯一乐趣，我不在酒馆、赌场或任何娱乐场合消磨时光。”</li>
+<li>“成立了图书馆之后，我仍然兢兢业业,孜孜不倦的埋头苦干我的印刷事业，但同时我也每天匀出一两个小时的时间专用于我的读书！”
+<br><font color="blue">@思考：为什么富兰克林这么笃信 “勤奋”的力量？</font>起初，父亲对我谆谆教诲，并引用所罗门的一句箴言：<u>“你看见办事殷勤的人吗？他们必定会站在
+君主面前，而不会站在下贱人面前。”</u> 因此富兰克林就下定决心把勤奋看成自己谋求财富和功名的手段！后来，富兰克林在践行勤奋的路上，<u>不断取得正向的反馈(不断获得成功)，所以他就
+愈发坚信此举的正确</u>！</li>
+</ul>
+
+<hr style="margin-top:3px; marin-bottom:3px">
+
+<ul>
+<li><font color="red">富兰克林的十三条做人原则（<b>自己一生内心所信奉的真正信仰，自己为自己定制的圣经</b>，值得花费一生去不停地祷告）</font>
+<pre>
+富兰克林的十三条道德准则（富兰克林内心的圣经）：
+（一）节制：食不过饱，饮不过量；
+【 节制 帮助富兰克林：成功赢得了长期持续的健康，它为富兰克林带来了一副好身板！】
+（二）静默：于人于己不利之言不语，避免碎语闲言；
+（三）秩序：放物各归其位，办事各按其时（有秩序不拖沓）；
+（四）决心：自己下定决心去做自己想做的事情之后，就一定把它做到心想事成，不屈不挠；
+【 决心 帮助富兰克林：成功做成了自己一生中想干的很多事！】
+（五）节俭：不在于人于己无益之事上浪费金钱，既然花了就要于人于己有利；
+（六）勤奋：珍惜时光，手里总忙有益之事，剪除一切无益之举；
+【 节俭和勤奋 帮助富兰克林：成功摆脱了债务，同时也获得了独立和财富！】
+（七）诚信：不害人不欺诈，思想坦荡公正，实事求是；
+（八）正义：要懂得成人之美，切勿损人利己，懂得 “吃亏是福，利心互换” 的道理！
+【 诚信和正义 帮助富兰克林：成功获取了众人的信任，进而在美国独立过程中被委托以光荣重任！】
+（九）中庸：避免走极端，不动怒，忍让化冤仇；
+（十）整洁：起居服饰，务求整洁；
+（十一）平静淡然：不以物喜不以己悲，切不可为小事常事扰乱了方寸，搅乱了心灵；
+（十二）贞洁：节欲以保健康，同时也要注重不损自己和他人的名誉；
+（十三）谦卑：懂得发现并学习 别人的长处和优点，知道 “人外有人天外有天”，永远不能自视过高，要懂得终生学习的道理！
+（克制一切跟别人针锋相对的言论，不要直接了当的说过于武断的说法。
+（当自己的观点与别人不同时，先承认别人的观点在某些情况下是对的 [承认别人的功劳]，
+（然后再说在另外的条件下，自己的见解是什么样的。这样你在发表自己意见的时候，别人就会更加乐意接受，反驳也会大大减少！）
+【 所有的这十三则美德 联合在一起，使得富兰克林能够保持脾气平和，谈笑风生，一生都有很好的人缘，深得年轻朋友的喜欢，取得了举世瞩目的成就。】
+</pre></li>
+<li>富兰克林制定了这十三条后，决定给它们排好序，每次只专注于前几项，等把这几项掌握透了之后，再试下一项，这样循序渐进，直到把这十三项统统做到！终生践行！</li>
+<li><font color="red">富兰克林传授自己的 践行这十三条准则的秘诀 (P118/264)：用小本子，首先让这十三项美德一项占一页，然后每周下定决心对一项美德进行严密监视，依次执行逐个攻破！</font>
+一年 52周，循环往替，正好可以完整的走完四个周期！</li>
+<li>富兰克林在练习 “秩序” 这一项美德时，为自己确立的 <b>“每日时刻表”</b>！工作休闲两不误，简直太棒了，不能更立志！
+<img src="timetable.jpg">富兰克林 · 每日时刻表</img></li>
+</ul>
+
+<hr style="margin-top:3px; marin-bottom:3px">
+
+<ul>
+<li>富兰克林在这里也承认自己也并没有做到完美，但自己通过想着这个完美的目标努力前进，使得自己已然成长为了一个比较优秀和比较快乐的人了！
+<br><font color="blue">@思考：这十三条人生原则其实是为我们指定了一个 道德完美的度量衡</font>，它不是要求我们一定要达到的，而是需要我们花费一生的时间去不断追求的。
+<b>只有知道完美的标准是什么，我们在追求完美的过程中，才能够变得越来越接近完美！这就是度量衡的价值！</b></li>
+</ul></li>
+</ol>
+
+-----------
+
+<h3 id="toc_4">4. 第三部</h3>
+<ul>
+<li>富兰克林在总结出了自己圣经中的十三大原则之后，曾一度甚至想要成立一个联合&quot;美德党&quot;，后来演变成了 “解放自由社” 这个社团，吸引志同道合的年轻人一起，大家共同监督共同进步，为整个社会的发展培养更多优秀的青年。</li>
+<li><p>富兰克林也相信：<u>“一个能力尚可的人可以成就一番大事业，促进社会大变革，只要他首先能够制定出一个好计划，然后再剪除自己平时的一切娱乐活动或其他令他分心旁骛的杂务，而只把这一计划
+当作他唯一的研究和事业！”</u> 
+<br><font color="blue">@联系：稻盛和夫 创办京瓷,创办KDII 的成功经验</font>：一是信奉京瓷哲学(利他主义哲学-敬天爱人)，二是创业之后一心扑在事业上，剪除自己平时的一切娱乐活动，
+而只专心于自己的事业！</p></li>
+<li><p>富兰克林回忆自己成立 “共图社” 对自己个人以及该社团内的每个成员的用处都很大，成员们都个个满意！</p></li>
+<li><p>他说了自己管理社团的秘诀：“制定社规，给组织保密，同时 限定社员限额(十二名)”，这样做的目的是 避免不适当的人申请入社 以破坏整个社团的氛围和规矩。</p></li>
+</ul>
+
+<hr style="margin-top:3px; marin-bottom:3px">
+
+<ul>
+<li>1736年富兰克林被选为议会秘书，开始自己的从政生涯。</li>
+<li><b>富兰克林在处理人际关系时所用的方法</b>：设法让别人施恩于你，然后你再向他表达强烈的感恩之情，然后你就会发现你们之间的关系就会变得和善多了！
+<u>该方法背后的道理是：“谁若是一次施恩于你，只要你懂得知恩图报，他必将愿意二次施恩于你。</u>而且其乐意之情 为你愿意接受他的恩惠之情 所不能及”。
+<br>（举例：他在参选时，有一位新议员不赞成他，他于是就找机会向他借了他的一本稀世珍本藏书，然后过了一个礼拜后，自己亲自将书归还，并且在书中还附了一个纸条子，
+表达自己强烈的感恩之情【设法让对方有恩于己，然后你们双方之间的关系就会缓和很多】。）
+<br><font color="blue">@思考：这种方法能不能应用于平时我自己的人际交往关系之中呢？</font><u>这种方法本质上就是在人与人之间制造一种 “相互帮忙，相互需要” 的感觉。
+让别人在你身上看到自己的价值，然后他的自尊心自信心在你身上就得到了很大的增强，他也就会越来越看重你，喜欢接近你。</u>接着你们之间的很多事情也就好办多了。</li>
+</ul>
+
+<hr style="margin-top:3px; marin-bottom:3px">
+
+<ul>
+<li>1737年富兰克林升任 总督+邮政管理局局长，他真正开始关心社会公共事务了。开始讲述自己在议会供职时所发生的事情（巡夜，联合消防队，组建民兵护卫队，修炮台，成立科学学会等）。</li>
+<li>富兰克林在自己从政的同时，还做着印刷所的生意，遴选靠谱的合伙人搞连锁经营。</li>
+<li>他总结自己和合伙人之间能够自始至终始终保持一团和气不翻脸的原因：正式合伙之前主动采取预防措施，制定条款，把一切都规定的明明白白：彼此该做些什么，彼此能得到什么，全部事先
+确定好，消除任何可以争执的余地！【也即：事先约法三章，无论几个合伙人在没有正式一起经营之前多么地互敬互信，在以后经营的过程中总会生发出不够平等的想法，如果事先没有约法三章，
+那么就难免会产生一些小小的猜忌和厌恶，最终甚至可能造成友谊破裂，关系断绝，产生一系列种种不愉快的后果。】
+<br><font color="blue">@联系：《大秦帝国》六国合纵攻秦为何屡屡失败，乐毅五国伐齐为何又能一战功成？</font>最主要的原因就在于六国合纵攻秦时，相互之间未能 <b>事先约法三章</b>，
+在真正打起来的时候各国只算计本国利益，全然不顾盟军大局，终止自然溃败之局；而乐毅领衔五国发兵之前，对伐齐之战事先就谋划在胸，同时与各国全部确定好自己的责任义务以及功成之后的
+利益分配情况，事先确定好了每个国家该做什么能得到什么，然后在真正打起来之时，五国盟军均奋力杀敌，最后打得齐国几近灭国。</li>
+</ul>
+
+<hr style="margin-top:3px; marin-bottom:3px">
+
+<ul>
+<li>1745年之后，接近40岁的富兰克林已经依靠合伙人一起做印刷所，通过持股分红的方式实现了财务自由！此时的他开始有了闲情逸致搞搞科学研究！当此之时，基本已经实现初步功成名就的
+富兰克林，本想安逸下去，但政府的各个部门又几乎同时都主动要给他强加某种职责。</li>
+<li>担任社会公职之后，富兰克林觉得自己拥有了更大的资源和权力，开始思谋着为为整个社会做出更大的贡献：建立公立医院，为全市铺路，为道路安装路灯，雇佣城市清洁工等。</li>
+<li>而且富兰克林后来做的事，在外人看来可能都属于小事，但富兰克林自己却不这么认为，他说：<u>“人的幸福，因撞到千载难逢的大事而得者为数寥寥，而由日积月累的小惠而生者则比比皆是。所以
+永远不要小瞧生活中小事的力量。”</u></li>
+</ul>
+
+<hr style="margin-top:3px; marin-bottom:3px">
+
+<ul>
+<li>富兰克林为配合军方军事行动向民众征集车马以运送物资，他于是向所在地区发布了两个公告（充分展现了自己 “威逼+利诱” 的做事风格）：首先承诺如果你们提供了车马，政府
+将会给你优厚的酬金，同时你们也展现出了自己对国家的忠诚；反之如果你们拒不提供车马，则王事必办，车马非要不可，到时候很可能就采用强硬手段，而到那时你们就只能落得一个
+敬酒不吃吃罚酒的下场了，而这种情况是我绝不忍听到的！</li>
+<li>美国后来所一贯奉行的 “胡萝卜加大棒”式 的国策，也可以说从富兰克林这里就已经开始使用了！</li>
+<li>富兰克林圆满地完成了军方将军给自己指派的征集车马的军事任务后，将军对他的表现高度满意，不仅付清了原先由富兰克林所垫付的账目，还对他再三表示感谢和赞扬。</li>
+</ul>
+
+<hr style="margin-top:3px; marin-bottom:3px">
+
+<ul>
+<li><b>富兰克林在实现了个人的财富自由之后(大约在1745年自己40岁的时候)</b>， 1746年之后富兰克林在科学领域也因为对电的本质的理解而声名鹊起。</li>
+<li>他在1746年前后开始做电学实验，并于1750年提出一种 在高塔上装一个铁棒可以从雷云中吸引“电流”的实验，证明了闪电和电本质上是相同的。后来他又在1752年又亲自用
+一个风筝做了这个实验。从云层吸引闪电的实验成功了之后，富兰克林又一次在科学领域内引发了全世界的关注。</li>
+<li>实验成功了之后，富兰克林在科学领域也获得了很大的成功，英国皇家学会主动把他选为了会员，还免了他的会费，并于1753年授予他科普利爵士金质奖章。</li>
+</ul>
+
+<hr style="margin-top:3px; marin-bottom:3px">
+
+<ul>
+<li>在科学界功成名就了之后，总督和议会企图和解，但二者所代表的利益是根本不同的，所以根本无法达成和解。这个时候议会就准备派富兰克林做为代表去英国参那些总督一本。</li>
+<li>在乘船去英国的这个旅途中，富兰克林又一次感受到了其中所包含的艰辛，包括不做事的爵爷，包括航海过程的艰辛等等。终于于1757年7月富兰克林携带儿子一起到达了英国伦敦。</li>
+</ul></li>
+</ol>
+
+-----------
+
+<h3 id="toc_5">5. 第四部</h3>
+
+<ul>
+<li>写富兰克林代表议会与领主们的代表丹尼总督两方在英国相互谈判的过程，最终富兰克林成功说服总督通过了 “对领主的田产和平民一样征税” 这样一项新法令。</li>
+<li>该部分写于1789-1790年富兰克林病危期间，后来富兰克林因病歇笔，自传在这里因此也就停笔了，他只把自己的生平记录到了1758年。所以这本自传里也没有后来富兰克林参与
+起草和修订《美国独立宣言》以及《美国宪法》的记录，也未能写出他后来作为一名外交官和人民公仆的光辉成就，不得不说也真是遗憾！</li>
+</ul></li>
+</ol>
+
+-----------
+
+<h3 id="toc_6">6. <font color="red">致富之路 <small>= 勤奋 + 节俭</small></font></h3>
+
+<ul>
+<li>如果你想要致富，你不仅要想到如何去赚，而且还需要想到如何去省！（ <u>致富 = 开源(勤奋，如何赚) + 节流(节俭，如何省)！</u>一定要双管齐下，才能够真正做到。）</li>
+<li>闲暇 绝不等于 懒惰：闲暇时光是用来做有益的事情的时光，而懒惰时光则在花时间做无益之事，简直就是最奢侈的在浪费生命。</li>
+</ul>
+
+<p><font color="blue">@思考：如何看待国家的重税收？我们可怎么交得起这么重的税啊？</font>请大家这么去想：“如果我们要交的仅仅是政府所征的税，那其实到还比较容易！
+相比之下我们在生活中很多其他的税，对我们来说反而是更加难以忍受的，例如：<font color="red">懒惰 会收取我们两倍的税，骄傲 会收取我们三倍的税，愚蠢 则会收我们四倍的税</font>！所以即便税务局
+允许为我们减免国家税收，这生活中那更重的税也只能靠我们自己去消除。<b>唯有自助者天方助之！</b>”。
+<br>· 考虑一下这种情况：“如果一个政府规定人民必须将其十分之一的劳动时间无偿奉献给国家，那么这个政府就必然会被认为太过严苛。但如果我们把自己因懒惰而无所事事所浪费的时光统计一下，那么 懒惰 向我们抽取的税收时间可要比这多多了。另外长期懒惰不做事，也会容易使人生病，进而甚至会缩短人的寿命，如果你这样想的话，其实 懒惰 才是我们每个人这一生所要缴纳的最大的税！”
+<br>· 因此如果谁有手艺谁有地产抑或谁有职业，谁就有了名利双收的公司！只要我们懂得勤奋，充分利用自己的时间狠狠地向土地向公司抽税，那么我们就永远不会挨饿！</p>
+
+<p>· <b>穷查理宝典</b>：“倘若你真的热爱生命，那么你就绝不可浪费光阴，因为这光阴正是构成你生命的原料！”
+<br>· <b>穷查理宝典</b>：“懒惰使万事艰难，勤勉使一起顺利。我们一定要通过努力多做事，少困惑。必须人逼事，勿让事逼人！”
+<br>· <b>穷查理宝典</b>：“勤奋才是真正的成功之母，而失败不是！聪明人懂得从失败中汲取教训，以为在接下来的时间里更好的勤奋，从而在未来通过勤奋再来获取成功！”</p>
+
+<p><font color="blue">@思考：我们该如何对待睡眠这件事？</font>“睡着的狐狸永远抓不住鸡，人在坟墓里可以永远睡个够。” 我们在睡眠中度过的时间未免太多！而 浪费时间一定是一个人一生中最大的挥霍！</p>
+
+<p><font color="blue">@思考：怎么看待“向往好时光”？</font>好时光人人向往，但聪明人知道：<b>通过勤奋就可以创造出好时光，而勤奋是不需要向往的</b>，我们只要能够下定决心去做就可以了！正如一个懒惰的正在闲逛的仆人碰见他的主人会感到害臊一样，你是你自己的主人，你发现自己吊儿郎当的，不应该也感到丢脸吗？</p>
+
+<p><font color="blue">@思考：难道一个人就不可以有闲暇时间吗？</font>穷查理说：“要想得到闲暇，那就好好利用你的每一分钟时光。” 闲暇时光是准备用来做有益的事情的，而绝不是懒惰无所事事的浪费！</p>
+
+<p><font color="blue">@思考：如何才能做到 致富？</font>“如果你要致富，那么你不仅要想到赚，而且要想到省！” 一个人如果不知道怎样节省自己的收入，那么他也许一辈子累死累活到最后也会一名不文的死去！
+切记要改掉自己爱花钱的愚蠢行为，酒色骗赌，使人穷苦，维护一个恶习，等于养育两个孩子！关于如何节俭，请记住穷查理的话：“买一个东西不是考虑它价格便不便宜，而应该考虑你自己是否真的需要！有的时候便宜货未必真的便宜！” 许多人因为买了便宜货毁了自己，花钱买后悔，简直愚蠢透顶！</p>
+
+<p>· <b>穷查理宝典</b>：“今日事今日毕，一个今天抵得过两个明天！”
+<br>· <b>穷查理宝典</b>：“如果你有很多事情要为自己，为家庭，为祖国去做，那么你一定要曙光初露就要起身！别让太阳脸朝下盯着你，嘲笑你好丢人！”
+<br>· <b>穷查理宝典</b>：“关于节俭：你若买了你自己不需要的东西，过不了多久你就会卖你所必需的东西作为代价！”
+<br>· <b>穷查理宝典</b>：“智者能从别人的失败中汲取教训，而愚者即使从自己的失败经历中也吸收不到任何宝贵价值！”</p>
+
+<p><font color="blue">@思考：如何看待因爱慕虚荣而债台高筑这种行为？怎么看待 蚂蚁花呗,京东白条,信用卡？</font>这些人如果是买了自己真正需要的东西，无论贵贱都无可厚非！
+相反如果买的东西仅仅是爱慕虚荣而自己又一时半会拿不出现钱，希望能借助信用卡提前消费，提前去体面一番，那么这种人简直就等于发疯！<b>认真想想你负了债可怎么办啊，你等于是把自己的自由交给了别人去支配</b>！
+<br>穷查理说：“人类第二大恶习是说谎，而第一大恶习是欠债！人一欠债就不由得说谎！借钱人是贷款人的奴隶！你一定要鄙弃枷锁维护自由，维护自己的独立：勤奋而自由，节俭而自由。”</p>
+
+<p>· <b>穷查理宝典</b>：“如果你拥有了点金石，你肯定就不会抱怨世事险恶纳税艰难了！而<u>这个点金石就是：勤奋+节俭！这些东西不需要你有任何社会关系，也不需要你能继承多少财富，我们每个人生来就具有</u>！只是有些人一辈子都未曾发掘它利用它！”
+<br>· <b>穷查理宝典</b>：“如果你发现了这个点金石，并因此获得了成功！同时也一定要懂得谦恭！因为没有上天护佑，你这一切将全都会落空。我们要懂得谦卑以祈求天时地利人和的护佑，而对于目前那些需要天佑的人我们因此也一定不要无情，要懂得安慰和帮助他们！因为助人亦是助己！”</p></li>
+</ol>
+
+-----------
+
+<h3 id="toc_7">7. 写在最后</h3>
+
+<ul>
+<li>穷查理说：“我们虽可以向世人提出劝告，却无法为他们提供行动！” 同时他再次劝告大家永远记住一点：“不听劝告的人无可救药，如果你不听道理，道理肯定会在将来狠狠的惩罚你！”</li>
+<li><b>亲爱的读者，如果你愿意遵循本书所传达给世人的道理，你的收获也就会像我一样大，永远祝福你</b> —— 本杰明·富兰克林 (查理·桑德斯)！</li>
+</ul></li>
+
+
+<br>----------- END -----------
+
+</body>
+
+</html>

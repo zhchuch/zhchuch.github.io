@@ -1,0 +1,1350 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
+<style>
+body {
+  font-family: Helvetica, arial, sans-serif;
+  font-size: 14px;
+  line-height: 1.6;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  background-color: white;
+  padding: 30px; }
+
+body > *:first-child {
+  margin-top: 0 !important; }
+body > *:last-child {
+  margin-bottom: 0 !important; }
+
+a {
+  color: #4183C4; }
+a.absent {
+  color: #cc0000; }
+a.anchor {
+  display: block;
+  padding-left: 30px;
+  margin-left: -30px;
+  cursor: pointer;
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0; }
+
+h1, h2, h3, h4, h5, h6 {
+  margin: 20px 0 10px;
+  padding: 0;
+  font-weight: bold;
+  -webkit-font-smoothing: antialiased;
+  cursor: text;
+  position: relative; }
+
+h1:hover a.anchor, h2:hover a.anchor, h3:hover a.anchor, h4:hover a.anchor, h5:hover a.anchor, h6:hover a.anchor {
+  background: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAAGXRFWHRTb2Z0d2FyZQBBZG9iZSBJbWFnZVJlYWR5ccllPAAAA09pVFh0WE1MOmNvbS5hZG9iZS54bXAAAAAAADw/eHBhY2tldCBiZWdpbj0i77u/IiBpZD0iVzVNME1wQ2VoaUh6cmVTek5UY3prYzlkIj8+IDx4OnhtcG1ldGEgeG1sbnM6eD0iYWRvYmU6bnM6bWV0YS8iIHg6eG1wdGs9IkFkb2JlIFhNUCBDb3JlIDUuMy1jMDExIDY2LjE0NTY2MSwgMjAxMi8wMi8wNi0xNDo1NjoyNyAgICAgICAgIj4gPHJkZjpSREYgeG1sbnM6cmRmPSJodHRwOi8vd3d3LnczLm9yZy8xOTk5LzAyLzIyLXJkZi1zeW50YXgtbnMjIj4gPHJkZjpEZXNjcmlwdGlvbiByZGY6YWJvdXQ9IiIgeG1sbnM6eG1wPSJodHRwOi8vbnMuYWRvYmUuY29tL3hhcC8xLjAvIiB4bWxuczp4bXBNTT0iaHR0cDovL25zLmFkb2JlLmNvbS94YXAvMS4wL21tLyIgeG1sbnM6c3RSZWY9Imh0dHA6Ly9ucy5hZG9iZS5jb20veGFwLzEuMC9zVHlwZS9SZXNvdXJjZVJlZiMiIHhtcDpDcmVhdG9yVG9vbD0iQWRvYmUgUGhvdG9zaG9wIENTNiAoMTMuMCAyMDEyMDMwNS5tLjQxNSAyMDEyLzAzLzA1OjIxOjAwOjAwKSAgKE1hY2ludG9zaCkiIHhtcE1NOkluc3RhbmNlSUQ9InhtcC5paWQ6OUM2NjlDQjI4ODBGMTFFMTg1ODlEODNERDJBRjUwQTQiIHhtcE1NOkRvY3VtZW50SUQ9InhtcC5kaWQ6OUM2NjlDQjM4ODBGMTFFMTg1ODlEODNERDJBRjUwQTQiPiA8eG1wTU06RGVyaXZlZEZyb20gc3RSZWY6aW5zdGFuY2VJRD0ieG1wLmlpZDo5QzY2OUNCMDg4MEYxMUUxODU4OUQ4M0REMkFGNTBBNCIgc3RSZWY6ZG9jdW1lbnRJRD0ieG1wLmRpZDo5QzY2OUNCMTg4MEYxMUUxODU4OUQ4M0REMkFGNTBBNCIvPiA8L3JkZjpEZXNjcmlwdGlvbj4gPC9yZGY6UkRGPiA8L3g6eG1wbWV0YT4gPD94cGFja2V0IGVuZD0iciI/PsQhXeAAAABfSURBVHjaYvz//z8DJYCRUgMYQAbAMBQIAvEqkBQWXI6sHqwHiwG70TTBxGaiWwjCTGgOUgJiF1J8wMRAIUA34B4Q76HUBelAfJYSA0CuMIEaRP8wGIkGMA54bgQIMACAmkXJi0hKJQAAAABJRU5ErkJggg==) no-repeat 10px center;
+  text-decoration: none; }
+
+h1 tt, h1 code {
+  font-size: inherit; }
+
+h2 tt, h2 code {
+  font-size: inherit; }
+
+h3 tt, h3 code {
+  font-size: inherit; }
+
+h4 tt, h4 code {
+  font-size: inherit; }
+
+h5 tt, h5 code {
+  font-size: inherit; }
+
+h6 tt, h6 code {
+  font-size: inherit; }
+
+h1 {
+  font-size: 28px;
+  color: black; }
+
+h2 {
+  font-size: 24px;
+  border-bottom: 1px solid #cccccc;
+  color: black; }
+
+h3 {
+  font-size: 18px; }
+
+h4 {
+  font-size: 16px; }
+
+h5 {
+  font-size: 14px; }
+
+h6 {
+  color: #777777;
+  font-size: 14px; }
+
+p, blockquote, ul, ol, dl, li, table, pre {
+  margin: 15px 0; }
+
+hr {
+  background: transparent url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAYAAAAECAYAAACtBE5DAAAAGXRFWHRTb2Z0d2FyZQBBZG9iZSBJbWFnZVJlYWR5ccllPAAAAyJpVFh0WE1MOmNvbS5hZG9iZS54bXAAAAAAADw/eHBhY2tldCBiZWdpbj0i77u/IiBpZD0iVzVNME1wQ2VoaUh6cmVTek5UY3prYzlkIj8+IDx4OnhtcG1ldGEgeG1sbnM6eD0iYWRvYmU6bnM6bWV0YS8iIHg6eG1wdGs9IkFkb2JlIFhNUCBDb3JlIDUuMC1jMDYwIDYxLjEzNDc3NywgMjAxMC8wMi8xMi0xNzozMjowMCAgICAgICAgIj4gPHJkZjpSREYgeG1sbnM6cmRmPSJodHRwOi8vd3d3LnczLm9yZy8xOTk5LzAyLzIyLXJkZi1zeW50YXgtbnMjIj4gPHJkZjpEZXNjcmlwdGlvbiByZGY6YWJvdXQ9IiIgeG1sbnM6eG1wPSJodHRwOi8vbnMuYWRvYmUuY29tL3hhcC8xLjAvIiB4bWxuczp4bXBNTT0iaHR0cDovL25zLmFkb2JlLmNvbS94YXAvMS4wL21tLyIgeG1sbnM6c3RSZWY9Imh0dHA6Ly9ucy5hZG9iZS5jb20veGFwLzEuMC9zVHlwZS9SZXNvdXJjZVJlZiMiIHhtcDpDcmVhdG9yVG9vbD0iQWRvYmUgUGhvdG9zaG9wIENTNSBNYWNpbnRvc2giIHhtcE1NOkluc3RhbmNlSUQ9InhtcC5paWQ6OENDRjNBN0E2NTZBMTFFMEI3QjRBODM4NzJDMjlGNDgiIHhtcE1NOkRvY3VtZW50SUQ9InhtcC5kaWQ6OENDRjNBN0I2NTZBMTFFMEI3QjRBODM4NzJDMjlGNDgiPiA8eG1wTU06RGVyaXZlZEZyb20gc3RSZWY6aW5zdGFuY2VJRD0ieG1wLmlpZDo4Q0NGM0E3ODY1NkExMUUwQjdCNEE4Mzg3MkMyOUY0OCIgc3RSZWY6ZG9jdW1lbnRJRD0ieG1wLmRpZDo4Q0NGM0E3OTY1NkExMUUwQjdCNEE4Mzg3MkMyOUY0OCIvPiA8L3JkZjpEZXNjcmlwdGlvbj4gPC9yZGY6UkRGPiA8L3g6eG1wbWV0YT4gPD94cGFja2V0IGVuZD0iciI/PqqezsUAAAAfSURBVHjaYmRABcYwBiM2QSA4y4hNEKYDQxAEAAIMAHNGAzhkPOlYAAAAAElFTkSuQmCC) repeat-x 0 0;
+  border: 0 none;
+  color: #cccccc;
+  height: 4px;
+  padding: 0;
+}
+
+body > h2:first-child {
+  margin-top: 0;
+  padding-top: 0; }
+body > h1:first-child {
+  margin-top: 0;
+  padding-top: 0; }
+  body > h1:first-child + h2 {
+    margin-top: 0;
+    padding-top: 0; }
+body > h3:first-child, body > h4:first-child, body > h5:first-child, body > h6:first-child {
+  margin-top: 0;
+  padding-top: 0; }
+
+a:first-child h1, a:first-child h2, a:first-child h3, a:first-child h4, a:first-child h5, a:first-child h6 {
+  margin-top: 0;
+  padding-top: 0; }
+
+h1 p, h2 p, h3 p, h4 p, h5 p, h6 p {
+  margin-top: 0; }
+
+li p.first {
+  display: inline-block; }
+li {
+  margin: 0; }
+ul, ol {
+  padding-left: 30px; }
+
+ul :first-child, ol :first-child {
+  margin-top: 0; }
+
+dl {
+  padding: 0; }
+  dl dt {
+    font-size: 14px;
+    font-weight: bold;
+    font-style: italic;
+    padding: 0;
+    margin: 15px 0 5px; }
+    dl dt:first-child {
+      padding: 0; }
+    dl dt > :first-child {
+      margin-top: 0; }
+    dl dt > :last-child {
+      margin-bottom: 0; }
+  dl dd {
+    margin: 0 0 15px;
+    padding: 0 15px; }
+    dl dd > :first-child {
+      margin-top: 0; }
+    dl dd > :last-child {
+      margin-bottom: 0; }
+
+blockquote {
+  border-left: 4px solid #dddddd;
+  padding: 0 15px;
+  color: #777777; }
+  blockquote > :first-child {
+    margin-top: 0; }
+  blockquote > :last-child {
+    margin-bottom: 0; }
+
+table {
+  padding: 0;border-collapse: collapse; }
+  table tr {
+    border-top: 1px solid #cccccc;
+    background-color: white;
+    margin: 0;
+    padding: 0; }
+    table tr:nth-child(2n) {
+      background-color: #f8f8f8; }
+    table tr th {
+      font-weight: bold;
+      border: 1px solid #cccccc;
+      margin: 0;
+      padding: 6px 13px; }
+    table tr td {
+      border: 1px solid #cccccc;
+      margin: 0;
+      padding: 6px 13px; }
+    table tr th :first-child, table tr td :first-child {
+      margin-top: 0; }
+    table tr th :last-child, table tr td :last-child {
+      margin-bottom: 0; }
+
+img {
+  max-width: 100%; }
+
+span.frame {
+  display: block;
+  overflow: hidden; }
+  span.frame > span {
+    border: 1px solid #dddddd;
+    display: block;
+    float: left;
+    overflow: hidden;
+    margin: 13px 0 0;
+    padding: 7px;
+    width: auto; }
+  span.frame span img {
+    display: block;
+    float: left; }
+  span.frame span span {
+    clear: both;
+    color: #333333;
+    display: block;
+    padding: 5px 0 0; }
+span.align-center {
+  display: block;
+  overflow: hidden;
+  clear: both; }
+  span.align-center > span {
+    display: block;
+    overflow: hidden;
+    margin: 13px auto 0;
+    text-align: center; }
+  span.align-center span img {
+    margin: 0 auto;
+    text-align: center; }
+span.align-right {
+  display: block;
+  overflow: hidden;
+  clear: both; }
+  span.align-right > span {
+    display: block;
+    overflow: hidden;
+    margin: 13px 0 0;
+    text-align: right; }
+  span.align-right span img {
+    margin: 0;
+    text-align: right; }
+span.float-left {
+  display: block;
+  margin-right: 13px;
+  overflow: hidden;
+  float: left; }
+  span.float-left span {
+    margin: 13px 0 0; }
+span.float-right {
+  display: block;
+  margin-left: 13px;
+  overflow: hidden;
+  float: right; }
+  span.float-right > span {
+    display: block;
+    overflow: hidden;
+    margin: 13px auto 0;
+    text-align: right; }
+
+code, tt {
+  margin: 0 2px;
+  padding: 0 5px;
+  white-space: nowrap;
+  border: 1px solid #eaeaea;
+  background-color: #f8f8f8;
+  border-radius: 3px; }
+
+pre code {
+  margin: 0;
+  padding: 0;
+  white-space: pre;
+  border: none;
+  background: transparent; }
+
+.highlight pre {
+  background-color: #f8f8f8;
+  border: 1px solid #cccccc;
+  font-size: 13px;
+  line-height: 19px;
+  overflow: auto;
+  padding: 6px 10px;
+  border-radius: 3px; }
+
+pre {
+  background-color: #f8f8f8;
+  border: 1px solid #cccccc;
+  font-size: 13px;
+  line-height: 19px;
+  overflow: auto;
+  padding: 6px 10px;
+  border-radius: 3px; }
+  pre code, pre tt {
+    background-color: transparent;
+    border: none; }
+
+sup {
+    font-size: 0.83em;
+    vertical-align: super;
+    line-height: 0;
+}
+* {
+	-webkit-print-color-adjust: exact;
+}
+@media screen and (min-width: 914px) {
+    body {
+        width: 854px;
+        margin:0 auto;
+    }
+}
+@media print {
+	table, pre {
+		page-break-inside: avoid;
+	}
+	pre {
+		word-wrap: break-word;
+	}
+}
+</style>
+<title>GRE 词汇精选</title>
+
+</head>
+<body>
+<h2>GRE 词汇精选</h2>
+
+<h3>Stage 1 : Part 1 [Word List 1 - 6]</h3>
+
+<h4><font color="blue">Word List 1</font></h4>
+
+<p><code>单词列表</code></p>
+
+<table>
+<thead>
+<tr>
+<th align="left">单词 </th>
+<th align="left"> 同义词 </th>
+<th align="left"> 短语 </th>
+<th align="left"> 单词 </th>
+<th align="left"> 同义词 </th>
+<th align="left"> 短语</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td align="left">abet        </td>
+<td align="left"> incite, encourage </td>
+<td align="left">  make abet (打赌) </td>
+<td align="left"> accomplice </td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td align="left">abeyance    </td>
+<td align="left"> abort, suspend </td>
+<td align="left"> be in abeyance (被搁置) </td>
+<td align="left"> accrete </td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td align="left">abominate   </td>
+<td align="left"> </td>
+<td align="left"> </td>
+<td align="left"> accrue </td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td align="left">abrogate    </td>
+<td align="left"> </td>
+<td align="left"> </td>
+<td align="left"> acerbic </td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td align="left">absolve     </td>
+<td align="left"> </td>
+<td align="left"> </td>
+<td align="left"> acolyte </td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td align="left">abstemious  </td>
+<td align="left"> </td>
+<td align="left"> </td>
+<td align="left"> acoustic </td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td align="left">abstruse    </td>
+<td align="left"> </td>
+<td align="left"> </td>
+<td align="left"> acquiesce </td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td align="left">abysmal     </td>
+<td align="left"> </td>
+<td align="left"> </td>
+<td align="left"> acquit </td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td align="left">accede      </td>
+<td align="left"> </td>
+<td align="left"> </td>
+<td align="left"> adage </td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td align="left">accolade    </td>
+<td align="left"> </td>
+<td align="left"> </td>
+<td align="left"> adament </td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td align="left">adherent    </td>
+<td align="left"> </td>
+<td align="left"> </td>
+<td align="left"> adjourn </td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td align="left">admonish    </td>
+<td align="left"> </td>
+<td align="left"> </td>
+<td align="left"> adroit </td>
+<td align="left"> skillful, expert </td>
+<td></td>
+</tr>
+<tr>
+<td align="left">adulate     </td>
+<td align="left"> flatter </td>
+<td align="left"> </td>
+<td align="left"> adumbrate </td>
+<td align="left"> forshadow </td>
+<td></td>
+</tr>
+<tr>
+<td align="left">aegis       </td>
+<td align="left"> shield, protection </td>
+<td align="left"> </td>
+<td align="left"> affectation </td>
+<td align="left"> pretend, feign </td>
+<td></td>
+</tr>
+</tbody>
+</table>
+
+
+<h2></h2>
+
+<p><code>每日一句</code></p>
+
+<p><strong>Today is the first day of the rest of my life</strong>, I wake as a child to see the world begin. <br/>
+On monarch wings and birthday wonderings, want to put on faces, walk in the wet and cold. <br/>
+And look forward to my growing old, <strong>to grow is to change, to change is to be new, to be new is to be young again</strong>, I barely remember when.</p>
+
+<hr />
+
+<h4><font color="blue">Word List 2</font></h4>
+
+<p><code>单词列表</code></p>
+
+<table>
+<thead>
+<tr>
+<th align="left">单词 </th>
+<th align="left"> 同义词 </th>
+<th align="left"> 短语 </th>
+<th align="left"> 单词 </th>
+<th align="left"> 同义词 </th>
+<th align="left"> 短语</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td align="left">affidavit   </td>
+<td align="left"> </td>
+<td align="left"> </td>
+<td align="left"> affinity </td>
+<td align="left"> </td>
+<td align="left"> colse relationship</td>
+</tr>
+<tr>
+<td align="left">affix       </td>
+<td align="left"> stick, attach </td>
+<td align="left"> </td>
+<td align="left"> affront </td>
+<td align="left"> offend </td>
+<td></td>
+</tr>
+<tr>
+<td align="left">agglomerate </td>
+<td align="left"> conglomerate </td>
+<td align="left"> </td>
+<td align="left"> aggrandize </td>
+<td align="left"> </td>
+<td align="left"> make greater or more powerful</td>
+</tr>
+<tr>
+<td align="left">agnostic    </td>
+<td align="left"> </td>
+<td align="left"> </td>
+<td align="left"> agronomy </td>
+<td align="left"> agronomist </td>
+<td></td>
+</tr>
+<tr>
+<td align="left">airtight    </td>
+<td align="left"> </td>
+<td align="left"> </td>
+<td align="left"> alcove </td>
+<td align="left"> recessed section </td>
+<td></td>
+</tr>
+<tr>
+<td align="left">alimentary  </td>
+<td align="left"> aliment </td>
+<td align="left"> </td>
+<td align="left"> allay </td>
+<td align="left"> relieve, alleviate </td>
+<td></td>
+</tr>
+<tr>
+<td align="left">alleviate   </td>
+<td align="left"> allay, lighten, relieve </td>
+<td align="left"> </td>
+<td align="left"> aloof </td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td align="left">altruism    </td>
+<td align="left"> </td>
+<td align="left"> </td>
+<td align="left"> amalgam </td>
+<td align="left"> combination, mixture </td>
+<td align="left"> amalgamate</td>
+</tr>
+<tr>
+<td align="left"><em>dilettante</em> </td>
+<td align="left"> amateur </td>
+<td align="left"> </td>
+<td align="left"> amble </td>
+<td align="left"> </td>
+<td align="left"> a leisurely walk</td>
+</tr>
+<tr>
+<td align="left">amiable     </td>
+<td align="left"> genial, amity </td>
+<td align="left"> </td>
+<td align="left"> amorphous </td>
+<td align="left"> shapeless </td>
+<td></td>
+</tr>
+<tr>
+<td align="left">amulet      </td>
+<td align="left"> </td>
+<td align="left"> against evil </td>
+<td align="left"> anaerobic </td>
+<td align="left"> </td>
+<td align="left"> an + aero + bic</td>
+</tr>
+<tr>
+<td align="left">anarchy     </td>
+<td align="left"> </td>
+<td align="left"> </td>
+<td align="left"> anatomical </td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td align="left">anchor      </td>
+<td align="left"> </td>
+<td align="left"> </td>
+<td align="left"> ancillary </td>
+<td align="left"> auxiliary, subordinate </td>
+<td></td>
+</tr>
+<tr>
+<td align="left">anemia      </td>
+<td align="left"> </td>
+<td align="left"> </td>
+<td align="left"> anguish </td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td align="left">animosity   </td>
+<td align="left"> hatred, dislike </td>
+<td align="left"> </td>
+<td align="left"> animus </td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td align="left">annihilate  </td>
+<td align="left"> </td>
+<td align="left"> </td>
+<td align="left"> annul </td>
+<td align="left"> invalidate, cancel </td>
+<td></td>
+</tr>
+<tr>
+<td align="left">antagonize  </td>
+<td align="left"> hostility </td>
+<td align="left"> </td>
+<td align="left"> antecedent</td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td align="left">anterior    </td>
+<td align="left"> </td>
+<td align="left"> </td>
+<td align="left"> anthem</td>
+<td></td>
+<td></td>
+</tr>
+</tbody>
+</table>
+
+
+<h2></h2>
+
+<p><code>每日一句</code></p>
+
+<p>Every day I remind myself that my inner and outer life are based on the labors of other men, living and dead, <br/>
+and that <strong>I must exert myself</strong> in order to give in the same measure as I have received and am still receiving. -- <em>Albert Einstein (爱因斯坦)</em></p>
+
+<hr />
+
+<h4><font color="blue">Word List 3</font></h4>
+
+<p><code>单词列表</code></p>
+
+<table>
+<thead>
+<tr>
+<th align="left">单词 </th>
+<th align="left"> 同义词 </th>
+<th align="left"> 短语 </th>
+<th align="left"> 单词 </th>
+<th align="left"> 同义词 </th>
+<th align="left"> 短语</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td align="left">anthology   </td>
+<td align="left"> </td>
+<td align="left"> a collection of poems or stories </td>
+<td align="left"> antic </td>
+<td align="left"> fantastic, queer </td>
+<td></td>
+</tr>
+<tr>
+<td align="left">antidote    </td>
+<td align="left"> </td>
+<td align="left"> </td>
+<td align="left"> antipathy </td>
+<td align="left"> [反]sympathy </td>
+<td></td>
+</tr>
+<tr>
+<td align="left">antiseptic  </td>
+<td align="left"> </td>
+<td align="left"> </td>
+<td align="left"> aplomb </td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td align="left">apocryphal  </td>
+<td align="left"> </td>
+<td align="left"> </td>
+<td align="left"> appall </td>
+<td align="left"> horror, shock </td>
+<td></td>
+</tr>
+<tr>
+<td align="left">appellation </td>
+<td align="left"> </td>
+<td align="left"> </td>
+<td align="left"> apposite</td>
+<td align="left"> appropriate </td>
+<td></td>
+</tr>
+<tr>
+<td align="left"><em>appropriate</em> </td>
+<td align="left"> <em>embezzle</em> </td>
+<td align="left"> </td>
+<td align="left"> apprentice </td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td align="left">apropos     </td>
+<td align="left"> proper </td>
+<td align="left"> </td>
+<td align="left"> <em>aquatic</em> </td>
+<td align="left"> <em>aquifer</em> </td>
+<td></td>
+</tr>
+<tr>
+<td align="left">arable      </td>
+<td align="left"> </td>
+<td align="left"> </td>
+<td align="left"> arboreal </td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td align="left">arcane      </td>
+<td align="left"> mysterious, secret </td>
+<td align="left"> </td>
+<td align="left"> archetype </td>
+<td align="left"> prototype </td>
+<td></td>
+</tr>
+<tr>
+<td align="left">ardent      </td>
+<td align="left"> passionate, enthusiastic </td>
+<td align="left"> </td>
+<td align="left"> <em>argot</em> </td>
+<td align="left"> <em>slang</em> </td>
+<td></td>
+</tr>
+<tr>
+<td align="left">arid        </td>
+<td align="left"> dry </td>
+<td align="left"> </td>
+<td align="left"> armada </td>
+<td align="left"> </td>
+<td align="left"> a fleet of warships</td>
+</tr>
+<tr>
+<td align="left">armistice   </td>
+<td align="left"> </td>
+<td align="left"> </td>
+<td align="left"> arresting </td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td align="left">arrogate    </td>
+<td align="left"> </td>
+<td align="left"> </td>
+<td align="left"> artifice </td>
+<td align="left"> trick </td>
+<td></td>
+</tr>
+<tr>
+<td align="left">arrhythmic  </td>
+<td align="left"> </td>
+<td align="left"> lacking rhythm </td>
+<td align="left"> ascetic </td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td align="left">aseptic     </td>
+<td align="left"> </td>
+<td align="left"> </td>
+<td align="left"> asperity </td>
+<td align="left"> severity </td>
+<td></td>
+</tr>
+<tr>
+<td align="left">assiduous   </td>
+<td align="left"> diligent </td>
+<td align="left"> </td>
+<td align="left"> assorted </td>
+<td align="left"> mixed </td>
+<td></td>
+</tr>
+<tr>
+<td align="left">assuage     </td>
+<td align="left"> relieve </td>
+<td align="left"> </td>
+<td align="left"> astringent </td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td align="left">astute      </td>
+<td align="left"> </td>
+<td align="left"> </td>
+<td align="left"> <em>atrocious</em> </td>
+<td align="left"> cruel, brutal </td>
+<td></td>
+</tr>
+</tbody>
+</table>
+
+
+<h2></h2>
+
+<p><code>每日一句</code></p>
+
+<p><strong>Dripping water hollows out stone, not through force but through persistence.</strong></p>
+
+<hr />
+
+<h4><font color="blue">Word List 4</font></h4>
+
+<p><code>单词列表</code></p>
+
+<table>
+<thead>
+<tr>
+<th align="left">单词 </th>
+<th align="left"> 同义词 </th>
+<th align="left"> 短语 </th>
+<th align="left"> 单词 </th>
+<th align="left"> 同义词 </th>
+<th align="left"> 短语</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td align="left">attenuate   </td>
+<td align="left"> </td>
+<td align="left"> </td>
+<td align="left"> attune </td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td align="left">auspices    </td>
+<td align="left"> subsidize, fund, endow </td>
+<td align="left">  </td>
+<td align="left"> auspicious </td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td align="left">avalanche   </td>
+<td align="left"> </td>
+<td align="left"> </td>
+<td align="left"> avarice </td>
+<td align="left"> greed </td>
+<td></td>
+</tr>
+<tr>
+<td align="left">avid    </td>
+<td align="left"> eager, desired </td>
+<td align="left"> </td>
+<td align="left"> awry </td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td align="left">backhanded  </td>
+<td align="left"> indirect </td>
+<td align="left"> </td>
+<td align="left"> baleful </td>
+<td align="left"> harmful, deadly </td>
+<td></td>
+</tr>
+<tr>
+<td align="left">balmy </td>
+<td align="left"> mild, fragrant </td>
+<td align="left">  </td>
+<td align="left"> bane </td>
+<td align="left"> disaster </td>
+<td align="left"> baneful(有害的)</td>
+</tr>
+<tr>
+<td align="left">banish  </td>
+<td align="left"> exile, eliminate </td>
+<td align="left">  </td>
+<td align="left"> banister </td>
+<td align="left"> railing</td>
+<td></td>
+</tr>
+<tr>
+<td align="left">barbarous   </td>
+<td align="left"> crude, brutal </td>
+<td align="left"> </td>
+<td align="left"> barefaced </td>
+<td align="left"> shameless </td>
+<td></td>
+</tr>
+<tr>
+<td align="left">barometer   </td>
+<td align="left"> </td>
+<td align="left"> </td>
+<td align="left"> bask </td>
+<td align="left"> </td>
+<td align="left"> bask in the sunshine(priase)</td>
+</tr>
+<tr>
+<td align="left">bathetic    </td>
+<td align="left"> </td>
+<td align="left"> </td>
+<td align="left"> battalion </td>
+<td align="left"> </td>
+<td></td>
+</tr>
+<tr>
+<td align="left">bawdy   </td>
+<td align="left"> obscene </td>
+<td align="left"> </td>
+<td align="left"> bazaar </td>
+<td align="left"> </td>
+<td align="left"> 新疆音译“巴扎”</td>
+</tr>
+<tr>
+<td align="left">bedeck  </td>
+<td align="left"> adorn </td>
+<td align="left"> </td>
+<td align="left"> bedlam</td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td align="left">behoove </td>
+<td align="left"> </td>
+<td align="left"> </td>
+<td align="left"> belittle </td>
+<td align="left"> scorn, despise, contempt</td>
+<td></td>
+</tr>
+<tr>
+<td align="left">bellicose   </td>
+<td align="left"> militant </td>
+<td align="left"> </td>
+<td align="left"> benediction </td>
+<td align="left"> blessing</td>
+<td></td>
+</tr>
+<tr>
+<td align="left"><em>benign</em>    </td>
+<td align="left"> kind, <em>lenient</em> </td>
+<td align="left"> </td>
+<td align="left"> benison </td>
+<td align="left"> blessing</td>
+<td></td>
+</tr>
+<tr>
+<td align="left">bequeath    </td>
+<td align="left"> </td>
+<td align="left"> </td>
+<td align="left"> berate</td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td align="left">bereft      </td>
+<td align="left"> deprived </td>
+<td align="left"> </td>
+<td align="left"> beset </td>
+<td align="left"> besiege</td>
+<td></td>
+</tr>
+<tr>
+<td align="left">besmirch    </td>
+<td align="left"> slander, aspersion </td>
+<td align="left"> </td>
+<td align="left"> betroth </td>
+<td align="left"> engagement</td>
+<td></td>
+</tr>
+</tbody>
+</table>
+
+
+<p><br></p>
+
+<h2></h2>
+
+<p><code>每日一句</code></p>
+
+<p><strong>Change, like healing, takes time.</strong></p>
+
+<hr />
+
+<h4><font color="blue">Word List 5</font></h4>
+
+<p><code>单词列表</code></p>
+
+<table>
+<thead>
+<tr>
+<th align="left">单词 </th>
+<th align="left"> 同义词 </th>
+<th align="left"> 短语 </th>
+<th align="left"> 单词 </th>
+<th align="left"> 同义词 </th>
+<th align="left"> 短语</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td align="left">bibliophile </td>
+<td align="left"> </td>
+<td align="left"> </td>
+<td align="left"> bifurcate </td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td align="left">bigot   </td>
+<td align="left"> </td>
+<td align="left"> </td>
+<td align="left"> bilk</td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td align="left">blade   </td>
+<td align="left"> </td>
+<td align="left"> </td>
+<td align="left"> blasphemy</td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td align="left">blast   </td>
+<td align="left"> </td>
+<td align="left"> </td>
+<td align="left"> blatant</td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td align="left">blazon  </td>
+<td align="left"> </td>
+<td align="left"> </td>
+<td align="left"> blemish</td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td align="left">blithe  </td>
+<td align="left"> </td>
+<td align="left"> </td>
+<td align="left"> boast </td>
+<td align="left"> brag &lt;> boast</td>
+<td></td>
+</tr>
+<tr>
+<td align="left">boisterous  </td>
+<td align="left"> noisy, tumultuous </td>
+<td align="left"> </td>
+<td align="left"> bolster </td>
+<td align="left"> support, reinforce</td>
+<td></td>
+</tr>
+<tr>
+<td align="left">bondage </td>
+<td align="left"> slavery </td>
+<td align="left"> </td>
+<td align="left"> bootles </td>
+<td align="left"> useless</td>
+<td></td>
+</tr>
+<tr>
+<td align="left">boon    </td>
+<td align="left"> welfare </td>
+<td align="left"> </td>
+<td align="left"> brag </td>
+<td align="left"> boast &lt;> brag</td>
+<td></td>
+</tr>
+<tr>
+<td align="left">brandish    </td>
+<td align="left"> </td>
+<td align="left"> </td>
+<td align="left"> bravado</td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td align="left">brazen  </td>
+<td align="left"> brassy </td>
+<td align="left"> </td>
+<td align="left"> bridle </td>
+<td align="left"> curb</td>
+<td></td>
+</tr>
+<tr>
+<td align="left">brink   </td>
+<td align="left"> margin, edge </td>
+<td align="left"> </td>
+<td align="left"> brittle</td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td align="left">bromide </td>
+<td align="left"> </td>
+<td align="left"> </td>
+<td align="left"> browbeat </td>
+<td align="left"> bully</td>
+<td></td>
+</tr>
+<tr>
+<td align="left">bruise  </td>
+<td align="left"> </td>
+<td align="left"> </td>
+<td align="left"> bulge </td>
+<td align="left"> swell</td>
+<td></td>
+</tr>
+<tr>
+<td align="left">brusque </td>
+<td align="left"> </td>
+<td align="left"> </td>
+<td align="left"> bumptious</td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td align="left">burgeon </td>
+<td align="left"> </td>
+<td align="left"> </td>
+<td align="left"> burnish </td>
+<td align="left"> polish</td>
+<td></td>
+</tr>
+<tr>
+<td align="left">byproduct   </td>
+<td align="left"> </td>
+<td align="left"> </td>
+<td align="left"> cajole </td>
+<td align="left"> coax</td>
+<td></td>
+</tr>
+</tbody>
+</table>
+
+
+<p><br></p>
+
+<h2></h2>
+
+<p><code>每日一句</code></p>
+
+<p>Schedule your runs like appointments, so you make them a priority during a hectic week.</p>
+
+<hr />
+
+<h4><font color="blue">Word List 6</font></h4>
+
+<p><code>单词列表</code></p>
+
+<table>
+<thead>
+<tr>
+<th align="left">单词 </th>
+<th align="left"> 同义词 </th>
+<th align="left"> 短语 </th>
+<th align="left"> 单词 </th>
+<th align="left"> 同义词 </th>
+<th align="left"> 短语</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td align="left">calculating </td>
+<td align="left"> </td>
+<td align="left"> </td>
+<td align="left"> calibrate </td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td align="left">calligraphy </td>
+<td align="left"> calligrapher(书法家) </td>
+<td align="left"> </td>
+<td align="left"> calumniate </td>
+<td align="left"> slander, defame </td>
+<td align="left"> calumny</td>
+</tr>
+<tr>
+<td align="left">candid  </td>
+<td align="left"> straightforward </td>
+<td align="left"> </td>
+<td align="left"> candor </td>
+<td align="left"> frankness</td>
+<td></td>
+</tr>
+<tr>
+<td align="left">canonical   </td>
+<td align="left"> orthodox </td>
+<td align="left"> </td>
+<td align="left"> canvass </td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td align="left">capillary   </td>
+<td align="left"> </td>
+<td align="left"> </td>
+<td align="left"> capitulate</td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td align="left"><em>caprice</em>   </td>
+<td align="left"> </td>
+<td align="left"> </td>
+<td align="left"> <em>capricious</em></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td align="left">captious    </td>
+<td align="left"> </td>
+<td align="left"> </td>
+<td align="left"> cardinal</td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td align="left">carol       </td>
+<td align="left"> </td>
+<td align="left"> </td>
+<td align="left"> carpenter</td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td align="left">caste   </td>
+<td align="left"> 区分 cast </td>
+<td align="left"> </td>
+<td align="left"> castigate</td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td align="left">categorical </td>
+<td align="left"> absolute </td>
+<td align="left"> </td>
+<td align="left"> catharsis </td>
+<td align="left"> purify</td>
+<td></td>
+</tr>
+<tr>
+<td align="left">catholic    </td>
+<td align="left"> universal </td>
+<td align="left"> </td>
+<td align="left"> caustic </td>
+<td align="left"> corrosive</td>
+<td></td>
+</tr>
+<tr>
+<td align="left"><em>cavalry</em>   </td>
+<td align="left"> <em>infantry</em> </td>
+<td align="left"> </td>
+<td align="left"> caveat</td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td align="left">cavort  </td>
+<td align="left"> gambol </td>
+<td align="left"> </td>
+<td align="left"> celestial</td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td align="left">census  </td>
+<td align="left"> 区分 censor, consensus </td>
+<td align="left"> </td>
+<td align="left"> ceramic</td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td align="left">cereal  </td>
+<td align="left"> grain </td>
+<td align="left"> </td>
+<td align="left"> cerebral </td>
+<td align="left"> brain</td>
+<td></td>
+</tr>
+<tr>
+<td align="left">cessation   </td>
+<td align="left"> 区分 cession </td>
+<td align="left"> </td>
+<td align="left"> chagrin </td>
+<td align="left"> complaint </td>
+<td align="left"> To someone's chagrin</td>
+</tr>
+<tr>
+<td align="left">chancellor  </td>
+<td align="left"> </td>
+<td align="left"> </td>
+<td align="left"> characterization </td>
+<td align="left"> depiction, depict</td>
+<td></td>
+</tr>
+<tr>
+<td align="left">charisma    </td>
+<td align="left"> leadership </td>
+<td align="left"> </td>
+<td align="left"> charlatan </td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td align="left">chary   </td>
+<td align="left"> cautious, careful </td>
+<td align="left"> </td>
+<td align="left"> chaste </td>
+<td align="left"> virtuous</td>
+<td></td>
+</tr>
+<tr>
+<td align="left">chastise    </td>
+<td align="left"> scold, chide, condemn </td>
+<td align="left"> </td>
+<td align="left"> <em>cherubic</em></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td align="left">chicanery   </td>
+<td align="left"> </td>
+<td align="left"> </td>
+<td align="left"> chide </td>
+<td align="left"> scold, chastise</td>
+<td></td>
+</tr>
+<tr>
+<td align="left">choke   </td>
+<td align="left"> smother </td>
+<td align="left"> </td>
+<td align="left"> choleric </td>
+<td align="left"> irritable</td>
+<td></td>
+</tr>
+</tbody>
+</table>
+
+
+<p><br></p>
+
+<h2></h2>
+
+<p><code>每日一句</code></p>
+
+<p><strong> The man who has made up his mind to win will never say "impossible"! </strong> -- Napoleon (拿破仑)</p>
+
+<p>· <em>END</em> ·</p>
+
+<hr />
+
+<p><br></p>
+</body>
+</html>

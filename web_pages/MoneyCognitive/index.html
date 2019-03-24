@@ -1,0 +1,468 @@
+<!DOCTYPE html>
+<!-- saved from url=(0227)https://mp.weixin.qq.com/s?__biz=MjM5MjkzMzcyMQ==&mid=2651242859&idx=3&sn=03c3a17840e32ae326d98825eb570374&scene=1&srcid=0513BAA6pVkSw6WBoeo9p6Yt&pass_ticket=4sRnf6OhN6LfyUCvT2axUaxl1Crq8GXJZcHxLN1IAw23%2BG3GvPcTWyKfjyDQeOcT#rd -->
+<html><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+        
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width,initial-scale=1.0,maximum-scale=1.0,user-scalable=0">
+<meta name="apple-mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-status-bar-style" content="black">
+<meta name="format-detection" content="telephone=no">
+
+
+        <script type="text/javascript">
+            window.logs = {
+                pagetime: {}
+            };
+            window.logs.pagetime['html_begin'] = (+new Date());
+        </script>
+        
+
+<script type="text/javascript"> 
+
+    var page_begintime = (+new Date());
+
+    var biz = "MjM5MjkzMzcyMQ=="||"";
+    var sn = "03c3a17840e32ae326d98825eb570374" || ""|| "";
+    var mid = "2651242859" || ""|| "";
+    var idx = "3" || "" || "";
+
+    
+    var is_rumor = ""*1;
+    var norumor = ""*1;
+    if (!!is_rumor&&!norumor){
+      if (!document.referrer || document.referrer.indexOf("mp.weixin.qq.com/mp/rumor") == -1){
+        location.href = "http://mp.weixin.qq.com/mp/rumor?action=info&__biz=" + biz + "&mid=" + mid + "&idx=" + idx + "&sn=" + sn + "#wechat_redirect";
+      }
+    }
+
+    
+    
+</script>
+<script type="text/javascript">
+var MutationObserver = window.WebKitMutationObserver||window.MutationObserver||window.MozMutationObserver;
+var isDangerSrc = function(src) {
+    if(src) {
+        var host = src.match(/http(?:s)?:\/\/([^\/]+?)(\/|$)/);
+        if(host && !/qq\.com$/.test(host[1])) {
+            return true;
+        }
+    }
+    return false;
+}
+var ishttp = location.href.indexOf("http://")==0;
+if (ishttp && typeof MutationObserver === 'function') {
+    window.__observer_data = {count:0, exec_time: 0, list:[]};
+    window.__observer = new MutationObserver(function(mutations) {
+        
+        window.__observer_data.count++;
+        var begin = new Date(), deleteNodes = [];
+        mutations.forEach(function(mutation) {
+            var nodes = mutation.addedNodes;
+            for (var i = 0; i < nodes.length; i++) {
+                var node = nodes[i];
+
+                if (node.tagName === 'SCRIPT') {
+                    var scriptSrc = node.src;
+                    if(isDangerSrc(scriptSrc)) {
+                        window.__observer_data.list.push(scriptSrc);
+                        deleteNodes.push(node);
+                    }
+                
+                }
+            }
+        });
+        for(var i=0; i<deleteNodes.length; i++) {
+            var node = deleteNodes[i];
+            node.parentNode.removeChild(node);
+        }
+        window.__observer_data.exec_time += (new Date() - begin);
+    });
+    window.__observer.observe(document, {subtree: true, childList: true});
+}
+(function() {
+    if (Math.random()<0.01 && ishttp && HTMLScriptElement.prototype.__lookupSetter__ && typeof Object.defineProperty !== "undefined") {
+        window.__danger_src = {xmlhttprequest:[], script_src: [], script_setAttribute: []};
+        var t = "$"+Math.random();
+        
+        
+        HTMLScriptElement.prototype.__old_method_script_src = HTMLScriptElement.prototype.__lookupSetter__ ('src');
+        HTMLScriptElement.prototype.__defineSetter__ ('src', function(url) {
+            if (url && isDangerSrc(url)) {
+                
+                window.__danger_src.script_src.push(url);
+            }
+            this.__old_method_script_src(url);
+        });
+        var element_setAttribute_method = "element_setAttribute"+t;
+        Object.defineProperty(Element.prototype, element_setAttribute_method, {
+            value: Element.prototype.setAttribute,
+            enumerable: false
+        });
+        Element.prototype.setAttribute = function(name, url) {
+            if (this.tagName == 'SCRIPT' && name == 'src' && isDangerSrc(url)) {
+                
+                window.__danger_src.script_setAttribute.push(url);
+            }
+            this[element_setAttribute_method](name, url);
+        };
+    }
+})();
+</script>
+
+        <link rel="dns-prefetch" href="https://res.wx.qq.com/">
+<link rel="dns-prefetch" href="https://mmbiz.qpic.cn/">
+<link rel="shortcut icon" type="image/x-icon" href="http://res.wx.qq.com/mmbizwap/zh_CN/htmledition/images/icon/common/favicon22c41b.ico">
+<script type="text/javascript">
+    String.prototype.html = function(encode) {
+        var replace =["&#39;", "'", "&quot;", '"', "&nbsp;", " ", "&gt;", ">", "&lt;", "<", "&amp;", "&", "&yen;", "¥"];
+        if (encode) {
+            replace.reverse();
+        }
+        for (var i=0,str=this;i< replace.length;i+= 2) {
+             str=str.replace(new RegExp(replace[i],'g'),replace[i+1]);
+        }
+        return str;
+    };
+
+    window.isInWeixinApp = function() {
+        return /MicroMessenger/.test(navigator.userAgent);
+    };
+
+    window.getQueryFromURL = function(url) {
+        url = url || 'http://qq.com/s?a=b#rd'; 
+        var query = url.split('?')[1].split('#')[0].split('&'),
+            params = {};
+        for (var i=0; i<query.length; i++) {
+            var arg = query[i].split('=');
+            params[arg[0]] = arg[1];
+        }
+        if (params['pass_ticket']) {
+        	params['pass_ticket'] = encodeURIComponent(params['pass_ticket'].html(false).html(false).replace(/\s/g,"+"));
+        }
+        return params;
+    };
+
+    (function() {
+	    var params = getQueryFromURL(location.href);
+        window.uin = params['uin'] || '';
+        window.key = params['key'] || '';
+        window.wxtoken = params['wxtoken'] || '';
+        window.pass_ticket = params['pass_ticket'] || '';
+    })();
+
+</script>
+
+        <title>赚钱：你学得了马化腾，却学不了任正非</title>
+
+<link rel="stylesheet" type="text/css" href="../css_files/page_mp_article_improve2d1390.css">
+        <link rel="stylesheet" type="text/css" href="../css_files/page_mp_article_improve_combo2d1390.css">
+        <link rel="stylesheet" type="text/css" href="../css_files/not_in_mm2c9cd6.css">
+
+<style>
+     
+    </style>
+<!--[if lt IE 9]>
+<link rel="stylesheet" type="text/css" href="https://res.wx.qq.com/mmbizwap/zh_CN/htmledition/style/page/appmsg/page_mp_article_improve_pc2c9cd6.css">
+<![endif]-->
+<script type="text/javascript">
+    document.domain = "qq.com";
+</script>
+    <script type="text/javascript">
+                        var first_sceen__time = (+new Date());
+
+                        if ("" == 1 && document.getElementById('js_content'))
+                            document.getElementById('js_content').addEventListener("selectstart",function(e){ e.preventDefault(); });
+
+                                        (function(){
+                            if (navigator.userAgent.indexOf("WindowsWechat") != -1){
+                                var link = document.createElement('link');
+                                var head = document.getElementsByTagName('head')[0];
+                                link.rel = 'stylesheet';
+                                link.type = 'text/css';
+                                link.href = "https://res.wx.qq.com/mmbizwap/zh_CN/htmledition/style/page/appmsg/page_mp_article_improve_winwx2c9cd6.css";
+                                head.appendChild(link);
+                            }
+                        })();
+                    </script>
+                    <link rel="stylesheet" type="text/css" href="./index_files/page_mp_article_improve_combo2d1390.css">
+    <link rel="stylesheet" type="text/css" href="./index_files/not_in_mm2c9cd6.css"></head>
+    <body id="activity-detail" class="zh_CN mm_appmsg not_in_mm" ontouchstart="">
+        
+    <script type="text/javascript">
+        var write_sceen_time = (+new Date());
+    </script>
+    
+    <div id="js_cmt_mine" class="discuss_container editing access" style="display:none;">
+        <div class="discuss_container_inner">
+            <h2 class="rich_media_title">[对钱的认知 && 对赚钱的理解]：你学得了马化腾，却学不了任正非</h2>
+            <span id="log"></span>
+            <div class="frm_textarea_box_wrp">
+                <span class="frm_textarea_box">
+                    <textarea id="js_cmt_input" class="frm_textarea" placeholder="留言将由公众号筛选后显示，对所有人可见。"></textarea>
+                    <div class="emotion_tool">
+                        <span class="emotion_switch" style="display:none;"></span>
+                        <span id="js_emotion_switch" class="pic_emotion_switch_wrp">
+                            <img class="pic_default" src="./index_files/icon_emotion_switch.2x278965.png" alt="">
+                            <img class="pic_active" src="./index_files/icon_emotion_switch_active.2x278965.png" alt="">
+                        </span>
+                        <div class="emotion_panel" id="js_emotion_panel">
+                            <span class="emotion_panel_arrow_wrp" id="js_emotion_panel_arrow_wrp">
+                                <i class="emotion_panel_arrow arrow_out"></i>
+                                <i class="emotion_panel_arrow arrow_in"></i>
+                            </span>
+                            <div class="emotion_list_wrp" id="js_slide_wrapper">
+                                
+                                
+                            </div>
+                            <ul class="emotion_navs" id="js_navbar">
+                                
+                            </ul>
+                        </div>
+                    </div>
+                </span>
+            </div>
+            <div class="discuss_btn_wrp"><a id="js_cmt_submit" class="btn btn_primary btn_discuss btn_disabled" href="javascript:;">提交</a></div>
+            <div class="discuss_list_wrp" style="display:none">
+                <div class="rich_tips with_line title_tips discuss_title_line">
+                    <span class="tips">我的留言</span>
+                </div>
+                <ul class="discuss_list" id="js_cmt_mylist"></ul>
+            </div>
+            <div class="rich_tips tips_global loading_tips" id="js_mycmt_loading">
+                <img src="./index_files/icon_loading_white2805ea.gif" class="rich_icon icon_loading_white" alt="">
+                <span class="tips">加载中</span>
+            </div>
+            <div class="wx_poptips" id="js_cmt_toast" style="display:none;">
+                <img alt="" class="icon_toast" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAGoAAABqCAYAAABUIcSXAAAAGXRFWHRTb2Z0d2FyZQBBZG9iZSBJbWFnZVJlYWR5ccllPAAAA3NpVFh0WE1MOmNvbS5hZG9iZS54bXAAAAAAADw/eHBhY2tldCBiZWdpbj0i77u/IiBpZD0iVzVNME1wQ2VoaUh6cmVTek5UY3prYzlkIj8+IDx4OnhtcG1ldGEgeG1sbnM6eD0iYWRvYmU6bnM6bWV0YS8iIHg6eG1wdGs9IkFkb2JlIFhNUCBDb3JlIDUuNS1jMDE0IDc5LjE1MTQ4MSwgMjAxMy8wMy8xMy0xMjowOToxNSAgICAgICAgIj4gPHJkZjpSREYgeG1sbnM6cmRmPSJodHRwOi8vd3d3LnczLm9yZy8xOTk5LzAyLzIyLXJkZi1zeW50YXgtbnMjIj4gPHJkZjpEZXNjcmlwdGlvbiByZGY6YWJvdXQ9IiIgeG1sbnM6eG1wTU09Imh0dHA6Ly9ucy5hZG9iZS5jb20veGFwLzEuMC9tbS8iIHhtbG5zOnN0UmVmPSJodHRwOi8vbnMuYWRvYmUuY29tL3hhcC8xLjAvc1R5cGUvUmVzb3VyY2VSZWYjIiB4bWxuczp4bXA9Imh0dHA6Ly9ucy5hZG9iZS5jb20veGFwLzEuMC8iIHhtcE1NOk9yaWdpbmFsRG9jdW1lbnRJRD0ieG1wLmRpZDoyMTUxMzkxZS1jYWVhLTRmZTMtYTY2NS0xNTRkNDJiOGQyMWIiIHhtcE1NOkRvY3VtZW50SUQ9InhtcC5kaWQ6MTA3QzM2RTg3N0UwMTFFNEIzQURGMTQzNzQzMDAxQTUiIHhtcE1NOkluc3RhbmNlSUQ9InhtcC5paWQ6MTA3QzM2RTc3N0UwMTFFNEIzQURGMTQzNzQzMDAxQTUiIHhtcDpDcmVhdG9yVG9vbD0iQWRvYmUgUGhvdG9zaG9wIENDIChNYWNpbnRvc2gpIj4gPHhtcE1NOkRlcml2ZWRGcm9tIHN0UmVmOmluc3RhbmNlSUQ9InhtcC5paWQ6NWMyOGVjZTMtNzllZS00ODlhLWIxZTYtYzNmM2RjNzg2YjI2IiBzdFJlZjpkb2N1bWVudElEPSJ4bXAuZGlkOjIxNTEzOTFlLWNhZWEtNGZlMy1hNjY1LTE1NGQ0MmI4ZDIxYiIvPiA8L3JkZjpEZXNjcmlwdGlvbj4gPC9yZGY6UkRGPiA8L3g6eG1wbWV0YT4gPD94cGFja2V0IGVuZD0iciI/Pmvxj1gAAAVrSURBVHja7J15rF1TFMbXk74q1ZKHGlMkJVIhIgg1FH+YEpEQJCKmGBpThRoSs5jVVNrSQUvEEENIhGiiNf9BiERICCFIRbUiDa2qvudbOetF3Tzv7XWGffa55/uS7593977n3vO7e5+199p7v56BgQGh0tcmvAUERREUQVEERREUQVEERREUQVEERREUQVEERREUQVEERREUQVEERVAUQVEERVAUQbVYk+HdvZVG8b5F0xj4RvhouB+eCy8KrdzDJc1RtAX8ILxvx98V1GyCSkN98Cx4z/95/Wn4fj6j6tUEeN4wkFSnw1MJqj5NhBfAuwaUHREUg4lqNMmePVsHll/HFhVfe1t3FwpJI8DXCCquDrCWNN4B6Tb4M3Z98aTPmTvh0YHl18PXw29yZiKejoPvcUD6E74yFBJbVDk6Bb7K8aP/Hb4c/tRzEYIqprPhSxzlf4Uvhb/0Xoig8qnHAJ3lqPMzfDH8XZ4LEpRf2sVdA5/sqPO9Qfop70UJyn+/boaPddT5yrq7VUUvTIVJI7q74MMddXR8NB1eXcYvhBpZm0s2w72/o86HFoKvLau/pYaXzjLMdUJ6y0LwtWV9CIIaXtvA8+G9HHV03u5q+K+yH47U0NoRngPv7KjzHDwTLj0bS1BDazfJJlcnOOostC6ysnCT+q80G/sIvFVgeW09D8FPVT0uoP7VfvAD8NjA8pqmuAN+OcYAjso0RbIZ8DGB5TVNcRO8JMaHY9SXSdfa3eeANJimWBLrA7JFiZwIXye+NMUV8CcxP2SRFjXefok7NRjSGZJlWUPvw2/wtNiQirSoXWyMsR28wR7AzzYM0oXw+Y7yK+CLJGeaoqjyrJSdZJD6Ov4+z5y6NJc0Az7NUecHydIUy+v60KNyQHoM3nKI1y7YCFiq0i7uBvgER52vDdKqWn9djhY1Dn4G3n6Ecqm2rF74dvgoR53S0hQxW9RJAZAGW5bSn58QJA27dQ7uIEedjywEX5NKVxCqsY6y+qA+LxFI4+yZ6oH0trWkNan80jygtIUsc5SflgAsDXgehfdx1KkkTRE76tN+Xue2jnTU0Ru1oIbvpt30bBtKhOp5yaaRkts0lic8V1i6dPcIRx2d/l8Y8XtNNEg7OOo8bl1kmmOKnDsO88CaYzejau0hWZqiL7C83oCH4SeTHvwV2BqqsHRVztSEYOmWF80NeXZT6Hd4KflResE9vCnBOlCyGfDNAstHTVPUDWoQ1t3iW+9WNizvlhfd4aerXd+ThqiMfNR6+9LvOOro5OY5JX2H4+F7HZD+kGzlamMgldWiirQsjcwWFbjmqZJteekJLK9pisvgL6RhKvuciZiwzrWWGapfrPy30kBVcSBIrw0aD3PU0XB6cehntq7rTMf7/2iQlktDVdXJLXlg6VjmiYBn6rWSTRCH6hvJ0hQrpcGq8oidsmHpTP8t8DGO9/vcWt9qabiqPgup1yKyQwvC2tSefZ73SSpNkUJ4PlLorlHZ+446nc8f3fIyywlJhwrTuwVSjBa1ccvSxN0hjjoK5xVrYZMd9V6XbFfgBukixTwGLg8sDam3dZR/wZ6L/dJlin1en8LS+bgpFbz3Ygvzu1J1HKxYNqxGpCmaCEo12rrBorD6LRp8UbpcdR5VWhTW35KlKd6QFqjuM2XzwlpnMxTvSkuUwuG/Xlg6NtPjbT6WFimF/VG6LEvXgn8QGDjMbBukVECFwhpoS+CQatfX2Q1q6H7wENHdrfCr0lKleEB9JyxNneus+VJpsVL9TwI6W65LovWIGl3KtVJaLv7LBwYTFEERFEVQFEERFEVQFEERFEVQFEERFEVQFEERFEVQFEERFFWq/hFgADUMN4RzT6/OAAAAAElFTkSuQmCC">
+                <p class="toast_content">已留言</p>
+            </div>
+        </div>
+    </div>
+
+    <div id="js_article" class="rich_media">
+        
+        <div id="js_top_ad_area" class="top_banner">
+ 
+        </div>
+                
+
+        <div class="rich_media_inner">
+            <div id="page-content">
+                <div id="img-content" class="rich_media_area_primary">
+                    <h2 class="rich_media_title" id="activity-name">
+                        [对钱的认知 和 对赚钱的理解] <br>你学得了马化腾，却学不了任正非 
+                    </h2>
+                    <div class="rich_media_meta_list">
+                        						                        <em id="post-date" class="rich_media_meta rich_media_meta_text">2016-05-12</em>
+
+
+                        <div id="js_profile_qrcode" class="profile_container" style="display:none;">
+                            <div class="profile_inner">
+                                
+                            </div>
+                            <span class="profile_arrow_wrp" id="js_profile_arrow_wrp">
+                                <i class="profile_arrow arrow_out"></i>
+                                <i class="profile_arrow arrow_in"></i>
+                            </span>
+                        </div>
+                    </div>
+                    
+                    <div class="rich_media_content " id="js_content">
+                        
+                        <p>人只能在其对钱认识的格局之内赚钱，人对钱认识的格局决定了人这一生掌控钱的数目。</p><p><br></p><p><span style="line-height: 1.6;">&nbsp;对钱的认识不进化，没有钱的将会永远没有，已经拥有的钱也会逐渐失去。</span><br></p><p><span style="max-width: 100%; box-sizing: border-box !important; word-wrap: break-word !important;"><br style="max-width: 100%; box-sizing: border-box !important; word-wrap: break-word !important;"></span>每一代的创业者都有一个同样的困惑……</p><p>40年代出生的创业者困惑自己为什么不能成为&nbsp;&nbsp;&nbsp; 任正非&nbsp; （1944年出生）</p><p>50年代出生的创业者困惑自己为什么不能成为&nbsp;&nbsp;&nbsp; 王健林&nbsp;&nbsp; （1954年出生）</p><p>60年代出生的创业者困惑自己为什么不能成为&nbsp;&nbsp;&nbsp; 马&nbsp; 云&nbsp;&nbsp; （1964年出生）</p><p>70年代出生的创业者困惑自己为什么不能成为&nbsp;&nbsp;&nbsp; 马化腾&nbsp;&nbsp; （1971年出生）</p><p>80年代出生的创业者困惑自己为什么不能成为&nbsp;&nbsp;&nbsp; 程&nbsp; 维&nbsp;&nbsp; （1983年出生）</p><p>&nbsp;</p><p>创业在同一时代，为什么你成为不了任正非、王健林、马云、马化腾和程维呢？</p><p><br></p><p>出生在同一年代，为什么你的同学成为了亿万富翁，可是你却没有呢？</p><p><br></p><p>答案在下面的故事里……</p><p style="max-width: 100%; min-height: 1em; white-space: pre-wrap; color: rgb(62, 62, 62); line-height: 23px; text-indent: 32px; box-sizing: border-box !important; word-wrap: break-word !important; background-color: rgb(255, 255, 255);"><span style="max-width: 100%; box-sizing: border-box !important; word-wrap: break-word !important;">&nbsp;</span></p><p>前天，一位在1993年就登上福布斯榜的亿万富翁突然约我，他说自己在1993年就是亿万富翁，可是20多年过去了，为什么自己不能越来越有钱呢？这位亿万富翁知道我在财经圈也有20多年，也算是公司的发展、运营的专家。另外，因为工作的关系，我有机会和中国最牛的一线企业家马化腾、马云、柳传志、王健林等有接触，所以他希望我来帮助他解决一个难题。&nbsp;</p><p><br></p><p>和这位亿万富翁相识很久，虽然近来走动比较少，但是朋友不需长见面，朋友请求自然是不能推辞。 我从中午11点一直和他聊到晚上21点，这中间吃了两顿饭，在这两顿饭中，我找到了他不能越来越有钱的原因。&nbsp;&nbsp;</p><p>&nbsp;&nbsp;&nbsp;</p><p>中午聊到13点的时候，他一看表说是该吃饭了。我这个人不愿意吃饭浪费时间，最喜欢吃快餐，要吃吃碗手擀面就知足啦。所以他问我吃什么的时候，我就说越简单越好。于是，我们一起去了员工食堂。当然，这个食堂不是他们公司的，而是园区的。吃员工食堂最大的特点就是要自己端盘子自己来盛饭（大家记着这个细节，后面有用）</p><p><br></p><p>午饭后，我们接着聊。</p><p><br></p><p>晚餐的时候，又多了一位我们共同的朋友，这位朋友也是这位董事长非常敬重的一个人。晚餐我们还是选择了在了员工食堂，这个朋友带着夫人来的，他的夫人一进入食堂脸色就不好看，显然是觉得被慢待了。为了缓和气氛，在服务员端菜上来的时候，我就说，还是董事长有面子，你看一般的客人都要自己去端菜，可是，这位服务员小姑娘亲自给我们端上来了（其实是因为晚上客人少，所以服务员就把菜端上来了）。董事长听了之后，也非常高兴说一定要给小费的。他从兜里掏出一大叠百元大钞，我以为他要给几百，还觉得亿万富翁到底是大方。结果他在百元的大钞翻了半天，从里边拿出两个五元的，递给服务员。服务员不要，我无法判断服务员是因为嫌少还是因为有规定，但是，我个人觉得他给得的确太少，以至于我有点难为情。为了避免尴尬我从他手里接过来钱，硬塞给了服务员。<br style="max-width: 100%; box-sizing: border-box !important; word-wrap: break-word !important;"></p><p><br></p><p>可是，令人更尴尬的一件事情发生了，在服务员上最后一道菜离开后，另外一个朋友突然说，盘子下有两张五元钱，瞬间，在场的人都沉默了。还是，那个朋友打破的沉默说，我觉得说是这十元钱还是放在这里吧，我们是万万不能拿走。</p><p style="max-width: 100%; min-height: 1em; white-space: pre-wrap; color: rgb(62, 62, 62); line-height: 23px; text-indent: 32px; box-sizing: border-box !important; word-wrap: break-word !important; background-color: rgb(255, 255, 255);"><span style="max-width: 100%; font-family: 宋体; color: black; box-sizing: border-box !important; word-wrap: break-word !important;">&nbsp;</span></p><p>我终于找到了，这位1993年就登上福布斯榜的亿万富翁不能持续赚钱的原因就是他对钱的认识没有进化，还停留在他赚钱的最原始阶段。</p><p style="max-width: 100%; min-height: 1em; white-space: pre-wrap; color: rgb(62, 62, 62); line-height: 23px; text-indent: 32px; box-sizing: border-box !important; word-wrap: break-word !important; background-color: rgb(255, 255, 255);"><span style="max-width: 100%; font-family: 宋体; color: black; box-sizing: border-box !important; word-wrap: break-word !important;">&nbsp;</span></p><p>人只能在其对钱认识的格局之内赚钱，人对钱认识的格局决定了人这一生掌控钱的数目。</p><p style="max-width: 100%; min-height: 1em; white-space: pre-wrap; color: rgb(62, 62, 62); line-height: 23px; box-sizing: border-box !important; word-wrap: break-word !important; background-color: rgb(255, 255, 255);"><span style="max-width: 100%; font-family: 宋体; color: black; box-sizing: border-box !important; word-wrap: break-word !important;">&nbsp;</span></p><p>我在以前的文章里面说过，企业赚钱有四个阶段，“挣钱、来钱、生钱和赚钱”。挣钱作为创业的第一个阶段是最艰苦的，要用双手靠力气来和别人争。正是因为这个阶段挣钱非常难，很多人养成了非常节俭的习惯，他们恨不得把钱掰开两半来用。这个习惯的形成后的最大坏处是，他不仅仅对自己吝啬对于其他人也吝啬。自己出去吃饭能要一个菜绝对不会要两个，住宾馆能住快捷的绝对不住星级的。</p><p style="max-width: 100%; min-height: 1em; white-space: pre-wrap; color: rgb(62, 62, 62); line-height: 25.6000003814697px; text-indent: 32px; box-sizing: border-box !important; word-wrap: break-word !important; background-color: rgb(255, 255, 255);"><span style="max-width: 100%; box-sizing: border-box !important; word-wrap: break-word !important;">&nbsp;<br style="max-width: 100%; box-sizing: border-box !important; word-wrap: break-word !important;"></span></p><p>但是，当你进入到和钱发生关系的第二阶段“来钱”的时候，如果你对钱的认识没有进化升级，还是停留在第一个阶段的时候，就非常危险了。第二个阶段“来钱”，“来”字的繁体字是十字架下面三个人，依靠的就是更多的人的参与来帮助公司赚钱。</p><p><br></p><p>可以进入第二阶段。很多的创业者对钱的认识依然还停留在“省”上。他对自己都一直非常的吝啬，你怎么指望他能对员工慷慨。</p><p><br></p><p>这位亿万富翁对于一个需要感谢的服务员都如此吝啬，我能够想象到他对公司的员工也绝对不会慷慨。这就是他公司无法继续发展壮大的最主要的原因。</p><p style="max-width: 100%; min-height: 1em; white-space: pre-wrap; color: rgb(62, 62, 62); line-height: 25.6000003814697px; text-indent: 32px; box-sizing: border-box !important; word-wrap: break-word !important; background-color: rgb(255, 255, 255);"><span style="max-width: 100%; box-sizing: border-box !important; word-wrap: break-word !important;">&nbsp;</span></p><p>公司不是一个人能做伟大的，必须依靠员工，没有员工，企业家什么也不是，公司什么也不是。</p><p style="max-width: 100%; min-height: 1em; white-space: pre-wrap; color: rgb(62, 62, 62); line-height: 25.6000003814697px; text-indent: 32px; box-sizing: border-box !important; word-wrap: break-word !important; background-color: rgb(255, 255, 255);"><span style="max-width: 100%; box-sizing: border-box !important; word-wrap: break-word !important;">&nbsp;</span></p><p>你也许会说，可是，如果你说的对，为什么他能成为亿万富翁呢？没有错，在上个世纪的80年代，只要胆大就是第一批富裕起来的人。但是，为什么现在这些暴发户很快消失匿迹了呢，就是因为他们无法对钱的认识上进行进化升级。</p><p style="max-width: 100%; min-height: 1em; white-space: pre-wrap; color: rgb(62, 62, 62); line-height: 25.6000003814697px; text-indent: 32px; box-sizing: border-box !important; word-wrap: break-word !important; background-color: rgb(255, 255, 255);"><span style="max-width: 100%; box-sizing: border-box !important; word-wrap: break-word !important;">&nbsp;</span></p><p>对钱的认识不进化，没有的将会永远没有，已经拥有的也会逐渐失去。&nbsp;</p><p style="max-width: 100%; min-height: 1em; white-space: pre-wrap; color: rgb(62, 62, 62); line-height: 25.6000003814697px; text-indent: 32px; box-sizing: border-box !important; word-wrap: break-word !important; background-color: rgb(255, 255, 255);"><br></p><p>有些企业老板总是抱怨公司没有人才， 其实，就是因为他们对钱的认识没有进化升级。这些老板们始终弄不清楚，员工凭什么追随你，员工来到你的公司，是来帮助你一起实现你的理想，但是人家还是要养家糊口，你不仅要让员工赚到钱，而且还要有尊严。</p><p><br></p><p>你如果不让员工赚到钱，员工怎么让你和企业赚到钱呢？</p><p><br></p><p>当我们有权利给别人发钱的时候，发出的多与少，不仅仅是一种良心，而更是一种对人的尊重和其创造价值的敬畏。这种尊重和敬畏，表面上是为别人，归根结底是为了自己和企业更好的发展。</p><p style="max-width: 100%; min-height: 1em; white-space: pre-wrap; color: rgb(62, 62, 62); line-height: 23px; box-sizing: border-box !important; word-wrap: break-word !important; background-color: rgb(255, 255, 255);"><span style="max-width: 100%; box-sizing: border-box !important; word-wrap: break-word !important;"><br style="max-width: 100%; box-sizing: border-box !important; word-wrap: break-word !important;"></span></p><p>为什么中国的企业平均存活期只有4年左右，能够做10年20年的凤毛麟角，因为这些企业的当家人对钱的理解只能停留在第一个阶段，而无法进入到第二个阶段。</p><p style="max-width: 100%; min-height: 1em; white-space: pre-wrap; color: rgb(62, 62, 62); line-height: 25.6000003814697px; box-sizing: border-box !important; word-wrap: break-word !important; background-color: rgb(255, 255, 255);"><span style="max-width: 100%; box-sizing: border-box !important; word-wrap: break-word !important;">&nbsp;&nbsp; </span></p><p><strong style="max-width: 100%; box-sizing: border-box !important; word-wrap: break-word !important;">企业当家人对钱认识的速度决定他了赚钱的速度，更决定了企业的生与死。</strong></p><p><strong style="color: rgb(62, 62, 62); line-height: 25.6000003814697px; text-indent: 32px; white-space: pre-wrap; max-width: 100%; box-sizing: border-box !important; word-wrap: break-word !important;"><br></strong></p><p><strong style="color: rgb(62, 62, 62); line-height: 25.6000003814697px; text-indent: 32px; white-space: pre-wrap; max-width: 100%; box-sizing: border-box !important; word-wrap: break-word !important;">腾讯帝国高速发展的奥秘！</strong></p><p style="max-width: 100%; min-height: 1em; white-space: pre-wrap; color: rgb(62, 62, 62); line-height: 25.6000003814697px; text-indent: 32px; box-sizing: border-box !important; word-wrap: break-word !important; background-color: rgb(255, 255, 255);"><strong style="max-width: 100%; box-sizing: border-box !important; word-wrap: break-word !important;"><span style="max-width: 100%; box-sizing: border-box !important; word-wrap: break-word !important; background: rgb(217, 217, 217);"><br style="max-width: 100%; box-sizing: border-box !important; word-wrap: break-word !important;"></span></strong></p><p>2016年4月26日是一个极其普通的日子，但是，正是这个日子揭开了腾讯帝国高速发展的奥秘。这一天香港联交所公布了腾讯2015年报，年报显示在五名最高薪酬人士中，有一位去年年薪至少达到2.74亿港元，约合人民币2.297亿元。平均日薪约62.9万元人民币。而另外两位的薪酬比较少的人的薪酬也有1.83亿港元。年报中并未在年报中透露五名最高薪酬人士的姓名。<span style="max-width: 100%; font-family: 宋体; box-sizing: border-box !important; word-wrap: break-word !important;"><br style="max-width: 100%; box-sizing: border-box !important; word-wrap: break-word !important;"></span></p><p><br></p><p>但是，在腾讯的高管名单中，我们可以猜猜拿天价高薪的这些人是谁。腾讯高级管理人员包括首席信息官许晨晔、首席运营官兼互娱事业群及移动互联网事业群总裁任宇昕、高级执行副总裁兼微信事业群总裁张小龙、高级执行副总裁兼网络媒体业务系统总裁刘胜义等。</p><p><br></p><p>我要说的重点在下面：五名高管中年薪最低的是1.83亿港币，最高的是2.74港币，可是，你们知道马化腾多少吗？马化腾的年薪连几位高管的零头都不到，</p><p style="max-width: 100%; min-height: 1em; white-space: pre-wrap; color: rgb(62, 62, 62); line-height: 25.6000003814697px; box-sizing: border-box !important; word-wrap: break-word !important; background-color: rgb(255, 255, 255);"><span style="max-width: 100%; font-family: 宋体; box-sizing: border-box !important; word-wrap: break-word !important;">据财报显示，马化腾的酬金仅为</span><span style="max-width: 100%; box-sizing: border-box !important; word-wrap: break-word !important;">3282.8</span><span style="max-width: 100%; font-family: 宋体; box-sizing: border-box !important; word-wrap: break-word !important;">万元。高管的收入超过董事长，下级的收入超过上级，这在国企里面肯定是不可能，在民企里面更不可能。但是，腾讯实现了，马化腾做到了。<strong style="max-width: 100%; box-sizing: border-box !important; word-wrap: break-word !important;">这就是腾讯为什么能高速持续发展的核心原因之一。</strong></span></p><p style="max-width: 100%; min-height: 1em; white-space: pre-wrap; color: rgb(62, 62, 62); line-height: 25.6000003814697px; box-sizing: border-box !important; word-wrap: break-word !important; background-color: rgb(255, 255, 255);"><span style="max-width: 100%; box-sizing: border-box !important; word-wrap: break-word !important;">&nbsp;<br style="max-width: 100%; box-sizing: border-box !important; word-wrap: break-word !important;"></span></p><p>马化腾用实实在在的实惠回报微信之父张小龙，也印证了所有腾讯大将存在的价值，更印证了另外一个真理，叫千军易得一将难求。有人说海底捞的服务你永远学不会，而腾讯对高管的慷慨你更学不会。</p><p><span style="color: rgb(62, 62, 62); line-height: 25.6000003814697px; text-indent: 32px; white-space: pre-wrap; font-family: 宋体;"><br></span></p><p>当相对于马化腾对腾讯高管的慷慨，你更学不会的是华为任正非对所有员工的雨露共沾，任正非用这个词阐释了，众人拾材火焰高，更印证了另外一个真理，<span style="color: rgb(0, 122, 170);">让你的员工发财的企业，企业才会伟大。</span></p><p style="max-width: 100%; min-height: 1em; white-space: pre-wrap; color: rgb(62, 62, 62); line-height: 25.6000003814697px; box-sizing: border-box !important; word-wrap: break-word !important; background-color: rgb(255, 255, 255);"><span style="max-width: 100%; box-sizing: border-box !important; word-wrap: break-word !important;">&nbsp;</span></p><p><strong><span style="color: rgb(171, 25, 66);">华为的总营收为何超过BAT三巨头总和？</span></strong></p><p style="max-width: 100%; min-height: 1em; white-space: pre-wrap; color: rgb(62, 62, 62); line-height: 25.6000003814697px; box-sizing: border-box !important; word-wrap: break-word !important; background-color: rgb(255, 255, 255);"><span style="max-width: 100%; box-sizing: border-box !important; word-wrap: break-word !important;">&nbsp;</span></p><p>2016年的4月1号愚人节期间华为发布了 2015年度财报，财报显示去年华为销售收入3950亿元，同比增长37%，净利润同比增长33%，达369亿元。</p><p><span style="color: rgb(62, 62, 62); line-height: 25.6000003814697px; text-indent: 32px; white-space: pre-wrap; max-width: 100%; font-family: 宋体; box-sizing: border-box !important; word-wrap: break-word !important;"><br></span></p><p>国内人天天把百度、阿里巴巴和腾讯放在口边，是因为他们很能赚钱，可是2015年BAT三巨头总营收合计也不过2500亿元。</p><p><br></p><p>3950亿元-2500亿元= 1450亿元</p><p><br></p><p>华为的总营收比BAT三巨头总营收高出1450亿元。</p><p style="max-width: 100%; min-height: 1em; white-space: pre-wrap; color: rgb(62, 62, 62); line-height: 25.6000003814697px; text-indent: 32px; box-sizing: border-box !important; word-wrap: break-word !important; background-color: rgb(255, 255, 255);"><span style="max-width: 100%; box-sizing: border-box !important; word-wrap: break-word !important;"><br style="max-width: 100%; box-sizing: border-box !important; word-wrap: break-word !important;"></span></p><p>借助微信发展的强烈势头，2015年度腾讯在BAT三巨头总营收最高为1028.63亿元，但这相当于华为全年营收的26%。</p><p><span style="color: rgb(171, 25, 66);"><strong style="color: rgb(62, 62, 62); line-height: 25.6000003814697px; text-indent: 32px; white-space: pre-wrap; max-width: 100%; box-sizing: border-box !important; word-wrap: break-word !important;"><br></strong></span></p><p><strong><span style="color: rgb(171, 25, 66);">为什么？华为是怎么做到的？</span></strong></p><p><span style="color: rgb(62, 62, 62); line-height: 25.6000003814697px; white-space: pre-wrap; text-indent: 16px; max-width: 100%; box-sizing: border-box !important; word-wrap: break-word !important;"><br></span></p><p><span style="color: rgb(62, 62, 62); line-height: 25.6000003814697px; white-space: pre-wrap; text-indent: 16px; max-width: 100%; box-sizing: border-box !important; word-wrap: break-word !important;">4</span><span style="color: rgb(62, 62, 62); line-height: 25.6000003814697px; white-space: pre-wrap; text-indent: 16px; max-width: 100%; font-family: 宋体; box-sizing: border-box !important; word-wrap: break-word !important;">月</span><span style="color: rgb(62, 62, 62); line-height: 25.6000003814697px; white-space: pre-wrap; text-indent: 16px; max-width: 100%; box-sizing: border-box !important; word-wrap: break-word !important;">19 日，72</span><span style="color: rgb(62, 62, 62); line-height: 25.6000003814697px; white-space: pre-wrap; text-indent: 16px; max-width: 100%; font-family: 宋体; box-sizing: border-box !important; word-wrap: break-word !important;">岁高龄的任正非在机场排队打出租车的照片瞬间在社交网络被刷屏。</span></p><p>&nbsp;<br style="max-width: 100%; box-sizing: border-box !important; word-wrap: break-word !important;">其实，这是大家的少见多怪，任正非在公司食堂打饭都很正常。<br style="max-width: 100%; box-sizing: border-box !important; word-wrap: break-word !important;"><br></p><p style="max-width: 100%; min-height: 1em; white-space: pre-wrap; color: rgb(62, 62, 62); line-height: 25.6000003814697px; box-sizing: border-box !important; word-wrap: break-word !important; background-color: rgb(255, 255, 255);"><span style="max-width: 100%; font-family: 宋体; box-sizing: border-box !important; word-wrap: break-word !important;"><br></span></p><p><span style="color: rgb(171, 25, 66);"><strong>华为是这么做到总营收超过BAT三巨头总和！</strong></span></p><p><span style="color: rgb(0, 122, 170);">&nbsp;</span></p><p><span style="color: rgb(0, 122, 170);">第一，&nbsp;&nbsp;对客户慷慨</span></p><p style="max-width: 100%; min-height: 1em; white-space: pre-wrap; color: rgb(62, 62, 62); line-height: 25.6000003814697px; box-sizing: border-box !important; word-wrap: break-word !important; background-color: rgb(255, 255, 255);"><strong style="max-width: 100%; box-sizing: border-box !important; word-wrap: break-word !important;"><span style="max-width: 100%; font-family: 宋体; box-sizing: border-box !important; word-wrap: break-word !important;"><br></span></strong></p><p style="max-width: 100%; min-height: 1em; white-space: pre-wrap; color: rgb(62, 62, 62); line-height: 25.6000003814697px; box-sizing: border-box !important; word-wrap: break-word !important; background-color: rgb(255, 255, 255);"><span style="max-width: 100%; font-family: 宋体; box-sizing: border-box !important; word-wrap: break-word !important;">全球化是中国企业未来几年的头等战略，但是，怎么打开国际市场？任正非给上了教科书式的一课。</span><span style="max-width: 100%; box-sizing: border-box !important; word-wrap: break-word !important;">2000</span><span style="max-width: 100%; font-family: 宋体; box-sizing: border-box !important; word-wrap: break-word !important;">年的时候，华为就开始全球化之路，但是，国外认为中国整体的实力不强，华为公司肯定也不行，所以一直不被接受。这个时候正好赶上香港电信展，这个电信展是全球有</span><span style="max-width: 100%; box-sizing: border-box !important; word-wrap: break-word !important;">50</span><span style="max-width: 100%; font-family: 宋体; box-sizing: border-box !important; word-wrap: break-word !important;">多个国家的</span><span style="max-width: 100%; box-sizing: border-box !important; word-wrap: break-word !important;">2000多名电信官员、运营商和代理商参加。任正非看准了，认为这是一个很好的机会，于是他主动提出来承担2000</span><span style="max-width: 100%; font-family: 宋体; box-sizing: border-box !important; word-wrap: break-word !important;">多人的来往机票，而且，提出必须是头等舱。住宾馆全部是</span><span style="max-width: 100%; box-sizing: border-box !important; word-wrap: break-word !important;">5</span><span style="max-width: 100%; font-family: 宋体; box-sizing: border-box !important; word-wrap: break-word !important;">星级，在会议结束以后，每一个来宾还获得一份礼物，当年价格最高、最时尚的笔记本电脑。仅仅这一次会议，华为就耗资</span><span style="max-width: 100%; box-sizing: border-box !important; word-wrap: break-word !important;">3</span><span style="max-width: 100%; font-family: 宋体; box-sizing: border-box !important; word-wrap: break-word !important;">亿港币。很多人觉得任正非是冤大头，但是，正是任正非的这份慷慨，让世界电信界认识到了华为的实力，在这次会议之后，他们再也不质疑华为的能力，华为国际化之路的大门被打开了。</span></p><p><span style="max-width: 100%; box-sizing: border-box !important; word-wrap: break-word !important;">&nbsp;</span></p><p><span style="color: rgb(0, 122, 170);">第二，让员工雨露均沾</span></p><p><span style="color: rgb(0, 122, 170);"><br></span></p><p>“人人股份制”是华为公司的原创，只要员工的贡献达到了一定程度，员工就可以在华为公司拥有股份，员工如果离开华为公司，华为会按照当时的价值兑现股票。</p><p><br></p><p>&nbsp;比人人持股更让人心跳的是，华为人是可以分享公司发展的成果的。2012年，华为实现利润154亿元，任正非拿出125亿元作为年终奖奖励员工，当时华为有15万员工，平均每人获得8.33万元。</p><p style="max-width: 100%; min-height: 1em; white-space: pre-wrap; color: rgb(62, 62, 62); line-height: 25.6000003814697px; box-sizing: border-box !important; word-wrap: break-word !important; background-color: rgb(255, 255, 255);"><span style="max-width: 100%; box-sizing: border-box !important; word-wrap: break-word !important;">&nbsp;<br style="max-width: 100%; box-sizing: border-box !important; word-wrap: break-word !important;"></span></p><p style="max-width: 100%; min-height: 1em; white-space: pre-wrap; color: rgb(62, 62, 62); line-height: 25.6000003814697px; box-sizing: border-box !important; word-wrap: break-word !important; background-color: rgb(255, 255, 255);"><span style="color: rgb(0, 122, 170);"><span style="max-width: 100%; box-sizing: border-box !important; word-wrap: break-word !important;">第二，<span times="" new="" style="max-width: 100%;">&nbsp;&nbsp;</span></span><span style="max-width: 100%; font-family: 宋体; box-sizing: border-box !important; word-wrap: break-word !important;">任正非对自己吝啬</span></span></p><p style="max-width: 100%; min-height: 1em; white-space: pre-wrap; color: rgb(62, 62, 62); line-height: 25.6000003814697px; box-sizing: border-box !important; word-wrap: break-word !important; background-color: rgb(255, 255, 255);"><span style="max-width: 100%; box-sizing: border-box !important; word-wrap: break-word !important;">&nbsp;</span></p><p>任正非在华为到底有多少股份，一直是一个谜，直到任正非在华为内部论坛发布了《一江春水向东流》这篇文章，大家才知道任正非在华为的股份还不到1%。</p><p style="max-width: 100%; min-height: 1em; white-space: pre-wrap; color: rgb(62, 62, 62); line-height: 25.6000003814697px; box-sizing: border-box !important; word-wrap: break-word !important; background-color: rgb(255, 255, 255);"><span style="font-family: 宋体; line-height: 25.6000003814697px; text-indent: 32px;"><br></span></p><p>当很多企业的创始人还在为争夺公司的控制权舍不得让出股份的时候，任正非的作法难道不让他们脸红吗？他们的格局在哪里？我只能这么说，他们爱自己比爱公司更多一点。</p><p style="max-width: 100%; min-height: 1em; white-space: pre-wrap; color: rgb(62, 62, 62); line-height: 25.6000003814697px; box-sizing: border-box !important; word-wrap: break-word !important; background-color: rgb(255, 255, 255);"><span style="max-width: 100%; box-sizing: border-box !important; word-wrap: break-word !important;">&nbsp;</span></p><p>如果你是一个打工者，你发现你的老板对钱的认识的格局没有进化，你有两个选择：一个是转发这篇文章给他看，让他提升对钱认识的格局；另外一个选择就是离开他，否则，你永远也赚不到钱。</p><p><span style="max-width: 100%; box-sizing: border-box !important; word-wrap: break-word !important;"><br style="max-width: 100%; box-sizing: border-box !important; word-wrap: break-word !important;">&nbsp;</span>如果你是一位正在热恋中的小女人，你同样要把这篇文章给自己的男朋友看，提高他对钱的认识格局，否则你们即使在一起，将来也会因为对钱的认识不同而分手。记住，小气吝啬的男人，无论他现在多么帅，多么有钱，那永远都是他自己的，都和你无关。</p><p style="max-width: 100%; min-height: 1em; white-space: pre-wrap; color: rgb(62, 62, 62); line-height: 25.6000003814697px; box-sizing: border-box !important; word-wrap: break-word !important; background-color: rgb(255, 255, 255);"><span style="max-width: 100%; box-sizing: border-box !important; word-wrap: break-word !important;"></span></p><p><strong><span style="color: rgb(171, 25, 66);">起底汉高祖刘邦战胜项羽的真正原因</span></strong></p><p style="max-width: 100%; min-height: 1em; white-space: pre-wrap; color: rgb(62, 62, 62); line-height: 25.6000003814697px; text-indent: 32px; box-sizing: border-box !important; word-wrap: break-word !important; background-color: rgb(255, 255, 255);"><span style="max-width: 100%; box-sizing: border-box !important; word-wrap: break-word !important;">&nbsp;</span></p><p>无论是马化腾对高管的慷慨还是任正非对全体员工的雨露均沾，都印证他们对钱认识的格局观是一流的。可是，他们的格局观无法超越一个人，这个人就是汉高祖刘邦。</p><p><br></p><p>我要的是天下，凡是和这个目标无关的一切我都可以舍弃。——刘邦</p><p><br></p><p>中国最古老的象棋的创意是源于刘邦和项羽的天下之争。刘邦战神项羽有很多原因，但是，有一个原因一直被忽视了。</p><p style="max-width: 100%; min-height: 1em; white-space: pre-wrap; color: rgb(62, 62, 62); line-height: 25.6000003814697px; box-sizing: border-box !important; word-wrap: break-word !important; background-color: rgb(255, 255, 255);"><span style="max-width: 100%; font-family: 宋体; box-sizing: border-box !important; word-wrap: break-word !important;"><br style="max-width: 100%; box-sizing: border-box !important; word-wrap: break-word !important;"></span></p><p>胜者王侯败者寇，一般失败者都会被涂上颜色，但是项羽失败之后更多的是同情。很多人对项羽及其倾慕，认为他是真英雄。就连他的爱情，也是凄美动人，霸王别姬的故事让多少美丽的女子倾慕能有一个项羽式的夫君。</p><p><br></p><p>相比较刘邦，大家的评价多是说他是一个地痞流氓出身，夺得天下纯粹是意外。</p><p><br></p><p><span style="max-width: 100%; box-sizing: border-box !important; word-wrap: break-word !important;">&nbsp;</span>但是，看看下面的这组数据你的认识就会有改变了。</p><p><br></p><p>&nbsp;我们说一个好汉三个帮，最能帮项羽的有范增，但是，最后利他而去。最有能力的韩信转而投向刘邦。而刘邦这边张良、萧何、韩信被称为“汉兴三杰”是刘邦战胜项羽的肱股之臣。</p><p><br></p><p>&nbsp;为什么刘邦这边能聚集这么多能人，而项羽不行呢？各种作品中给出了各种答案，我今天从财经的视角给出一个从来没有的答案：项羽太小气和吝啬。</p><p><strong><span style="color: rgb(171, 25, 66);">&nbsp;</span></strong></p><p><strong><span style="color: rgb(171, 25, 66);">吝啬和小气是男人成就伟业的天敌</span></strong></p><p style="max-width: 100%; min-height: 1em; white-space: pre-wrap; color: rgb(62, 62, 62); line-height: 25.6000003814697px; box-sizing: border-box !important; word-wrap: break-word !important; background-color: rgb(255, 255, 255);"><span style="max-width: 100%; box-sizing: border-box !important; word-wrap: break-word !important;">&nbsp;</span></p><p>项羽本来是贵族出身，应该是最大方的，可是，因为他出生不久会楚国就被秦国灭了，他颠沛流离吃了很多苦，所以，本应该大方的人变得吝啬了。据说，项羽在分封给手下人官职的时候会犹豫不决，他会把官印放在手里反复的抚摸思考，因为他的手太有力了，以至于官印都给磨平了。</p><p style="max-width: 100%; min-height: 1em; white-space: pre-wrap; color: rgb(62, 62, 62); line-height: 25.6000003814697px; box-sizing: border-box !important; word-wrap: break-word !important; background-color: rgb(255, 255, 255);"><span style="max-width: 100%; box-sizing: border-box !important; word-wrap: break-word !important;">&nbsp;</span></p><p><span style="max-width: 100%; box-sizing: border-box !important; word-wrap: break-word !important;">&nbsp;</span>&nbsp;而刘邦虽然出身卑微，但是，这个人非常有江湖气息，他身边的朋友非常多，原因就是他非常的慷慨。谁有困难只要提出来，他肯定是借钱也要帮忙。</p><p><br></p><p>刘邦这一点梁山的宋江和他非常的像。宋江文武都一般，但是，他为什么能够受到那么多梁上好汉的拥戴呢？而且还成为了梁山的董事长呢？</p><p><br></p><p><span style="color: rgb(0, 122, 170);">其根本原因就是宋江对于钱的认识的格局，他知道钱是用来做什么。</span></p><p style="max-width: 100%; min-height: 1em; white-space: pre-wrap; color: rgb(62, 62, 62); line-height: 25.6000003814697px; text-indent: 32px; box-sizing: border-box !important; word-wrap: break-word !important; background-color: rgb(255, 255, 255);"><span style="max-width: 100%; font-family: 宋体; box-sizing: border-box !important; word-wrap: break-word !important;"><br></span></p><p>宋江有一个与生俱来的优点就是讲义气，他的这个讲义气集中体现在对钱的认识上，他对于钱的认识是一步到位。在地方上当小吏的时候，对于江湖上需要帮助的人，无论是认识还是不认识，只要他有钱他就会不图回报的把钱给这些朋友。所以，江湖上人们送给他一个外号叫做及时雨宋江。</p><p><span style="font-family: 宋体; line-height: 25.6000003814697px; color: rgb(62, 62, 62); text-indent: 32px; white-space: pre-wrap; background-color: rgb(255, 255, 255);"><br></span></p><p>宋江入主梁山担任第二把手的时候，也一直保持着这个作风，其对钱的慷慨甚至超过了晁盖。虽然晁盖在临死的时候并没有把董事长的位置传给他，但是，梁山好汉仍然选举他为老大。因为大家知道宋江是一个懂得分享的人，抢了钱，除了拿出一部分作为维护梁山这个公司发展必备之外，其余他都会分给大家。</p><p style="max-width: 100%; min-height: 1em; white-space: pre-wrap; color: rgb(62, 62, 62); line-height: 25.6000003814697px; text-indent: 32px; box-sizing: border-box !important; word-wrap: break-word !important; background-color: rgb(255, 255, 255);"><span style="max-width: 100%; box-sizing: border-box !important; word-wrap: break-word !important;">&nbsp;</span></p><p>刘邦在被逼造反以后，更是慷慨，一座城池被贡献之后，他会把所有的珠宝赏赐给官兵，给有功之臣封官更是毫不吝啬。当年，唐高祖李渊造反之后封官也是如此。有谋士就劝他不要这样。李渊说，反正这些都不是我的，我造反一旦失败什么都没有了，还不如趁着有的时候分给大家。</p><p><br></p><p>对于刘邦和李渊来说，他们知道造反只有死路一条，能活命的只有一个办法，就是夺得天下，而和这个目标相比，金钱、官职、女色都可以不要。</p><p><span style="font-family: 宋体; color: rgb(62, 62, 62); line-height: 25.6000003814697px; text-indent: 32px; white-space: pre-wrap; background-color: rgb(255, 255, 255);"><br></span></p><p><span style="font-family: 宋体; color: rgb(62, 62, 62); line-height: 25.6000003814697px; text-indent: 32px; white-space: pre-wrap; background-color: rgb(255, 255, 255);">其实，对于很多创业者来说创业成功是一个小概率事件，</span><span style="color: rgb(171, 25, 66);"><strong style="font-family: 宋体; color: rgb(62, 62, 62); line-height: 25.6000003814697px; text-indent: 32px; white-space: pre-wrap; max-width: 100%; box-sizing: border-box !important; word-wrap: break-word !important; background-color: rgb(255, 255, 255);">马化腾和任正非的终极目标是要把把腾讯和华为做成世界一流的公司，除了这个目标，其他的他们都可以舍弃。</strong></span></p>
+
+                        <section class="article135" label="powered by 135editor.com" style="font-family: 微软雅黑;"><p style="text-align: center; white-space: normal;">
+    <br><br>
+    <span style="color: #595959; font-size: 14px;">·END·</span></p><hr style="box-sizing: border-box;"  />
+</section>
+                    </div>
+                                        
+                                        
+                                        <div class="rich_media_tool" id="js_toobar3">
+                                                                    <div id="js_read_area3" class="media_tool_meta tips_global meta_primary" style="display:none;">阅读 <span id="readNum3"></span></div>
+
+                        <span style="display:none;" class="media_tool_meta meta_primary tips_global meta_praise" id="like3">
+                            <i class="icon_praise_gray"></i><span class="praise_num" id="likeNum3"></span>
+                        </span>
+
+                        <a id="js_report_article3" style="display:none;" class="media_tool_meta tips_global meta_extra" href="javascript:void(0);">投诉</a>
+
+                    </div>
+
+
+
+                                    </div>
+
+                <div class="rich_media_area_primary sougou" id="sg_tj" style="display:none">
+
+                </div>
+
+                <div class="rich_media_area_extra">
+
+                    
+                                        <div class="mpda_bottom_container" id="js_bottom_ad_area">
+                        
+                    </div>
+                                        
+                    <div id="js_iframetest" style="display:none;"></div>
+                                        
+                                    </div>
+               
+            </div>
+            
+        </div>
+    </div>
+
+
+        
+        <script>
+    var __DEBUGINFO = {
+        debug_js : "https://res.wx.qq.com/mmbizwap/zh_CN/htmledition/js/biz_wap/debug/console2ca724.js",
+        safe_js : "https://res.wx.qq.com/mmbizwap/zh_CN/htmledition/js/biz_wap/safe/moonsafe2d5cb8.js",
+        res_list: []
+    };
+</script>
+        <script>window.moon_map = {"appmsg/emotion/caret.js":"https://res.wx.qq.com/mmbizwap/zh_CN/htmledition/js/appmsg/emotion/caret278965.js","biz_wap/jsapi/cardticket.js":"https://res.wx.qq.com/mmbizwap/zh_CN/htmledition/js/biz_wap/jsapi/cardticket275627.js","appmsg/emotion/map.js":"https://res.wx.qq.com/mmbizwap/zh_CN/htmledition/js/appmsg/emotion/map278965.js","appmsg/emotion/textarea.js":"https://res.wx.qq.com/mmbizwap/zh_CN/htmledition/js/appmsg/emotion/textarea27cdc5.js","appmsg/emotion/nav.js":"https://res.wx.qq.com/mmbizwap/zh_CN/htmledition/js/appmsg/emotion/nav278965.js","appmsg/emotion/common.js":"https://res.wx.qq.com/mmbizwap/zh_CN/htmledition/js/appmsg/emotion/common278965.js","appmsg/emotion/slide.js":"https://res.wx.qq.com/mmbizwap/zh_CN/htmledition/js/appmsg/emotion/slide2a9cd9.js","pages/report.js":"https://res.wx.qq.com/mmbizwap/zh_CN/htmledition/js/pages/report2c9cd6.js","pages/music_player.js":"https://res.wx.qq.com/mmbizwap/zh_CN/htmledition/js/pages/music_player2b674b.js","pages/loadscript.js":"https://res.wx.qq.com/mmbizwap/zh_CN/htmledition/js/pages/loadscript2c9cd6.js","appmsg/emotion/dom.js":"https://res.wx.qq.com/mmbizwap/zh_CN/htmledition/js/appmsg/emotion/dom278965.js","biz_wap/utils/hashrouter.js":"https://res.wx.qq.com/mmbizwap/zh_CN/htmledition/js/biz_wap/utils/hashrouter2805ea.js","a/gotoappdetail.js":"https://res.wx.qq.com/mmbizwap/zh_CN/htmledition/js/a/gotoappdetail2a2c13.js","a/ios.js":"https://res.wx.qq.com/mmbizwap/zh_CN/htmledition/js/a/ios275627.js","a/android.js":"https://res.wx.qq.com/mmbizwap/zh_CN/htmledition/js/a/android2c5484.js","a/profile.js":"https://res.wx.qq.com/mmbizwap/zh_CN/htmledition/js/a/profile29b1f8.js","a/mpshop.js":"https://res.wx.qq.com/mmbizwap/zh_CN/htmledition/js/a/mpshop2da3e2.js","a/card.js":"https://res.wx.qq.com/mmbizwap/zh_CN/htmledition/js/a/card2d1390.js","biz_wap/utils/position.js":"https://res.wx.qq.com/mmbizwap/zh_CN/htmledition/js/biz_wap/utils/position29b1f8.js","appmsg/a_report.js":"https://res.wx.qq.com/mmbizwap/zh_CN/htmledition/js/appmsg/a_report2d87eb.js","biz_common/utils/respTypes.js":"https://res.wx.qq.com/mmbizwap/zh_CN/htmledition/js/biz_common/utils/respTypes2c57d0.js","appmsg/cmt_tpl.html.js":"https://res.wx.qq.com/mmbizwap/zh_CN/htmledition/js/appmsg/cmt_tpl.html2a2c13.js","sougou/a_tpl.html.js":"https://res.wx.qq.com/mmbizwap/zh_CN/htmledition/js/sougou/a_tpl.html2c6e7c.js","appmsg/emotion/emotion.js":"https://res.wx.qq.com/mmbizwap/zh_CN/htmledition/js/appmsg/emotion/emotion2a9cd9.js","biz_common/utils/report.js":"https://res.wx.qq.com/mmbizwap/zh_CN/htmledition/js/biz_common/utils/report275627.js","biz_common/utils/huatuo.js":"https://res.wx.qq.com/mmbizwap/zh_CN/htmledition/js/biz_common/utils/huatuo293afc.js","biz_common/utils/cookie.js":"https://res.wx.qq.com/mmbizwap/zh_CN/htmledition/js/biz_common/utils/cookie275627.js","pages/voice_component.js":"https://res.wx.qq.com/mmbizwap/zh_CN/htmledition/js/pages/voice_component2c5484.js","new_video/ctl.js":"https://res.wx.qq.com/mmbizwap/zh_CN/htmledition/js/new_video/ctl2d441f.js","biz_common/utils/monitor.js":"https://res.wx.qq.com/mmbizwap/zh_CN/htmledition/js/biz_common/utils/monitor2a30ee.js","biz_common/utils/spin.js":"https://res.wx.qq.com/mmbizwap/zh_CN/htmledition/js/biz_common/utils/spin275627.js","biz_wap/jsapi/pay.js":"https://res.wx.qq.com/mmbizwap/zh_CN/htmledition/js/biz_wap/jsapi/pay275627.js","appmsg/reward_entry.js":"https://res.wx.qq.com/mmbizwap/zh_CN/htmledition/js/appmsg/reward_entry2db716.js","appmsg/comment.js":"https://res.wx.qq.com/mmbizwap/zh_CN/htmledition/js/appmsg/comment2d39f3.js","appmsg/like.js":"https://res.wx.qq.com/mmbizwap/zh_CN/htmledition/js/appmsg/like2b5583.js","appmsg/a.js":"https://res.wx.qq.com/mmbizwap/zh_CN/htmledition/js/appmsg/a2da3e2.js","pages/version4video.js":"https://res.wx.qq.com/mmbizwap/zh_CN/htmledition/js/pages/version4video2c7543.js","rt/appmsg/getappmsgext.rt.js":"https://res.wx.qq.com/mmbizwap/zh_CN/htmledition/js/rt/appmsg/getappmsgext.rt2c21f6.js","biz_wap/utils/storage.js":"https://res.wx.qq.com/mmbizwap/zh_CN/htmledition/js/biz_wap/utils/storage2a74ac.js","biz_common/tmpl.js":"https://res.wx.qq.com/mmbizwap/zh_CN/htmledition/js/biz_common/tmpl2b3578.js","appmsg/img_copyright_tpl.html.js":"https://res.wx.qq.com/mmbizwap/zh_CN/htmledition/js/appmsg/img_copyright_tpl.html2a2c13.js","appmsg/a_tpl.html.js":"https://res.wx.qq.com/mmbizwap/zh_CN/htmledition/js/appmsg/a_tpl.html2d1390.js","biz_common/ui/imgonepx.js":"https://res.wx.qq.com/mmbizwap/zh_CN/htmledition/js/biz_common/ui/imgonepx275627.js","biz_common/dom/attr.js":"https://res.wx.qq.com/mmbizwap/zh_CN/htmledition/js/biz_common/dom/attr275627.js","biz_wap/utils/ajax.js":"https://res.wx.qq.com/mmbizwap/zh_CN/htmledition/js/biz_wap/utils/ajax2c7a90.js","biz_common/utils/string/html.js":"https://res.wx.qq.com/mmbizwap/zh_CN/htmledition/js/biz_common/utils/string/html29f4e9.js","sougou/index.js":"https://res.wx.qq.com/mmbizwap/zh_CN/htmledition/js/sougou/index2c7543.js","biz_wap/safe/mutation_observer_report.js":"https://res.wx.qq.com/mmbizwap/zh_CN/htmledition/js/biz_wap/safe/mutation_observer_report2d5cb8.js","appmsg/report.js":"https://res.wx.qq.com/mmbizwap/zh_CN/htmledition/js/appmsg/report2cf2a3.js","biz_common/dom/class.js":"https://res.wx.qq.com/mmbizwap/zh_CN/htmledition/js/biz_common/dom/class275627.js","appmsg/report_and_source.js":"https://res.wx.qq.com/mmbizwap/zh_CN/htmledition/js/appmsg/report_and_source2c0ff9.js","appmsg/page_pos.js":"https://res.wx.qq.com/mmbizwap/zh_CN/htmledition/js/appmsg/page_pos2d38d6.js","appmsg/cdn_speed_report.js":"https://res.wx.qq.com/mmbizwap/zh_CN/htmledition/js/appmsg/cdn_speed_report2c57d0.js","appmsg/voice.js":"https://res.wx.qq.com/mmbizwap/zh_CN/htmledition/js/appmsg/voice2ab8bd.js","appmsg/qqmusic.js":"https://res.wx.qq.com/mmbizwap/zh_CN/htmledition/js/appmsg/qqmusic2ab8bd.js","appmsg/iframe.js":"https://res.wx.qq.com/mmbizwap/zh_CN/htmledition/js/appmsg/iframe2cc9e4.js","appmsg/review_image.js":"https://res.wx.qq.com/mmbizwap/zh_CN/htmledition/js/appmsg/review_image2d0cfe.js","appmsg/outer_link.js":"https://res.wx.qq.com/mmbizwap/zh_CN/htmledition/js/appmsg/outer_link275627.js","biz_wap/jsapi/core.js":"https://res.wx.qq.com/mmbizwap/zh_CN/htmledition/js/biz_wap/jsapi/core2c30c1.js","biz_common/dom/event.js":"https://res.wx.qq.com/mmbizwap/zh_CN/htmledition/js/biz_common/dom/event275627.js","appmsg/copyright_report.js":"https://res.wx.qq.com/mmbizwap/zh_CN/htmledition/js/appmsg/copyright_report2c57d0.js","appmsg/cache.js":"https://res.wx.qq.com/mmbizwap/zh_CN/htmledition/js/appmsg/cache2a74ac.js","appmsg/pay_for_reading.js":"https://res.wx.qq.com/mmbizwap/zh_CN/htmledition/js/appmsg/pay_for_reading2c5484.js","appmsg/async.js":"https://res.wx.qq.com/mmbizwap/zh_CN/htmledition/js/appmsg/async2da3e2.js","biz_wap/ui/lazyload_img.js":"https://res.wx.qq.com/mmbizwap/zh_CN/htmledition/js/biz_wap/ui/lazyload_img2b18f6.js","biz_common/log/jserr.js":"https://res.wx.qq.com/mmbizwap/zh_CN/htmledition/js/biz_common/log/jserr2805ea.js","appmsg/share.js":"https://res.wx.qq.com/mmbizwap/zh_CN/htmledition/js/appmsg/share2daac1.js","biz_wap/utils/mmversion.js":"https://res.wx.qq.com/mmbizwap/zh_CN/htmledition/js/biz_wap/utils/mmversion275627.js","appmsg/cdn_img_lib.js":"https://res.wx.qq.com/mmbizwap/zh_CN/htmledition/js/appmsg/cdn_img_lib275627.js","biz_common/utils/url/parse.js":"https://res.wx.qq.com/mmbizwap/zh_CN/htmledition/js/biz_common/utils/url/parse2d1e61.js","biz_wap/utils/device.js":"https://res.wx.qq.com/mmbizwap/zh_CN/htmledition/js/biz_wap/utils/device2b3aae.js","biz_wap/jsapi/a8key.js":"https://res.wx.qq.com/mmbizwap/zh_CN/htmledition/js/biz_wap/jsapi/a8key2a30ee.js","appmsg/index.js":"https://res.wx.qq.com/mmbizwap/zh_CN/htmledition/js/appmsg/index2d625d.js"};</script><script type="text/javascript" src="./index_files/moon2c7b0a.js"></script>
+    <script id="voice_tpl" type="text/html">        
+        <span id="voice_main_<#=voiceid#>_<#=posIndex#>" class="db audio_area <#if(!musicSupport){#> unsupport<#}#>">
+            <span class="tc tips_global unsupport_tips" <#if(show_not_support!==true){#>style="display:none;"<#}#>>
+            当前浏览器不支持播放音乐或语音，请在微信或其他浏览器中播放            </span>
+            <span class="audio_wrp db">
+                <span id="voice_play_<#=voiceid#>_<#=posIndex#>" class="audio_play_area">
+                    <i class="icon_audio_default"></i>
+                    <i class="icon_audio_playing"></i>
+                    <img src="http://res.wx.qq.com/mmbizwap/zh_CN/htmledition/images/icon/appmsg/audio/icon_audio_unread26f1f1.png" alt="" class="pic_audio_default">
+                </span>
+                <span class="audio_length tips_global"><#=duration_str#></span>
+                <span class="db audio_info_area">
+                    <strong class="db audio_title"><#=title#></strong>
+                    <span class="audio_source tips_global"><#if(window.nickname){#>来自<#=window.nickname#><#}#></span>
+                </span>
+                <span id="voice_progress_<#=voiceid#>_<#=posIndex#>" class="progress_bar" style="width:0px;"></span>
+            </span>
+        </span>
+    </script>
+
+    <script id="qqmusic_tpl" type="text/html">        
+        <span id="qqmusic_main_<#=comment_id#>_<#=posIndex#>" class="db qqmusic_area <#if(!musicSupport){#> unsupport<#}#>">
+            <span class="tc tips_global unsupport_tips" <#if(show_not_support!==true){#>style="display:none;"<#}#>>
+            当前浏览器不支持播放音乐或语音，请在微信或其他浏览器中播放            </span>
+            <span class="db qqmusic_wrp">
+                <span class="db qqmusic_bd">
+                    <span id="qqmusic_play_<#=musicid#>_<#=posIndex#>" class="play_area">
+                        <i class="icon_qqmusic_switch"></i>
+                        <img src="http://res.wx.qq.com/mmbizwap/zh_CN/htmledition/images/icon/appmsg/qqmusic/icon_qqmusic_default.2x26f1f1.png" alt="" class="pic_qqmusic_default">
+                        <img src="<#=music_img#>" data-autourl="<#=audiourl#>" data-musicid="<#=musicid#>" class="qqmusic_thumb" alt="">
+                    </span>
+                                        <a id="qqmusic_home_<#=musicid#>_<#=posIndex#>" href="javascript:void(0);" class="access_area">
+                        <span class="qqmusic_songname"><#=music_name#></span>
+                        <span class="qqmusic_singername"><#=singer#></span>
+                        <span class="qqmusic_source"><img src="http://res.wx.qq.com/mmbizwap/zh_CN/htmledition/images/icon/appmsg/qqmusic/icon_qqmusic_source263724.png" alt=""></span>
+                    </a>
+                </span>
+            </span>       
+        </span>
+    </script>
+  <script type="text/javascript">
+      var not_in_mm_css = "https://res.wx.qq.com/mmbizwap/zh_CN/htmledition/style/page/appmsg/not_in_mm2c9cd6.css";
+      var windowwx_css = "https://res.wx.qq.com/mmbizwap/zh_CN/htmledition/style/page/appmsg/page_mp_article_improve_winwx2c9cd6.css";
+      var tid = "";
+      var aid = "";
+      var clientversion = "0";
+      var appuin = "MjM5MjkzMzcyMQ=="||"";
+
+      var source = "1";
+      var scene = 75;
+      
+      var itemidx = "";
+
+      var _copyright_stat = "0";
+      var _ori_article_type = "";
+
+      var nickname = "经济的常识";
+      var appmsg_type = "9";
+      var ct = "1463060690";
+      var publish_time = "2016-05-12" || "";
+      var user_name = "gh_6fd1ca081d19";
+      var user_name_new = "";
+      var fakeid   = "";
+      var version   = "";
+      var is_limit_user   = "0";
+      var round_head_img = "http://mmbiz.qpic.cn/mmbiz/jibJXNrDZy5ndZa7zZwmynTcnibvjIYWDY95XjPyUXf1UibptBKvBiaSX25ybIwzNiclic08GLVZpSlicIq0twhItkicmg/0";
+      var msg_title = "赚钱：你学得了马化腾，却学不了任正非";
+      var msg_desc = "人只能在其对钱认识的格局之内赚钱，人对钱认识的格局决定了人这一生掌控钱的数目。&nbsp;对钱的认识不进化，没有钱的将";
+      var msg_cdn_url = "http://mmbiz.qpic.cn/mmbiz/jibJXNrDZy5lLWxZAUVEqCT6J2f7mfGYe9hfu1pxV47rmh5icF8MGqUyaG1HViaYia7768X9ch2tib5iaib4fOSp3q2zw/0?wx_fmt=png";
+      var msg_link = "http://mp.weixin.qq.com/s?__biz=MjM5MjkzMzcyMQ==&amp;mid=2651242859&amp;idx=3&amp;sn=03c3a17840e32ae326d98825eb570374#rd";
+      var user_uin = "0"*1;
+      var msg_source_url = '';
+      var img_format = 'png';
+      var srcid = '0513BAA6pVkSw6WBoeo9p6Yt';
+      var networkType;
+      var appmsgid = '' || '2651242859'|| "";
+      var comment_id = "0" * 1;
+      var comment_enabled = "" * 1;
+      var is_need_reward = "0" * 1;
+      var is_https_res = ("" * 1) && (location.protocol == "https:");
+
+      var devicetype = "";
+      var source_username = "";  
+      var profile_ext_signature = "" || "";
+      var reprint_ticket = "";
+      var source_mid = "";
+      var source_idx = "";
+
+      var show_comment = "";
+      var __appmsgCgiData = {
+            can_use_page : "0"*1,
+            is_wxg_stuff_uin : "0"*1,
+            card_pos : "",
+            copyright_stat : "0",
+            source_biz : "",
+            hd_head_img : "http://wx.qlogo.cn/mmhead/Q3auHgzwzM7p76JvowFrPuW4ww5T73yadmZFyOGIjMkKzD0BqeYR7g/0"||(window.location.protocol+"//"+window.location.host + "http://res.wx.qq.com/mmbizwap/zh_CN/htmledition/images/pic/appmsg/pic_rumor_link.2x264e76.jpg")
+      };
+      var _empty_v = "http://res.wx.qq.com/mmbizwap/zh_CN/htmledition/images/pic/pages/voice/empty26f1f1.mp3";
+
+      var copyright_stat = "0" * 1;
+
+      var pay_fee = "" * 1;
+      var pay_timestamp = "";
+      var need_pay = "" * 1;
+
+      var need_report_cost = "0" * 1;
+      var use_tx_video_player = "0" * 1;
+
+      var friend_read_source = "" || "";
+      var friend_read_version = "" || "";
+      var friend_read_class_id = "" || "";
+
+      var is_only_read = "1" * 1;
+
+      
+            window.wxtoken = "";
+          if(!!window.__initCatch){
+        window.__initCatch({
+            idkey : 27613,
+            startKey : 0,
+            limit : 128,
+            reportOpt : {
+                uin : uin,
+                biz : biz,
+                mid : mid,
+                idx : idx,
+                sn  : sn
+            },
+            extInfo : {
+                network_rate : 0.01    
+            }
+        });
+    }
+  </script>
+  <script type="text/javascript">
+          seajs.use('appmsg/index.js');
+  </script>
+
+    
+
+
+ 
+</body></html>
