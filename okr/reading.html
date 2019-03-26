@@ -15,27 +15,43 @@
 <h4 style="margin-bottom: 15px;"> Current: 最近准备阅读书目列表 </h4>
 
 <div class="row-fluid">
+	<div class="span1">
+		<ul class="nav nav-pills nav-stacked">
+			<li class="active"> <a href="#read2018" data-toggle="tab"><font color="black"><b>2018</b></font></a> </li>
+			<li> <a href="#read2017">2017</a> </li>
+			<li> <a href="#read2016">2016</a> </li>
+			<li> <a href="#read2015">2015</a> </li>
+			<li> <a href="#readPLAN" data-toggle="tab">PLAN</a> </li>
+		</ul>
+	</div>
 
-<div class="span1">
-	<ul class="nav nav-pills nav-stacked">
-		<li class="active"> <a href="#read2018" data-toggle="tab"><font color="black"><b>2018</b></font></a> </li>
-		<li> <a href="reading2017.html">2017</a> </li>
-		<li> <a href="reading2016.html">2016</a> </li>
-		<li> <a href="reading2015.html">2015</a> </li>
-		<li> <a href="#readPLAN" data-toggle="tab">PLAN</a> </li>
-	</ul>
-</div>
-
-<div class="span11 tab-pane fade in active" id="read2018">
-<!-- <include src="./reading/readPLAN.html"></include> -->
-</div> <!-- End of span11 -->
-
-<div class="span11 tab-pane fade" id="readPLAN">
-<!-- <include src="./reading/readPLAN.html"></include> -->
-</div> <!-- End of span11 -->
+	<div class="span11">
+		<div class="tab-content">
+			<div class="tab-pane fade in active" id="read2018">
+				<div id="RD2018"></div>
+			</div>
+			<div class="tab-pane fade" id="read2017">
+				<div id="RD2017"></div>
+			</div>
+			<div class="tab-pane fade" id="read2016">
+				<div id="RD2016"></div>
+			</div>
+			<div class="tab-pane fade" id="read2015">
+				<div id="RD2015"></div>
+			</div>
+			<div class="tab-pane fade" id="readPLAN">
+				<div id="RDPlan"></div>
+			</div>
+		</div>
+	</div> <!-- End of span11 -->
 
 </div> <!-- End of row-fluid -->
 
 <script src="/res/js/include-html.js"></script>
-<script> $("#read2018").load("./reading/reading2018.html") </script>
-<script> $("#readPLAN").load("./reading/readPLAN.html") </script>
+<script> 
+$("#RD2018").load("./reading/reading2018.html"); 
+$("#RD2017").load("./reading/reading2017.html"); 
+$("#RD2016").load("./reading/reading2016.html"); 
+$("#RD2015").load("./reading/reading2015.html"); 
+$("#RDPlan").load("./reading/readPLAN.html");
+</script>
