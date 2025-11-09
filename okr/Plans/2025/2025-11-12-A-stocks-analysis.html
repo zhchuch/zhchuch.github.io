@@ -1,0 +1,490 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>2025年11-12月A股投资策略：十五五规划驱动下的结构性机会</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+SC:wght@300;400;500;700;900&display=swap" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Noto Sans SC', sans-serif;
+            background-color: #FFFFFF;
+        }
+        .card {
+            background-color: white;
+            border: 1px solid #E5E7EB;
+            border-radius: 1.25rem; /* 20px */
+            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
+            transition: all 0.3s cubic-bezier(0.25, 0.8, 0.25, 1);
+            overflow: hidden;
+            position: relative;
+        }
+        .card:hover {
+            box-shadow: 0 8px 24px rgba(0, 0, 0, 0.1);
+            transform: translateY(-2px);
+        }
+        .highlight-gradient-blue {
+            background: linear-gradient(135deg, rgba(59, 130, 246, 0), rgba(59, 130, 246, 0.05));
+        }
+        .highlight-gradient-green {
+            background: linear-gradient(135deg, rgba(34, 197, 94, 0), rgba(34, 197, 94, 0.05));
+        }
+        .highlight-gradient-purple {
+            background: linear-gradient(135deg, rgba(168, 85, 247, 0), rgba(168, 85, 247, 0.05));
+        }
+        .highlight-gradient-orange {
+            background: linear-gradient(135deg, rgba(249, 115, 22, 0), rgba(249, 115, 22, 0.05));
+        }
+        .highlight-gradient-teal {
+            background: linear-gradient(135deg, rgba(20, 184, 166, 0), rgba(20, 184, 166, 0.05));
+        }
+        .highlight-gradient-red {
+            background: linear-gradient(135deg, rgba(239, 68, 68, 0), rgba(239, 68, 68, 0.05));
+        }
+    </style>
+</head>
+<body class="bg-white">
+    <div class="max-w-7xl mx-auto p-4 md:p-8">
+        <div class="grid grid-cols-1 md:grid-cols-4 gap-4 md:gap-6">
+            <!-- 标题卡片 -->
+            <div class="card md:col-span-4 p-8 flex flex-col justify-center items-center text-center">
+                <div class="absolute top-0 left-0 w-full h-full highlight-gradient-blue"></div>
+                <h1 class="text-4xl md:text-6xl font-black text-gray-800 mb-4">2025年11-12月A股投资策略</h1>
+                <p class="text-xl md:text-2xl text-gray-600 font-light">十五五规划驱动下的结构性机会</p>
+                <div class="mt-8 flex space-x-6 text-sm text-gray-500">
+                    <div class="flex items-center"><i class="fa-solid fa-calendar mr-2"></i>2025年11月09日</div>
+                    <div class="flex items-center"><i class="fa-solid fa-file-signature mr-2"></i>投资策略深度研究</div>
+                </div>
+            </div>
+
+            <!-- 投资评级卡片 -->
+            <div class="card md:col-span-2 p-8 flex flex-col justify-center">
+                <div class="absolute top-0 left-0 w-full h-full highlight-gradient-green"></div>
+                <div class="flex items-center justify-between">
+                    <div>
+                        <p class="text-gray-500 text-lg font-medium">投资评级</p>
+                        <p class="text-5xl font-bold text-green-600 mt-2">强于大市</p>
+                        <p class="text-gray-600 mt-4 text-base">预计市场将呈现"结构分化、龙头领涨"的特征，建议投资者采取"攻守兼备、均衡配置"的投资策略。</p>
+                    </div>
+                    <div class="text-green-600 opacity-80">
+                        <i class="fa-solid fa-arrow-trend-up text-8xl"></i>
+                    </div>
+                </div>
+            </div>
+
+            <!-- 核心观点卡片 -->
+            <div class="card md:col-span-2 p-8 flex flex-col justify-center">
+                <div class="absolute top-0 left-0 w-full h-full highlight-gradient-purple"></div>
+                <p class="text-gray-500 text-lg font-medium">核心观点</p>
+                <p class="text-3xl font-bold text-purple-700 mt-2">11月进攻、12月防御</p>
+                <p class="text-gray-600 mt-4 text-base">11月是政策密集发布期和机构调仓关键时点，预计成长板块将率先受益；12月临近年末，资金趋于保守，高股息防御性板块有望获得超额收益。</p>
+            </div>
+
+            <!-- 四大投资主线标题 -->
+            <div class="card md:col-span-4 p-6 flex items-center">
+                <div class="absolute top-0 left-0 w-full h-full highlight-gradient-orange"></div>
+                <h2 class="text-2xl md:text-3xl font-bold text-gray-800">四大投资主线</h2>
+                <div class="ml-auto text-orange-500 opacity-60">
+                    <i class="fa-solid fa-sitemap text-3xl"></i>
+                </div>
+            </div>
+
+            <!-- 先进制造板块 -->
+            <div class="card md:col-span-2 md:row-span-2 p-8 flex flex-col">
+                <div class="absolute top-0 left-0 w-full h-full highlight-gradient-blue"></div>
+                <div class="flex items-center mb-4">
+                    <div class="w-12 h-12 rounded-full bg-blue-100 flex items-center justify-center text-blue-600">
+                        <i class="fa-solid fa-microchip text-xl"></i>
+                    </div>
+                    <div class="ml-4">
+                        <h3 class="text-xl font-bold text-gray-800">先进制造板块</h3>
+                        <p class="text-blue-600 font-medium">推荐评级：买入</p>
+                    </div>
+                </div>
+                <p class="text-gray-600 text-sm mb-6">聚焦半导体设备、AI算力、工业母机等硬科技领域，受益于十五五规划科技自立自强政策。</p>
+                <div class="space-y-3 mt-auto">
+                    <div class="flex items-center justify-between p-3 bg-gray-50 rounded-lg">
+                        <span class="font-medium text-gray-700">中芯国际</span>
+                        <span class="text-sm text-gray-500">688981</span>
+                    </div>
+                    <div class="flex items-center justify-between p-3 bg-gray-50 rounded-lg">
+                        <span class="font-medium text-gray-700">北方华创</span>
+                        <span class="text-sm text-gray-500">002371</span>
+                    </div>
+                    <div class="flex items-center justify-between p-3 bg-gray-50 rounded-lg">
+                        <span class="font-medium text-gray-700">海光信息</span>
+                        <span class="text-sm text-gray-500">688041</span>
+                    </div>
+                </div>
+            </div>
+
+            <!-- 绿色能源板块 -->
+            <div class="card md:col-span-2 p-8 flex flex-col">
+                <div class="absolute top-0 left-0 w-full h-full highlight-gradient-green"></div>
+                <div class="flex items-center mb-4">
+                    <div class="w-12 h-12 rounded-full bg-green-100 flex items-center justify-center text-green-600">
+                        <i class="fa-solid fa-leaf text-xl"></i>
+                    </div>
+                    <div class="ml-4">
+                        <h3 class="text-xl font-bold text-gray-800">绿色能源板块</h3>
+                        <p class="text-green-600 font-medium">推荐评级：增持</p>
+                    </div>
+                </div>
+                <p class="text-gray-600 text-sm mb-6">受益于"双碳"目标和新能源转型政策，光伏、风电、储能等细分领域景气度持续提升。</p>
+                <div class="space-y-3 mt-auto">
+                    <div class="flex items-center justify-between p-3 bg-gray-50 rounded-lg">
+                        <span class="font-medium text-gray-700">隆基绿能</span>
+                        <span class="text-sm text-gray-500">601012</span>
+                    </div>
+                    <div class="flex items-center justify-between p-3 bg-gray-50 rounded-lg">
+                        <span class="font-medium text-gray-700">金风科技</span>
+                        <span class="text-sm text-gray-500">002202</span>
+                    </div>
+                    <div class="flex items-center justify-between p-3 bg-gray-50 rounded-lg">
+                        <span class="font-medium text-gray-700">阳光电源</span>
+                        <span class="text-sm text-gray-500">300274</span>
+                    </div>
+                </div>
+            </div>
+
+            <!-- 消费与民生板块 -->
+            <div class="card md:col-span-2 p-8 flex flex-col">
+                <div class="absolute top-0 left-0 w-full h-full highlight-gradient-orange"></div>
+                <div class="flex items-center mb-4">
+                    <div class="w-12 h-12 rounded-full bg-orange-100 flex items-center justify-center text-orange-600">
+                        <i class="fa-solid fa-store text-xl"></i>
+                    </div>
+                    <div class="ml-4">
+                        <h3 class="text-xl font-bold text-gray-800">消费与民生板块</h3>
+                        <p class="text-orange-600 font-medium">推荐评级：增持</p>
+                    </div>
+                </div>
+                <p class="text-gray-600 text-sm mb-6">受益于扩大内需政策和消费升级趋势，免税、地产后周期、医疗服务等领域存在估值修复机会。</p>
+                <div class="space-y-3 mt-auto">
+                    <div class="flex items-center justify-between p-3 bg-gray-50 rounded-lg">
+                        <span class="font-medium text-gray-700">中国中免</span>
+                        <span class="text-sm text-gray-500">601888</span>
+                    </div>
+                    <div class="flex items-center justify-between p-3 bg-gray-50 rounded-lg">
+                        <span class="font-medium text-gray-700">保利发展</span>
+                        <span class="text-sm text-gray-500">600048</span>
+                    </div>
+                    <div class="flex items-center justify-between p-3 bg-gray-50 rounded-lg">
+                        <span class="font-medium text-gray-700">顾家家居</span>
+                        <span class="text-sm text-gray-500">603816</span>
+                    </div>
+                </div>
+            </div>
+
+            <!-- 金融与稳定板块 -->
+            <div class="card md:col-span-2 p-8 flex flex-col">
+                <div class="absolute top-0 left-0 w-full h-full highlight-gradient-teal"></div>
+                <div class="flex items-center mb-4">
+                    <div class="w-12 h-12 rounded-full bg-teal-100 flex items-center justify-center text-teal-600">
+                        <i class="fa-solid fa-shield-halved text-xl"></i>
+                    </div>
+                    <div class="ml-4">
+                        <h3 class="text-xl font-bold text-gray-800">金融与稳定板块</h3>
+                        <p class="text-teal-600 font-medium">推荐评级：买入</p>
+                    </div>
+                </div>
+                <p class="text-gray-600 text-sm mb-6">在低利率环境下，银行、保险等高股息板块具备防御价值，适合作为底仓配置。</p>
+                <div class="space-y-3 mt-auto">
+                    <div class="flex items-center justify-between p-3 bg-gray-50 rounded-lg">
+                        <span class="font-medium text-gray-700">招商银行</span>
+                        <span class="text-sm text-gray-500">600036</span>
+                    </div>
+                    <div class="flex items-center justify-between p-3 bg-gray-50 rounded-lg">
+                        <span class="font-medium text-gray-700">中国平安</span>
+                        <span class="text-sm text-gray-500">601318</span>
+                    </div>
+                    <div class="flex items-center justify-between p-3 bg-gray-50 rounded-lg">
+                        <span class="font-medium text-gray-700">长江电力</span>
+                        <span class="text-sm text-gray-500">600900</span>
+                    </div>
+                </div>
+            </div>
+
+            <!-- 历年11-12月板块表现 -->
+            <div class="card md:col-span-4 p-8">
+                <div class="absolute top-0 left-0 w-full h-full highlight-gradient-purple"></div>
+                <h3 class="text-xl font-bold text-gray-800 mb-6">历年11-12月板块表现规律</h3>
+                <div class="h-80">
+                    <canvas id="sectorPerformanceChart"></canvas>
+                </div>
+            </div>
+
+            <!-- 估值水平分析 -->
+            <div class="card md:col-span-2 p-8">
+                <div class="absolute top-0 left-0 w-full h-full highlight-gradient-blue"></div>
+                <h3 class="text-xl font-bold text-gray-800 mb-6">A股主要指数估值水平</h3>
+                <div class="h-64">
+                    <canvas id="valuationChart"></canvas>
+                </div>
+            </div>
+
+            <!-- 重点板块估值比较 -->
+            <div class="card md:col-span-2 p-8">
+                <div class="absolute top-0 left-0 w-full h-full highlight-gradient-green"></div>
+                <h3 class="text-xl font-bold text-gray-800 mb-6">重点板块估值比较</h3>
+                <div class="space-y-4">
+                    <div class="flex items-center">
+                        <div class="w-24 text-sm font-medium text-gray-600">先进制造</div>
+                        <div class="flex-1 mx-4 bg-gray-200 rounded-full h-2">
+                            <div class="bg-blue-500 h-2 rounded-full" style="width: 75%"></div>
+                        </div>
+                        <div class="w-16 text-sm font-medium text-gray-600 text-right">75%</div>
+                    </div>
+                    <div class="flex items-center">
+                        <div class="w-24 text-sm font-medium text-gray-600">绿色能源</div>
+                        <div class="flex-1 mx-4 bg-gray-200 rounded-full h-2">
+                            <div class="bg-green-500 h-2 rounded-full" style="width: 45%"></div>
+                        </div>
+                        <div class="w-16 text-sm font-medium text-gray-600 text-right">45%</div>
+                    </div>
+                    <div class="flex items-center">
+                        <div class="w-24 text-sm font-medium text-gray-600">消费板块</div>
+                        <div class="flex-1 mx-4 bg-gray-200 rounded-full h-2">
+                            <div class="bg-orange-500 h-2 rounded-full" style="width: 55%"></div>
+                        </div>
+                        <div class="w-16 text-sm font-medium text-gray-600 text-right">55%</div>
+                    </div>
+                    <div class="flex items-center">
+                        <div class="w-24 text-sm font-medium text-gray-600">金融板块</div>
+                        <div class="flex-1 mx-4 bg-gray-200 rounded-full h-2">
+                            <div class="bg-teal-500 h-2 rounded-full" style="width: 20%"></div>
+                        </div>
+                        <div class="w-16 text-sm font-medium text-gray-600 text-right">20%</div>
+                    </div>
+                </div>
+                <p class="text-xs text-gray-500 mt-4">注：估值百分位基于近5年数据</p>
+            </div>
+
+            <!-- 投资策略框架 -->
+            <div class="card md:col-span-4 p-8">
+                <div class="absolute top-0 left-0 w-full h-full highlight-gradient-orange"></div>
+                <h3 class="text-xl font-bold text-gray-800 mb-6">投资策略框架：时间-空间-主题</h3>
+                <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+                    <div class="bg-white border border-gray-200 rounded-lg p-6 shadow-sm">
+                        <div class="w-12 h-12 rounded-full bg-blue-100 flex items-center justify-center text-blue-600 mb-4">
+                            <i class="fa-solid fa-clock text-xl"></i>
+                        </div>
+                        <h4 class="text-lg font-bold text-gray-800 mb-2">时间维度</h4>
+                        <p class="text-gray-600 text-sm">11月重点布局先进制造和绿色能源等成长板块，12月逐步向消费民生和金融稳定等防御性板块切换。</p>
+                    </div>
+                    <div class="bg-white border border-gray-200 rounded-lg p-6 shadow-sm">
+                        <div class="w-12 h-12 rounded-full bg-green-100 flex items-center justify-center text-green-600 mb-4">
+                            <i class="fa-solid fa-layer-group text-xl"></i>
+                        </div>
+                        <h4 class="text-lg font-bold text-gray-800 mb-2">空间维度</h4>
+                        <p class="text-gray-600 text-sm">重点关注估值处于历史低位但基本面改善的板块，同时关注政策催化明确的高景气赛道，采用"高低搭配"的配置思路。</p>
+                    </div>
+                    <div class="bg-white border border-gray-200 rounded-lg p-6 shadow-sm">
+                        <div class="w-12 h-12 rounded-full bg-purple-100 flex items-center justify-center text-purple-600 mb-4">
+                            <i class="fa-solid fa-lightbulb text-xl"></i>
+                        </div>
+                        <h4 class="text-lg font-bold text-gray-800 mb-2">主题维度</h4>
+                        <p class="text-gray-600 text-sm">紧紧围绕十五五规划确定的"科技创新、绿色发展、消费升级、金融稳定"四大主题展开投资布局。</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- 风险提示 -->
+            <div class="card md:col-span-4 p-8">
+                <div class="absolute top-0 left-0 w-full h-full highlight-gradient-red"></div>
+                <h3 class="text-xl font-bold text-gray-800 mb-6">风险提示</h3>
+                <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+                    <div class="space-y-4">
+                        <div class="flex items-start">
+                            <i class="fa-solid fa-triangle-exclamation text-red-500 mt-1 mr-3"></i>
+                            <div>
+                                <h4 class="font-bold text-gray-700">外部风险</h4>
+                                <p class="text-gray-600 text-sm">美联储政策风险、地缘政治风险、汇率波动风险、大宗商品价格风险</p>
+                            </div>
+                        </div>
+                        <div class="flex items-start">
+                            <i class="fa-solid fa-triangle-exclamation text-red-500 mt-1 mr-3"></i>
+                            <div>
+                                <h4 class="font-bold text-gray-700">内部风险</h4>
+                                <p class="text-gray-600 text-sm">经济增长不及预期风险、政策执行风险、流动性风险、估值风险</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="space-y-4">
+                        <div class="flex items-start">
+                            <i class="fa-solid fa-shield-virus text-green-500 mt-1 mr-3"></i>
+                            <div>
+                                <h4 class="font-bold text-gray-700">风险控制建议</h4>
+                                <p class="text-gray-600 text-sm">仓位控制、板块轮动、个股选择、止损设置、分散投资、动态调整</p>
+                            </div>
+                        </div>
+                        <div class="flex items-start">
+                            <i class="fa-solid fa-shield-virus text-green-500 mt-1 mr-3"></i>
+                            <div>
+                                <h4 class="font-bold text-gray-700">操作纪律</h4>
+                                <p class="text-gray-600 text-sm">买入纪律、持有纪律、卖出纪律、风险控制纪律</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- 投资组合建议 -->
+            <div class="card md:col-span-4 p-8">
+                <div class="absolute top-0 left-0 w-full h-full highlight-gradient-teal"></div>
+                <h3 class="text-xl font-bold text-gray-800 mb-6">推荐投资组合构建</h3>
+                <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+                    <div>
+                        <h4 class="text-lg font-bold text-gray-700 mb-4">核心配置 (60%)</h4>
+                        <div class="space-y-3">
+                            <div class="flex items-center justify-between p-3 bg-gray-50 rounded-lg">
+                                <div class="flex items-center">
+                                    <div class="w-2 h-2 bg-teal-500 rounded-full mr-2"></div>
+                                    <span class="font-medium text-gray-700">金融稳定板块</span>
+                                </div>
+                                <span class="text-sm font-medium text-gray-600">30%</span>
+                            </div>
+                            <div class="flex items-center justify-between p-3 bg-gray-50 rounded-lg">
+                                <div class="flex items-center">
+                                    <div class="w-2 h-2 bg-orange-500 rounded-full mr-2"></div>
+                                    <span class="font-medium text-gray-700">消费民生板块</span>
+                                </div>
+                                <span class="text-sm font-medium text-gray-600">20%</span>
+                            </div>
+                            <div class="flex items-center justify-between p-3 bg-gray-50 rounded-lg">
+                                <div class="flex items-center">
+                                    <div class="w-2 h-2 bg-blue-500 rounded-full mr-2"></div>
+                                    <span class="font-medium text-gray-700">先进制造板块</span>
+                                </div>
+                                <span class="text-sm font-medium text-gray-600">10%</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div>
+                        <h4 class="text-lg font-bold text-gray-700 mb-4">卫星配置 (40%)</h4>
+                        <div class="space-y-3">
+                            <div class="flex items-center justify-between p-3 bg-gray-50 rounded-lg">
+                                <div class="flex items-center">
+                                    <div class="w-2 h-2 bg-green-500 rounded-full mr-2"></div>
+                                    <span class="font-medium text-gray-700">绿色能源板块</span>
+                                </div>
+                                <span class="text-sm font-medium text-gray-600">25%</span>
+                            </div>
+                            <div class="flex items-center justify-between p-3 bg-gray-50 rounded-lg">
+                                <div class="flex items-center">
+                                    <div class="w-2 h-2 bg-blue-500 rounded-full mr-2"></div>
+                                    <span class="font-medium text-gray-700">先进制造板块</span>
+                                </div>
+                                <span class="text-sm font-medium text-gray-600">15%</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+<script>
+    // 历年11-12月板块表现图表
+    const sectorCtx = document.getElementById('sectorPerformanceChart').getContext('2d');
+    const sectorChart = new Chart(sectorCtx, {
+        type: 'bar',
+        data: {
+            labels: ['金融板块', '消费板块', '科技板块', '周期板块', '先进制造', '绿色能源'],
+            datasets: [
+                {
+                    label: '11月平均涨幅',
+                    data: [8.5, 8.3, 10.8, 6.2, 15.2, 12.5],
+                    backgroundColor: 'rgba(59, 130, 246, 0.7)',
+                    borderColor: 'rgba(59, 130, 246, 1)',
+                    borderWidth: 1
+                },
+                {
+                    label: '12月平均涨幅',
+                    data: [12.5, 3.2, -2.1, 4.8, 5.8, 7.2],
+                    backgroundColor: 'rgba(34, 197, 94, 0.7)',
+                    borderColor: 'rgba(34, 197, 94, 1)',
+                    borderWidth: 1
+                }
+            ]
+        },
+        options: {
+            maintainAspectRatio: false,
+            responsive: true,
+            plugins: {
+                legend: {
+                    position: 'top',
+                },
+                tooltip: {
+                    callbacks: {
+                        label: function(context) {
+                            return context.dataset.label + ': ' + context.raw + '%';
+                        }
+                    }
+                }
+            },
+            scales: {
+                y: {
+                    beginAtZero: true,
+                    ticks: {
+                        callback: function(value) {
+                            return value + '%';
+                        }
+                    }
+                }
+            }
+        }
+    });
+
+    // A股主要指数估值水平图表
+    const valuationCtx = document.getElementById('valuationChart').getContext('2d');
+    const valuationChart = new Chart(valuationCtx, {
+        type: 'doughnut',
+        data: {
+            labels: ['沪深300', '中证500', '创业板指', '科创50', '中证银行', '中证消费'],
+            datasets: [{
+                label: '估值百分位',
+                data: [45, 38, 62, 58, 93, 52],
+                backgroundColor: [
+                    'rgba(59, 130, 246, 0.7)',
+                    'rgba(34, 197, 94, 0.7)',
+                    'rgba(249, 115, 22, 0.7)',
+                    'rgba(168, 85, 247, 0.7)',
+                    'rgba(20, 184, 166, 0.7)',
+                    'rgba(239, 68, 68, 0.7)'
+                ],
+                borderColor: [
+                    'rgba(59, 130, 246, 1)',
+                    'rgba(34, 197, 94, 1)',
+                    'rgba(249, 115, 22, 1)',
+                    'rgba(168, 85, 247, 1)',
+                    'rgba(20, 184, 166, 1)',
+                    'rgba(239, 68, 68, 1)'
+                ],
+                borderWidth: 1
+            }]
+        },
+        options: {
+            maintainAspectRatio: false,
+            responsive: true,
+            plugins: {
+                legend: {
+                    position: 'right',
+                },
+                tooltip: {
+                    callbacks: {
+                        label: function(context) {
+                            return context.label + ': ' + context.raw + '%';
+                        }
+                    }
+                }
+            }
+        }
+    });
+</script>
+</html>
