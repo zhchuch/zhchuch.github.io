@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>🏇时间线</title>
+</head>
+<body>
+    <h1 style="text-align: center; margin-bottom: 40px;margin-top: -10px;"> 年度大事件 <small> —— 白驹过隙</small></h1>
+    <div class="timeline-container">
+        <!-- 事件1 -->
+        <div class="timeline-item">
+            <div class="timeline-year" style="background-color: #e7db74;">2026</div>
+            <div class="timeline-content">
+                <p class="timeline-desc">●《资治通鉴》通读第一遍</p>
+                <!-- <img src="" alt="" class="timeline-img"> -->
+                <p>
+                    <ul>
+                        <li>2026/02：年度考核绩效A，职场算是翻身</li>
+                    </ul>
+                </p>
+            </div>
+        </div>
+
+        <!-- 事件2 -->
+        <div class="timeline-item">
+            <div class="timeline-year" style="background-color: #3498db;">2025</div>
+            <div class="timeline-content">
+                <p class="timeline-desc">● 正式任命基层管理者PL，首次实现年薪百万</p>
+               <!-- <img src="" alt="" class="timeline-img"> -->
+            </div>
+        </div>
+
+        <!-- 事件3 -->
+        <div class="timeline-item">
+            <div class="timeline-year" style="background-color: #3498db;">2024</div>
+            <div class="timeline-content">
+                <p class="timeline-desc">● 职场转身: 由南京转上海</p>
+                <p>
+                    <ul>
+                        <li>2024/03：最难捱的阳春三月 各种折磨对比思考 不知路在何方</li>
+                        <li>2024/02：职场生涯的首个至暗时刻（年度考核B 被打标签）</li>
+                    </ul>
+                    
+                </p>
+                <!-- <img src="" alt="" class="timeline-img"> -->
+            </div>
+        </div>
+
+        <!-- 事件4 -->
+        <div class="timeline-item">
+            <div class="timeline-year" style="background-color: #3498db;">2023</div>
+            <div class="timeline-content">
+                <p class="timeline-desc">● 家庭: 母亲生病住院，职业: 迷茫无措 <small>(教训: 抬头看路的重要性)</small></p>
+                <!-- <img src="" alt="" class="timeline-img"> -->
+                <p>
+                    <ul>
+                        <li>2023/04：职场上被边缘化，输送到战略预备队</li>
+                        <li>2023/03：母亲生病住院做手术，血糖叠加胆结石 住院1个月 (不知道爸妈当时是怎么熬过来的)</li>
+                    </ul>
+                </p>
+            </div>
+        </div>
+
+        <div class="timeline-item">
+            <div class="timeline-year" style="background-color: #3498db;">2022</div>
+            <div class="timeline-content">
+                <p class="timeline-desc">● 股灾: 亏损-30万 一年白干 <small>(教训: 千万不要做埋着头的鸵鸟, A股没有价值 一定要止损)</small></p>
+                <!-- <img src="" alt="" class="timeline-img"> -->
+                <p>
+                    <ul>
+                        <li>2022/04：</li>
+                        <li>2022/03：</li>
+                    </ul>
+                </p>
+            </div>
+        </div>
+    </div>
+    
+    <style>
+        /* 全局样式重置 */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: "Microsoft Yahei", sans-serif;
+        }
+
+        body {
+            background-color: #f5f5f5;
+            padding: 50px 0;
+        }
+
+        ul {
+            margin-left: 20px; 
+            font-size: 13px;
+        }
+        li {
+            margin-bottom: 6px
+        }
+
+        /* 时间轴容器 */
+        .timeline-container {
+            max-width: 800px;
+            margin: 0 auto;
+            position: relative;
+        }
+
+        /* 时间轴中心线 */
+        .timeline-container::before {
+            content: '';
+            position: absolute;
+            left: -80px;
+            top: 0;
+            transform: translateX(-50%);
+            width: 4px;
+            height: 100%;
+            background-color: #2c3e50;
+        }
+
+        /* 单个事件项 */
+        .timeline-item {
+            margin-bottom: 80px;
+            position: relative;
+            display: flex;
+        }
+
+        /* 偶数项反向排列（左右交替） */
+        .timeline-item {
+            justify-content: flex-start;
+            padding-right: 0;
+            padding-left: 0px;
+        }
+
+        /* 事件内容卡片 */
+        .timeline-content {
+            width: 90%;
+            background: white;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+        }
+
+        /* 事件年份标记 */
+        .timeline-year {
+            position: absolute;
+            left: -80px;
+            top: 20px;
+            transform: translateX(-50%);
+            width: 60px;
+            height: 60px;
+            color: white;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 18px;
+            font-weight: bold;
+            z-index: 10;
+        }
+
+        /* 事件标题/描述 */
+        .timeline-desc {
+            margin: 15px 0;
+            line-height: 1.6;
+            color: #333;
+            font-size: 16px;
+        }
+
+        /* 事件图片 */
+        .timeline-img {
+            width: 100%;
+            height: 200px;
+            object-fit: cover;
+            border-radius: 4px;
+        }
+
+        /* 响应式适配（手机端） */
+        @media (max-width: 768px) {
+            .timeline-container::before {
+                left: 30px;
+            }
+            .timeline-item, .timeline-item:nth-child(even) {
+                padding-left: 70px;
+                padding-right: 0;
+                justify-content: flex-start;
+            }
+            .timeline-year {
+                left: 30px;
+            }
+        }
+    </style>
+</body>
+</html>
